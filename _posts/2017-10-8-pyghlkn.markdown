@@ -1,9 +1,85 @@
 ---
 layout: post
-title: pyghlkn
+title: 《漂洋过海来看你》
 date: 2017-09-25 20:39:36 +0800
 categories: music
 tags: 
-img: undefined
+img: ../images/pyghlkn.jpg
 ---
-undefined
+* 
+{:toc}
+## 缘起
+
+这个假期，我妈说最近在听《漂洋过海来看你》这首歌，我便打算要练下来，生日的时候送给她。其实说起来很少给妈妈唱歌，可能有点害羞吧，，但是能用自己的才艺让妈妈感到爱，还是很开心的😊。
+
+## 歌曲分析
+
+[关于歌曲分析...](http://localhost/wordpress/2017/09/26/gequfenxi/)
+
+### 作曲分析
+
+[<span style="color: #0000ff;">关于作曲分析...</span>](http://localhost/wordpress/2017/09/26/zuoqufenxi/)
+
+整首歌是大调吧，主歌有四小段，副歌只有一段，第四段主歌算作是向高潮的过度。
+
+详细的和弦和旋律可视化见：[http://www.hooktheory.com/hookpad/view/plpvOfCotLHp](http://www.hooktheory.com/hookpad/view/plpvOfCotLHp)
+
+#### 和弦分析
+
+[<span style="color: #0000ff;">关于和弦分析...</span>](http://localhost/wordpress/2017/09/26/hexianfenxi/)
+
+主歌用到的和弦进行是：I-ii-IV-V，属于基本的和弦进行。
+
+![](../images/2017/09/a-1.png)
+
+副歌用到的和弦进行是有：vi-iii-IV-V-I-ii-vi-ii-iii-vi。 大调中vi可以连接任何和弦，后面接iii，iii接IV也很常见，然后下属接属和弦再回到主和弦，没有问题，包括后面ii依次接了vi和iii，没有毛病。但最后一个和弦没有回到大调主和弦，而是落在了vi上（收尾在小调吗？），不太了解，回头继续学一些乐理知识再回来看看吧，听起来挺好的，有一种意犹未尽的忧伤感。
+
+![](../images/2017/09/a-2.png)
+
+#### 旋律分析
+
+[<span style="color: #0000ff;">关于旋律分析...</span>](http://localhost/wordpress/2017/09/27/xuanlvfenxi/)
+
+前主歌前三段旋律模式（Melodic Themes）基本一样，重复中也有些变化，承接第四段旋律的最后一句“都忍住不哭泣”，六个字有五个音都在不稳定音阶（unstable scale degrees）上，听起来悲伤感会很浓烈，但是最后一个字又滑音回归道了稳定音阶上（stable scale degrees），正好对应了歌词中含义，忍住悲伤，收回眼泪。
+
+![](../images/2017/09/p1.png)
+
+![](../images/2017/09/p2.png)
+
+![](../images/2017/09/p3.png)
+
+第四段过度到高潮，其实本来以为这就是副歌，但是由于和弦和前面主歌的完全一样，所以就作为主歌的过度吧。里面有跟多音音高一样，大概能出来“对爱情始终坚定如一”的感觉吧。
+
+![](../images/2017/09/p4.png)
+
+最后是副歌，只有一段，最后一个音没有落在大调主音上，似乎落在了小调上，倒不是很常见，留意一下。
+
+![](../images/2017/09/p5.png)
+
+### 编曲分析
+
+[<span style="color: #0000ff;">关于编曲分析...</span>](http://localhost/wordpress/2017/09/26/bianqufenxi/)
+
+这首曲子我练习的时大伟编配的伴奏。我挺喜欢用大伟编的谱子的，大伟的谱子会用到很多比较新鲜的和弦，听起来不落俗套。比如这首，大伟用的C大调的和弦，里面很多和弦对我来说都比较高级了，大概分析分析学习一下吧。
+
+详细的和弦即旋律可视化化：[http://www.hooktheory.com/hookpad/view/YFeB2-Qlqkju](http://www.hooktheory.com/hookpad/view/YFeB2-Qlqkju)
+
+大伟编配的吉他谱网址：[http://www.daweijita.com/10096.html](http://www.daweijita.com/10096.html)
+
+首先第一个和弦进行 I-ii-IV-V。基础的编配是见下图，用到的都是最基本的顺阶三和弦，而大伟用来很多高级和弦包括七和弦和挂留和弦，还有一个转位和弦，见下下图。 因为前四段和弦一样，这里贴出第一段的对比效果，可以看到和弦的变化，导致歌曲的呈现效果会有不同，比如第一小节中有两个Ri音本来在C和弦下是不稳定的，但是换成了Cadd9和弦之后，变成了稳定的音阶，包括二级和弦换成七和弦，G和弦换成Gsus4也是类似的效果，但比如IV换成了IVsus2和弦，则多了两个不稳定的音，这是按理论来进行的简单分析，实际上听感的确会有不同，但是具体的差异也只能自己来体味了。 还有一个细节，虽然前四段编配的和弦大体一样，但是第二三段的Cmaj7和弦都换成了Cadd9，听起来感情觉得强烈一些，我觉得可以理解为一个情绪渐进的过程。
+
+![](../images/2017/09/l1.png)![](../images/2017/09/l2.png)
+
+副歌的和弦替换跟前面都差不多，就不赘述了，最后一个和弦值得留意一下，V6和弦是第五级和弦的第一转位，还是一个挺常用的转位和弦，减少了V和弦对主和弦的倾向性，后面的谱子我也没有做了，但是的确是接了I极和弦，V6起了对 vi 和 I 的连接。
+
+![](../images/2017/09/p5.png)
+
+![](../images/2017/09/l3.png)
+
+## 歌曲演唱
+
+唱不太好，录了一半，歌曲倒不是特别难唱，可能经历不够吧，对歌曲中异地恋的那种感情并没有体会。 [embed]http://v.youku.com/v_show/id_XMjk5MjMxMTQ5Mg==.html?spm=a2hzp.8244740.0.0[/embed]
+
+## 相关连接
+
+<span style="color: #0000ff;">关于相关连接...</span> **父节点: [<span style="color: #0000ff;">音乐空间</span>](http://localhost/wordpress/music/)**

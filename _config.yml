@@ -1,8 +1,8 @@
-title: "Jekyll-Theme-MDUI"
-description: "A Jekyll theme based on MDUI"
+title: "wangc的第一宇宙"
+description: "用知识建立信息世界的根据地"
 url: 
 baseurl: ""
-author: "KeJun"
+author: "wangc"
 paginate: 5
 paginate_path: "/blog/page:num/"
 
