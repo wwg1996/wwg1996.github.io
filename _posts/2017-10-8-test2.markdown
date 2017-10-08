@@ -1,0 +1,9 @@
+---
+layout: post
+title: test
+date: 2017-10-08 20:13:30 +0800
+categories: AI
+tags: 
+img: undefined
+---
+undefined
