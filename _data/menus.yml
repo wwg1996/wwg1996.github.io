@@ -1,3 +1,6 @@
+- name: MUSIC
+  url: /pages/music.html
+  icon: "&#xe53b;"
 - name: HOME
   url: /
   icon: home
