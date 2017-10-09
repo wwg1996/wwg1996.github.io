@@ -1,14 +1,14 @@
 - name: HOME
-  url: /
-  icon: home
-- name: CATEGORY
   url: /category/
+  icon: home
+- name: BLOG
+  url: /
   icon: "&#xe53b;"
 - name: TAGS
   url: /tags/
   icon: "&#xe893;"
-- name: MUSIC
-  url: /pages/music.html
-  icon: "&#xe624;"
+- name: About
+  url: /pages/about.html
+  icon: "&#xe7fd;"
 - name: navSearch
   switch: true
