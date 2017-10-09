@@ -1,0 +1,32 @@
+---
+layout: post
+title: 文章的结构
+date: 2017-10-09 23:52:46 +0800
+categories: PKM
+tags: 
+img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/pkm.jpg
+---
+
+# 文章的结构
+
+<span style="color: #000000;">一篇文章的结构如下所示:![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/10/r.png)</span>
+
+# 概念解释
+
+1.  在本博客中知识整理的最基本的单位是**知识节点**,在这里表示为**文章**。
+2.  知识节点间的关系有三种：**父节点**，**相关节点**，**子节点**。
+3.  子节点又分为两种，一种是**组成节点**，一种是**子类节点**。父节同此。
+4.  一个知识节点的组成节点，包含在文章的内容中。
+    *   点击<span style="color: #0000ff;">关于组成节点1...</span>，转至组成节点的父类节点
+    *   为了防止篇幅过长，组成节点可能只呈现一个摘要（总结），点击<span style="color: #0000ff;">详细...</span>，查看详细内容
+5.  在<span style="color: #0000ff;">相关连接</span>中，可以打开这篇文章的父节点，相关节点和子类节点。
+
+进一步了解 本博客系统采用的知识管理系统模型（PKMS model）<span style="color: #0000ff;">点此</span>
+
+# 相关连接
+
+父节点：<span style="color: #0000ff;">小c的个人知识管理模型</span> 
+
+相关节点 
+
+子类节点：<span style="color: #0000ff;">本博客的所有文章</span>

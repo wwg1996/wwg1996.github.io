@@ -1,0 +1,90 @@
+---
+layout: post
+title: 1.1 词性
+date: 2017-10-10 01:47:32 +0800
+categories: more
+tags: 英语
+img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/English.jpg
+---
+
+笔记摘录自 *The Only Grammar Book You’ll Ever Need*
+* 
+{:toc}
+## 名词
+
+* 表示事物（人，事物，地点或抽象概念）的名称
+  * **专有名词**：特有的，具体的事物。
+  * **普通名词**：一类事物。
+  * **集体名词**：同一类事物的总称。
+  * **具体名称**：可以被感官直接感受到的事物。
+  * **抽象名词**：不可以被直接感觉到抽象事物。
+  * **可数名词**：可数名词是指能以数目来计算，可以分成个体的事物。
+  * **不可数名词**：不可数名词是指不能以数目来计算，不可以分成个体的事物。
+  * **合成名词**：两个或两个以上名词连在一起构成的名词。
+## 代词
+* 用来代替名词的词
+  * **人称代词**：表示人或事物
+    * 主格：I you he she they we
+    * 宾格：me you him her them us
+  * **物主代词**：表示所有权关系
+    * my his your your their her
+  * **指示代词**：表示指示或指出某个人或某件事
+    *  this这 that那 these这些 those 那些
+  * **关系代词**：关联两个句子
+    * which……的物 who……的人 that……的人或物 who谁 that引导定语从句
+  * **反身代词**：表示句子中的事物再反映回自身
+    * myself我自己 himself他自己 themselves他们自己 yourself你(们)自己、
+  * **疑问代词**：表示疑问
+    *  who谁 what什么 which哪个
+  * **不定代词**：表示不指明代替任何特定名词或形容词
+    *  some（something，somebody，someone），any（anything，anybody，anyone）， no（nothing，nobody，no one）， every（everything，everybody，everyone），all，each，both，much，many，（a）little，（a）few，other（s），another，none，one，either， neither
+## 形容词  
+* 用来修饰名词或代词的词，用于回答三个问题：which one? what kind of? or how many?
+  * **冠词**：放在名词前帮助说明名词所指的人或事物
+    * 定冠词：the
+    * 不定冠词：a，an
+## 动词
+* 表示动作或状态的词汇
+  * **实义动词**：表示动作
+    * 及物动词：可以接宾语的动词
+    * 不及物动词：不能接宾语的动词
+  * **be动词**： 
+    * is，am，are，was，were，being，been，to be 
+  * **系动词**：用来帮助说明主语的动词
+    * appear feel look remain smell stay become grow prove seem sound taste
+    * 上面的词可能是实义动词，也可能是系动词，如果在句子中用be动词将这些动词替换掉句子失去意义则为系动词。
+  * **情态动词**：表示语气的单词
+    * can (could), may (might), must, need, ought to, dare (dared), shall (should), will (would) must not.  
+## 副词
+* 修饰动词或形容词的词
+  * **连接副词**： 连接句子中的不同部分
+  * accordingly also besides consequently finally furthermore hence however incidentally indeed instead likewise meanwhile moreover nevertheless next otherwise still therefore thus
+  * **语义量词**：加强形容词的语义
+  * awfully, extremely, kind of, more, most, pretty
+    (as in pretty happy), quite, rather, really (as in really sad), somewhat, sort of, and too.
+
+## 介词
+* 在句子中连接名称或代词与其他词的词
+  * 选用**at**的场合：
+    * 用于钟点前。如：at seven，at half past six等。
+    * 用于固定短语中。如：at noon，at night。
+  * 选用**in**的场合：
+    * 用于一天当中的某个时间。如：in the morning／afternoon／evening
+    * 用于某个较长的时间，如在某年、某月、某季节等。
+    * in 2003，in March（在三月），in winter（在冬季）。
+  * 选用**on**的场合：
+    * 用于表示具体的某一天及星期几。如：on May 1（在五月一日）， 
+      on Saturday（在星期六）， on my birthday（在我生日那天）。
+    * 专指某一天的早、午、晚。
+    * 如：on the morning of New Year’s Day（在元旦的早晨），
+## 连词
+* 连接两个词
+  * 并列连词：but, or, yet, so, for, and, nor. 
+  * mnemonic ：boysfan
+  * 相关连词：both/and, either/or, neither/nor, not
+    only/also,  not only/but also.
+  * 从属连词（连接从句）：after
+    although，as if，as in，as long as，as much as，as soon as，assuming that，because，before，even though，how，if，in order that，in that，inasmuch as，now that，once，providing that，since，so long as，so that，than，thatthough，unless，until，when，whenever，where，wherever，whether，while
+
+## 感叹词
+* 表达强烈情感的词
