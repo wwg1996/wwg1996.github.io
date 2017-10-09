@@ -1,0 +1,41 @@
+---
+layout: post
+title: 旋律分析
+date: 2017-10-09 21:09:17 +0800
+categories: music
+tags: 曲目积累
+img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/music.jpg
+---
+* 
+{:toc}
+旋律的主要分析，我最主要还是看在基本的和声框架下，主旋律里不同音阶的稳定性了，再个就是旋律模式，以及这些对歌曲情感表达的影响。详细的可视化工具我用了[Hookpad](https://www.hooktheory.com/site),并且我乐理部分的学习也用了配套的[HookTheory](https://www.hooktheory.com/site)，在这里安利一下。
+
+## 音阶的稳定性
+
+### 概念
+
+这里的音阶的稳定性，简单的说就是主旋律和伴奏和弦“搭不搭”。Hookpad为我们查看音阶的稳定性提供了一个很好的可视化功能。
+
+如下图，一个简单的和弦进行I-vi-IV-V。Hookpad可以将这几个和弦的组成音显示出来（图中颜色加重的部分）。
+
+![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/aa2.png)
+
+接下来加入一段旋律。同一时刻，旋律的组成音包含<u>在</u>和弦的组成音内时，我们称这些音阶为**稳定的**，当旋律的组成音包含<u>不在</u>和弦的组成音内时，我们称这些音阶为**稳不定的**。
+
+![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/aa1.png)
+
+### 作用
+
+一般来说，稳定音阶给人的感觉是积极的，愉悦的，而宣布我的音阶给人的感觉是消极的，悲伤的。一首好听的音乐作品，应该是两种音阶都有的，而且稳定音阶为主，中间会适当的加入一些不稳定音阶。我们从这个角度来简单的分析一首歌曲为什么会给人愉悦或悲伤的感受。
+
+## 旋律模式
+
+即使是同样的和声框架，不同的创作者也能搭配上各式各样优美的旋律来，所以说音阶虽然是有限的，但其排列组合几乎是无穷的，虽然现在人工智能领域也在研究算法作曲，但是其中的模式目前来讲也很难全部归纳出来。但在千差万别的旋律里，还是大体可以归为下面三种模式：
+
+## ![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/b.png)
+
+## ![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/b1.png)
+
+## ![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/b3.png)
+
+从上面的旋律可视化图就很容易分辨出来这三种模式，第一种是循环式，第二种修饰循环式，第四种是序列式。这三种旋律类型基本上可以概括所有的流行音乐。实际上，人的大脑中是喜欢规律性的东西的，无论是艺术中对对称性的美的感受，还是对数学公式的美的感受，人们对美感，或者说和谐的感知很大一部分来自这种模式性。但是人们又喜欢新奇的事物，会对始终的规律性产生乏味感，所以旋律往往会在重复的基础上加上一些变化。

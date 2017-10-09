@@ -3,7 +3,7 @@ layout: post
 title: 《漂洋过海来看你》
 date: 2017-09-25 20:39:36 +0800
 categories: music
-tags: 曲目积累
+tags: 曲目积累 歌曲
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/pyghlkn.jpg
 ---
 * 

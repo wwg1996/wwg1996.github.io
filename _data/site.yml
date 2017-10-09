@@ -1,7 +1,7 @@
 head: 
    favicon: "/images/facicon1.png" #  the favicon
-   high_res_favicon: "/images/facicon2.png" #  the favicon using high quality format
-   apple_touch_icon: "/images/facicon2.png" # the iOS Home button icon
+   high_res_favicon: "/images/favicon2.png" #  the favicon using high quality format
+   apple_touch_icon: "/images/favicon2.png" # the iOS Home button icon
    keywords: "jekyll blog PKM AI" #  the site keywords
 
 uiux:
@@ -14,7 +14,7 @@ background:
    purecolor: "#eeeeee" # the background color
 
 img: 
-   avatar: "images/c.png" # your avatar
+   avatar: "https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/c.png" # your avatar
 
 card: 
    card_shadow: 1 # card shadow (0-24), 0 is not displayed
