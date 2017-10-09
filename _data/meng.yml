@@ -1,8 +1,8 @@
 title:  # Meng title
   switch: true # Meng title switch
-  visible: "(*´∇｀*) 被发现啦~" # State is visible text
-  hidden:  "(つェ⊂)看不到我~" # State is hidden text
-  with_default_title: true # with default title
+  visible: "(＾－＾)V，逗你呢~" # State is visible text
+  hidden:  "该网站已被屏蔽！~" # State is hidden text
+  with_default_title: false # with default title
   reset_time: 1000 # If state is visible , reset default title times(ms)
 
 cursor: # Meng cursor
@@ -22,19 +22,19 @@ header: # Meng header color + theme-color
 
 background: # Meng background
   switch: true
-  background_img: "https://ooo.0o0.ooo/2017/06/14/5940a9b8e4c21.jpg"
-  transparent_header: true
+  background_img: "https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/background2.jpg"
+  transparent_header: false
   transparent_footer: false
   text_color: '#000'
 
 card: # Meng card
-  switch: true
+  switch: false
   background_color: 'rgba(255, 255, 255, 0.5)'
   card_img_opacity: '0.8'
 
 live2d: # live2d ,see https://github.com/EYHN/hexo-helper-live2d
   switch: false
-  model: "/assets/live2d/koharu/koharu.model.json" # model.json path
+  model: "/assets/tororotororo/koharu/koharu.model.json" # model.json path
   drag: true # is drag ?
   in_mobile: false
   width: 130 # canvas width
@@ -47,18 +47,14 @@ music_player:
   player: "aplayer" #cplayer or aplayer
   button_color: "#1abc9c"
   music:
-    - title: 'Faded'
-      author: 'Alan Walker'
-      url: 'http://www.170mv.com/kw/other.web.rh01.sycdn.kuwo.cn/resource/n2/14/71/3899067167.mp3'
-      pic: 'http://p4.music.126.net/8dzD62VK8jLDbhEqkmpIAg==/18277181788626198.jpg?param=130y130'
-    - title: 'Unity'
-      author: 'TheFatRat'
-      url: 'http://www.170mv.com/kw/other.web.ri01.sycdn.kuwo.cn/resource/n2/44/7/1205252665.mp3'
-      pic: 'http://img4.kuwo.cn/star/starheads/240/72/35/3484765923.jpg'
+    - title: 'BWV 849'
+      author: 'J.S. Bach'
+      url: '/music/BWV849.mp3'
+      pic: 'https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/bash.jpg'
 
 head_card:
-  switch: true
+  switch: false
   left_img: "https://ooo.0o0.ooo/2017/06/19/5947b272d418b.jpg"
-  left_text: "『 · 如果真爱有颜色 』"
+  left_text: "『  』"
   right_img: "https://ooo.0o0.ooo/2017/06/08/5939484dc618e.png"
   offset_level: 2

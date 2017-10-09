@@ -80,6 +80,12 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/p
 
 唱不太好，录了一半，歌曲倒不是特别难唱，可能经历不够吧，对歌曲中异地恋的那种感情并没有体会。 [embed]http://v.youku.com/v_show/id_XMjk5MjMxMTQ5Mg==.html?spm=a2hzp.8244740.0.0[/embed]
 
+<iframe width="560" height="315" src="http://tv.sohu.com/upload/static/share/share_play.html#90268916_9365222_0_9001_0" frameborder="0" allowfullscreen></iframe>
+
+<iframe height="538" width="958" src="http://player.youku.com/embed/XMzA1MzM2MjYyNA==" frameborder="0" 'allowfullscreen'=""></iframe>
+
+
+
 ## 相关连接
 
 <span style="color: #0000ff;">关于相关连接...</span> **父节点: [<span style="color: #0000ff;">音乐空间</span>](http://localhost/wordpress/music/)**

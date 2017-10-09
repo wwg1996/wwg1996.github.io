@@ -1,6 +1,3 @@
-- name: MUSIC
-  url: /pages/music.html
-  icon: "&#xe53b;"
 - name: HOME
   url: /
   icon: home
@@ -10,11 +7,8 @@
 - name: TAGS
   url: /tags/
   icon: "&#xe893;"
-- name: FRIENDS
-  url: /friends/
-  icon: "&#xe8a3;"
-- name: EDITOR
-  url: /editor/
-  icon: "&#xe150;"
+- name: MUSIC
+  url: /pages/music.html
+  icon: "&#xe624;"
 - name: navSearch
   switch: true
