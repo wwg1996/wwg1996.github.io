@@ -1,0 +1,28 @@
+---
+layout: post
+title: 1.5 代词问题32 +0800
+categories: more
+tags: 英语
+img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/English.jpg
+---
+
+笔记摘录自 *The Only Grammar Book You’ll Ever Need*
+* 
+{:toc}
+1. **形式问题**
+   * **单复数一致**
+     * 代词与缩代替的名词要单复数形式一致 
+     * 注意不定代词的单复数：Anyone, anybody, anything, each, either, everybody, everyone, everything, neither, nobody, none, no one, one, somebody, something, and someone are all considered to be singular words
+     * singular   they：经常用they或their代替一些单数代词的位置
+   * **代词的格**
+     * 主格：用作主语
+     * 宾格：用作宾语
+     * 注意：
+       * **Than As的情景**：经常会在Than，As后省略词语直接跟代词，这时候代词不同的格会有不同的意思。
+       * **Who and Whom**：尝试用he和him代替。
+
+2. **语义问题**
+   * **指代不清**
+   * 注意考虑代词替代的名词是什么，除非故意模糊表述，否则要尽量措辞避免语义不清。
+   * **关于人称**：注意人称的应用,多个人称时，把第一人称放在最后说是一种习惯的礼仪。
+   * **Than 和 As的情景**：经常会在Than，As后省略词语直接跟代词，这时候代词不同的格会有不同的意思。

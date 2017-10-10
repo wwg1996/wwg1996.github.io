@@ -1,0 +1,76 @@
+---
+layout: post
+title: 1.1 词性
+date: 2017-10-10 01:47:32 +0800
+categories: more
+tags: 英语
+img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/English.jpg
+---
+
+笔记摘录自 *The Only Grammar Book You’ll Ever Need*
+* 
+{:toc}
+## 类型按语法结构进行分类
+ * **简单句**
+  * 一个主语加一个谓语
+  * 多个主语加一个位于（and连接主语）
+  * 一个主语多个位于（and连接）
+> 1. I see John laughed.
+> 2. The tall, good looking boy with the curly blond hair laughed loudly at his best friend's story.
+ * **并列句**
+    * 两个简单句通过一定的手段连接，构成了并列句。两个分句中展示出的主语和谓语同等重要且相互关联。
+    * 连接；（FANBOYS）for，and，nor，but，or，yet，so、或分号、分号加连接副词
+> 1. The old car sputtered to the top of the hill and we were all relieved.
+> 2. The old car sputtered to the top of the hill; we were all relieved.
+> 3. The old car sputtered to the top of the hill;therefore, we were all relieved.
+ * **复合句**
+  * 主句加从句
+  * 写复合句时，要首先判断表达内容中的主要信息和次要信息。当你决定为哪个分句加上从属连词时，其实就只命令你所选择的次要信息。
+ * **并列复合句**
+
+## 按交际功能进行分类
+* **陈述句**
+  * 用来表达观点和事实
+  * 分为肯定和否定，和句号搭配
+* **疑问句**
+  * 一般疑问句
+  * 特殊疑问句
+  * 选择疑问句
+  * 附加疑问句
+> 1. Is browsing on the internet your favorite pastime?
+> 2. What is your favourite pastime?
+> 3. Is your favorite pastime playing golf or browing on the interne?
+> 4. Browsing on the internet is your favorite pastime,isn't it?
+* **祈使句**
+  * 表达命令请求，劝告，建议，句末一般用句号或感叹号
+  * Do型
+  * Be型
+  * Let 型
+
+  >1. ○ Please stand up！ Don't move！
+  >2. ○ Be sure to take your personal >belongings befotr getting off the train
+  >3. ○ Don't be late for your class！
+  >4. ○ Let me know if your have any problem
+  >5. ○ Don't let him go
+  >  6. ○ Let hime not go
+* **感叹句**
+  * What 引导
+  * How引导
+  > 1. ○ What a great idea it is？
+  >   2.○ How great the idea is！
+  >   3.○ How I miss you！
+
+## 按修辞手法进行划分
+* **松散句**
+  * 在一个句子中，先介绍主要信息，再介绍次要信息，那么这样的句子，就是松散句
+> * The Internet provides an endless source of entertainment，because of the varity of websites，fun games，entertaining videos，and Wikipedia
+* **圆周句**
+  * 先介绍次要信息，再介绍主要信息，也就是要到句子的末尾，整个句子的意思才完全表达清楚
+> * Although Isincerely regret having totell you this and really hope that you will understand， I'm afraid to inform you that，I've broken your favorite antique vase
+* **对偶句**
+  * 对偶句的前后部分结构相似，但意思相反。
+> * Ask not what your country can do for you；ask what you can do for your contry。
+* **平行结构句**
+  * 把两个或两个以上的结构相同，意义并重，预期一致的词，短语或句子排列成串形成一个整体。可以加强语气。
+> * We can gain knowledge by observation or by practice
+* **短句**：一般来说，短句语气重，可陈述重要的事实和想法。比较简洁有力，可表明一种急迫，紧张，快节奏的动作，

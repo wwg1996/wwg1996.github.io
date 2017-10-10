@@ -144,13 +144,11 @@ I-V-vi-iii-IV-V-I-I。卡农进行的变体，只是把终止式提前了而已�
 
 ## 相关连接
 
-</div>
+[关于相关连接...](https://wwg1996.github.io/pkm/2017/10/09/wzdjg.html)
 
-**父节点**
+**父类节点**
+- [歌曲分析](https://wwg1996.github.io/music/2017/10/09/gqfx.html)
+- [乐曲分析](https://wwg1996.github.io/music/2017/10/09/yqfx.html)
+**子类节点**
+- [[《漂洋过海来看你》 ](https://wwg1996.github.io/music/2017/10/09/flower.html)
 
-*   [<span style="color: #0000ff;">作曲分析</span>](http://localhost/wordpress/2017/09/26/zuoqufenxi/)
-*   [<span style="color: #0000ff;">编曲分析</span>](http://localhost/wordpress/2017/09/26/bianqufenxi/)
-
-**相关节点** **子节点**
-
-*   [<span style="color: #0000ff;">《漂洋过海来看你》</span>](http://localhost/wordpress/2017/09/25/piaoyangguohailaikanni/)

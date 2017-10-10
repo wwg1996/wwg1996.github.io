@@ -14,7 +14,7 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/m
 
 编曲目前来说，我只着眼于吉他的编配。所以各种编曲中和弦的运用是最值得去学习的。与作曲中的和弦分析不同的是，作曲中的和弦分析着眼于基本的和声框架，并且用基础的顺阶和弦进行表示，但是在编曲中很可能会用到一些不同的处理方法，用到一些高级的和弦来诠释或丰富歌曲的感情，而如何在基本和弦进行的基础上，变化一些基本和弦，变成七和弦，转置和弦，挂留和弦或离调和弦，甚至完全不同的和弦，这是编曲中和弦分析的重点。
 
-[<span style="color: #0000ff;">详细...</span>](http://localhost/wordpress/2017/09/26/hexianfenxi/)
+[详细...](https://wwg1996.github.io/music/2017/10/09/hxfx.html)
 
 ## 节奏分析
 
@@ -26,12 +26,9 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/m
 
 ## 相关连接
 
-详细… **父节点**
+[关于相关连接...](https://wwg1996.github.io/pkm/2017/10/09/wzdjg.html)
 
-*   [<span style="color: #0000ff;">歌曲分析</span>](http://localhost/wordpress/2017/09/26/gequfenxi/)
-
-**相关节点** 
-
+**父类节点**
+- [歌曲分析](https://wwg1996.github.io/music/2017/10/09/gqfx.html)
 **子类节点**
-
-*   [<span style="color: #0000ff;">《漂洋过海来看你》</span>](http://localhost/wordpress/2017/09/25/piaoyangguohailaikanni/)
+- [[《漂洋过海来看你》 ](https://wwg1996.github.io/music/2017/10/09/flower.html)

@@ -1,0 +1,77 @@
+---
+layout: post
+title: 1.2 单词的基本形式
+date: 2017-10-10 01:47:32 +0800
+categories: more
+tags: 英语
+img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/English.jpg
+---
+
+笔记摘录自 *The Only Grammar Book You’ll Ever Need*
+* 
+{:toc}
+# 拼写规律
+1. I before e \
+   Except after c \
+   Or when sounded as a\
+   As in neighbor or weigh
+
+# 复数形式规律
+1. 后缀一般情况加-s
+    1. 除非单词以-s，-z，-x，-sh，-ch，-ss结尾，这时一般加-es
+    2. 以o结尾，hero，Negro，potato，tomato加-es，其他一般加-s
+    3. 一般-y结尾的，把y变i，加-es
+    4. 一般以-f或-fe结尾的，吧f变v加es
+2. 有一些不规则变形：\
+  analysis = analyses，child = children，mouse = mice，foot = feet，person = people，tooth = teeth，ox = oxen
+
+# 后缀规律
+1. -x结尾的直接加后缀
+2. -c结尾的，并且-c之前有a，o，u或者一个辅音，直接加后缀
+3. -c结尾的-c，之前有e，i而且变形后重读-c，加k再加后缀
+4. -c结尾的-c，之前有e，i而且变形后轻读-c，直接加后缀
+5. 以辅音结尾的，并且辅音上一个字母是非重读的元音，直接加后缀
+    1. 反例：program = programmed，format = formatting
+6. -ie结尾，加后缀-ing之前，把-ie变y
+7. -y结尾的，并且y在辅音之前，把y变i加后缀
+   1. 除非为-ing后缀
+   2. y在元音之前，直接加后缀
+
+# 前缀规律
+1. 一般直接加前缀
+   ​     
+# 副词和形容词
+* **比较级形式规律**
+> 有原级，比较级和最高级
+1. 单音节副词或形容词比较级直接加-er，最高级直接加-est
+2. 多音节形容词和以-ly结尾的副词组合more或most表达比较形式
+3. 两个音阶一般不好区分用那种形式，可以查字典
+4. 特殊变形
+
+| Positive       | Comparative     | Superlative       |
+| -------------- | --------------- | ----------------- |
+| bad            | worse           | worst             |
+| far            | farther/further | farthest/furthest |
+| good           | better          | best              |
+| well           | better          | best              |
+| ill            | worse           | worst             |
+| little         | less            | least             |
+| many           | more            | most              |
+| much           | more            | most              |
+| older（persons） | elder           | eldest            |
+| old（things）    | older           | oldest            |
+
+#动词
+* **Verbals**
+> 由动词派生的词，包括分词，动名词，和不定式。这些verbals不在起动词的作用，而是作为句子的其他成分。
+  * **分词**
+  * 经常起形容词的作用
+    * 过去分词：+ing
+    * 现在分词：+d 或 +ed
+    * 垂悬分词：没有主语
+  * **动名词*
+  * +ing，起名词的作用
+    * 规律：前面要加所有格 
+  * **不定式** 
+  * 经常用作名词，有时也会用作形容词副词
+   * 规律：有时会省略 

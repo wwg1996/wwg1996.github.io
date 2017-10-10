@@ -66,10 +66,10 @@ prism:
 
 mathjax: true
 
-google_analytics: ""  # google analytics code
+google_analytics: "UA-107846901-1"  # google analytics code
 
-baidu_site_verification: ""  # baidu site verification code
-google_site_verification: ""  # google search console verification code
+baidu_site_verification: "cUWDgJtPLR"  # baidu site verification code
+google_site_verification: "google7c87d37893759bbc.html"  # google search console verification code
 
 baidu_auto_push: true  # if you used baidu auto push to commit links
 

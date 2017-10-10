@@ -14,34 +14,35 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/m
 
 ## 作曲分析
 
-作曲分析主要是分析主旋律和基本的和弦进行，如果说组成歌曲的旋律的基本单位是音阶的话，那么组成歌曲和声框架的就是和弦进行。所以目前来说，这两方面时我最主要分析和积累的点，以后等到有更多的知识积蓄，可能还会从调式调性、风格流派以及更多和声理论来进行分析，就更为全面了。<span style="color: #0000ff;"></span>
+作曲分析主要是分析主旋律和基本的和弦进行，如果说组成歌曲的旋律的基本单位是音阶的话，那么组成歌曲和声框架的就是和弦进行。所以目前来说，这两方面时我最主要分析和积累的点，以后等到有更多的知识积蓄，可能还会从调式调性、风格流派以及更多和声理论来进行分析，就更为全面了。
 
-[<span style="color: #0000ff;">详细...</span>](http://localhost/wordpress/2017/09/26/zuoqufenxi/)
+[详细...](https://wwg1996.github.io/music/2017/10/09/zxfx.html)
 
 ## 编曲分析
 
 编曲我目前只着眼于吉他的编曲，多看一些不同编配的吉他谱，找一些喜欢的分析一下一些和弦的运用和效果什么的，然后就是看看节奏型的布置和一些技巧的使用。
 
-[<span style="color: #0000ff;">详细...</span>](http://localhost/wordpress/2017/09/26/bianqufenxi/)
+[详细...](https://wwg1996.github.io/music/2017/10/09/bqfx.html)
 
 ## 歌词分析
 
 歌词的创作其实也是一个大学问，毕竟流行音乐里故歌词的表达可能要占整首歌情感表达的一半，但目前和我关系不大，就先大概结合网上一些资料感觉感觉，等到我入门了作曲编曲再详细学学。
 
-[<span style="color: #0000ff;">详细...</span>](http://localhost/wordpress/2017/09/26/%e6%ad%8c%e8%af%8d%e5%88%86%e6%9e%90/)
-
 ## 唱法分析
 
 流行音乐里，听众最直观的感受处还是歌手的唱功，而不是歌曲里面其他乐器的编配。所以一首歌的弹唱，我更愿意去把多一点的精力放在唱上，找一个喜欢的翻唱版本或者原唱版本，去学习模仿他的唱法，一句一句的加以练习，除了巩固发声和气息的基本功外，我还要去感受演唱者的一些细节处理，比如咬字，和其他一些技巧的运用。尽量达到能够把整首歌的味道比较完整的呈现出来的程度，然后录下来。
 
-[<span style="color: #0000ff;">详细...</span>](http://localhost/wordpress/2017/09/26/%e5%94%b1%e6%b3%95%e5%88%86%e6%9e%90/)
-
 ## 相关连接
+[关于相关连接...](https://wwg1996.github.io/pkm/2017/10/09/wzdjg.html)
 
-<span style="color: #0000ff;">详细...</span> **父类节点**
+ **父类节点**
 
-*   [<span style="color: #0000ff;">音乐学习</span>](http://localhost/wordpress/music/)
+* [音乐学习](https://wwg1996.github.io/category/music.html)
 
-**相关节点** **子类节点**
+**相关节点** 
 
-*   [<span style="color: #0000ff;">《漂洋过海来看你》</span>](http://localhost/wordpress/2017/09/25/piaoyangguohailaikanni/)
+* [乐曲分析](https://wwg1996.github.io/music/2017/10/09/yqfx.html)
+
+**子类节点**
+
+- [[《漂洋过海来看你》 ](https://wwg1996.github.io/music/2017/10/09/flower.html)

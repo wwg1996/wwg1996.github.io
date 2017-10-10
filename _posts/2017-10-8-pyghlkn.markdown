@@ -14,11 +14,11 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/p
 
 ## 歌曲分析
 
-[关于歌曲分析...](http://localhost/wordpress/2017/09/26/gequfenxi/)
+[关于歌曲分析...](https://wwg1996.github.io/music/2017/10/09/gqfx.html)
 
 ### 作曲分析
 
-[关于作曲分析...](http://localhost/wordpress/2017/09/26/zuoqufenxi/)
+[关于作曲分析...](https://wwg1996.github.io/music/2017/10/09/zxfx.html)
 
 整首歌是大调吧，主歌有四小段，副歌只有一段，第四段主歌算作是向高潮的过度。
 
@@ -26,7 +26,7 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/p
 
 #### 和弦分析
 
-[关于和弦分析...](http://localhost/wordpress/2017/09/26/hexianfenxi/)
+[关于和弦分析...](https://wwg1996.github.io/music/2017/10/09/hxfx.html)
 
 主歌用到的和弦进行是：I-ii-IV-V，属于基本的和弦进行。
 
@@ -38,7 +38,7 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/p
 
 #### 旋律分析
 
-[关于旋律分析...](http://localhost/wordpress/2017/09/27/xuanlvfenxi/)
+[关于旋律分析...](https://wwg1996.github.io/music/2017/10/09/xlfx.html)
 
 前主歌前三段旋律模式（Melodic Themes）基本一样，重复中也有些变化，承接第四段旋律的最后一句“都忍住不哭泣”，六个字有五个音都在不稳定音阶（unstable scale degrees）上，听起来悲伤感会很浓烈，但是最后一个字又滑音回归道了稳定音阶上（stable scale degrees），正好对应了歌词中含义，忍住悲伤，收回眼泪。
 
@@ -58,7 +58,7 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/p
 
 ### 编曲分析
 
-[关于编曲分析...](http://localhost/wordpress/2017/09/26/bianqufenxi/)
+[关于编曲分析...](https://wwg1996.github.io/music/2017/10/09/bqfx.html)
 
 这首曲子我练习的时大伟编配的伴奏。我挺喜欢用大伟编的谱子的，大伟的谱子会用到很多比较新鲜的和弦，听起来不落俗套。比如这首，大伟用的C大调的和弦，里面很多和弦对我来说都比较高级了，大概分析分析学习一下吧。
 
@@ -78,12 +78,11 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/p
 
 ## 歌曲演唱
 
-唱不好，录了一半，歌曲倒不是特别难唱，可能经历不够吧，对歌曲中异地恋的那种感情没什么体会。 
+唱不好，录了一半。
 [视频连接](http://v.youku.com/v_show/id_XMjk5MjMxMTQ5Mg==.html?spm=a2hzp.8244740.0.0)
-
-<iframe width="560" height="315" src="http://tv.sohu.com/upload/static/share/share_play.html#90268916_9365222_0_9001_0" frameborder="0" allowfullscreen></iframe>
 
 
 ## 相关连接
-关于相关连接...
-**父节点: [音乐空间](http://localhost/wordpress/music/)**
+[关于相关连接...](https://wwg1996.github.io/cs/2017/10/10/jsswdl.html)
+
+**父节点: [音乐空间](https://wwg1996.github.io/music/2017/10/09/xlfx.html)**

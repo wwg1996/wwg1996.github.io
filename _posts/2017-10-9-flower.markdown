@@ -18,7 +18,7 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/a
 
 ## 乐曲分析
 
-[<span style="color: #0000ff;">关于乐曲分析...</span>](http://localhost/wordpress/2017/09/28/yuequfenxi/)
+[关于乐曲分析...](https://wwg1996.github.io/music/2017/10/09/yqfx.html)
 
 ### 作曲分析
 
@@ -48,5 +48,6 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/a
 
 ## 相关连接
 
-详细… 
-**父节点: [音乐空间](http://localhost/wordpress/music/)**
+[关于相关连接…](https://wwg1996.github.io/pkm/2017/10/09/wzdjg.html) 
+
+**父节点: [音乐空间](https://wwg1996.github.io/category/music.html)**

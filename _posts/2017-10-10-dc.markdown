@@ -1,0 +1,54 @@
+---
+layout: post
+title: 1.4 动词的变化
+date: 2017-10-10 01:47:32 +0800
+categories: more
+tags: 英语
+img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/English.jpg
+---
+
+笔记摘录自 *The Only Grammar Book You’ll Ever Need*
+* 
+{:toc}
+# 动词
+* **Verbals**
+> 由动词派生的词，包括分词，动名词，和不定式。这些verbals不在起动词的作用，而是作为句子的其他成分。
+* * **分词**
+  * 起形容词的作用
+    * 现在分词：+ing
+    * 过去分词：+d 或 +ed
+    * 垂悬分词：没有主语或不确定主语
+  * **动名词**
+  * +ing，起名词的作用
+    * 规律：前面要加所有格 
+  * **不定式** 
+  * +to，经常用作名词，有时也会用作形容词副词
+    * 规律：有时会省略 to
+    * To Split or Not to Split：Let your ear tell you whether a split infinitive works. If it does, then by all means use it; if not, leave the infinitive alone.
+
+* **动词时态** 
+> 动词时态有三种，分别为现在时，过去时和将来时，每一种时态又分为三种，分别为一般时态，进行时态，完成时态和完成进行时态。
+* * **一般时态**
+    * 一般现在时描述一个行为是经常性的或者是重复性的
+    * 一般过去时描述一个行为从过去开始在过去结束
+    * 一般将来时描述一个行为将要发生
+  * **进行时态** 
+    * 现在进行时表示一个行为正在进行 is/are + verbal
+    * 过去进行时表示行为在过去时进行 was/were + verbal
+    * 将来进行时表示行为要持续到将来 will be/shall be + verbal
+  * **完成时态**
+    * 一般完成时指明一个行为在过去某时候发生并且一直持续着 have/has + varbal
+    * 过去完成时指明一个过去发生的行为在另一个过去发生的行为之前 had + verbal
+    * 将来完成时指明一个将来发生的行为在另一个将来发生的行为之前 will have + verbal
+  * **完成进行时**
+    * 一般完成进行时表达一个行为在过去重复进行很可能将来也会继续下去 has been + verbal
+    * 过去完成进行时表达一个行为在另一个过去行为发生前就已经完成了 had been + verbal
+    * 将来完成进行时，表达一个行为要在将来一些时间后发生 will have been + varbal
+
+* **动词语态**
+> 动词的语态表达了作者的态度
+  * **陈述语气**：表达一种事实
+  * **祈使语气**：表达一种请求或发出命令
+  * **虚拟语气**：只使用两个动词，be和were
+    * if，unless表达陈述与现实相反，不大可能或者有疑问的
+    * 表现一种希望，一个需求，一个建议，一个呼吁或者一个命令

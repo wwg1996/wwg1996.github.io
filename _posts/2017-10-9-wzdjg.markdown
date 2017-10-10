@@ -26,7 +26,9 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/p
 
 # 相关连接
 
-父节点：<span style="color: #0000ff;">小c的个人知识管理模型</span> 
+[关于相关连接...](https://wwg1996.github.io/pkm/2017/10/09/wzdjg.html)
+
+父节点：小c的个人知识管理模型
 
 相关节点 
 

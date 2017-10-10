@@ -26,14 +26,16 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/m
 
 ## 相关连接
 
-<span style="color: #0000ff;">详细...</span>
+[关于相关连接...](https://wwg1996.github.io/pkm/2017/10/09/wzdjg.html)
 
  **父类节点**
 
-*   [<span style="color: #0000ff;">音乐学习</span>](http://localhost/wordpress/music/)
+*   [音乐学习](https://wwg1996.github.io/category/music.html)
 
 **相关节点** 
 
+* [歌曲分析](https://wwg1996.github.io/music/2017/10/09/gqfx.html)
+
 **子类节点**
 
-*   <span style="color: #0000ff;">《flower》 岸部真明</span>
+*   [《flower》 岸部真明](https://wwg1996.github.io/music/2017/10/09/flower.html)

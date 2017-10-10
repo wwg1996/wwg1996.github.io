@@ -32,10 +32,18 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/m
 
 即使是同样的和声框架，不同的创作者也能搭配上各式各样优美的旋律来，所以说音阶虽然是有限的，但其排列组合几乎是无穷的，虽然现在人工智能领域也在研究算法作曲，但是其中的模式目前来讲也很难全部归纳出来。但在千差万别的旋律里，还是大体可以归为下面三种模式：
 
-## ![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/b.png)
+![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/b.png)
 
-## ![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/b1.png)
+![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/b1.png)
 
-## ![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/b3.png)
+![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/b3.png)
 
 从上面的旋律可视化图就很容易分辨出来这三种模式，第一种是循环式，第二种修饰循环式，第四种是序列式。这三种旋律类型基本上可以概括所有的流行音乐。实际上，人的大脑中是喜欢规律性的东西的，无论是艺术中对对称性的美的感受，还是对数学公式的美的感受，人们对美感，或者说和谐的感知很大一部分来自这种模式性。但是人们又喜欢新奇的事物，会对始终的规律性产生乏味感，所以旋律往往会在重复的基础上加上一些变化。
+
+## 相关连接
+
+[关于相关连接...](https://wwg1996.github.io/pkm/2017/10/09/wzdjg.html)
+ **父类节点**
+- [歌曲分析](https://wwg1996.github.io/music/2017/10/09/gqfx.html)
+**子类节点**
+- [[《漂洋过海来看你》 ](https://wwg1996.github.io/music/2017/10/09/flower.html)
