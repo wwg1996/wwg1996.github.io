@@ -8,19 +8,19 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2
 ---
 
 > 笔记摘录自[_大学计算机—计算思维导论_]
+
 * 
 {:toc}
+
 ## 1\. 导言
 
 > 定义：计算思维涉及运用计算机科学的基础概念去求解问题、设计系统和理解人类的行为。也可以说是蕴含在计算学科知识背后的具有贯通性和联想性的内容。
 >
 > > 基本目标：能够执行一般的任意复杂的计算规则。
 
-<div class="mermaid" data-source-line="6" data-processed="true">
+![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/d.png)</div>
 
-<div>![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/d.png)</div>
 
-</div>
 
 
 
@@ -133,7 +133,7 @@ long factorial2( int n )
 
 * * *
 
-<div class="mermaid" data-source-line="120" data-processed="true">![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/j.png)</div>
+![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/j.png)
 
 *   **社会/自然的计算化**
 

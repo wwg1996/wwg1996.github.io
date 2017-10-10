@@ -20,6 +20,7 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/p
     *   点击<span style="color: #0000ff;">关于组成节点1...</span>，转至组成节点的父类节点
     *   为了防止篇幅过长，组成节点可能只呈现一个摘要（总结），点击<span style="color: #0000ff;">详细...</span>，查看详细内容
 5.  在<span style="color: #0000ff;">相关连接</span>中，可以打开这篇文章的父节点，相关节点和子类节点。
+6.  重要规律：<span style="color: #e21918;">子类节点会继承其父节点的知识组成结构。</span>
 
 进一步了解 本博客系统采用的知识管理系统模型（PKMS model）<span style="color: #0000ff;">点此</span>
 
@@ -29,4 +30,4 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/p
 
 相关节点 
 
-子类节点：<span style="color: #0000ff;">本博客的所有文章</span>
+子类节点：<span style="color: #0000ff;">本博客的所有理论型知识文章</span>
