@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 1. 证明基础和顺推-倒推法
-date: 2017-10-10 16:26:26 +0800
+date: 2017-10-10 16:08:26 +0800
 categories: math
 tags: 证明方法 
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/proof.jpg

@@ -18,11 +18,11 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/m
 
 #  数学方法
 
-##建模方法
+## 建模方法
 
-##解题方法
+## 解题方法
 
-##证明方法
+## 证明方法
 
 1. [证明基础和顺推-倒推法](https://wwg1996.github.io/math/2017/10/10/stdt.html)
 2. [基于顺推-倒推法的四种证明方法](https://wwg1996.github.io/math/2017/10/10/szff.html)

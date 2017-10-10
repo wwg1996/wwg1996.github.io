@@ -1,7 +1,7 @@
 ---
 layout: post
-title: C语言中的结构和联合
-date: 2017-10-10 17:58:48 +0800
+title: 结构和联合
+date: 2017-10-10 17:20:48 +0800
 categories: CS
 tags: C 
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/c.jpg

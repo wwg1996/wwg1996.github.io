@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 3. 矛盾法和换质位法
-date: 2017-10-10 16:26:26 +0800
+title: 3.矛盾法和换质位法
+date: 2017-10-10 10:01:26 +0800
 categories: math
-tags: 证明方法 
+tags: 证明方法
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/proof.jpg
 ---
 
-> 当顺推倒推序列中的命题有量词出现时，通常可以用构造法、选择法、归纳法以及特殊化法来做出证明。\
+> 当顺推倒推序列中的命题有量词出现时，通常可以用构造法、选择法、归纳法以及特殊化法来做出证明。
 
 * 
 {:toc}

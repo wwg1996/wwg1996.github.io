@@ -1,13 +1,14 @@
 ---
 layout: post
 title: 1.2 单词的基本形式
-date: 2017-10-10 01:47:32 +0800
+date: 2017-10-10 01:01:03 +0800
 categories: more
-tags: 英语
+tags: 英语 
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/English.jpg
 ---
 
 笔记摘录自 *The Only Grammar Book You’ll Ever Need*
+
 * 
 {:toc}
 # 拼写规律

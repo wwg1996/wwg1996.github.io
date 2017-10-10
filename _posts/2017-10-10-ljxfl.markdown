@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 逻辑学分类
-date: 2017-10-10 22:47:40 +0800
+date: 2017-10-10 22:01:40 +0800
 categories: more
 tags: 逻辑学
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/logic.png

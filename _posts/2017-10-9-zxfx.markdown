@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 作曲分析
-date: 2017-10-09 20:58:59 +0800
+date: 2017-10-09 20:08:59 +0800
 categories: music
 tags: 曲目积累
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/music.jpg
@@ -26,5 +26,5 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/m
 
 **父类节点**
 - [歌曲分析](https://wwg1996.github.io/music/2017/10/09/gqfx.html)
-**子类节点**
+  **子类节点**
 - [[《漂洋过海来看你》 ](https://wwg1996.github.io/music/2017/10/09/flower.html)

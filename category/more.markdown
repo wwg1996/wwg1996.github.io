@@ -20,13 +20,12 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/m
 
 * [1.1 词性](https://wwg1996.github.io/more/2017/10/10/zwyz.html)
 * [1.2 单词的基本形式](https://wwg1996.github.io/more/2017/10/10/dcjbxs.html)
-
-
 * [1.3 形容词副词变化](https://wwg1996.github.io/more/2017/10/10/xrcfc.html)
 * [1.4 动词的变化](https://wwg1996.github.io/more/2017/10/10/dc.html)
 * [1.5 代词问题](https://wwg1996.github.io/more/2017/10/10/dcwt.html)
 * [3.1 语句成分](https://wwg1996.github.io/more/2017/10/10/yjcf.html)
 * [3.3 语句分类](https://wwg1996.github.io/more/2017/10/10/yjfl.html)
+* [3.4 主谓一致](https://wwg1996.github.io/more/2017/10/10/zwyz.html)
 
 
 

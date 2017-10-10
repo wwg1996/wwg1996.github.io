@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 4，其他特殊的证明方法
-date: 2017-10-10 16:26:26 +0800
+date: 2017-10-10 16:04:26 +0800
 categories: math
 tags: 证明方法 
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/proof.jpg

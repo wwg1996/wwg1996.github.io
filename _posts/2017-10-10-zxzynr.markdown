@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 哲学这主要内容
-date: 2017-10-10 22:55:02 +0800
+title: 哲学的主要内容
+date: 2017-10-10 01:14:28 +0800
 categories: more
 tags: 哲学 
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/zx.jpg
@@ -9,8 +9,8 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/z
 
 摘录自[华中科技大学公开课：哲学导论](http://open.163.com/special/cuvocw/zhexuetonglun.html)
 
-* 
-{:toc}
+[TOC]
+
 ## 本体论
 
 （存在论）
@@ -19,9 +19,9 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/z
 
 什么东西在驱动着万物的运作，所谓的第一推动力是什么？
 
-1.  一元论（唯心/唯物）
-2.  二元论 笛卡尔
-3.  多元论
+1. 一元论（唯心/唯物）
+2. 二元论 笛卡尔
+3. 多元论
 
 ## 认识论
 
@@ -42,7 +42,7 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/z
 
 ——检验真理的标准？
 
-1.  实用主义真理观：
+1. 实用主义真理观：
 
    以詹姆斯为代表的实用主义者认为“有用即是真理”。他们认为真的观念就是那些可以被证实和检验的、具有引导性的、有用的观念；
 

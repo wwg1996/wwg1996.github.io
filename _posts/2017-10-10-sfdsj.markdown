@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 《苏菲的世界》笔记
-date: 2017-10-10 22:55:02 +0800
+date: 2017-10-10 22:07:02 +0800
 categories: more
 tags: 哲学 
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/zx.jpg

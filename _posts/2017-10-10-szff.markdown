@@ -1,14 +1,15 @@
 ---
 layout: post
 title: 2. 基于顺推-倒推法的四种证明方法
-date: 2017-10-10 16:26:26 +0800
+date: 2017-10-10 01:06:34 +0800
 categories: math
 tags: 证明方法 
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/proof.jpg
 ---
+
 * 
 {:toc}
-> 当顺推倒推序列中的命题有量词出现时，通常可以用构造法、选择法、归纳法以及特殊化法来做出证明。\
+> 当顺推倒推序列中的命题有量词出现时，通常可以用构造法、选择法、归纳法以及特殊化法来做出证明。
 
 ## 量词---A：构造法
 
