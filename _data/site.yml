@@ -57,11 +57,11 @@ comment:
 prism:
   themes: prism-okaidia
   components: 
-    - C 
-    - C++
-    - PHP
-    - SQL
-    - Python
+    - c 
+    - c++
+    - php
+    - sql
+    - python
   plugins: 
 
 mathjax: true
