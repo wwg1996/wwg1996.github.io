@@ -57,7 +57,11 @@ comment:
 prism:
   themes: prism-okaidia
   components: 
-    - bash 
+    - C 
+    - C++
+    - PHP
+    - SQL
+    - Python
   plugins: 
 
 mathjax: true
@@ -67,7 +71,7 @@ google_analytics: ""  # google analytics code
 baidu_site_verification: ""  # baidu site verification code
 google_site_verification: ""  # google search console verification code
 
-baidu_auto_push: false  # if you used baidu auto push to commit links
+baidu_auto_push: true  # if you used baidu auto push to commit links
 
 lang: "zh-CN"  # lang
 
