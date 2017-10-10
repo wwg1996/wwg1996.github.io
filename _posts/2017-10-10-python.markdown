@@ -1,0 +1,192 @@
+---
+layout: post
+title: Python 2.7——基础总结
+date: 2017-10-10 17:58:48 +0800
+categories: CS
+tags: Python 
+img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/python.png
+---
+* 
+{:toc}
+
+## Python
+> 一种解释性的，面向对象的，带有动态语义的高级语言。
+* Python的设计哲学是“优雅”、“明确”、“简单”。他是人专注于解决问题，而不是语言本身的细节。
+* Python开发者的哲学是“用一种方法，最好是只有一种方法来做一件事”。
+
+优点
+* **简单**：Python是一种代表简单主义思想的语言。阅读一个良好的Python程序就感觉像是在读英语一样。它使你能够专注于解决问题而不是去搞明白语言本身。
+* **速度快**：Python 的底层是用 C 语言写的，很多标准库和第三方库也都是用 C 写的，运行速度非常快。
+* **解释性**：一个用编译性语言比如C或C++写的程序可以从源文件（即C或C++语言）转换到一个你的计算机使用的语言（二进制代码，即0和1）。这个过程通过编译器和不同的标记、选项完成。
+* **高层语言**：用Python语言编写程序的时候无需考虑诸如如何管理你的程序使用的内存一类的底层细节。 
+* **可扩展性**：如果需要一段关键代码运行得更快或者希望某些算法不公开，可以部分程序用C或C++编写，然后在Python程序中使用它们。
+* **可嵌入性**：可以把Python嵌入C/C++程序，从而向程序用户提供脚本功能。
+
+## 数据
+* **数字和表达式**
+
+```python
+>>> 5+3
+8
+>>> 5/3
+1
+>>> 5.0/3 
+1.6666666666666666667
+>>> 5,0//3              #相当于int(5,0/3)
+>>> 2**3                 #乘方的快捷运算符
+8
+>>> 1+1==2 
+Ture
+>>> 1+1==2 and 1+1!=2  # 逻辑运算符 and or not
+False
+```
+* **字符串，切片与索引**
+
+```python
+>>> print "\"hello\""
+hello
+>>> print "hello" + " " + "world"
+hello world
+>>> print "hello"*3
+hellohellohello
+>>> print len("hello")            # 字符串长度
+5
+print str(123) + "123"            # 数字变字符串
+print "123" + int(123)            # 字符串变数字
+```
+
+```python
+# 索引
+>>> print "ABCDEF"[3]
+C
+>>> print "ABCDEF"[-1]
+F
+# 切片
+>>> print "ABCDEFG"[1:3]
+BC
+>>> print "ABCDEFG"[1:]
+BCDEFG
+>>> print "ABCDEFG"[:3]
+ABC
+>>> print "ABCDEFG"[:]
+ABCDEFG
+>>> print "ABCDEFG"[::2]
+ACEG
+>>> print "ABCDEFG"[::-2]
+GECA
+```
+## list
+
+```python
+>>> a = [1,2,3,4,5]
+>>> a.insert(1,1.5)  # 在每一个位置后面插入一个元素
+>>> print a
+[1, 1.5, 2, 3, 4, 5]
+>>> a = [1,2,3,4,5] 
+>>> a.append(6)   # 尾部插入一个元素
+>>> a.append(7)
+>>> print a
+[1, 2, 3, 4, 5, 6, 7]
+# list的索引
+>>> a = [1,2,0,01,"hello",[1,2,3]]
+>>> print a[0]
+1
+>>> print a[-1]
+[1, 2, 3]
+>>> print a[-1][0]
+1
+# list的其他操作
+>>> a = [1,2,3]
+>>> b = [4,5,6]
+>>> print a+b
+[1, 2, 3, 4, 5, 6]
+>>> print a*2
+[1, 2, 3, 1, 2, 3]
+>>> del a[0]         
+>>> print a
+[2, 3]
+>> a.insert[1,1.5]
+>> print a
+1
+
+>>> a = [1,2,3]
+>>> print 1 in a    # 判断元素是否在list中
+Ture
+```
+* 不可变的list--元组\
+  `a = (1,2,3)`
+* 可自定义索引的list--dict
+
+```python
+>>> contact = {"王伟光":"182","王伟光":"155"}
+>>> print contact["王伟光"]
+155
+>>> contact["狗蛋"] = "132" # 新增或修改
+>>> print contact["狗蛋"]
+132
+```
+
+## 控制流
+
+```python
+a == 1
+if a == 1
+    print "ok"
+else:
+    print "no"
+    
+i = 0
+sum = 0
+while i<=100:
+    sum += i
+    i = i + 1
+print sum
+
+num = [0,1,2,3,4]
+for i in num:
+    print i 
+
+```
+## 封装抽象
+
+* **函数**--程序语句的打包
+> python中依然存在变量的作用域问题，`global x`声明全局变量
+```python
+value = [2,3,4]
+def printlist(value):
+    for i in value:
+        print i
+
+printlist(value)
+```
+* **模块**--函数的打包
+```python
+import math     # 引入math包
+print dir(math) # 输出math的功能
+```
+
+* **类和对象**
+
+```python
+class MyClass:
+    def _init_(self):               # 析构函数              
+        print "new object"
+        self.name = "myclass"       # self相当于C++里的this，但是需要显示声明
+    def setname(self,name):         # 成员函数
+        self.name = name
+    def printname(self):
+        print self.name
+
+calss MyNewClass(Myclass):          # 继承
+
+a = MyClass()                       # 声明对象
+a.setname("Apple")
+a.printname()
+```
+
+## python的奇技淫巧
+
+* 列表推导和字典推导
+
+
+
