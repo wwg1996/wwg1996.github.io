@@ -20,11 +20,11 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/m
 [Guitar Pro](https://baike.baidu.com/item/Guitar%20Pro/5452699) 
 ## 曲目积累
 ###  曲目分析
-[歌曲分析](http://localhost/wordpress/2017/09/26/gequfenxi/) 
-[乐曲分析](http://localhost:4000/music/2017/10/09/yqfx.htm)
+[歌曲分析](https://wwg1996.github.io/music/2017/10/09/gqfx.html) 
+[乐曲分析](https://wwg1996.github.io/music/2017/10/09/yqfx.html/yqfx.htm)
 ### 曲目演奏
 ####  弹唱
 [《漂洋过海来看你》](https://wwg1996.github.io/music/2017/09/25/pyghlkn.html)
 《消愁》
 #### 独奏
-[《flower》岸部真明](http://localhost/wordpress/2017/09/28/flower/)
+[《flower》岸部真明](https://wwg1996.github.io/music/2017/10/09/flower.html)

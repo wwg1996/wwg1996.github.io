@@ -18,7 +18,7 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/m
 
 ## 英语
 
-* [1.1 词性](https://wwg1996.github.io/more/2017/10/10/zwyz.html)
+* [1.1 词性](https://wwg1996.github.io/more/2017/10/10/cx.html)
 * [1.2 单词的基本形式](https://wwg1996.github.io/more/2017/10/10/dcjbxs.html)
 * [1.3 形容词副词变化](https://wwg1996.github.io/more/2017/10/10/xrcfc.html)
 * [1.4 动词的变化](https://wwg1996.github.io/more/2017/10/10/dc.html)

@@ -83,6 +83,6 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/p
 
 
 ## 相关连接
-[关于相关连接...](https://wwg1996.github.io/cs/2017/10/10/jsswdl.html)
+[关于相关连接...](https://wwg1996.github.io/pkm/2017/10/09/wzdjg.html)
 
-**父节点: [音乐空间](https://wwg1996.github.io/music/2017/10/09/xlfx.html)**
+**父节点: [音乐空间](https://wwg1996.github.io/category/music.html)**
