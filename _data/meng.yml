@@ -1,7 +1,7 @@
 title:  # Meng title
   switch: true # Meng title switch
-  visible: "(*´∇｀*)" # State is visible text
-  hidden:  "404: Not Found！~" # State is hidden text
+  visible: "(*´∇｀*) 被发现啦~" # State is visible text
+  hidden:  "(つェ⊂)看不到我~" # State is hidden text
   with_default_title: false # with default title
   reset_time: 1000 # If state is visible , reset default title times(ms)
 
@@ -28,7 +28,7 @@ background: # Meng background
   text_color: '#000'
 
 card: # Meng card
-  switch: false
+  switch: true
   background_color: 'rgba(255, 255, 255, 0.5)'
   card_img_opacity: '0.8'
 
@@ -53,8 +53,8 @@ music_player:
       pic: '/images/bash.jpg'
 
 head_card:
-  switch: false
-  left_img: "https://ooo.0o0.ooo/2017/06/19/5947b272d418b.jpg"
-  left_text: "『  』"
-  right_img: "https://ooo.0o0.ooo/2017/06/08/5939484dc618e.png"
+  switch: true
+  left_img: "/images/card.png"
+  left_text: " Wubba lubba dub dub "
+  right_img: "/images/c.png"
   offset_level: 2

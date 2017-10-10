@@ -19,7 +19,7 @@ zh-CN:
       two: "天前，文中所描述的信息可能已发生改变，请谨慎使用。"
    readtime: 
       one: "阅读本文需要"
-      two: "分钟"
+      two: "分钟(按字数)"
    page:
       search: "搜索"
    post:
