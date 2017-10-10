@@ -9,11 +9,11 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/c
 * 
 {:toc}
 
-#### * 存储结构
+#### 存储结构
 1. 变量的存储结构
 
 ---
-https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/cc1.png
+![https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/cc1.png](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/cc1.png)
 
 ##### 属性
   * **生存期**是执行过程的一个区间，从创建变量开始到销毁释放内存结束。
@@ -59,7 +59,8 @@ https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/cc1.pn
 
 ---
 
-* ex1：** a = b + c， lvalue = rvalue**
+* ex1：**a = b + c， lvalue = rvalue**
 * ex2：a++ -> lvalue, ++a -> rvalue 
 * **lvalue**：内存中持续存储数据的一个地址。
 * **rvalue**：临时存储的表达式结果。
+

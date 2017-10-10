@@ -27,6 +27,8 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/c
 
 * **传递指针**
 > 这时候就可以在函数内部通过指针修改实参的值了。
+
+
 ```c
 int abs(int* pnum)
 {
@@ -42,10 +44,9 @@ void main()
     
 }
 ```
-```c
 ## 其他
 * **const修饰符**
 > 避免意外修改函数参数\
+```c
 `int func(const int& num)`
-
 ```

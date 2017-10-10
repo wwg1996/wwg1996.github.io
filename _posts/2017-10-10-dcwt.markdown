@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1.5 代词问题32 +0800
+title: 1.5 代词问题
 categories: more
 tags: 英语
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/English.jpg

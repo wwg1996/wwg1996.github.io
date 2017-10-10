@@ -16,7 +16,7 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/c
 * 应用场景一
 > 适用于函数需要返回多个值
 
-```
+```c
 void swap (int *a, int *b);
 {
     int t = *a;
@@ -27,7 +27,7 @@ void swap (int *a, int *b);
 * 应用场景二
 > 函数返回运算状态，结果由指针返回
 
-```
+```c
 int divide( int a, int b, int *c)
 {
     int ret = 1;
@@ -42,7 +42,7 @@ int divide( int a, int b, int *c)
 * 应用场景三
 > 字符串的操作
 
-```
+```c
 int strlen( char * string )
 {
     int length = 0;
@@ -50,7 +50,8 @@ int strlen( char * string )
     while( *string++ != '\0' )
         length += 1;
         
-    return length;
+    return length;c
 }
 ```
 
+c

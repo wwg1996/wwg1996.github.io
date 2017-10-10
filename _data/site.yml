@@ -14,7 +14,7 @@ background:
    purecolor: "#eeeeee" # the background color
 
 img: 
-   avatar: "https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/c.png" # your avatar
+   avatar: "/images/c.png" # your avatar
 
 card: 
    card_shadow: 1 # card shadow (0-24), 0 is not displayed
