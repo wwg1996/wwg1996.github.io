@@ -58,7 +58,7 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2
 
 实例
 
-```C
+```c
 #include <stdio.h>
 
 int main(void)
@@ -79,7 +79,7 @@ int main(void)
 
 实例1
 
-```C
+```c
 // 递归
 long factorial1( int n )
 {
