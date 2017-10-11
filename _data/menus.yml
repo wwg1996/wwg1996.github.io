@@ -1,13 +1,13 @@
-- name: HOME
+- name: 首页
   url: /category/
   icon: home
-- name: BLOG
+- name: 文章
   url: /
   icon: "&#xe53b;"
-- name: TAGS
+- name: 标签
   url: /tags/
   icon: "&#xe893;"
-- name: About
+- name: 关于
   url: /pages/about.html
   icon: "&#xe7fd;"
 - name: navSearch
