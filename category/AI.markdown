@@ -1,3 +1,35 @@
 ---
-layout: category_content
+layout: post
+title: AI空间
+date: 2017-10-11 10:42:22 +0800
+categories: AI
+tags: 
+img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/ai.jpg
 ---
+
+## 课程
+
+### 人工智能概论
+
+### 深度学习
+
+[吴恩达的深度学习课程](http://mooc.study.163.com/smartSpec/detail/1001319001.htm)
+
+* 0 什么是机器学习？
+* 1 课程导论
+* 2 神经网络编程基础
+* 3 单层神经网络
+* 4 深度神经网络
+
+### 数据挖掘
+
+## 工具
+
+### Python与机器学习
+
+### Matlab于与机器学习
+
+### Mathematica与机器学习
+
+## 项目与实践
+
