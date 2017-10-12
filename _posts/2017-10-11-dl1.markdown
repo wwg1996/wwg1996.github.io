@@ -4,7 +4,7 @@ title: 1 课程导言
 date: 2017-10-11 11:37:32 +0800
 categories: AI
 tags: 神经网络 深度学习
-img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/dl.jpg
+img: https://wwg1996.github.io/images/dl.jpg
 ---
 
 笔记学习自网易云课堂-微专业-[深度学习工程师](http://mooc.study.163.com/smartSpec/detail/1001319001.htm)
@@ -16,7 +16,7 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/d
 
 ### 神经网络模型
 经典的神经网络模型如下，红色的是输入层，绿色的是输出层，中间是隐含层。其实就是想人的神经系统一样，圆圈对应神经元，连线是神经元之间的突触。
-![image](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/300px-Colored_neural_network.svg.png)
+![image](https://wwg1996.github.io/images/300px-Colored_neural_network.svg.png)
 
 ### 分类
 根据上面的模型，神经网络的层数是可以调整的。根据层数（一般说的隐含层）的多少，分为单层，两层或多层神经网络模型；而根据模型中神经元之间传播算法的不同，有可分类为各种神经网络，比如如果使用BP算法，便称为BP神经网络。
@@ -37,7 +37,7 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/d
 
 房价预测问题，实际就是用神经网络进行拟合，寻找输入和输出的关系，比如房子面积，几室几厅和处在区域等和实际销售价格之间的关系。比如一般经验来说，房子面积越大，房间越多，地理位置越好（比如市中心），那么房子就会买的越贵。但是实际情况会更复杂，影响房子价值的因素会很多，而且相关因素不一定是线性的，因素只见还会互相影响，这时候我们就可以用神经网络模型来进行预测，只需输入大量的有效数据，就可以自动帮我们综合考虑这一切。
 
-[link](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/fjyc.png)
+![link](https://wwg1996.github.io/images/fjyc.png)
 
 Matlab的Neural Network Toolbox上有这个实例，有Matlab的同学可以看着参考文档上手试一试。
 
@@ -48,13 +48,13 @@ Matlab的Neural Network Toolbox上有这个实例，有Matlab的同学可以看�
 
 ### 监督学习的应用
 监督学习的应用范围很广，比如很多预测类问题，语音识别，图像识别，机器翻译，自动驾驶技术等等
-![image](sl.png)
+![image](https://wwg1996.github.io/images/sl.png)
 
 ### 两个概念
 * **结构化数据**:一些问题中，很多信息我们很方便把他量化出来的，比如房价预测，大小，卧室数量都是现成的数字，这样就很方便处理。
 * **非结构化数据**:但是现实世界中，大多数据我们是难以量化的，比如图片识别是猫还是狗，虽然图片本身可以存储为数据矩阵，但是什么样的图片中包含的具体信息（猫和狗的特征），难以量化描述。
 
-![image](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/sdud.png)
+![image](https://wwg1996.github.io/images/sdud.png)
 
 ## 为什么深度学习会兴起
 实际上，每一种技术，包括机器学习，神经网络，深度学习什么的，虽然最近很火，好像新技术一样，其实从产生到发展过程中都经历过很多起伏。比如神经网络技术，其实发展了70年了，中间一度被新技术取代，现在随着深度学习的兴起有重回人们的视野。
@@ -65,11 +65,12 @@ Matlab的Neural Network Toolbox上有这个实例，有Matlab的同学可以看�
 如今被成为大数据时代，因为我们每时每刻，只要是使用联网的电子设备都会产生数据，并且人们把现实中的各种实体都在加以数据化用于计算和分析，所以如今的现成数据是海量的，并且获取新的数据也变的很方便。
 而神经网络需要的就是海量的数据进行训练，理论上来讲，神经网络层数越多，可以驾驭的数据量也就越大，而训练所用的数据量越大，性能就会越好。如今数据越来越大，多层神经网络（深度学习）的优势就体现出来了，而面对海量的数据，其他的机器学习方法也比不上深度学习方法了。
 
-![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/xnfx.png)
+![](https://wwg1996.github.io/images/xnfx.png)
 
 ### 更好的算法和机器
 并且现在，硬件技术和软件技术都在迅猛的发展，人们对应神经网络模型也提出了更好的算法，现在训练一个网络是很快的，比如Matlab，在一般笔记本电脑上用几万的数据训练一个网络只需要几分钟。这样我们很方便可以不断的调制我们的模型，再不断的训练，多试验一下就能找到很好的模型来解决问题了。
 
 参考的网址
 * [神经网络浅讲：从神经元到深度学习](http://www.cnblogs.com/subconscious/p/5058741.html)
-* [MathWorks](https://cn.mathworks.com/help/nnet/index.html)](https://cn.mathworks.com/help/nnet/index.html)
+* [MathWorks](https://cn.mathworks.com/help/nnet/index.html)
+
