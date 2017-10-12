@@ -4,8 +4,9 @@ title: 计算思维导论
 date: 2017-10-10 01:02:07 +0800
 categories: CS
 tags: 计算思维 
-img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/4DA6333218DB44B38BF253F693A2FE92.jpg
+img: https://wwg1996.github.io/images/2017/09/4DA6333218DB44B38BF253F693A2FE92.jpg
 ---
+如果说现代每个人都需要有一点逻辑思维的话，那么现信息时代每个人都要了解计算思维。同样，计算思维也可以作为学习计算机科学技术贯彻始终的一条主线，入大学之前我就看过一遍这个课程，感觉受益很大，后来学了一些东西后，大二暑假我又看了一遍，还是能够豁然开朗，所以这里总结了一下。
 
 > 笔记摘录自[_大学计算机—计算思维导论_](http://www.icourse163.org/course/hit-7001#/info)
 
@@ -18,7 +19,7 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2
 >
 > > 基本目标：能够执行一般的任意复杂的计算规则。
 
-![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/d.png)</div>
+![](https://wwg1996.github.io/images/2017/09/d.png)</div>
 
 
 
@@ -26,9 +27,9 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2
 
 ## 2\. 计算思维总图
 
-> 计算思维最重要的两个概念是**抽象**和**自动化**。 **计算之树**：六个维度：计算技术的奠基性思维、通用计算环境的演化思维、社会/自然与计算的融合思维、问题求解思维、网络化思维和数据化思维。 ![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/4DA6333218DB44B38BF253F693A2FE92.jpg)  
+> 计算思维最重要的两个概念是**抽象**和**自动化**。 **计算之树**：六个维度：计算技术的奠基性思维、通用计算环境的演化思维、社会/自然与计算的融合思维、问题求解思维、网络化思维和数据化思维。 ![](https://wwg1996.github.io/images/2017/09/4DA6333218DB44B38BF253F693A2FE92.jpg)  
 >
-> ![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/img_0417.png)
+> ![](https://wwg1996.github.io/images/2017/09/img_0417.png)
 
 ## 3\. 计算思维的六个维度(A-E)
 
@@ -44,7 +45,7 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2
 >
 > > 0和1是自然社会问题计算话，硬件到软件的枢纽。 现实世界的各种信息（数值性信息和非数值性信息）都可转换成0和1来表示，处理与变换，再将0和1转换成满足人们视，听，触等各种感觉的信息。 实例
 
-<div class="mermaid" data-source-line="28" data-processed="true">![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/g-1.png)</div>
+<div class="mermaid" data-source-line="28" data-processed="true">![](https://wwg1996.github.io/images/2017/09/g-1.png)</div>
 
 
 
@@ -105,7 +106,7 @@ long factorial2( int n )
 
 实例2
 
- ![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/7af73512b31bb0512223d7bb377adab44bede09b.jpg.png)
+ ![](https://wwg1996.github.io/images/2017/09/7af73512b31bb0512223d7bb377adab44bede09b.jpg.png)
 
 ### B. 通用计算环境的演化思维
 
@@ -133,7 +134,7 @@ long factorial2( int n )
 
 * * *
 
-![](https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/2017/09/j.png)
+![](https://wwg1996.github.io/images/2017/09/j.png)
 
 *   **社会/自然的计算化**
 
