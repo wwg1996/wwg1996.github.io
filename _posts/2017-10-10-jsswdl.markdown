@@ -45,7 +45,7 @@ img: https://wwg1996.github.io/images/2017/09/4DA6333218DB44B38BF253F693A2FE92.j
 >
 > > 0和1是自然社会问题计算话，硬件到软件的枢纽。 现实世界的各种信息（数值性信息和非数值性信息）都可转换成0和1来表示，处理与变换，再将0和1转换成满足人们视，听，触等各种感觉的信息。 实例
 
-<div class="mermaid" data-source-line="28" data-processed="true">![](https://wwg1996.github.io/images/2017/09/g-1.png)</div>
+![](https://wwg1996.github.io/images/2017/09/g-1.png)
 
 
 
