@@ -4,7 +4,7 @@ title: AI空间
 date: 2017-10-11 10:42:22 +0800
 categories: AI
 tags: 
-img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/ai.jpg
+img: /images/ai.jpg
 ---
 
 ## 课程
