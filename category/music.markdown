@@ -4,7 +4,7 @@ title: 音乐空间
 date: 2017-10-8 20:39:36 +0800
 categories: music
 tags:  
-img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/music.jpg
+img: /images/music.jpg
 ---
 ## 基础知识
 ### 唱歌
