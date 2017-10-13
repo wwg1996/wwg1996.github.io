@@ -18,3 +18,6 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/u
                             ————————小c的第一宇宙
 ```
 
+QQ: 947790973
+
+（其实我建立这个博客，除了是为了在互联网上建个属于自己的小窝，还为了能交一些志同道合的好朋友，上面是我的qq😄）

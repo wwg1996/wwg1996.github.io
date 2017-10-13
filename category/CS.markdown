@@ -6,6 +6,8 @@ categories:
 tags:  
 img: /images/cs.jpg
 ---
+## 推荐阅读
+* [计算思维导论](https://wwg1996.github.io/cs/2017/10/10/jsswdl.html)
 
 ## 专业基础
 
