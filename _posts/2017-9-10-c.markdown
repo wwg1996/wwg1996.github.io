@@ -1,7 +1,7 @@
 ---
 layout: post
 title: C语言--基础总结
-date: 2017-10-10 17:03:48 +0800
+date: 2017-9-10 17:03:48 +0800
 categories: CS
 tags: C 
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/c.jpg
@@ -168,7 +168,7 @@ for （ i=0, j=10; i<j; i++, j-- )
 * 选择结构
   * If语句
   * switch语句
-  
+
 ```c
 //C提供了三种形式的if语句
 If( flag )

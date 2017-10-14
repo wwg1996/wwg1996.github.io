@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 1 课程导言
-date: 2017-10-11 11:37:32 +0800
+date: 2017-9-11 11:37:32 +0800
 categories: AI
 tags: 神经网络 深度学习
 img: https://wwg1996.github.io/images/dl.jpg

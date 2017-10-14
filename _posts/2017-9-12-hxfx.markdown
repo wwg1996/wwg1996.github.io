@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 和弦分析
-date: 2017-10-09 20:04:55 +0800
+date: 2017-9-12 20:04:55 +0800
 categories: music
 tags: 曲目积累
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/music.jpg
@@ -154,5 +154,5 @@ I-V-vi-iii-IV-V-I-I。卡农进行的变体，只是把终止式提前了而已�
 - [歌曲分析](https://wwg1996.github.io/music/2017/10/09/gqfx.html)
 - [乐曲分析](https://wwg1996.github.io/music/2017/10/09/yqfx.html)
   **子类节点**
-- [《漂洋过海来看你》 ](https://wwg1996.github.io/music/2017/10/09/flower.html)
+- [《漂洋过海来看你》 ](http://wangweiguang.xyz/music/2017/09/25/pyghlkn.html#和弦分析)
 
