@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 和弦分析
-date: 2017-9-12 20:04:55 +0800
+date: 2017-10-9 20:04:55 +0800
 categories: music
 tags: 曲目积累
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/music.jpg

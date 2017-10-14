@@ -1,0 +1,9 @@
+---
+layout: post
+title: ai
+date: 2000-01-01 20:50:25 +0800
+categories: AI
+tags: 
+img: 
+---
+调整分类显示顺序用
