@@ -8,6 +8,7 @@ img: /images/cs.jpg
 ---
 ## 推荐阅读
 * [计算思维导论](https://wwg1996.github.io/cs/2017/10/10/jsswdl.html)
+* [一张图了解计算机学科](http://wangweiguang.xyz/cs/2017/10/14/map_of_cs.html)
 
 ## 专业基础
 
@@ -50,6 +51,7 @@ img: /images/cs.jpg
 ## 综合视野
 
 * [计算思维导论](https://wwg1996.github.io/cs/2017/10/10/jsswdl.html)
+* [一张图了解计算机学科](http://wangweiguang.xyz/cs/2017/10/14/map_of_cs.html)
 
 
 

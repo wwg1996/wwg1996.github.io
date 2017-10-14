@@ -13,11 +13,13 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/m
 ## 和弦分析
 
 作曲的和弦分析，其实就是说分析歌曲的和弦走向了。可以说，歌曲的和弦走向是最具规（tao）律（lu）性的，理解一个歌曲的和弦走向就相当于理解了歌曲的一半。虽然并不能是说用那些和弦进行和和弦连接是绝对好或不好的，因为高手眼中大概什么样的和弦搭配都能够合理合适的进行创作，但是就统计来说，一些流行的和弦进行可能会有上万首歌曲再同时用，包括很多歌曲的和弦走向也往往是从一些经典的和弦走向变化过来的。所以对于我这样的初学者来说，分析和积累常用的和弦走向无疑是一个很好的起点。
+
 [详细...](https://wwg1996.github.io/music/2017/10/09/hxfx.html)
 
 ## 旋律分析
 
 旋律的主要分析，我最主要还是看在基本的和声框架下，主旋律里不同音阶的稳定性了，再个就是旋律模式，以及这些对歌曲情感表达的影响。详细的可视化工具我用了[Hookpad](https://www.hooktheory.com/site),并且我乐理部分的学习也用了配套的[HookTheory](https://www.hooktheory.com/site)，在这里安利一下。
+
 [详细...](https://wwg1996.github.io/music/2017/10/09/xlfx.html)
 
 ## 相关连接
@@ -27,4 +29,4 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/m
 **父类节点**
 - [歌曲分析](https://wwg1996.github.io/music/2017/10/09/gqfx.html)
   **子类节点**
-- [[《漂洋过海来看你》 ](https://wwg1996.github.io/music/2017/10/09/flower.html)
+- [《漂洋过海来看你》 ](http://wangweiguang.xyz/music/2017/09/25/pyghlkn.html#作曲分析)
