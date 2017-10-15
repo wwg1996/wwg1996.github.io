@@ -3,7 +3,7 @@ layout: post
 title: 初心
 date: 2017-10-01 17:00:47 +0800
 categories: more
-tags: 
+tags: 随笔
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/universe.png
 ---
 

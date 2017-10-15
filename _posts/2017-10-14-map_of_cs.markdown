@@ -15,15 +15,13 @@ img: https://wwg1996.github.io/images/mapofCS.png
 
 看不了的可以看下面我翻译的文章。😇
 
-[TOC]
-
 ![image](https://wwg1996.github.io/images/mapofCS.png)
 ([要高清图的点这个连接](https://wwg1996.github.io/images/more/mapofCS.png))
 
 ## 前言
 计算机是人类大脑的延伸，一开始科学家制造计算机是为了解决算术问题，但很快计算机的功能就被广泛拓展了，比如互联网技术、[人工智能](https://wwg1996.github.io/category/AI.html)和用计算机用来模拟整个世界。
 
-但是，不可思议的是，这一些都是建立在[0和1的表示处理和变换](https://wwg1996.github.io/cs/2017/10/10/jsswdl.html#0和1思维)之上的。
+但是，不可思议的是，这一些都是建立在[0和1的表示处理和变换](https://wwg1996.github.io/cs/2017/10/10/jsswdl.html##0和1思维)之上的。
 计算机正以无法置信的速度变小变快。现在手机的计算能力已经超过了60年代超级计算机计算能力的总和当年阿波罗11号的整个登月系统如今甚至只需要在两个任天堂就能完成。计算机科学如今已经扩展出了很多相互关联的分支，下面把计算机学科分为三大领域。
 
 ## 计算机科学理论
