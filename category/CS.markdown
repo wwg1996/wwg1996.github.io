@@ -32,6 +32,10 @@ img: /images/cs.jpg
 
 #### Linux 系统编程
 
+#### 其他
+
+* [数字图像处理](http://wangweiguang.xyz/cs/2017/10/16/txcl.html)
+
 ## IT技术
 
 ###  web开发

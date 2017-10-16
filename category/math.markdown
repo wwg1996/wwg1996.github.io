@@ -30,3 +30,11 @@ img: /images/math.jpg
 4. [其他特殊的证明方法](https://wwg1996.github.io/math/2017/10/10/lwsz.html)
 5. [ 总结](https://wwg1996.github.io/math/2017/10/10/sum.html)
 
+
+# 数学问题
+
+## 实际问题
+
+* [分类问题](http://wangweiguang.xyz/math/2017/10/16/flwt.html)
+
+## 数学趣题

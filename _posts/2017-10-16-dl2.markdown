@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 第二周 神经网络基础
+title: 2 神经网络基础
 date: 2017-10-16 21:58:49 +0800
 categories: AI
 tags: 神经网络 监督学习 
-img: 
+img: https://wwg1996.github.io/images/dl.jpg
 ---
 
 笔记学习自[网易云课堂-微专业-深度学习工程师](http://mooc.study.163.com/smartSpec/detail/1001319001.htm)
@@ -17,30 +17,30 @@ img:
 
 
 # 从一个问题出发
-> 学习一个新理论从一个实际应用出发是最直观的。这里从一个简单的分类问题来引出logistic回归模型。
+> 学习一个新理论从实际应用出发是最直观的。这里从一个简单的分类问题来引出logistic回归模型。
 
 ## 二分分类
 
 二分分类是一种只要求得到“是”或“不是”（1 或 0）答案的分类问题。
-(关于分类问题...)
+([关于分类问题...](http://wangweiguang.xyz/math/2017/10/16/flwt.html))
 
 比如输入一张照片，判断照片里的物体是否为猫。
 
-![](https://wangweiguang.xyz/images/Binary_Classification.jpg)
+![](http://wangweiguang.xyz/images/Binary_Classification.jpg)
 
 图像的输入：上图中照片将输入为3个像素矩阵（RGB）,最终整合为一列特征向
-（关于图像的存储...）
+（[关于图像的存储...](http://wangweiguang.xyz/cs/2017/10/16/txcl.html)）
 
 ![](http://wangweiguang.xyz/images/RGB_matrix.jpg)
 
 ## 符号约定和基本概念
 * 向量`x`表示输入的特征向量，如上面的猫图。
-* `n`或`n<sub>x</sub>`：向量x的维度（列向量x的行数），加入猫图的每个像素矩阵为64×64，那么猫图的n将为64×64×64×3。
+* `n`n<sub>x</sub>或：向量x的维度（列向量x的行数），加入猫图的每个像素矩阵为64×64，那么猫图的n将为64×64×64×3。
 * 向量`y`表示**分类标号**，在二分类问题里y为0或1。上面的猫图因为就是猫，所以对应y为1了。
 * `(x,y)`组成一个单独的**样本**。
 * **样本集**：神经网络需要输入大量的样本进行学习，如上面的猫图问题，会输入大量的图片和对于这些图片各自的标记（是或不是）。
 * **训练样本**：用于训练的样本叫做训练样本。（还有几类样本并不用于训练过程，比如用于测试的样本）。
-* `(x<sup>(i)</sup>,y<sub>(i)</sub>)`表示第i个样本。
+* (x<sup>(i)</sup>,y<sup>(i)</sup>)表示第i个样本。
 * `m`样本的个数，不特别说明的话就是指训练样本的个数。
 * `X`:训练集中所有的x<sup>(i)</sup>组成的矩阵。
 
@@ -56,9 +56,9 @@ Logistic回归里面是一个线性函数`wx+b`。外面的`σ()`称为**Sigmoid
 
 ### 与其他概念的关系
 
-* **监督学习**：Logistic回归是一种监督学习算法，但一般来说逻辑回归划出的分类线是线性的，对分类线非线性的分类问题表现力不足。（关于监督学习...）
+* **监督学习**：Logistic回归是一种监督学习算法，但一般来说逻辑回归划出的分类线是线性的，对分类线非线性的分类问题表现力不足。（[关于监督学习...](http://wangweiguang.xyz/cs/2017/10/16/SL.html)）
 * **回归算法**：Logistic回归作为一种回归算法，实际上可以看做是线性回归外面加了一个Sigmoid函数。
-  （关于回归算法...）
+  （[关于回归算法...](http://wangweiguang.xyz/cs/2017/10/16/SL.html#回归算法)）
 * **神经网络**：Logistic回归可以看做一个小型的神经网络。（Sigmoid函数看做为激活函数。）
 
 ### 关于Sigmoid函数
@@ -185,7 +185,6 @@ Numpy是一个Python的科学计算包。种工具可用来存储和处理大型
 import numpy as np
 a = np.array([1,2,3,4])
 print(a)
-
 ```
 将会输出:
 
@@ -200,7 +199,7 @@ print(a)
 
 如下面这个例子，分别用向量化方法和for循环方法实现两组向量的点乘（内积），并且计时比较。
 
-```
+```python
 import time
 a = np.random.rand(1000000)
 b = np.random.rand(1000000)
@@ -243,7 +242,7 @@ print("循环方法：" + str(1000*(toc-tic))+"ms")
 ## Python中的广播
 广播是一种让你的Python代码执行更快的手段，可以通过下面的三个例子来直观了解。第一分例子里一列向量和一个实数（一维向量）相加，实数会扩展为列向量。下线两个例子也是如此，当矩阵运算时维数不一致，矩阵（向量）会通过复制的方式进行扩展。
 
-![](https://wangweiguang.xyz/images/Broadcasting.jpg)
+![](http://wangweiguang.xyz/images/Broadcasting.jpg)
 
 ## Py/numpy 陷阱
 Python/numpy很好用，但是在提供灵活性的同时，其中的你如果不完全熟悉其中的一切规则，就会导致难以察觉的bug
@@ -270,7 +269,7 @@ print(b)
 print(a.shape)
 print(b.shape)
 ```
-
+输出：
 ```
 (5,)
 (5, 1)
@@ -279,6 +278,6 @@ print(b.shape)
 所以一般不要使用`a = np.random.randn(5) `形式，并且为了保证矩阵的维度的一至，我们可以经常使用`a.reshape(1,5)`或`assert(a.shape = (1,5))`函数来确保我们矩阵的维数是正确的。（这两个函数都O(1)，开销很小)
 
 
-## 作业
+# 作业
 [https://www.coursera.org/learn/neural-networks-deep-learning/home/week/1](https://www.coursera.org/learn/neural-networks-deep-learning/home/week/1)
 

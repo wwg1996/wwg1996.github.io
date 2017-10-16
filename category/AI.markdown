@@ -17,7 +17,7 @@ img: /images/ai.jpg
 
 * 0 什么是机器学习？
 * [1 课程导论](https://wwg1996.github.io/ai/2017/10/11/dl1.html)
-* 2 神经网络基础
+* [2 神经网络基础](http://wangweiguang.xyz/ai/2017/10/16/dl2.html)
 * 3 单层神经网络
 * 4 深度神经网络
 
@@ -27,7 +27,7 @@ img: /images/ai.jpg
 
 ### Python与机器学习
 
-### Matlab于与机器学习
+### Matlab与与机器学习
 
 ### Mathematica与机器学习
 
