@@ -145,7 +145,7 @@ Logistic回归里面是一个线性函数`wx+b`。外面的`σ()`称为**Sigmoid
 ## 用计算图求导
 我们还可以用计算图对表达式进行求导，比如求dJ/du，dJ/db和dJ/dc。如下图，采取的是从`J=3v`逆向向前求导，我们把这个过程称作**反向传播**，其实下图中实际上就是复合函数求导，将链式法则的过程展现了出来。
 
-![](http://wangweiguang.xyz/images/Computing_derivation.jpg)
+![](http://wangweiguang.xyz/images/Computing_dervation.jpg)
 
 ## 另一个例子
 接下来我们也可以借助计算图来表示和计算逻辑回归中用梯度下降法寻找最优参数w和b的过程，以此作为对计算图和梯度下降法的再次熟悉。
