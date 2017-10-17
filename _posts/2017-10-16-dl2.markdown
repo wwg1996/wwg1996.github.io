@@ -61,6 +61,7 @@ Logistic回归里面是一个线性函数`wx+b`。外面的`σ()`称为**Sigmoid
 * **回归算法**：Logistic回归作为一种回归算法，实际上可以看做是线性回归外面加了一个Sigmoid函数。
   （[关于回归算法...](http://wangweiguang.xyz/cs/2017/10/16/SL.html#回归算法)）
 * **神经网络**：Logistic回归可以看做一个小型的神经网络。（Sigmoid函数看做为激活函数。）
+* **支持向量机**：他也是一种二分类算法，支持向量机算法从某种意义上来说是逻辑回归算法的强化：通过给予逻辑回归算法更严格的优化条件，支持向量机算法可以获得比逻辑回归更好的分类界线。([关于支持向量机...](http://wangweiguang.xyz/math/2017/10/16/flwt.html#支持向量机))
 
 ### 关于Sigmoid函数
 下面是Sigmoid的函数图像。从图像容易看出，它的值域是在[0,1]区间内的。Logistic回归中，在Sigmoid函数的作用就是把里面的线性函数的输出值转化为了0到1之间的概率。（比如猫图问题中输入一张图片，输出为0.7，可以当做有70%的概论是猫。）
@@ -97,8 +98,7 @@ Logistic回归里面是一个线性函数`wx+b`。外面的`σ()`称为**Sigmoid
 这时候，我们有了用于分类的模型（Logistic回归），有了衡量模型学习效果的两个函数，我们拿什么方法对分类模型进行“学习”呢？也就是说我们怎么样找到一组最好的w和b值使得我们的成本函数最小呢？这里用到了梯度下降法。（我把机器学习中搜索模型参数的过程理解为“学习”，不知道合适否。）
 
 ## 梯度下降法
-梯度下降法（gradient descent)
-用于帮我们搜素出一组最优化的参数，让成本函数的值最小。梯度下降法所做的就是从初始点开始，朝最“抖”的下坡方向走一步。
+梯度下降法（gradient descent)用于帮我们搜素出一组最优化的参数，让成本函数的值最小。梯度下降法所做的就是从初始点开始，朝最“抖”的下坡方向走一步。
 
 下图直观的说明了这个过程。
 
@@ -280,5 +280,5 @@ print(b.shape)
 
 
 # 作业
-[https://www.coursera.org/learn/neural-networks-deep-learning/home/week/1](https://www.coursera.org/learn/neural-networks-deep-learning/home/week/1)
+[https://www.coursera.org/learn/neural-networks-deep-learning/home/week/2](https://www.coursera.org/learn/neural-networks-deep-learning/home/week/2)
 
