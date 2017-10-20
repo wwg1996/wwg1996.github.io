@@ -280,5 +280,9 @@ print(b.shape)
 
 
 # 作业
-[https://www.coursera.org/learn/neural-networks-deep-learning/home/week/2](https://www.coursera.org/learn/neural-networks-deep-learning/home/week/2)
+[Python Basics with Numpy (optional assignment)](http://wangweiguang.xyz/html/Python+Basics+With+Numpy.html)
+
+[Logistic Regression with a Neural Network mindset.html](http://wangweiguang.xyz/html/Logistic+Regression+with+a+Neural+Network+mindset.html)
+
+
 

@@ -27,9 +27,11 @@ img: /images/ai.jpg
 
 ### Python与机器学习
 
-### Matlab与与机器学习
+#### 编程练习
 
-### Mathematica与机器学习
+[Python Basics with Numpy](http://wangweiguang.xyz/html/Python+Basics+With+Numpy.html)
+
+[Logistic Regression with a Neural Network mindset.html](http://wangweiguang.xyz/html/Logistic+Regression+with+a+Neural+Network+mindset.html)
 
 ## 项目与实践
 
