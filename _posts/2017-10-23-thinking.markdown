@@ -29,3 +29,7 @@ img: http://wangweiguang.xyz/images/ai.jpg
 潜意思和表意识相互作用。
 ## 形象思维
 基于形象概念，根据形象认识材料。
+
+# 相关连接
+
+* 父节点：[智能](http://wangweiguang.xyz/ai/2017/10/23/intelligence.html)

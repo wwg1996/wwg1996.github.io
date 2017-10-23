@@ -11,6 +11,8 @@ img: /images/ai.jpg
 
 ### 人工智能概论
 
+* [0 人工智能概述](http://wangweiguang.xyz/ai/2017/10/23/ai0.html)
+
 ### 深度学习
 
 [吴恩达的深度学习课程](http://mooc.study.163.com/smartSpec/detail/1001319001.htm)
@@ -31,7 +33,7 @@ img: /images/ai.jpg
 
 [Python Basics with Numpy](http://wangweiguang.xyz/html/Python+Basics+With+Numpy.html)（刷新后显示）
 
-[Logistic Regression with a Neural Network mindset.html](http://wangweiguang.xyz/html/Logistic+Regression+with+a+Neural+Network+mindset.html)（刷新后显示）
+[Logistic Regression with a Neural Network mindset](http://wangweiguang.xyz/html/Logistic+Regression+with+a+Neural+Network+mindset.html)（刷新后显示）
 
 ## 项目与实践
 
