@@ -29,9 +29,9 @@ img: /images/ai.jpg
 
 #### 编程练习
 
-[Python Basics with Numpy](http://wangweiguang.xyz/html/Python+Basics+With+Numpy.html)
+[Python Basics with Numpy](http://wangweiguang.xyz/html/Python+Basics+With+Numpy.html)（刷新后显示）
 
-[Logistic Regression with a Neural Network mindset.html](http://wangweiguang.xyz/html/Logistic+Regression+with+a+Neural+Network+mindset.html)
+[Logistic Regression with a Neural Network mindset.html](http://wangweiguang.xyz/html/Logistic+Regression+with+a+Neural+Network+mindset.html)（刷新后显示）
 
 ## 项目与实践
 

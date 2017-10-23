@@ -280,9 +280,9 @@ print(b.shape)
 
 
 # 作业
-[Python Basics with Numpy (optional assignment)](http://wangweiguang.xyz/html/Python+Basics+With+Numpy.html)
+[Python Basics with Numpy (optional assignment)](http://wangweiguang.xyz/html/Python+Basics+With+Numpy.html)（刷新后显示）
 
-[Logistic Regression with a Neural Network mindset.html](http://wangweiguang.xyz/html/Logistic+Regression+with+a+Neural+Network+mindset.html)
+[Logistic Regression with a Neural Network mindset.html](http://wangweiguang.xyz/html/Logistic+Regression+with+a+Neural+Network+mindset.html)（刷新后显示）
 
 
 
