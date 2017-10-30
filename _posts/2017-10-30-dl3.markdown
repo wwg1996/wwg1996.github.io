@@ -23,11 +23,11 @@ img: http://wangweiguang.xyz/images/dl.jpg
 而这其实就是一个单层的神经网络，并且只有一个神经元的神经网络。如下图，神经网络的模型还可以扩展为两层，每层的神经元个数可以是很多个，这无非就是多次重复了逻辑回归的计算过程，如计算图所示。
 
 一个神经网络的层数和每层的神经元个数，包括神经元中计算的函数（逻辑回归是一种）都是我们可以设计的部分，从这几方面我们开始介绍神经网络。
-![image](https://wangweiguang.xyz/images/dl3_1.jpg)
+![image](http://wangweiguang.xyz/images/dl3_1.jpg)
 
 ## 神经网络的各层
 如下图为一个两层的神经网络
-![image](https://wangweiguang.xyz/images/dl3_2.jpg)
+![image](http://wangweiguang.xyz/images/dl3_2.jpg)
 * **输入层**（input layer）：图中的x<sub>1</sub>x<sub>2</sub>x<sub>3</sub>就是输入层，输入层只负责传入数据，不做计算。输入层标记为a<sub></sub><sup style="margin-left:-5px">[0]</sup>，输入层第i个元素标记为a<sub>i</sub><sup style="margin-left:-5px">[0]</sup>。
 * **输出层**（output layer）图中标记为a<sup>[2]</sup>就是输出层，输出层是神经网络计算的最后一层，最后输出结果。输出层也需要对前面一层传过来的结果进行计算。
 * **隐含层**（hidden layer）：也叫中间层，图中标记为a<sup>[2]</sup>。实际上输入层和输出层都只有一层，并且当问题确定时这一层也就确定了，我们对神经网络的层数个节点数进行设计实际上是对隐藏层进行设计，隐含层的节点数是自由的，而节点数设置的多少会影响到整个模型的效果。隐含层需要对数据进行传递和计算。
@@ -37,7 +37,7 @@ img: http://wangweiguang.xyz/images/dl.jpg
 
 ## 神经网络的神经元
 神经网络的每一层（除输入层）都是由若干个神经元，也就是计算单元组成的。如下图：
-![image](https://wangweiguang.xyz/images/dl3_2.jpg)
+![image](http://wangweiguang.xyz/images/dl3_2.jpg)
 每一个计算单元可以分为两步运算，第一是经过一个线性函数，然后经过一个σ函数，称做**激活函数**。
 ### 激活函数
 每个计算单元都有一个激活函数，不同层的激活函数可以不同。在逻辑回归中，激活函数我们可以看做是sigmiod函数。而在神经网络的设计中，我们还可以选择其他不同的非线性函数。
@@ -50,14 +50,14 @@ img: http://wangweiguang.xyz/images/dl.jpg
 #### tanh函数
 tanh函数也就是双曲正切函数。从函数式和图像上来看，tanh函数可以当做是sigmiod函数的变化。tanh的值域是在-1和1之间，均值为零，这在实际学习过程中会比sigmiod函数好很多，所以一般用来替代sigmiod函数。
 
-![image](https://wangweiguang.xyz/images/tanh.jpg)
+![image](http://wangweiguang.xyz/images/tanh.jpg)
 #### ReLU
 ReLU叫做修正线性单元，这是目前最常用的激活函数。比起前两种激活函数，ReLU函数最大的优点，而前两种函数如果输入值很大的话，斜率会很小几乎为0，这导致用梯度下降法时学习效率会很慢，而ReLU修正线性单元则克服了这个缺点。
-![image](https://wangweiguang.xyz/images/ReLU.jpg)
+![image](http://wangweiguang.xyz/images/ReLU.jpg)
 
 #### leaking ReLU
 ReLU中z小于零的时候斜率为0。当然，在实际中我们可以调整隐含单元个数使z大于0，也可以让z小于0时的斜率为一个比较小的值，这就有了leaking ReLU。
-![image](https://wangweiguang.xyz/images/lReLU.jpg)
+![image](http://wangweiguang.xyz/images/lReLU.jpg)
 
 #### 作用
 非线性激活函数，起非线性映射作用并将神经元输出幅度限制在一定范
@@ -70,7 +70,7 @@ R选择激活函数时，eLU是默认的第一选择，leaking ReLU也可以试�
 
 ## 神经网络的初始化
 在学习之前，我们要对个参数进行初始化。在逻辑回归中，完全可以把所有参数以零做初始化，但是在神经网络中如果所有参数都为0，梯度下降法就无效了。主要是因为矩阵w一开始就是对称的，后面无论经过多少次计算，所有隐含层单元进行的计算都是相同的，得到的结果也是相同的，这就失去了多个隐含层单元的意义了。所以一般是初始化主要是随机化w的值，b是不存在对称性的问题，可以直接初始化为零。并且，使用sigmiod或tanh时可以在权重初始化上乘上0.01.防止学习速度太慢（针对深层网络，这个值还会有所不同，但总之都要求比较小）
-![image](https://wangweiguang.xyz/images/dl3_5.jpg)
+![image](http://wangweiguang.xyz/images/dl3_5.jpg)
 
 ## 神经网络编程
 见编程作业：
