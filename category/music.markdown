@@ -13,7 +13,9 @@ img: /images/music.jpg
 ### 曲目演奏
 ####  弹唱
 [《漂洋过海来看你》](https://wwg1996.github.io/music/2017/09/25/pyghlkn.html)
-《消愁》
+[《消愁》](https://node.kg.qq.com/play?s=3ozNRz3T2P_Zw3Mn&shareuid=679b9d8d252d3f8e&topsource=a0_pn201001004_z11_u56080085_l0_t1509445211__)
+[《董小姐》](http://wangweiguang.xyz/music/2017/10/31/dxj.html)
+
 #### 独奏
 [《flower》岸部真明](https://wwg1996.github.io/music/2017/10/09/flower.html)
 

@@ -20,7 +20,7 @@ img: /images/ai.jpg
 * 0 什么是机器学习？
 * [1 课程导论](https://wwg1996.github.io/ai/2017/10/11/dl1.html)
 * [2 神经网络基础](http://wangweiguang.xyz/ai/2017/10/16/dl2.html)
-* 3 单层神经网络
+* [3 浅层神经网络](http://wangweiguang.xyz/ai/2017/10/30/dl3.html)
 * 4 深度神经网络
 
 ### 数据挖掘
@@ -34,6 +34,8 @@ img: /images/ai.jpg
 [Python Basics with Numpy](http://wangweiguang.xyz/html/Python+Basics+With+Numpy.html)（刷新后显示）
 
 [Logistic Regression with a Neural Network mindset](http://wangweiguang.xyz/html/Logistic+Regression+with+a+Neural+Network+mindset.html)（刷新后显示）
+
+[Planar data classification with one hidden layer](http://wangweiguang.xyz/html/Planar+data+classification+with+one+hidden+layer+v4.html)（刷新后显示）
 
 ## 项目与实践
 
