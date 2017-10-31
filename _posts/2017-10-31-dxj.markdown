@@ -1,0 +1,79 @@
+---
+layout: post
+title: dxj
+date: 2017-10-31 18:09:30 +0800
+categories: music
+tags: 曲目积累 歌曲 
+img: http://wangweiguang.xyz/images/dxj.jpg
+---
+
+* 
+{:toc}
+## 缘起 
+
+最开始是在快乐男声里听到这首歌的。左立弹唱的版本觉得很好听，无论是吉他的编配还是人声。
+
+## 歌曲演唱
+
+这首歌还是好唱的。😊
+
+
+[音频连接](http://node.kg.qq.com/play?s=NPs3JsNnvZ9D9NPx&shareuid=679b9d8d252d3f8e&topsource=a0_pn201001004_z11_u56080085_l0_t1509291313__)
+
+## 歌曲分析
+
+[关于歌曲分析...](http://wwg1996.github.io/music/2017/10/09/gqfx.html)
+
+### 作曲分析
+
+[关于作曲分析...](http://wwg1996.github.io/music/2017/10/09/zxfx.html)
+
+整首歌是大调，主歌四段，副歌两段。
+
+详细的和弦和旋律可视化见：[http://www.hooktheory.com/hookpad/project/406185](http://www.hooktheory.com/hookpad/project/406185)
+
+#### 和弦分析
+
+[关于和弦分析...](http://wwg1996.github.io/music/2017/10/09/hxfx.html)
+
+这首歌的和声框架还是比较简单的，几乎一直再重复一个和弦进行：I-VI-iii-vi-IV-V-I-I（[详细..](http://wangweiguang.xyz/music/2017/10/09/hxfx.html#iv-v-iii-vi-ivii-v-i-ii7)）高潮将前面两个和弦换成了IV-V。
+据说这是最国内最常用的一个和弦进行，以后可以留意多收集一些这样歌曲总结比较，学习一下。另外我目前还不清楚副歌和主歌的和旋走向有什么区别，毕竟副歌要有到整首歌“高潮”的感觉，这是怎么出来的，这首歌倒是给了一个例子，因为副歌和弦只是变动了前两个，把主和弦到下属和弦，换成了下属和弦到属和弦，把副歌和旋换的和主歌一样，副歌的高潮感就就很弱了。
+
+![image](http://wangweiguang.xyz/images/dxj1.jpg)
+
+![image](http://wangweiguang.xyz/images/dxj2.jpg)
+
+#### 旋律分析
+
+[关于旋律分析...](http://wwg1996.github.io/music/2017/10/09/xlfx.html)
+
+主歌四段旋律模式大体还是一样的，每一段都有变化，但每一段之前都是先唱三个字“董小姐”，这三个音重复了四遍。这三个字同期来有律动感，主歌每一段都是从第二拍开始的，“董”字八分之一拍，“小”字十六分之一拍，“姐”字补上了前面的十六分之一拍，往后演唱了八分之一拍。把这三个字都变成八分之一拍就不好听了。
+
+主歌的情绪还是比较稳定的，副歌开始的二分之一拍的五个音都是不稳定音，情感有种爆发的感觉。
+
+![](http://wangweiguang.xyz/images/dxj3.jpg)
+
+![](http://wangweiguang.xyz/images/dxj4.jpg)
+
+
+### 编曲分析
+
+[关于编曲分析...](http://wwg1996.github.io/music/2017/10/09/bqfx.html)
+
+编曲我用的是左立的编配，感觉很好听，网上有扒下来的，我看的是这个[http://www.17jita.com/jitapu/img/3313.html](http://www.17jita.com/jitapu/img/3313.html)
+
+![](http://wangweiguang.xyz/images/dxj5.jpg)
+
+详细的和弦和旋律可视化见：[http://www.hooktheory.com/hookpad/view/2604fRWFfNrr](http://www.hooktheory.com/hookpad/view/2604fRWFfNrr)
+
+### 作词分析
+这首歌之所以能出名词有很大一部分的功劳，词中的故事就不详细说了，我比较在意的是里面一些词字的运用。
+
+比如，又一次想唱给女朋友听这个，改成“王小姐”，还没开口就感觉没有那个意境了。所以真的是，一些词语细微的变化，会让整句的感觉都不一样，因为每一个词字给人的感觉也就是联想是不同的，意境往往来源于这些微妙变化。同样的，这里唱作“李小姐”，“张小姐”，“孙小姐”都没有“董小姐”好，这里我没有去考究，大概是主要因为有些姓太常见了，就没有新鲜感了，想董这样相对的用的少的姓氏会给人一种“特别”的感受。
+
+同样的，还有安河桥，不是立交桥，不是建设桥给人的感觉也很好。
+
+## 相关连接
+[关于相关连接...](http://wwg1996.github.io/pkm/2017/10/09/wzdjg.html)
+
+**父节点: [音乐空间](http://wwg1996.github.io/category/music.html)**
