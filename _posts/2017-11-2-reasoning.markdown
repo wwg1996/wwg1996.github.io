@@ -4,7 +4,7 @@ title: 推理
 date: 2017-11-02 15:50:42 +0800
 categories: AI
 tags: 逻辑学 
-img: https://wangweiguang.xyz/images/reasoning.jpg
+img: http://wangweiguang.xyz/images/reasoning.jpg
 ---
 
 * 

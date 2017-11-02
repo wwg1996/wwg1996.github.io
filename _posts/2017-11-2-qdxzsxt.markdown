@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 2 确定性知识系统
+title: 1 确定性知识系统
 date: 2017-11-02 15:39:31 +0800
 categories: AI
 tags: 知识系统 
-img: https://wangweiguang.xyz/images/zsxt.jpg
+img: http://wangweiguang.xyz/images/zsxt.jpg
 ---
 * 
 {:toc}
@@ -17,12 +17,12 @@ img: https://wangweiguang.xyz/images/zsxt.jpg
 ## 知识表示
 知识的概念可以从两个方面来讨论，一是知识的定义，二是知识的类型。一种普遍的观点认为，知识是人们在改造客观世界的实践中积累起来的认识和经验。 按知识的确定性分知识可分为确定性知识和不确定性知识。确定性知识是可以给出其真值为“真”或“假”的知识。这些知识是可以精确表示的知识。不确定性知识是指具有“不确定”特性的知识，这种不确定特性包括不完备性、不精确性和模糊性。
 
-关于知识...
+[关于知识...](http://wangweiguang.xyz/ai/2017/11/02/knowledge.html)
 
 ## 知识推理
 人工智能的推理研究，就是要基于人类的思维机理，去实现机器的自动推理。除推理的思维机理外，它包括两个基本问题，一是推理的方法，二是推理的控制策略。常见的推理方法有，演绎推理，归纳推理等。推理过程不仅依赖于所用的推理方法，也依赖于推理的控制策略。推理的控制策略是指如何使用领域知识使推理过程尽快达到目标的策略。
 
-关于推理...
+[关于推理...](http://wangweiguang.xyz/ai/2017/11/02/reasoning.html)
 
 # 确定性知识系统
 ## 表示方法
@@ -55,7 +55,7 @@ img: https://wangweiguang.xyz/images/zsxt.jpg
     * ON(box,a)
     * TABLE(a)
     * TABLE(b)
-    问题的目标状态
+        问题的目标状态
     * AT(robot,c)
     * EMPTY(robot)
     * ON (box,b)
@@ -120,7 +120,7 @@ img: https://wangweiguang.xyz/images/zsxt.jpg
 在语义网络表示中，一个最基本的语义单元称为语义基元，一个语义基元所对应的那部分网络结构称为基本网元。一个语义基元可用如下三元组：(节点1，弧，节点2) 来描述，其结构可用一个基本网元来表示。例如，若用A，B分别表示三元组中的节点1和节点2,用表示A与B之间的语义联系，则它所对应的基本网元的结构下图。
 ![image](http://wangweiguang.xyz/images/arb.jpg)
 
-详细...
+[详细...](http://wangweiguang.xyz/ai/2017/11/02/semantic_network.html)
 
 ### 框架表示法
 #### 简介

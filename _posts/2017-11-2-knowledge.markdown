@@ -4,7 +4,7 @@ title: 知识
 date: 2017-11-02 15:47:24 +0800
 categories: AI
 tags: 知识系统 
-img: https://wangweiguang.xyz/images/knowledge.jpg
+img: http://wangweiguang.xyz/images/knowledge.jpg
 ---
 
 * 
