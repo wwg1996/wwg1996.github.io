@@ -48,7 +48,9 @@ img: http://wangweiguang.xyz/images/semantic_network.jpg
 二元关系是指可用二元谓词P(x,y)表示的关系。其中，x,y为实体，P为实体之间的关系。单个二元关系可直接用一个基本网元来表示。复杂关系，可通过一些相对独立的二元或一元关系的组合来实现。
 
 例：用语义网络表示：动物能运动、会吃。鸟是一种动物，鸟有翅膀、会飞。鱼是一种动物，鱼生活在水中、会游泳。
-![image](http://wangweiguang.xyz/images/yyw2.jpg)
+
+![image](http://wangweiguang.xyz/images/yywl2.jpg)
+
 #### 表示多元关系
 用语义网络表示多元关系时，可把它转化为一个或多个二员关系的组合，然后再利用下一节讨论的合取关系的表示方法，把这种多元关系表示出来。
 
@@ -57,16 +59,19 @@ img: http://wangweiguang.xyz/images/semantic_network.jpg
 
 例：用语义网络表示：“小燕子这只燕子从春天到秋天占有一个巢”
 解：需要设立一个占有权结点，表示占有物和占有时间等。
-![image](http://wangweiguang.xyz/images/yyw3.jpg)
+
+![image](http://wangweiguang.xyz/images/yywl3.jpg)
 
 ### 事件和动作的表示
 用这种方法表示事件或动作时，需要设立一个事件节点或动作结点。其中，事件节点由一些向外引出的弧来指出事件行为及发出者与接受者。动作结点由一些向外引出的弧来指出动作的主体与客体。
 
 例：用于语义网络表示：“常河给江涛一个优盘”
 解：用事件结点节点表示下所示
-![image](http://wangweiguang.xyz/images/yyw4.jpg)
+
+![image](http://wangweiguang.xyz/images/yywl4.jpg)
 用动作结点节点表示如下所示
-![image](http://wangweiguang.xyz/images/yyw5.jpg)
+
+![image](http://wangweiguang.xyz/images/yywl5.jpg)
 
 ## 语义网络推理
 用语义网络表示知识的问题求解系统主要由两大部分所组成，一部分是由语义网络构成的知识库，另一部分是用于问题求解的推理机构。语义网络的推理过程主要有两种，一种是**继承**，另一种是**匹配**。
@@ -90,9 +95,9 @@ img: http://wangweiguang.xyz/images/semantic_network.jpg
 #### 例子
 用语义网络表示：王强是理想公司的经理；理想公司在中关村；王强28岁。
 解：其表示如图所示
-![image](http://wangweiguang.xyz/images/yyw6.jpg)
+![image](http://wangweiguang.xyz/images/yywl6.jpg)
 假设上图的语义网络已在知识库中，问王强在哪个公司工作？可构造如如下语义网络片断。
-![image](http://wangweiguang.xyz/images/yyw7.jpg)
+![image](http://wangweiguang.xyz/images/yywl7.jpg)
 当用该语义网络片断与图2-18所示的语义网络进行匹配时，由“Work-for”弧所指的结点可知，职员王强工作在“理想公司”，这就得到了问题的答案。若还想知道职员王强的其它情况，则可在语义网络中增加相应的空结点。
 
 ## 语义网络表示的特点
