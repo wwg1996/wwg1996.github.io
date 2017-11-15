@@ -51,13 +51,16 @@ img: http://wangweiguang.xyz/images/dl.jpg
 * 构建神经网络模型
 * 对实际问题进行训练和预测
   ![image](http://wangweiguang.xyz/images/sjwl.png)
+  
 ## 0 引入相关包
+
 神经网络编程最重要的一个包就是numpy了，并且这里将随机数种子设置为1，以保证后面每次运行的结果一样，方便展示。
 ```python
 import numpy as np
 np.random.seed(1)
 ```
 ## 1 参数初始化
+
 对L层神经网络的参数（W，b）进行初始化。其中随机初始化W（权重矩阵）使用到`np.random.randn(shape)*0.01`，初始化b（偏移量）为0使用到`np.zeros(shape)`。（注意对矩阵维数进行检验，养成习惯）
 
 ```python
@@ -91,7 +94,9 @@ def initialize_parameters_deep(layer_dims):
 * LINEAR -> ACTIVATION where ACTIVATION will be either ReLU or Sigmoid.
 * [LINEAR -> RELU]  ××  (L-1) -> LINEAR -> SIGMOID (whole model)
   其中我们在最后一层使用了sigmoid激活函数（用于实现二分分类的输出），其他全部采取ReLU函数。
+
 ### 2.1 线性部分
+
 线性部分的方程为Z<sup>[l]</sup>=W<sup>[l]</sup>A<sup>[l−1]</sup>+b<sup>[l]</sup>，其中A<sup>[0]</sup> = X。实现矩阵乘法，使用到` np.dot() `，同样的在最后对矩阵维数进行检查。
 
 值得注意的是我们保留了A，W，b的结果，这是为了方便反向传播过程可以直接调用这些值，这是一个实际编程中的小技巧。（后面都会保存进cache）
@@ -164,7 +169,7 @@ def relu(Z):
     return A, cache
 ```
 ### 2.3 合并
-为了更加方便，将线性部分与激活函数的部分进行合并（LINEAR->ACTIVATION ），完成公式A<sup>[l]=g(Z<sup>[l]</sup>)=g(W<sup>[l]</sup>A<sup>[l−1]</sup>+b<sup>[l]</sup>)，其中“g”可以选择sigmoid() 或 relu()。
+为了更加方便，将线性部分与激活函数的部分进行合并（LINEAR->ACTIVATION ），完成公式A<sup>[l]</sup>=g(Z<sup>[l]</sup>)=g(W<sup>[l]</sup>A<sup>[l−1]</sup>+b<sup>[l]</sup>)，其中“g”可以选择sigmoid() 或 relu()。
 
 ```python
 def linear_activation_forward(A_prev, W, b, activation):
@@ -438,6 +443,7 @@ def L_model_backward(AL, Y, caches):
 * W<sup>[l]</sup>=W<sup>[l]</sup>−α dW<sup>[l]</sup>
 * b<sup>[l]</sup>=b<sup>[l]</sup>−α db<sup>[l]</sup>
   其中α为学习率。
+
 ```python
 def update_parameters(parameters, grads, learning_rate):
     """
@@ -463,6 +469,7 @@ def update_parameters(parameters, grads, learning_rate):
     return parameters
 
 ```
+
 ## 6 多层神经网络模型
 上面我们构造了一个神经网络模型需要的所有基本函数：
 
@@ -698,7 +705,9 @@ print_mislabeled_images(classes, test_x, test_y, pred_test)
 - Camera Angle
 - Brightness of the picture
 - Scale variation (cat is very large or small in image) 
+
 ### 7.5 模型应用
+
 接下来可以自己拿更多的图片进行测试和识别。注意导入图片进入预测模型时，要对图片矩阵进行预处理，也就是进行resize和reshape，并且标准化到0，1区间。
 
 ```python
@@ -722,4 +731,9 @@ plt.imshow(image)
 print ("y = " + str(np.squeeze(my_predicted_image)) + ", your L-layer model predicts a \"" + classes[int(np.squeeze(my_predicted_image)),].decode("utf-8") +  "\" picture.")
 
 ```
-这里我测试了一些图片，效果其实并不是很满意，一方面是训练样本还是比较少（200多张），改善，模型也是最基本的模型，到后面下一部分会对设置超参数的一些常见方法进行进一步学习，并且学习更高级的模型比如卷积神经网络，预计会比现在的模型效果更好。
+这里我测试了一些图片，效果其实并不是很满意，一方面是训练样本还是比较少（200多张），模型也是最基本的模型，到后面下一部分会对设置超参数的一些常见方法进行进一步学习，并且学习更高级的模型比如卷积神经网络，预计会比现在的预测效果更好。
+
+详见编程作业：
+[Building your Deep Neural Network Step b Step v5.html](http://wangweiguang.xyz/html/Building%2Byour%2BDeep%2BNeural%2BNetwork%2B-%2BStep%2Bby%2BStep%2Bv5.html)（刷新后显示）
+
+[Deep Neural Network Application v3.html](http://wangweiguang.xyz/html/Deep%2BNeural%2BNetwork%2B-%2BApplication%2Bv3.html)（刷新后显示）
