@@ -51,7 +51,7 @@ img: http://wangweiguang.xyz/images/dl.jpg
 * 构建神经网络模型
 * 对实际问题进行训练和预测
   ![image](http://wangweiguang.xyz/images/sjwl.png)
-  
+
 ## 0 引入相关包
 
 神经网络编程最重要的一个包就是numpy了，并且这里将随机数种子设置为1，以保证后面每次运行的结果一样，方便展示。
