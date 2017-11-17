@@ -58,3 +58,7 @@ img: http://wangweiguang.xyz/images/problem_reduction.jpg
 三阶梵塔问题的分解过程可用如下图所示的与/或树来表示。在该与/或树中，有7个终止节点，它们分别对应着7个本原问题。如果把这些本原问题从左至右排列起来，即得到了原始问题的解：
 
 ![image](http://wangweiguang.xyz/images/wtgy.jpg)
+
+
+
+相关连接：[搜索策略](http://wangweiguang.xyz/ai/2017/11/17/ai3.html)

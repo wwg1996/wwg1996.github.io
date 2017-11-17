@@ -4,7 +4,7 @@ title: 状态空间法
 date: 2017-11-17 17:54:18 +0800
 categories: AI
 tags: 搜索 
-img: http://wangweiguang.xyz/images/search.png
+img: http://wangweiguang.xyz/images/state_space.jpg
 ---
 
 * 
@@ -65,7 +65,7 @@ BFS，其英文全称是Breadth First Search。BFS并不使用经验法则算法
 深度优先搜索是一种非完备策略，即对某些本身有解的问题，采用深度优先搜索可能找不到最优解，也可能根本找不到解。常用的解决办法是增加一个深度限制，当搜索达到一定深度但还没有找到解时，停止深度搜索，向宽度发展。这种方法被称为有界深度优先搜索。
 
 ## 状态空间的启发式搜索
-（关于启发式搜索...）
+（[关于启发式搜索...](http://wangweiguang.xyz/ai/2017/11/17/ai3.html#启发式搜索)）
 ### A算法
 在图搜索算法中，如果能在搜索的每一步都利用估价函数对Open表中的节点进行排序，则该搜索算法为A算法。由于估价函数中带有问题自身的启发性信息，
 因此，A算法也被称为启发式搜索算法。
