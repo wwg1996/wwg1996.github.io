@@ -76,6 +76,7 @@ img: http://wangweiguang.xyz/images/English.jpg
 * 工作场景：实际工作场景的某个片段。如：讨论工作事项、推销、出差等
 * 求职场景：毕业生求职面试、跳槽
 * 场景词汇：
+
 ```
 // 求职
 resume n. 简历 
@@ -112,6 +113,7 @@ lower the cost of production 降低生产成本
   * 大量的数字信息
   * 上升下降的表达
 * 场景词汇：
+
 ```
 // 银行
 open an account          开户头
@@ -138,7 +140,9 @@ bear market              熊市
 foreign exchange         外汇
 yield                    投资的收益
 ```
+
 * 数字读法
+
 ```
 // 年份读法
 1979年：nineteen seventy-nine
@@ -178,6 +182,7 @@ in the 1930s：in the ninetee thirties 在二十世纪三十年代
 326,414,718：three hundred (and) twenty-six million, four hundred (and) fourteen thousand, seven hundred (and) eighteen
 4,302,000,000：four billion three hundred (and) two million
 ```
+
 ### 环保科技
 * 场景词汇：
 
@@ -238,6 +243,7 @@ scientific invention         科学发明
   1. 含有原文中重复出现的词的选项往往是答案
   2. 符合说话人态度的选项往往是答案
 * 高频词汇：side effect, dosage, prescribe, practitioner, herbal, remedy, syndrome, pediatrics
+
 ```
 side effect      副作用       
 dosage           剂量
@@ -324,6 +330,7 @@ downsize                 v. 缩减岗位，进行裁员
 raise funds              筹集资金
 boost                    n. 提高，增加
 ```
+
 ### 研究报告
 * 研究报告
   * 权威机构与专家的话是重点
