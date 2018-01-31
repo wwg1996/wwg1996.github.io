@@ -25,6 +25,10 @@ img: /images/ai.jpg
 * [3 浅层神经网络](http://wangweiguang.xyz/ai/2017/10/30/dl3.html)
 * [4 深层神经网络](http://wangweiguang.xyz/ai/2017/11/15/dl4.html)
 
+[Siraj 深度学习课程](https://space.bilibili.com/178337929/#/channel/detail?cid=32677)
+
+* 1 Intro to Deep Learning
+
 ### 数据挖掘
 
 ## 工具
