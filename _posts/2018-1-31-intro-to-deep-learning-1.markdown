@@ -1,14 +1,18 @@
 ---
 layout: post
-title: Intro to Deep Learning 1
+title: 1 Intro to Deep Learning 
 date:  17:33:07 +0800
 categories: AI
 tags: Siraj  深度学习 
-img: http://wangweiguang.xyz/images/DL.jpg
+img: http://wangweiguang.xyz/images/ML.jpg
 ---
 
 课程视频见[https://www.bilibili.com/video/av18910318/](https://www.bilibili.com/video/av18910318/)
 
+
+
+* 
+{:toc}
 # 1 Intro to Deep Learning
 
 本周总结：
@@ -21,7 +25,7 @@ img: http://wangweiguang.xyz/images/DL.jpg
 
   第一周基础没什么好说的，编个小程序热热身。
 
-# 实例
+## 实例
 
 ```python
 import pandas as pd
@@ -75,7 +79,7 @@ np_data = np.array(df['Y'])
 np.mean(np.abs(np_data - body_reg.predict(x_values)))
 ```
 
-# Ludo's winning code:
+## Ludo's winning code:
 
 ```python
 %matplotlib inline
@@ -89,15 +93,15 @@ import sklearn
 import numpy as np
 ```
 
-## Regression with 2 variables
+### Regression with 2 variables
 
-### 1. Import and visualize data
+#### 1. Import and visualize data
 
 ```python
 df = pd.read_csv('challenge_dataset.txt', names=['X','Y'])
 ```
 
-### 2. 2D Regression 
+#### 2. 2D Regression 
 
 ```python
 from sklearn.model_selection import train_test_split
@@ -115,7 +119,7 @@ reg.fit(X_train.values.reshape(-1,1), y_train.values.reshape(-1,1))
 print('Score: ', reg.score(X_test.values.reshape(-1,1), y_test.values.reshape(-1,1)))
 ```
 
-### 3. Plot regression and visualize results
+#### 3. Plot regression and visualize results
 
 ```python
 x_line = np.arange(5,25).reshape(-1,1)

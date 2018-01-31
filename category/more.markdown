@@ -32,5 +32,6 @@ img: /images/more.jpg
 
 ### 考试
 
-* 听力
-* 阅读
+* [听力](http://wangweiguang.xyz/more/2018/01/31/listening.html)
+* [阅读](http://wangweiguang.xyz/more/2018/01/31/reading.html)
+

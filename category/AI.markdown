@@ -27,7 +27,7 @@ img: /images/ai.jpg
 
 [Siraj 深度学习课程](https://space.bilibili.com/178337929/#/channel/detail?cid=32677)
 
-* 1 Intro to Deep Learning
+* [1 Intro to Deep Learning](http://wangweiguang.xyz/ai/2018/01/31/intro-to-deep-learning-1.html)
 
 ### 数据挖掘
 

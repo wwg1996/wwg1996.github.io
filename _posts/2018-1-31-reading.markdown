@@ -1,329 +1,339 @@
 ---
 layout: post
-title: reading
-date:  18:02:15 +0800
+title: 阅读
+date:  18:00:52 +0800
 categories: more
 tags: 英语 
 img: http://wangweiguang.xyz/images/English.jpg
 ---
+* 
+{:toc}
 
-# 听力介绍
-（六级为例）
-* 听力题型
-  * **长对话**：节目访谈、工作求职、投资理财、环保科技
-  * **篇章**：人物经历、社会问题、医学医药、文化地理、科学生物
-  * **讲座**：身心健康、文化风俗、经济现状、心灵鸡汤、教育技能、研究报告
-* 听力难点
-  * 听不懂 
-    1. 词汇量不足
-    2. 辨音
-      * 同音词/近音词干扰
-      * 连读/失爆干扰
-      * 英式与美式发音
-    3. 一词多义
-  * 来不及反应
-    1. 审题方法
-    2. 出题规律
+# 阅读介绍
+(六级为例)
+* 题型
+  * 词义理解——选词填空（5%）
+  * 长篇阅读——匹配题（10%）
+  * 仔细阅读——单选题（20%）
+* 比重：35%
+* 顺序：第三部分
+* 时间：40min
 
-# 解题步骤
-## 审题
-* 预判问题的走向
-  * By doing sth. → 对方式的提问
-  * 不定式形式 → 对目的或原因的提问
-  * 动词原形或现在分词开头 → 对动作提问
-  * 形容词 → 对观点态度提问
-* 预判对话主旨
-  * 选项中共性的内容、话题词汇
-* 预判听题重点
-  1. 性别取向：选项中重复出现的主语性别（he/she），为听题重点
-  2. 大写数字专有：大写的专有名词或者数字会在听力中出现，帮助定位题
-* 缩小选择范围
-  * 唯一无关项排除，排除内容与其他三项无关的选项 
-## 听题
-1. 顺序原则
-2. 问答原则
-  * 提问者—话题引出者—对应最后的问题
-  * 回答者—信息提供者—对应最后的答案
+* 阅读本质
+  * 定位 -> 主旨 -> Skimming
+  * 词汇 -> 定位 -> Scanning
+  * 语法 -> 技巧 -> Skills
 
-## 解题
+# 解题基础与技巧
+## 阅读语法基础
+* 句子基本构成
+  * SV (主谓): The boy is sleeping.
+  * SVP (主系表): The boy is cute.
+  * SVO (主谓宾): The boy is playing the piano.
+  * SVoO (主谓宾宾): The boy gave the girl a rose.
+  * SVoC (主谓宾宾补): The boy asked the girl to marry him.
+* 句子辅助成分
+```
+The boy is sleeping.
+The cute boy, Tom, is sleeping deeply in his bedroom.
+              同位语            状语         地点状语
+```
+* 句子的合成
+  * 有两种情况，第一是句子的某一种成分扩展成为了句子
+  * S: ++What he said++ is not true.（主语从句）
+  * P: This is ++where the boy met the girl++.（表语从句）
+  * O: He said ++he was tired++.（宾语从句）
+  * o: He will give the book to ++whoever is in charge++.（间接宾语从句）
+  * A: He quitted ++because he was tired++.（状语从句）
+  * Att: The boy ++I mentioned++ quitted the job.（定语从句）
+  * App: The fact ++that he quitted the job++ is not surprising.（同位语从句）
+  * 第二种是句子之间的并列组合。
+  * 并列：He is smart, and he works hard.
+  * 转折：He is smart, but he doesn't work hard.
+  * 因果：He is cool, so he is popular.
+  * 因果：He is popular, for he is cool.
+
+## 关键信息定位
+* 关键信息的定义：关键信息是指
+  1. 可用于定位的
+  2. 通常不具可替代性的
+  3. 实词
+* 关键信息的分类
+  * 专有名词：China, WTO, Jennifer Anniston
+  * 专业术语：oceanography
+  * 特殊符号："international"
+  * 表示地点：on the playground 
+  * 具体时间：yesterday, last year
+  * 数字表达：in 1900s, third
+  * 实义名词：desk, banana
+* 无效的关键信息：几乎每一段都出现
+
+## 参考信息变换
+* 参考信息的定义：参考信息是指
+  1. 与核心含义相关的
+  2. 但非常容易被替代的
+  3. 实词
+* 参考信息的分类
+  * 抽象名词：happiness, love, change, arrival
+  * 动词：love, change
+  * 形容词：good
+  * 副词：hurriedly, often
+* 参考信息的变换
+  1. 词性转换：名词 → 动词，动词 → 形容词，形容词 → 副词，……
+  2. 同义替换
+  3. 逻辑变换：双重否定，逆否命题，等价变换
+  * bring me happiness:
+      * bring me joy（同义替换）
+      * make me happy（词性转换）
+      * please me（同义替换+词性转换）
+      * sweep my unhappiness away（双重否定）
+      * no longer feel unhappy（双重否定+词性转换）
+      * no longer feel down（双重否定+词性转换+同义替换）
+
+## 文章主题判断
+* 主题是什么：主题句特征
+  1. 判断句式：be, become, …
+  2. 定义句式：be defined as, definition, concept, …
+  3. 作者观点：I believe, I think, I don't believe, I don't think, …
+  4. 建议句型：If I were you, 祈使句, 反问句, …
+* 为什么需要了解主题
+  * 主旨题的解答
+  * 其他题向主旨靠拢
+* 主题的展现形式
+  * 直入主题型
+  * 例子开头做引子
+  * 对比开头做引子
+  * 设问开头做引子
+  * 文末
+
+## 细节信息检索
+* 细节是什么：主题以外的所有内容，可以是
+  1. 某人的观点（非作者观点）
+  2. 某种逻辑关系
+  3. 某人、某事、某地、某物的特点
+  4. 某种推测或预言
+* 为什么要了解特定细节，不要全读
+  * 时间冲突：450字，7.5分钟，1.5分钟，题+选项+原文
+  * 水平冲突：词汇量，长难句
+* 那些细节是重点
+  * 顺接关系
+    * 并列/递进：
+      * 总分结构
+      * 注意被突出的那一项
+    * 因果关系
+      * 因VS果：I spoke louder so that everyone could hear me；I spoke louder so that everyone heard me.
+      * 三要素：目的、条件、根据
+    * 类比关系：本题VS喻体
+    * 举例关系：理论VS例子
+    * 解释关系：抽象VS解释
+  * 相反关系
+    * 对比：前后两者同等重要
+    * 转折：之后是重点
+    * 让步：之前是重点
 
 # 题型解析
-## 长对话
-### 节目访谈
-* 节目访谈类对话特点：
-  1. 录音开头常有主持人开场白
-  2. 主持人在开头会对嘉宾的情况作介绍
-  3. 谈话的主要内容：嘉宾的成长历程，对于事情的看法等
-  4. 第一道题常会对主持人的职业进行提问
-* 答案提示词
-  1. 表示转折：but, however, nevertheless ...
-  2. 表示强调：
-     * only, just, still
-     * actually, in fact, as a matter of fact
-     * real / really, of course, certainly, specially / especially
-     * This is important. 
-  3. 语气提示词：
-    * well, listen, ok, now, wow, let's see
-    * 表示情绪变换的词，如 to one's surprise …
-  4. 表示建议：
-    * Let me suggest something.
-    * How about …
-    * What about …
-    * Why don't / not …
+## 匹配题
+* 解题的顺序
+  * 文章：结构的分析*
+  * 题干：关键词的判定
+  * 题干：参考词的判定
+  * 文章：关键词的定位
+  * 文章：参考词的匹配
+  * 优先级：
+    1. 数字、大写、专业术语、时间、地点、特殊标点
+    2. 实义名词
+    3. 抽象名词
+    4. 动词、形容词、副词
+* 结构的分析
+  * 小标题
+  * 明确的合并同类项标志（如人名）
+  * 明确的段落概括标志
 
-### 工作求职
-* 工作场景：实际工作场景的某个片段。如：讨论工作事项、推销、出差等
-* 求职场景：毕业生求职面试、跳槽
-* 场景词汇：
-```
-// 求职
-resume n. 简历 
-have an impressive reputation
-享有良好的声誉
-report to 向……汇报工作
-benefits package 福利待遇 
-paid vacation 带薪假期
-be entitled to 可享受、有权拥有……
-medical and dental insurance 医疗和牙科保险
-personnel department 人事部 
+## 仔细阅读
+### 题型判定
+* 主旨大意题型：含main / summary / title / main purpose …的题目
+* 细节信息检索  
+  * 细节信息题型：
+    * 题干中出现文章中的具体信息包括并不限于（事实、例证、原因、过程） 
+    * 体现为事实、人名、地名、数字、大写字母、专有名词、因果关系类的词
+  * 推理判断题型：
+    * infer / imply / conclude / 事或物 + suggest / learn from（推理）
+    * correct / true / mentioned （判断对的）
+    * ncorrect / not true / not mentioned / except （判断错的）
+  * 词义猜测题型：""：题干出现“引号”; (Paragraph XX, Line XX)
+  * 观点态度题型：attitude，态度词
 
-// 工作
-brainstorming 群策群力，合力攻关
-take over the position 接任职位
-an extension of the deadline 延期
-odd job 零工
-professional expertise 专业技能
-further talk 进一步谈判
-overtime / extra hours 加班
-on business trip 出差
-right candidate for this position 该职位的合适候选人
-resign from one's position 从某一职位辞职
-stay competitive 保持竞争力
-lower the cost of production 降低生产成本
-```
+### 主旨大意题型
+* 主旨位置：主旨题出现在第一道，主旨在首段找，出在最后一道题可能在二段或末端
+  * 首段：
+    * 直入主题型
+    * 例子开头做引子
+    * 对比开头做引子
+    * 设问开头做引子
+  * 二段：but
+  * 末端
+* 正确选项特点：话题词（反复重复）→ 必须有
+* 错误选项特点：含有细节 → 常错
+* 难点：话题词替换
 
-### 投资理财
-* 内容：
-  * 银行开通账户
-  * 咨询理财产品
-  * 讨论经济形势
-* 特点：
-  * 大量的数字信息
-  * 上升下降的表达
-* 场景词汇：
-```
-// 银行
-open an account          开户头
-a deposit account        定期存款账户
-a current account        活期存款账户
-a minimum deposit        最低存款额
-deposit book / passbook  存折 
-interest rates           利率
-credit card              信用卡
-overdraft / overdraw     透支
-service charge           服务费
-commercial bank          商业银行，储蓄信贷银行
-investment bank          投资银行
+### 细节信息题型
+1. 定位
+  * 关键词：大写、专有名词、数字、时间、地点、实意名词
+  * 参考词：抽象名词、动词、形容词、副词
+2. 逻辑（相反）
+  * 转折逻辑——转折之后是重点：but, yet, however, still, nevertheless, nonetheless, in fact, actually, 句末的though, 句中插入语的though, …
+  * 让步逻辑——主句是重点：though, although, even though, even if, 句首的while, despite, in spite of, …
+  * 对比逻辑——与主题相关的部分是重要的：than, rather than, instead of, not as … as, not so … as, while, compared with / to, in comparison (with / to), by / in contrast (with / to), on the contrary, contrary to, contrarily, unlike …
+2. 逻辑（顺承）
+  * 并列逻辑：and, also, as well, too, or, first+second+third+finally, …
+  * 典型论据（递进逻辑）：more, most, -est, only, main, major, chief, vital, crucial, critical, key, fundamental, essential, necessary, on the top of the list, …
+  * 解释：:, —, in other words, that is, that is to say, which means, …
+  * 举例：for example, for instance, such as, like, say, …
+  * 类比：as, like, similar, similarly, likewise, …
+2. 逻辑（因果）
+  * 因果（目的、条件、根据）
+    * 因为： because, as, since, for, in that, because of, owing to, due to, thanks to, in response to, result from, be attributed to, be ascribed to, lie in, …
+    * 所以：so, and therefore, and consequently, and hence, and thus, therefore, consequently, hence, thus, result in, lead to, contribute to, bring about, account for, be responsible for, cause, trigger, arouse, raise, …
+3. 考点：
+  * 专家、学者、作者的观点或态度
+  * 原因、结果
+  * 转折
+  * 典型论据（被突出的那一项）
+6. 错误选项的类型
+  * 南辕北辙
+    * 与原文相反
+    * 因果倒置
+  * 以偏概全
+  * 张冠李戴
+    * 偷换概念
+    * 跨细节
+  * 无中生有
+  * 唯我独尊（参考）：选项过分绝对
+    * 选项中出现：最高级, all, only, always, never, sure, certain, must be）
+    * 理想的东西可以绝对化
 
-// 投资
-capital market           资本市场
-stock exchange           证券交易所
-share                    股份，股票 
-bond                     债券
-broker                   经纪人
-shareholder / stockholder股票持有人，股东
-bull market              牛市
-bear market              熊市
-foreign exchange         外汇
-yield                    投资的收益
-```
-* 数字读法
-```
-// 年份读法
-1979年：nineteen seventy-nine
-        nineteen hundred (and) seventy-nine
-1900年：nineteen hundred
-1809年：eighteen O nine
-2000年：two thousand
-2008年：two thousand and eight / twenty O eight
-in the 1930s：in the ninetee thirties 在二十世纪三十年代  
-              in the thirties of the twentieth century
-531BC：five three one BC / five hundred and thirty-one BC
+### 推理判断题型
+> 推理判断题依旧需要主旨和细节的把握，下面说明这个题型特有的难点
 
-// 电话号码的读法
-1023：one O two three
-1227：one double two seven one two two seven
-911：nine one one
-999：nine nine nine
+* 难点1：逻辑意义的替换
+  * A > B -> B < A
+  * A因为B -> B所以A
+  * 就像A一样，B有X特征。 -> A有X特征。
+  * 不像A，B很X。-> A不X。
+  * A比其他都X。 -> A最X。
+  * A应该 / 必须X。 -> A没有做到X。
+  * 如果A（虚拟），则B。 -> A没有发生，B也没有发生。
+* 难点2：位置相对隐蔽
+  * 例子 VS 观点 
+  * 代词 VS 名词
+  * 那些东西没有提到
 
-// 小数、倍数与分数的读法
-0.98：zero / naught point nine eight
-1.36：one point three six
+### 词义猜测题型
+* 解题思路
+  * 逻辑：并列 / 类比 / 对比 / 解释 / 同位语 / 插入语
+  * 指代：this / that / these / those / the / such
 
-2倍：double / twice
-3倍：triple / three times
-4倍以上：数字 + times
+### 观点态度题型
+* 带有强烈感情色彩的形容词、副词、动词、名词
+  * 赞同态度：positive, approving, supportive, optimistic, sympathetic, favorable, consenting, complimentary (complementary 补充)
+  * 反对态度：negative, disapproving, critical, pessimistic, questioning, doubtful, suspicious, skeptical, gloomy, worried, concerned, scornful
+  * 中立态度：neutral, objective, impartial, unbiased, detached
+  * 永陪态度（永错）：subjective, indifferent, puzzling, confused, ambiguous, prejudiced, biased, tolerance
+* 全句状语
+* 与作者观点的一致性
 
-1/3：one third
-2/3：two thirds
-1/2：one / a half
-1/4：one / a quarter / fourth
+## 选词填空
+### 选词选项判断
+* 后缀与词性
+* 名词：
+  * 词性判定
+    * -ance / -ence / -ancy / -ency 
+    * -ment
+    * -tion / -sion
+    * -al
+    * -age
+    * -ness
+    * -ty / -ity
+    * -th
+    * -hood
+    * -ship
+    * -or / -er / -ist / -ian / -ar / -ee (表示人)
+    * -y
+* 形容词：
+  * -able, -ible
+  * -al
+  * -ant / -ent
+  * -ary
+  * -ful
+  * -less
+  * -ic
+  * -ous
+  * -tive, -sive
+  * -y
+  * -some
+  * -ly
+  * -ish
+* 动词：
+  * 词性判定
+    * -ate
+    * -en
+    * -ify 
+    * -ize / -ise
+    * en- / em-
+* 副词：
+  * -ly
+  * -ward(s)
+  * -wise
+* 需注意
+  * 区别比较 
+      * -ly：名词-ly = 形容词，动词-ly = 副词
+      * -al：动词-al = 名词，名词-al = 形容词
+      * -y：非名词-y = 名词，名词-y = 形容词
+      * 以上针对的是含有词根的词汇，对于table, English, rely, lower这些原生词无效。
+  * 一词多性：一般无词根词缀的名词都比较古老，会出现一词多义的情况
+  * 性义对应：同一个单词（拼写）不同的词性对应的依次不同。
+  * 屈折变化：根据句法要求单词好会发生变化
+    * 名词：-s 复数变化
+    * 动词：
+      * -s 第三人称动词
+      * -ed 过去式、过去分词、形容词
+      * -ing 进行式、现在分词、动名词、形容词、名词
+    * 形容词/副词：
+      * -er 比较级
+      * -est 最高级
+     
+### 选词题干判断
+* 句子成分与词性
+  * 主语：名词，v.ing
+  * 谓语：动词，v.ing，v.ed
+  * 宾语：名词，v.ing
+  * 表语：名词，形容词，v.ing，v.ed
+  * 宾补： 名词，形容词，v.ing，v.ed
+  * 定语：名词，形容词，v.ing，v.ed
+  * 状语：副词，v.ing，v.ed
+* 典型形式分析
+  * a / an / the / my / two … n. 结构
+  * prep. … n. 结构
+  * n. / pron. … n. / pron. 结构
+  * aux.v / to … v. 结构
+  * 平行结构：(both) A and B，(not only) A but (also) B，(whether) A or B，either A or B，neither A nor B
+  * 全句状语：
+    * (And / So / But) …,
+    * , …, 
+* 句子分析终极大法
+  * 例：A hundred years ago one in three American workers was ++40++ on a farm.  
+  * They were ++owners++ on a farm.（n.，表语）
+  * They were playing on a farm.（v.ing，谓语的一部分）
+  * They were killed on a farm.（v.ed，谓语的一部分）
+  * They were happy on a farm.（a.，表语）
+  * They were eventually on a farm.（ad.，状语）
 
-// 五位数及以上数字的读法
-11,234：eleven thousand two hundred (and) thirty-four 
-155,721：one hundred (and) fifty-five thousand, seven hundred (and) twenty-one
-6,155,702：six million one hundred (and) fifty-five thousand, seven hundred and two
-26,000,008：twenty-six million and eight
-326,414,718：three hundred (and) twenty-six million, four hundred (and) fourteen thousand, seven hundred (and) eighteen
-4,302,000,000：four billion three hundred (and) two million
-```
-### 环保科技
-* 场景词汇：
-
-```
-// 环境
-deteriorate                  恶化，变坏
-environmental deterioration  环境恶化
-poisonous gas / toxic gas    有毒气体
-global warming               全球变暖
-deforestation                采伐森林
-vegetation destruction       破坏植被
-desertification              荒漠化，沙漠化
-extinction                   灭绝
-dust storm                   沙尘暴
-ecosystem                    生态系统
-destruction of nature        破坏自然
-inhabitable                  适于居住的，可居住的
-alternative fuel             可替代燃料
-
-// 科技
-artificial intelligence      人工智能
-measurement                  n. 衡量、测量
-dimensional                  adj. 空间的
-three dimensional space      三维空间
-electrical appliance         电器设备
-electronic device            电子设备
-statistic data               统计数据
-solar energy                 太阳能
-advanced science             尖端科学
-scientific invention         科学发明
-
-```
-
-## 篇章
-### 人物经历
-* 人物经历特点：
-  1. 选项中重复出现人称代词
-  2. 录音开头介绍人物
-  3. 以记叙语气陈述事件，常使用过去时态
-  4. 通过时间地点的推移变换，提示新内容层次的出现
-  5. 人物的所思所想、事件的转折结局往往是考点
-* 表示时间的答案提示词
-
-### 社会问题
-* 社会问题类篇章听力特点：
-  1. 以社会上普遍存在的或者是一部分人遇到的问题切入，出题范围很广
-  2. 文章一般会讨论到产生问题的背景和原因。
-  3. 常结合具体数据。
-  4. 选项内容多为负面信息。
-  5. 专家的观点中，往往有重要信息。
-
-### 医学医药
-* 医学医药类篇章听力特点：
-  1. 论说文，总分结构
-  2. 药物、疾病 + 某个特定人群
-  3. 专家意见、研究数据、实验结果
-* 猜题方式：
-  1. 含有原文中重复出现的词的选项往往是答案
-  2. 符合说话人态度的选项往往是答案
-* 高频词汇：side effect, dosage, prescribe, practitioner, herbal, remedy, syndrome, pediatrics
-```
-side effect      副作用       
-dosage           剂量
-prescribe        开处方
-practitioner     从业者
-herbal           草本的
-remedy           治疗
-syndrome         综合症状
-workout          锻炼
-wary             谨慎的
-well-regulated   井然有序的
-take a toll      产生负面影响
-```
-
-### 文化地理
-* 文化地理类：涉及知识面较广，生词较多。平时注意积累。
-* 高频词汇
-
-```
-Americanize    美国化
-colonization   殖民
-revitalize     复兴
-relocate       迁移
-monument       纪念碑
-relic          遗物
-legend         传说
-supernatural   超自然的
-sheer          陡峭的
-volcano        火山
-```
-
-### 科学生物
-* 科学生物：
-  * 积累专业词汇
-  * 注意专家研究，数字信息
-  * 排除法
-* 高频词汇
-
-```
-chemical           化学物
-the Arctic Circle  北极圈
-pollutant          污染物
-sample             样本
-deposit            沉淀物
-device             设备
-supervision        监管
-```
-
-## 讲座
-### 身心健康
-* 身心健康类讲座/讲话
-  * 开篇提出讨论内容
-  * 文章较长，说话人通过提示词或者提问来推进内容
-  * 演讲中的自问自答常含答案
-  * 序数词后有关键信息
-  * 听题时，可适当记录，避免走神
-* 高频词汇
-
-```
-self-esteem       自尊
-erode             侵蚀
-well-being        幸福安康
-belt out          拉开嗓门唱，热情演奏
-
-```
-### 经济现状
-* 经济现状类讲座/讲话特点：
- 1. 负面的经济现状较多，且多为国外或者是全球性问题
- 2. 常出现数字信息
-* 听题解题：
-  * 唯一数字项，可排除
-  * 权威人士的话中常含关键信息
-  * 最高级提到的为重点信息
-
-```
-unemployment insurance   失业保险
-laid-off                  adj. 被裁员的
-cut back                 削减
-devastating              可怕
-mortgage payments        按揭贷款、房屋贷款
-recession                衰减
-odds                     逆境
-downsize                 v. 缩减岗位，进行裁员
-raise funds              筹集资金
-boost                    n. 提高，增加
-```
-### 研究报告
-* 研究报告
-  * 权威机构与专家的话是重点
-  * 带有绝对词的，往往不是答案
+### 选词填空技巧
+* 做题步骤技巧
+  1. 分析选项词性
+  2. 分析题干需求
+  3. 优先可能性少的空格，一般方法：
+    1. ad., n.s, v.s
+    2. v., 过去式v.ed
+    3. n., 名词性v.ing
+    4. a., 分词
