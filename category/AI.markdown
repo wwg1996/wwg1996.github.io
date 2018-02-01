@@ -27,7 +27,8 @@ img: /images/ai.jpg
 
 [Siraj 深度学习课程](https://space.bilibili.com/178337929/#/channel/detail?cid=32677)
 
-* [1 Intro to Deep Learning](http://wangweiguang.xyz/ai/2018/01/31/intro-to-deep-learning-1.html)
+* [1 How to Make a Prediction](http://wangweiguang.xyz/ai/2018/01/31/intro-to-deep-learning-1.html)
+* How to Do Linear Regression using Gradient Descent (live)
 
 ### 数据挖掘
 

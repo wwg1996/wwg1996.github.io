@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1 Intro to Deep Learning 
+title: How to Make a Prediction
 date:  17:33:07 +0800
 categories: AI
 tags: Siraj  深度学习 
