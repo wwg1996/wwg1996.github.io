@@ -19,7 +19,6 @@ img: /images/ai.jpg
 
 [吴恩达的深度学习课程](http://mooc.study.163.com/smartSpec/detail/1001319001.htm)
 
-* 0 什么是机器学习？
 * [1 课程导论](https://wwg1996.github.io/ai/2017/10/11/dl1.html)
 * [2 神经网络基础](http://wangweiguang.xyz/ai/2017/10/16/dl2.html)
 * [3 浅层神经网络](http://wangweiguang.xyz/ai/2017/10/30/dl3.html)
@@ -29,6 +28,7 @@ img: /images/ai.jpg
 
 * [1 如何做一个预测](http://wangweiguang.xyz/ai/2018/01/31/intro-to-deep-learning-1.html)
 * [如何在线性回归中使用梯度下降法](http://wangweiguang.xyz/ai/2018/02/01/how-to-do-linear-regression-using-gradient-descent.html)
+* 2 [神经网络的构建](http://wangweiguang.xyz/ai/2018/02/03/how-to-make-a-neural-network.html)
 
 ### 数据挖掘
 
