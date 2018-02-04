@@ -27,8 +27,9 @@ img: /images/ai.jpg
 [Siraj 深度学习课程](https://space.bilibili.com/178337929/#/channel/detail?cid=32677)
 
 * [1 如何做一个预测](http://wangweiguang.xyz/ai/2018/01/31/intro-to-deep-learning-1.html)
-* [如何在线性回归中使用梯度下降法](http://wangweiguang.xyz/ai/2018/02/01/how-to-do-linear-regression-using-gradient-descent.html)
-* 2 [神经网络的构建](http://wangweiguang.xyz/ai/2018/02/03/how-to-make-a-neural-network.html)
+* [梯度下降法](http://wangweiguang.xyz/ai/2018/02/01/how-to-do-linear-regression-using-gradient-descent.html)
+*  [2 神经网络的构建](http://wangweiguang.xyz/ai/2018/02/03/how-to-make-a-neural-network.html)
+* [TensorFlow的使用](http://wangweiguang.xyz/ai/2018/02/04/how-to-use-tensorflow-for-classification.html)
 
 ### 数据挖掘
 
@@ -47,8 +48,6 @@ img: /images/ai.jpg
 [Building your Deep Neural Network Step b Step v5.html](http://wangweiguang.xyz/html/Building%2Byour%2BDeep%2BNeural%2BNetwork%2B-%2BStep%2Bby%2BStep%2Bv5.html)（刷新后显示）
 
 [Deep Neural Network Application v3.html](http://wangweiguang.xyz/html/Deep%2BNeural%2BNetwork%2B-%2BApplication%2Bv3.html)（刷新后显示）
-
-
 
 ## 项目与实践
 
