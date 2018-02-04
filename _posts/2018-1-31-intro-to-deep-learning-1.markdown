@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Make a Prediction
-date:  17:33:07 +0800
+date: 2018-1-31 17:33:07 +0800
 categories: AI
 tags: Siraj  深度学习 
 img: http://wangweiguang.xyz/images/ML.jpg

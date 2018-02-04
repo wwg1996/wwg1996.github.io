@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 神经网络模型的构建
-date:  21:08:14 +0800
+date: 2018-2-3 21:08:14 +0800
 categories: AI
 tags: 深度学习 Siraj 
 img: http://wangweiguang.xyz/images/ML.jpg

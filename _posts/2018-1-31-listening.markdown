@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 听力
-date:  18:02:15 +0800
+date: 2018-1-31 18:02:15 +0800
 categories: more
 tags: 英语 
 img: http://wangweiguang.xyz/images/English.jpg

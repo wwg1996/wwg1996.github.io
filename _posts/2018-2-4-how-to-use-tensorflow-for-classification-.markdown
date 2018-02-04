@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tensorflow的基本使用
-date:  19:15:22 +0800
+date: 2018-2-4 19:15:22 +0800
 categories: AI
 tags: 深度学习 Siraj 
 img: http://wangweiguang.xyz/images/ML.jpg
@@ -12,20 +12,20 @@ img: http://wangweiguang.xyz/images/ML.jpg
 这是示例将说明如何在TensorFlow中对简单数据集进行分类。这里，我们正在建立一个模型来帮助朋友选择买房。她给了对下面这个表格里房子的评价。我们要建立一个模型，把房子的面积和浴室的数量作为输入，并输出一个关于她是否喜欢房子的预测。
 
 | Area (sq ft) (x1) | Bathrooms (x2) | Label (y) |
- | --- | --- | --- |
- | 2,104 |  3 | Good |
- | 1,600 |  3 | Good |
- | 2,400 |  3 | Good |
- | 1,416 | 	2 | Bad |
- | 3,000 | 	4 | Bad |
- | 1,985 | 	4 | Good |
- | 1,534 | 	3 | Bad |
- | 1,427 | 	3 | Good |
- | 1,380 | 	3 | Good |
- | 1,494 | 	3 | Good |
- 
+| ----------------- | -------------- | --------- |
+| 2,104             | 3              | Good      |
+| 1,600             | 3              | Good      |
+| 2,400             | 3              | Good      |
+| 1,416             | 2              | Bad       |
+| 3,000             | 4              | Bad       |
+| 1,985             | 4              | Good      |
+| 1,534             | 3              | Bad       |
+| 1,427             | 3              | Good      |
+| 1,380             | 3              | Good      |
+| 1,494             | 3              | Good      |
+
  首先导入库
- 
+
 ```python
 %matplotlib inline               
 import pandas as pd              # 让我们把数据作为表格形式来处理

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 阅读
-date:  18:00:52 +0800
+date: 2018-1-31 18:00:52 +0800
 categories: more
 tags: 英语 
 img: http://wangweiguang.xyz/images/English.jpg
@@ -184,17 +184,17 @@ The cute boy, Tom, is sleeping deeply in his bedroom.
   * 转折逻辑——转折之后是重点：but, yet, however, still, nevertheless, nonetheless, in fact, actually, 句末的though, 句中插入语的though, …
   * 让步逻辑——主句是重点：though, although, even though, even if, 句首的while, despite, in spite of, …
   * 对比逻辑——与主题相关的部分是重要的：than, rather than, instead of, not as … as, not so … as, while, compared with / to, in comparison (with / to), by / in contrast (with / to), on the contrary, contrary to, contrarily, unlike …
-2. 逻辑（顺承）
+3. 逻辑（顺承）
   * 并列逻辑：and, also, as well, too, or, first+second+third+finally, …
   * 典型论据（递进逻辑）：more, most, -est, only, main, major, chief, vital, crucial, critical, key, fundamental, essential, necessary, on the top of the list, …
   * 解释：:, —, in other words, that is, that is to say, which means, …
   * 举例：for example, for instance, such as, like, say, …
   * 类比：as, like, similar, similarly, likewise, …
-2. 逻辑（因果）
+4. 逻辑（因果）
   * 因果（目的、条件、根据）
     * 因为： because, as, since, for, in that, because of, owing to, due to, thanks to, in response to, result from, be attributed to, be ascribed to, lie in, …
     * 所以：so, and therefore, and consequently, and hence, and thus, therefore, consequently, hence, thus, result in, lead to, contribute to, bring about, account for, be responsible for, cause, trigger, arouse, raise, …
-3. 考点：
+5. 考点：
   * 专家、学者、作者的观点或态度
   * 原因、结果
   * 转折
@@ -301,7 +301,7 @@ The cute boy, Tom, is sleeping deeply in his bedroom.
     * 形容词/副词：
       * -er 比较级
       * -est 最高级
-     
+
 ### 选词题干判断
 * 句子成分与词性
   * 主语：名词，v.ing

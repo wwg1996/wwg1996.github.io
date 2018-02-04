@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何在线性回归中运用梯度下降法
-date:  19:35:14 +0800
+date: 2018-2-1 19:35:14 +0800
 categories: AI
 tags: 深度学习 Siraj 
 img: http://wangweiguang.xyz/images/ML.jpg
