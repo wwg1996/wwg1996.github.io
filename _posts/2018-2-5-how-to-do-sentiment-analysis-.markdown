@@ -7,9 +7,12 @@ tags: 深度学习 Siraj
 img: http://wangweiguang.xyz/images/ML.jpg
 ---
 
+* 
+{:toc}
+
 教程链接：[https://www.bilibili.com/video/av19178430/?spm_id_from=333.23.home_video_list.1](https://www.bilibili.com/video/av19178430/?spm_id_from=333.23.home_video_list.1)
 
-## 知识：
+## 知识
 1. 情感分析两种方法：
    * 基于词典的方法：先对句子进行分词，然后统计个个词汇的个数，最后在情感字典中查找这些单词对应的情感值，然后可以计算出总体的情感。
    * **机器学习的方法**：输入大量句子以及这些句子的情感标签，就可以训练一个句子情感分类器，预测新的句子的情感。
@@ -83,3 +86,6 @@ model.fit(trainX, trainY, validation_set=(testX, testY), show_metric=True,
           batch_size=32)
 ```
 因为注册AWS还要国外的信用卡，没有弄成，在自己笔记本上运行了40分钟，才训练好，迭代了7040次，准确度最后达到0.9475，损失值从一开始的0.5左右到了0.15。以后还是得想办法找一个免费的云服务器，跑一些小程序。
+
+## Challenge
+
