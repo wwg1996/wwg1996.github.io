@@ -7,6 +7,8 @@ tags: 深度学习 Siraj
 img: http://wangweiguang.xyz/images/ML.jpg
 ---
 
+课程视频地址：[https://www.bilibili.com/video/av19129164/](https://www.bilibili.com/video/av19129164/)
+
 # 预备
 
 这是示例将说明如何在TensorFlow中对简单数据集进行分类。这里，我们正在建立一个模型来帮助朋友选择买房。她给了对下面这个表格里房子的评价。我们要建立一个模型，把房子的面积和浴室的数量作为输入，并输出一个关于她是否喜欢房子的预测。

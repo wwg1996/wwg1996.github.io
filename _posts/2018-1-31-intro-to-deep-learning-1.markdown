@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Make a Prediction
+title: 如何做预测
 date: 2018-1-31 17:33:07 +0800
 categories: AI
 tags: Siraj  深度学习 
