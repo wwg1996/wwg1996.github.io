@@ -14,6 +14,8 @@ img: /images/ai.jpg
 * 0 [人工智能概述](http://wangweiguang.xyz/ai/2017/10/23/ai0.html)
 * 1 [确定性知识系统](http://wangweiguang.xyz/ai/2017/11/02/qdxzsxt.html)
 * 2 [搜索策略](http://wangweiguang.xyz/ai/2017/11/17/ai3.html)
+* 3 [计算智能](http://wangweiguang.xyz/ai/2018/02/17/computational-intelligence.html)
+* 4 [机器学习](http://wangweiguang.xyz/ai/2018/02/17/machine-learning.html)
 
 ### 深度学习
 

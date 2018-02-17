@@ -34,14 +34,14 @@ img: http://wangweiguang.xyz/images/CI.jpg
 
 ![image](http://wangweiguang.xyz/images/ML.jpg)
 
-详细...
+[详细...](http://wangweiguang.xyz/ai/2018/02/17/neural-network.html)
 
 ## 进化计算
 进化计算是一种模拟自然界生物进化过程与机制，进行问题求解的自组织、自适应的随机搜索技术。它以达尔文进化论的“物竟天择、适者生存”作为算法的进化规则，并结合孟德尔的遗传变异理论，将生物进化过程中的繁殖、变异、竞争和选择引入到了算法中，是一种对人类智能的演化模拟方法。进化计算有着遗传算法、进化策略、进化规划和遗传规划四大分支。其中，遗传算法是进化计算中最初形成的一种具有普遍影响的模拟进化优化算法。
 
 ![image](http://wangweiguang.xyz/images/EA.jpg)
 
-详细...
+[详细...](http://wangweiguang.xyz/ai/2018/02/17/evolutionary-computation.html)
 
 
 ## 模糊计算
