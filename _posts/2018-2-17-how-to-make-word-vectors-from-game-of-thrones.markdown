@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Make Word Vectors from Game of Thrones
+title: 词向量方法分析《权利的游戏》
 date: 2018-02-17 20:12:33 +0800
 categories: AI
 tags: 深度学习 Siraj 
