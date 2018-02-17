@@ -8,7 +8,7 @@ img: http://wangweiguang.xyz/images/game-of-thrones.jpg
 ---
 * 
 {:toc}
-课程视频见：https://www.bilibili.com/video/av19669011/
+课程视频见：[https://www.bilibili.com/video/av19669011/](https://www.bilibili.com/video/av19669011/)
 
 这周的主课讲了情感分析，这里讲解一些自然语言理解方面的程序例子。作为承载人类情感的载体，语言文字，常常作为情感分析的典型材料。所以情感分析和自然语言理解是密不可分的，他们都作为机器学习的一种应用领域，帮助人类深入思维的密境，揭示人类情感思维的奥秘。
 

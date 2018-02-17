@@ -139,3 +139,159 @@ model = tflearn.DNN(net, tensorboard_verbose=0)
 model.fit(trainX, trainY, validation_set=(testX, testY), show_metric=True,
           batch_size=32)
 ```
+
+## Jovian's Winning Code:
+Jovian的冠军代码写的很全面了，每一步的解释也很详细。这里同样把这个当做了一个分类问题，比较了三种不同的分类方式的区别，训练完成最后的深度学习网络可以达到0.5左右的正确率，输入一个游戏的名称，可以预测出这个游戏的评价等级。
+
+### 依赖库
+```python
+import pandas as pd
+import tflearn
+from tflearn.data_utils import to_categorical, pad_sequences
+from tflearn.datasets import imdb
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn import preprocessing
+```
+### 数据导入
+导入游戏评价数据库ign.csv
+```python
+original_ign = pd.read_csv('ign.csv')
+```
+查看数据库的形状
+```python
+print('original_ign.shape:', original_ign.shape)
+```
+output：
+```
+original_ign.shape: (18625, 11)
+```
+共有18625个游戏的数据，每个游戏有11项信息。其中只有游戏的评价信息（score_phrase）是我们需要关注的。下面统计游戏的各种评价。
+```python
+original_ign.score_phrase.value_counts()
+```
+output
+```
+Great          4773
+Good           4741
+Okay           2945
+Mediocre       1959
+Amazing        1804
+Bad            1269
+Awful           664
+Painful         340
+Unbearable       72
+Masterpiece      55
+Disaster          3
+Name: score_phrase, dtype: int64
+```
+可以看出评价为Great和Good的最多，而Disaster的评价只有3个。
+
+### 数据处理
+#### 预处理
+检查属否有null元素（缺失项）
+```python
+original_ign.isnull().sum()
+```
+output：
+```
+Unnamed: 0         0
+score_phrase       0
+title              0
+url                0
+platform           0
+score              0
+genre             36
+editors_choice     0
+release_year       0
+release_month      0
+release_day        0
+dtype: int64
+```
+将缺失值填充为空字符串（这个例子其实无需做这两步，但要养成检查缺失值的好习惯）：
+```python
+original_ign.fillna(value='', inplace=True)
+```
+#### 数据划分
+划分样本集和标签集：
+```python
+X = ign.text
+y = ign.score_phrase
+```
+
+分类训练集和测试集：
+```python
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
+```
+
+#### 样本集处理
+将样本集的字符串转变为数字序列。创建vocab，把X转化为X\_word\_ids。
+```python
+vect = CountVectorizer(ngram_range=(1,1), token_pattern=r'\b\w{1,}\b')
+
+vect.fit(X_train)
+vocab = vect.vocabulary_
+
+def convert_X_to_X_word_ids(X):
+    return X.apply( lambda x: [vocab[w] for w in [w.lower().strip() for w in x.split()] if w in vocab] )
+
+X_train_word_ids = convert_X_to_X_word_ids(X_train)
+X_test_word_ids  = convert_X_to_X_word_ids(X_test)
+```
+序列扩充
+```python
+从       
+X_test_padded_seqs  = pad_sequences(X_test_word_ids , maxlen=20, value=0)
+```
+
+#### 标签集处理
+```python
+unique_y_labels = list(y_train.value_counts().index)
+le = preprocessing.LabelEncoder()
+le.fit(unique_y_labels)
+
+y_train = to_categorical(y_train.map(lambda x: le.transform([x])[0]), nb_classes=len(unique_y_labels))
+y_test  = to_categorical(y_test.map(lambda x:  le.transform([x])[0]), nb_classes=len(unique_y_labels))
+```
+
+### 构造网络
+构造网络和实例一样
+```python
+n_epoch = 100
+size_of_each_vector = X_train_padded_seqs.shape[1]
+vocab_size = len(vocab)
+no_of_unique_y_labels = len(unique_y_labels)
+```
+```python
+net = tflearn.input_data([None, size_of_each_vector]) # The first element is the "batch size" which we set to "None"
+net = tflearn.embedding(net, input_dim=vocab_size, output_dim=128) # input_dim: vocabulary size
+net = tflearn.lstm(net, 128, dropout=0.6) # Set the dropout to 0.6
+net = tflearn.fully_connected(net, no_of_unique_y_labels, activation='softmax') # relu or softmax
+net = tflearn.regression(net, 
+                         optimizer='adam',  # adam or ada or adagrad # sgd
+                         learning_rate=1e-4,
+                         loss='categorical_crossentropy')
+```
+
+### 训练网络
+初始化
+```python
+model = tflearn.DNN(net, tensorboard_verbose=0)
+```
+
+训练
+```python
+model.fit(X_train_padded_seqs, y_train, 
+           validation_set=(X_test_padded_seqs, y_test), 
+           n_epoch=n_epoch,
+           show_metric=True, 
+           batch_size=100)
+```
+训练结果：
+```python
+Training Step: 16799  | time: 25.949s
+| Adam | epoch: 100 | loss: 0.00000 - acc: 0.0000 -- iter: 16700/16759
+Training Step: 16800  | time: 27.099s
+| Adam | epoch: 100 | loss: 0.00000 - acc: 0.0000 | val_loss: 1.83644 - val_acc: 0.4326 -- iter: 16759/16759
+--
+```

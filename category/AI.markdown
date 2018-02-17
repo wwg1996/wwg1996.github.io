@@ -28,8 +28,10 @@ img: /images/ai.jpg
 
 * [1 如何做一个预测](http://wangweiguang.xyz/ai/2018/01/31/intro-to-deep-learning-1.html)
 * [梯度下降法](http://wangweiguang.xyz/ai/2018/02/01/how-to-do-linear-regression-using-gradient-descent.html)
-*  [2 神经网络的构建](http://wangweiguang.xyz/ai/2018/02/03/how-to-make-a-neural-network.html)
+* [2 神经网络的构建](http://wangweiguang.xyz/ai/2018/02/03/how-to-make-a-neural-network.html)
 * [TensorFlow的使用](http://wangweiguang.xyz/ai/2018/02/04/how-to-use-tensorflow-for-classification.html)
+* [3 情感分析初探](http://wangweiguang.xyz/ai/2018/02/05/how-to-do-sentiment-analysis.html)
+* [词向量方法分析《权利的游戏》](http://wangweiguang.xyz/ai/2018/02/17/how-to-make-word-vectors-from-game-of-thrones.html)
 
 ### 数据挖掘
 
