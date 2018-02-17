@@ -89,3 +89,53 @@ model.fit(trainX, trainY, validation_set=(testX, testY), show_metric=True,
 
 ## Challenge
 
+The challenge for this video is to train a model on this dataset of video game reviews from IGN.com. Then, given some new video game title it should be able to classify it. You can use pandas to parse this dataset. Right now each review has a label that's either Amazing, Great, Good, Mediocre, painful, or awful. These are the emotions. Using the existing labels is extra credit. The baseline is that you can just convert the labels so that there are only 2 emotions (positive or negative). Ideally you can use an RNN via TFLearn like the one in this example, but I'll accept other types of ML models as well. 
+
+You'll learn how to parse data, select appropriate features, and use a neural net on an IRL pr
+
+
+```python
+import tflearn
+from tflearn.data_utils import to_categorical, pad_sequences, VocabularyProcessor
+import pandas as pd
+import numpy as np
+
+# 数据导入
+# 用pd做数据导入，这里训练集测试集随机的抽取会更好
+dataframe = pd.read_csv('ign.csv').iloc[:, 1:3]
+
+train = dataframe.iloc[:int(dataframe.shape[0]*0.9), :]
+test = dataframe.iloc[int(dataframe.shape[0]*0.9):dataframe.shape[0], :]
+
+trainX = train.title
+trainY = train .score_phrase
+testX = test.title
+testY = test.score_phrase
+
+# 数据处理
+# 和实例不同的是这里的数据是纯文本的，处理前要转换成数据序列，用到了tflearn中的VocabularyProcessor相关方法；样本集分为11类
+vocab_proc = VocabularyProcessor(15)
+trainX = np.array(list(vocab_proc.fit_transform(trainX)))
+testX = np.array(list(vocab_proc.fit_transform(testX)))
+
+vocab_proc2 = VocabularyProcessor(1)
+trainY = np.array(list(vocab_proc2.fit_transform(trainY))) - 1
+trainY = to_categorical(trainY, nb_classes=11)
+vocab_proc3 = VocabularyProcessor(1)
+testY = np.array(list(vocab_proc3.fit_transform(testY))) - 1
+testY = to_categorical(testY, nb_classes=11)
+
+# 构建网络
+# 现在并不清楚要按什么标准构建不同的网络，直接用的实例
+net = tflearn.input_data([None, 15])
+net = tflearn.embedding(net, input_dim=10000, output_dim=128)
+net = tflearn.lstm(net, 128, dropout=0.8)
+net = tflearn.fully_connected(net, 2, activation='softmax')
+net = tflearn.regression(net, optimizer='adam', learning_rate=0.001,
+                         loss='categorical_crossentropy')
+            
+# 训练网络
+model = tflearn.DNN(net, tensorboard_verbose=0)
+model.fit(trainX, trainY, validation_set=(testX, testY), show_metric=True,
+          batch_size=32)
+```
