@@ -3,7 +3,7 @@ layout: post
 title: 词向量方法分析《权利的游戏》
 date: 2018-02-17 20:12:33 +0800
 categories: AI
-tags: 深度学习 Siraj 
+tags: Siraj NLP
 img: http://wangweiguang.xyz/images/game-of-thrones.jpg
 ---
 * 
