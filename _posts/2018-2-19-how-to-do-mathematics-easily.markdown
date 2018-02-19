@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Do Mathematics Easily
+title: 神经网络中的数学
 date: 2018-02-18 19:48:29 +0800
 categories: AI
 tags: 神经网络 Siraj 
