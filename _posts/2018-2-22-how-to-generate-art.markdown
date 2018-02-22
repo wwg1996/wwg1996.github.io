@@ -11,7 +11,7 @@ img: http://wangweiguang.xyz/images/tp.jpg
 {:toc}
 # 艺术风格转移的卷积神经网络
 
-课程视频见：
+课程视频见：https://www.bilibili.com/video/av19891729/
 
 [TOC]
 
@@ -68,6 +68,7 @@ content_image = content_image.resize((height, width))
 content_image
 ```
 out[1]:
+
 ![image](http://wangweiguang.xyz/images/hugo.jpg)
 
 ```python
