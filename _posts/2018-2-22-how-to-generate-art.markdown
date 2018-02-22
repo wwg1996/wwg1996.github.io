@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Generate Art
+title: CNN实现艺术风格转移
 date: 2018-02-22 14:42:38 +0800
 categories: AI
 tags: 神经网络 Siraj 艺术 
