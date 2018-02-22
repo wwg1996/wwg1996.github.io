@@ -11,9 +11,7 @@ img: http://wangweiguang.xyz/images/tp.jpg
 {:toc}
 # 艺术风格转移的卷积神经网络
 
-课程视频见：https://www.bilibili.com/video/av19891729/
-
-[TOC]
+课程视频见：[https://www.bilibili.com/video/av19891729/](https://www.bilibili.com/video/av19891729/)
 
 ## 总结
 其实就像最基本的二分类问题一样，任何机器学习的问题的解决无非是这几个步骤，了解问题是什么，数据准备，然后选择解决问题的机器学习模型，然后训练模型，测试模型，周而复始，大功告成。
