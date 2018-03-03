@@ -7,6 +7,8 @@ tags:
 img: /images/ai.jpg
 ---
 
+[TOC]
+
 ## 课程
 
 ### 人工智能概论
@@ -37,11 +39,15 @@ img: /images/ai.jpg
 
 ### 数据挖掘
 
-## 工具
+## 人工智能应用
 
-### Python与机器学习
+### 自然语言理解
 
-#### 编程练习
+* [Chatbot初探0 qq聊天机器人 上](http://wangweiguang.xyz/ai/2018/03/03/chatbot0.html)
+
+## Python与人工智能
+
+### 编程练习
 
 [Python Basics with Numpy](http://wangweiguang.xyz/html/Python+Basics+With+Numpy.html)（刷新后显示）
 
@@ -53,5 +59,5 @@ img: /images/ai.jpg
 
 [Deep Neural Network Application v3.html](http://wangweiguang.xyz/html/Deep%2BNeural%2BNetwork%2B-%2BApplication%2Bv3.html)（刷新后显示）
 
-## 项目与实践
+## 
 
