@@ -13,7 +13,8 @@ img: http://wangweiguang.xyz/images/chatbot.jpg
 * 第二个是模拟出特定性格人的对话模式的chatbot，比如说按九型人格，或MBTI的人格分类，不同性格的机器人会对同一句话有不同的回答。
 * 目前还有一个大胆的想法就是让能不能让机器人从“书籍”里进行学习，比较小孩才是主要从模仿别人对话来学习如何对话，但成人更多是通过阅读来作为说谈的资本。
 
-[TOC]
+* 
+{:toc}
 
 # qq聊天机器人
 * 目标：在qq上做一个模仿你的机器人，和朋友说上一二十句话都看不出什么破绽。
@@ -78,7 +79,7 @@ for line in f:
         flag = 1
 ```
 ### 语句分词
-```
+```python
 ask1 = []      
 response1 = [] 
 for line in ask:
@@ -124,7 +125,7 @@ def convert_seq2seq_files(questions, answers, TESTSET_SIZE):
             print(len(range(len(questions))), '处理进度：', i)
 ```
 三分之一作为测试样本
-```
+```python
 questions = ask2
 answers = response2
 convert_seq2seq_files(questions, answers, len(ask1)//3)
@@ -278,7 +279,7 @@ def train():
 ### 最终对话函数
 这个函数就是我们整个对话机器人的最终出效果的函数，这个函数会加载训练好的模型，将输入的sentence转换为向量输入模型，然后得到模型的生成向量，最终通过字典转换后返回生成的语句。
 
-```
+```python
 def decode_line(sess, model, enc_vocab, rev_dec_vocab, sentence):
     # Get token-ids for the input sentence.
     token_ids = prepareData.sentence_to_token_ids(tf.compat.as_bytes(sentence), enc_vocab)
@@ -304,7 +305,7 @@ def decode_line(sess, model, enc_vocab, rev_dec_vocab, sentence):
 ## 可视化展示模块
 可视化部分用到了Flask，我还不是特别会，以后在好好学吧，这里就先用了。
 
-```
+```python
 app = Flask(__name__,static_url_path="/static") 
 
 @app.route('/message', methods=['POST'])
