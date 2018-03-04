@@ -263,6 +263,8 @@ time.sleep(2.5)  # 停止2.5秒
 1. r+可读写文件（可读，可写，可追加）
 2. w+写读
 3. a+追加
+
+
 ```python
 #打开文件open()
 f = open('test.txt','r+')
@@ -289,7 +291,10 @@ f.write("abc")
 #写入文件，writelines()参数是序列，比如列表，它会迭代帮你写入文件
 f.writelines(["aa","bb","cc"])
 ```
+
+
 ## 函数&模块
+
 ```python
 # 函数声明
 def power(x, n=2):
