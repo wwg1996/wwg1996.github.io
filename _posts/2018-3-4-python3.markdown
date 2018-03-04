@@ -1,0 +1,324 @@
+---
+layout: post
+title: python3 基础总结
+date: 2018-03-04 11:05:38 +0800
+categories: CS
+tags: Python 
+img: http://wangweiguang.xyz/images/python.png
+---
+
+* 
+{:toc}
+# Python3
+## 基本语法
+变量
+
+```python
+a = 1            
+a = b = c = 1
+a, b, c = 1, 2, "john"    
+
+# 动态生成变量
+for i in range(10):
+    locals()['a%s'%i] = i
+```
+输入和输出
+```python
+name = input('please enter your name: ')
+print('hello,', name)
+```
+数据类型
+```python
+int0 = 42       # 整形（十进制）
+int1 = 0xff00   # 整型（十六进制）
+
+float0 = 0.618  # 浮点型
+float1 = 1.23e9 # 浮点型（科学计数法）
+
+str0 = 'abc'            # 字符型（单引号双引号都可）
+str1 = 'I\'m \"OK\"!'   # 字符型（包含转义字符）
+str2 = r'\\\t\\'        # 字符型（r''中内容不转义）
+
+bool0 = True  # 布尔类型，常用与判断语句
+bool1 = False
+
+# List类型
+List = ['Apple', 123, True, [1,2,3]]  # 列表类型
+
+len(List)  # list长度
+
+List[0]    # 元素访问
+List[-1]   
+List[1:]
+
+List.append('Adam')     # 追加元素到末尾
+List.insert(1, 'Jack')  # 插入到指定位置
+List.pop()              # 删除末尾的元素
+
+# tuple类型
+# 与列表类型的不同在于定义后不可更改
+t = ('a', 'b', ['A', 'B'])  # 元组类型
+
+# dict类型
+d = {'key':'value', 'Michael': 95} # 字典类型
+d['Michael']     # 根据key访问value
+d.pop('Michael') # 删除元素
+
+# set类型
+# set中传入参数为列表，列表元素不能重复
+# 交集运算 &  并集运算 | 
+s = set([1, 2, 3])
+s.add(4)     # 加入元素
+s.remove(4)  # 删除元素
+```
+运算符
+```python
+# 算术运算符
+a + b 
+a - b
+a * b
+a / b
+a % b # 模运算，返回余数
+a**b  # 指数运算
+a//b  # 取整除，返回商的整数部分
+
+# 赋值运算符
+c += a # 等效于c=c+a，其他算术运算符同样
+
+# 关系运算符
+a != b
+a <> b # 也是不等于
+a < b
+a > b
+a <= b
+b >= a
+
+# 逻辑运算符
+x and y
+x or y
+not x
+
+# 成员运算符
+a in list     # a是否在list中
+b not in list
+
+# 位运算符（略）
+# 身份运算符（略）
+```
+流程控制
+```python
+# 判断语句
+age = 20
+if age <= 6:
+    print('kid')
+elif age >= 6:
+    print('teenager')
+elif (age >= 18 and age <= 60):
+    print('adult')
+else:
+    print('old')
+
+sum = 0
+# 循环语句
+for x in range(101):
+    sum = sum + x
+print(sum)
+
+sum = 0
+n = 99
+while n > 0:
+    sum = sum + n
+    n = n - 2
+print(sum)
+```
+## 高级特性
+```python
+# 切片
+L[5:9]  
+L[:10]
+L[-2:]
+L[:10:2] # 前10个数，每两个取一个
+L[::5]   # 所有数，每5个取一个
+
+# 迭代
+# 如果给定一个list或tuple，我们可以通过for循环
+# 来遍历这个list或tuple，这种遍历我们称为迭代
+# 在Python中，迭代是通过for ... in来完成的
+
+# 列表生成式
+[x * x for x in range(1, 11) if x % 2 == 0]
+[m + n for m in 'ABC' for n in 'XYZ']  # 两层循环
+
+# 生成器
+# 一边循环一边计算的机制，称为生成器, 不会占用很大的存储空间
+g = (x * x for x in range(10))
+
+# 迭代器
+# 可以直接作用于for循环的对象统称为可迭代对象：Iterable
+# 可以被next()函数调用并不断返回下一个值的对象称为迭代器：Iterator
+from collections import Iterable
+isinstance('abc', Iterable) # 判断对象是否为可迭代对象
+isinstance(iter('abc'), Iterator) # 判断对象是否为迭代器
+# 把list、dict、str等Iterable变成Iterator可以使用iter()函数
+x = next(iterator) # 获取迭代器下一个值
+
+```
+## 字符串解析
+```python
+str0 = 'abc'            # 字符串（单引号双引号都可）
+str1 = 'I\'m \"OK\"!'   # 字符串（包含转义字符）
+str2 = r'\\\t\\'        # 原始字符串（r''中内容不转义）
+str3 = '''This is a \
+very long string \
+very very long'''   # 长字符串
+
+# 格式化字符串
+# 占位符 %d 整数，%f 浮点数, %s 字符串
+str4 = 'Hi, %s, you have $%d.' % ('Michael', 1000000)
+
+# 字符串内建函数
+## 字符串格式化输出
+string.center(width, fillchar) # 居中,并使用fillchar填充至长度 width
+str.ljust(width, fillchar)     # 靠左
+str.rjust(width, fillchar)     # 靠右
+
+## 字符串搜索定位与替换
+string.count(str, start, end)  # 返回 str 在 string 里面出现的次数
+string.replace(str1, str2)  # 把 string 中的 str1 替换成 str2
+string.expandtabs(tabsize)     # 把字符串 string 中的 tab 符号转为空格，默认为8。
+string.find(str, start, end)   # 检测 str 是否包含在 string 中，返回索引
+
+## 字符串条件判断
+string.isalpha()    # 是否只包含字母
+string.isdigit()    # 是否只包含数字
+string.isspace()    # 是否只包含空格
+string.isalnum()    # 是否只包含字母和数字
+
+## 字符串的联合与分割
+string.join(seq)    #以 string 作为分隔符，将 seq 中所有的元素合并为一个新的字符串
+string.split(str)           # 以 str 为分隔符切片 string
+
+## 字符串编码
+string.decode(encoding) # 以 encoding 指定的编码格式解码 string
+string.encode(encoding  # 以 encoding 指定的编码格式编码 string
+ord('A') # 获取字符的整数表示
+chr(66)  # 函数把编码转换为对应的字符  
+```
+## 时间日历
+```python
+import time
+# 自从1970年1月1日午夜经过了多长时间（秒）
+print(time.time())
+
+# 获取格式化时间
+print(time.asctime(time.localtime(time.time())))
+
+# 时间元组
+print(time.localtime(time.time()))
+
+# 格式化日期
+# %y 两位数的年份表示（00-99）
+# %Y 四位数的年份表示（000-9999）
+# %m 月份（01-12）
+# %d 月内中的一天（0-31）
+# %H 24小时制小时数（0-23）
+# %I 12小时制小时数（01-12）
+# %M 分钟数（00=59）
+# %S 秒（00-59）
+# %a 本地简化星期名称
+# %A 本地完整星期名称
+# %b 本地简化的月份名称
+# %B 本地完整的月份名称
+# %c 本地相应的日期表示和时间表示
+# %j 年内的一天（001-366）
+# %p 本地A.M.或P.M.的等价符
+# %U 一年中的星期数（00-53）星期天为星期的开始
+# %w 星期（0-6），星期天为星期的开始
+# %W 一年中的星期数（00-53）星期一为星期的开始
+# %x 本地相应的日期表示
+# %X 本地相应的时间表示
+# %Z 当前时区的名称
+
+time.strftime('%Y-%m-%d %H:%M:%S',time.localtime()) # 以固定格式返回当前时间日期
+
+# 获取月日历
+import calendar
+cal=calendar.month(2018,3)
+c = calendar.calendar(2018)
+print(cal)
+print(c)
+
+# Time模块
+time.ctime() # 返回字符串'Fri Mar  2 21:17:43 2018'
+time.clock()   # 返回当前的CPU时间，用来衡量不同程序的耗时
+time.sleep(2.5)  # 停止2.5秒
+```
+## 文件操作
+打开文件的模式有：
+1. 只读模式（默认）
+2. 只写模式（不可读，不存在则创建，存在则覆盖）
+3. 追加模式（可读，不存在则创建,存在则只追加内容）
+
+"+"表示可同时读写某个文件：
+1. r+可读写文件（可读，可写，可追加）
+2. w+写读
+3. a+追加
+```python
+#打开文件open()
+f = open('test.txt','r+')
+#或者with open() 这种方法操作完成后，会自动关闭不需要close()
+with open('test.txt','r') as f:
+    f.read()
+
+#关闭文件
+f.close()
+
+#读取文件内容(可指定每次读取字字符)
+ret = f.read(8)
+
+#读取数据（可指定读取字符数），存为list显示
+ret = f.readlines()
+
+#读取一行数据
+f = open('test.txt','r+',encoding='utf-8')
+ret = f.readline()
+
+#写入文件write()参数是字符串
+f.write("abc")
+
+#写入文件，writelines()参数是序列，比如列表，它会迭代帮你写入文件
+f.writelines(["aa","bb","cc"])
+```
+## 函数&模块
+```python
+# 函数声明
+def power(x, n=2):
+    s = 1
+    while n > 0:
+        n = n - 1
+        s = s * x
+    return s
+```
+```python
+import 模块名 as 别名 # 导入模块并定义缩写
+from 包名.模块名 import 属性
+from 包名 import 模块名
+import sys
+sys.path           # 模块地址
+sys.path.append(path) # 添加搜素地址
+```
+## 其他
+
+```python
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+' a test module '
+
+__author__ = 'Michael Liao'
+```
+第1行和第2行是标准注释，第1行注释可以让这个当前.py文件直接在Unix/Linux/Mac上运行，第2行注释表示.py文件本身使用标准UTF-8编码；
+
+第4行是一个字符串，表示模块的文档注释，任何模块代码的第一个字符串都被视为模块的文档注释；
+
+第6行使用__author__变量把作者写进去，这样当你公开源代码后别人就可以瞻仰你的大名；
