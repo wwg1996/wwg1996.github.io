@@ -1,13 +1,14 @@
 ---
 layout: post
-title: How to Make a Text Summarizer
+title: 如何做文章摘要
 date: 2018-03-07 13:34:59 +0800
 categories: AI
 tags: Siraj NLP 
 img: http://wangweiguang.xyz/images/ML.jpg
 ---
 
-[TOC]
+* 
+{:toc}
 
 课程视频见:[https://www.bilibili.com/video/av20427016/](https://www.bilibili.com/video/av20427016/)
 
