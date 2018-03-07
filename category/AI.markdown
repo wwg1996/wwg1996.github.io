@@ -9,7 +9,7 @@ img: /images/ai.jpg
 
 [TOC]
 
-## 课程
+## 知识
 
 ### 人工智能概论
 
@@ -36,18 +36,26 @@ img: /images/ai.jpg
 * [TensorFlow的使用](http://wangweiguang.xyz/ai/2018/02/04/how-to-use-tensorflow-for-classification.html)
 * [3 情感分析初探](http://wangweiguang.xyz/ai/2018/02/05/how-to-do-sentiment-analysis.html)
 * [词向量方法分析《权利的游戏》](http://wangweiguang.xyz/ai/2018/02/17/how-to-make-word-vectors-from-game-of-thrones.html)
+* 4 [神经网络中的数学](http://wangweiguang.xyz/ai/2018/02/18/how-to-do-mathematics-easily.html)
+* 地震级数预测
+* 8 [CNN实现艺术风格转移](http://wangweiguang.xyz/ai/2018/02/22/how-to-generate-art.html)
 
 ### 数据挖掘
 
-## 人工智能应用
+## 应用
 
-### 自然语言理解
+### 自然语言处理
 
 * [Chatbot初探0 qq聊天机器人 上](http://wangweiguang.xyz/ai/2018/03/03/chatbot0.html)
+* [Word2Vector 分析《三体》](http://wangweiguang.xyz/ai/2018/02/18/santi2vec.html)
 
-## Python与人工智能
+### 计算机艺术
 
-### 编程练习
+* [CNN实现艺术风格转移](http://wangweiguang.xyz/ai/2018/02/22/how-to-generate-art.html)
+
+## 编程
+
+### 吴恩达DL编程练习
 
 [Python Basics with Numpy](http://wangweiguang.xyz/html/Python+Basics+With+Numpy.html)（刷新后显示）
 

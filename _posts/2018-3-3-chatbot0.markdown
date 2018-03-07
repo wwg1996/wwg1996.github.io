@@ -337,6 +337,7 @@ def index():
 ## 最终效果展示
 ### No1 精分的么小
 第一次出的结果，留作纪念，可能主要是因为训练时间比较短吧，对话都没有逻辑。把他叫做精分么小。
+
 ![image](http://wangweiguang.xyz/images/jfmx.jpg)
 
 ### No2 敷衍的么小
