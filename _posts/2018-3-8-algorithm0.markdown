@@ -30,8 +30,10 @@ img: http://wangweiguang.xyz/images/algorithm.jpg
 # 算法复杂度分析
 
 ## 时间复杂度
-> 算法时间的度量\
+> 算法时间的度量
+>
 > 一个用高级语言编写的程序所耗费的时间一般取决于：
+>
 > 1. 算法设计
 > 2. 问题规模
 > 3. 所使用高级语言
@@ -46,7 +48,7 @@ img: http://wangweiguang.xyz/images/algorithm.jpg
 
 例：
 
-```
+```c
 for (i=1;i<=n;i++)       // 频度 n+1
     for (j=1;j<=n;j++)   // 频度 n*(n+1)
     {                    
@@ -56,9 +58,8 @@ for (i=1;i<=n;i++)       // 频度 n+1
     }
 ```
 该算法语句频度之和
-```math
-f(n)=2n^3+3n^2+2n+1
-```
+
+![image](http://wangweiguang.xyz/images/a1.jpg)
 
 ### 2. 时间复杂度
 > 对于比较简单的算法可以直接计算出所有语句的频度，但对于稍微复杂算法，的可以选择一个基本语句，以此语句的频度，作为算法运行时间的衡量准则。
@@ -67,10 +68,7 @@ f(n)=2n^3+3n^2+2n+1
 * **大O符号**：一般情况下，算法中基本操作重复执行的次数是问题规模n的某个函数，用T(n)表示，若有某个辅助函数f(n),如果存在正常数c和n0使得当N≤n0时T(N)≥cf(N),则记为T(N)=O(f(N))。
   即
 
-```math
-
- \lim_{n\rightarrow\infty}\frac{T(n)}{f(n)}=M \; =: \; T(n)=O(f(n))
-```
+![image](http://wangweiguang.xyz/images/a2.jpg)
 
 > 大O符号是一种算法复杂度的相对表示方式(“O”是Oder的首字母，表示“阶”或者“数量级”)。**大O记号的思想在于简化分析过程**，比如二次多项式我们都可以看作是O(n^2)，因为低次项和二次项系数随着n的增长会变得无足轻重。
 
@@ -85,19 +83,13 @@ f(n)=2n^3+3n^2+2n+1
 
 * 一些规则
 
-```math
- T(n,m) = T_1(n) + T_2(n) = O (max ( f(n), g(m) )  
- 
- T(n,m) = T_1(n)*T_2(m) = O (f(n)*g(m))
+![image](http://wangweiguang.xyz/images/a3.jpg)
 
-f(x)=a_mn^m+a_{m-1}+a^{m-1}+...+a_1n+a_0  \Rightarrow T(n)=O(n^m)
-```
-\
 **常见非递归算法的时间复杂度举例**
 
 * 常量阶T(n)=O(1)
 
-```
+```c
 for( i=0; i<10000; i++){
     x++;
     s=0;   // 算法的执行时间不随问题规模n增长而增长
@@ -107,7 +99,7 @@ for( i=0; i<10000; i++){
 * 对数阶T(n)=O(logn)
 
 
-```
+```c
 for( i=1; i<=n; i=i*2){
     x++；
     s=0
@@ -117,7 +109,7 @@ for( i=1; i<=n; i=i*2){
 * 线性阶T(n)=O(n)
 
 
-```
+```c
 for( i=0; i<0; i++){
     x++；
     s=0
@@ -127,7 +119,7 @@ for( i=0; i<0; i++){
 * 立方阶T(n)=O(n^3)
 
 
-```
+```c
 for( i=1; i<=n; i++ )
     for( j=1; j<=n; j++)
         for( k=1; k<=j; k++)
@@ -137,24 +129,22 @@ for( i=1; i<=n; i++ )
 ```
 
 计算
-```math
-
-\sum_{i=1}^n\sum_{j=1}^i\sum_{k=1}^j1=\sum_{i=1}^n\sum_{j=1}^ij=\sum_{i=1}^n\dfrac{i(i+1)}{2}=\dfrac12\lgroup\dfrac{n(n+1)(2n+1)}6+\dfrac{n(n+1)}2\rgroup
-
-\Rightarrow T(n)=O(n^3)
-```
+![image](http://wangweiguang.xyz/images/a3.jpg)
 
 
 
-> 其他常用函数阶：\
-> ![image](E:\YoudaoImage\EDBF0832E0714FDF8BC5766BCB57BF2C.jpg)\
+> 其他常用函数阶：
+> 
+> ![image](http://wangweiguang.xyz/images/a5.jpg)
+> 
 > 一般来说，指数阶与组合阶的复杂度效率是无法忍受的，复杂度为c 、 log2n 、n 、 n*log2n,那么这个算法时间效率比较高，出现更多的是多项式时间的复杂度。
 
 ### 4. 最好最坏和平均时间复杂度
 > 通常只讨论算法在最坏的时候的时间复杂度，及分析算法执行时间的上界。
 
 ## 空间复杂度
-> 定义：S(n) = O(f(n))\
+> 定义：S(n) = O(f(n))
+> 
 > 表示表示随着问题规模n的增大，算法运行所需的增长率与g(n)的增长时间相同。
 > 算法要占据的空间包括
 > 1. 算法本身要占有的空间，指令，常数，变量以及输入要处理的数据等
@@ -162,7 +152,7 @@ for( i=1; i<=n; i++ )
 
 例：逆序数组中的元素
 
-```
+```c
 for( i=0; i<n/2; i++)
 {
     t=a[i];
@@ -172,7 +162,7 @@ for( i=0; i<n/2; i++)
 ```
 S(n)=O(1)
 
-```
+```c
 for(i=0, j=n-1; i<n; i++, j++)
     b[j]=a[i];
 for(i=0; i<n; i++)
