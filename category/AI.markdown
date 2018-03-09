@@ -7,7 +7,8 @@ tags:
 img: /images/ai.jpg
 ---
 
-[TOC]
+* 
+{:toc}
 
 ## 知识
 
@@ -36,9 +37,10 @@ img: /images/ai.jpg
 * [TensorFlow的使用](http://wangweiguang.xyz/ai/2018/02/04/how-to-use-tensorflow-for-classification.html)
 * [3 情感分析初探](http://wangweiguang.xyz/ai/2018/02/05/how-to-do-sentiment-analysis.html)
 * [词向量方法分析《权利的游戏》](http://wangweiguang.xyz/ai/2018/02/17/how-to-make-word-vectors-from-game-of-thrones.html)
-* 4 [神经网络中的数学](http://wangweiguang.xyz/ai/2018/02/18/how-to-do-mathematics-easily.html)
+* [4 神经网络中的数学](http://wangweiguang.xyz/ai/2018/02/18/how-to-do-mathematics-easily.html)
 * 地震级数预测
-* 8 [CNN实现艺术风格转移](http://wangweiguang.xyz/ai/2018/02/22/how-to-generate-art.html)
+* [8 CNN实现艺术风格转移](http://wangweiguang.xyz/ai/2018/02/22/how-to-generate-art.html)
+* [11 如何做文章摘要](http://wangweiguang.xyz/ai/2018/03/07/how-to-make-a-text-summarizer.html)
 
 ### 数据挖掘
 
