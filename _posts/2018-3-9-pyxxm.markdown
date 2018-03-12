@@ -1,0 +1,328 @@
+---
+layout: post
+title: Python小项目：小游戏和计算器
+date: 2018-03-09 12:08:19 +0800
+categories: CS
+tags: Python 
+img: http://wangweiguang.xyz/images/python.png
+---
+
+
+
+* 
+{:toc}
+## 打飞机小游戏（Pygame）
+
+参考资料：[https://www.cnblogs.com/alex3714/p/7966656.html](https://www.cnblogs.com/alex3714/p/7966656.html)
+
+游戏效果：
+![image](http://wangweiguang.xyz/images/dfj.jpg)
+
+### 项目结构
+```python
+"""
+PlayPlane/
+|-- bin/
+|   |-- __init__.py
+|   |-- main.py         程序运行主体程序
+|-- config/
+|   |-- __init__.py
+|   |-- settings.py     程序配置(例如: 游戏背景音乐的加载等)
+|-- material            程序素材放置(打飞机游戏素材放置)
+|   |-- font            字体素材
+|   |-- images          图像素材
+|   |-- sound           声音素材
+|-- src/                程序主体模块存放
+|   |-- __init__.py
+|   |-- bullet.py       我方飞机发射子弹实现代码存放
+|   |-- enemy.py        敌方飞机实现代码存放
+|   |-- plane.py        我方飞机实现代码存放
+|   |-- supply.py       炸弹和丹药补给实现代码存放
+|-- start.py           游戏启动文件
+|-- README.md          
+"""
+```
+
+### 程序配置
+> （config/settings.py）这里主要是完成资源的导入和游戏初始化的任务。
+```python
+# 略
+```
+### 我方飞机类
+> 创建飞机
+> 在pygame中, 所有可移动的对象均叫可看作一个精灵(sprite)
+> 该类并实现了碰撞方法 spritecollide
+>
+> 我方飞机和敌方飞机指定掩膜属性以及生存状态标志位 添加 self.mask 属性(可以实现更精准的碰撞效果)
+
+```python
+class OurPlane(pygame.sprite.Sprite):
+
+    def __init__(self, bg_size):
+        super(OurPlane, self).__init__()
+        # 确定我方飞机背景图(有俩张，可以让它们不停的切换，形成动态效果)
+        self.image_one = pygame.image.load(os.path.join(BASE_DIR, "material/image/hero1.png"))
+        self.image_two = pygame.image.load(os.path.join(BASE_DIR, "material/image/hero2.png"))
+        # 获取我方飞机的位置
+        self.rect = self.image_one.get_rect()
+        # 本地化背景图片的尺寸
+        self.width, self.height = bg_size[0], bg_size[1]
+        # 获取飞机图像的掩膜用以更加精确的碰撞检测
+        self.mask = pygame.mask.from_surface(self.image_one)
+        # 定义飞机初始化位置，底部预留60像素
+        self.rect.left, self.rect.top = (self.width - self.rect.width) // 2, (self.height - self.rect.height - 60)
+        # 设置飞机移动速度
+        self.speed = 10
+        # 设置飞机存活状态(True为存活, False为死亡)
+        self.active = True
+		#无敌状态 用于飞机重生保护
+        self.invincible = False 
+		# 加载飞机损毁图片
+        self.destroy_images = []
+        self.destroy_images.extend(
+            [
+                pygame.image.load(os.path.join(BASE_DIR, "material/image/hero_blowup_n1.png")),
+                pygame.image.load(os.path.join(BASE_DIR, "material/image/hero_blowup_n2.png")),
+                pygame.image.load(os.path.join(BASE_DIR, "material/image/hero_blowup_n3.png")),
+                pygame.image.load(os.path.join(BASE_DIR, "material/image/hero_blowup_n4.png")),
+            ]
+        )
+
+    def move_up(self):
+        """
+        飞机向上移动的操作函数，其余移动函数方法类似
+        """
+        if self.rect.top > 0:  # 如果飞机尚未移动出背景区域
+            self.rect.top -= self.speed
+        else:  # 若即将移动出背景区域，则及时纠正为背景边缘位置
+            self.rect.top = 0
+
+    def move_down(self):
+        """
+        飞机向下移动
+        """
+        if self.rect.bottom < self.height - 60:
+            self.rect.top += self.speed
+        else:
+            self.rect.bottom = self.height - 60
+
+    def move_left(self):
+        """
+        飞机向左移动
+        """
+        if self.rect.left > 0:
+            self.rect.left -= self.speed
+        else:
+            self.rect.left = 0
+
+    def move_right(self):
+        """
+        飞机向右移动
+        """
+        if self.rect.right < self.width:
+            self.rect.right += self.speed
+        else:
+            self.rect.right = self.width
+
+    def reset(self):
+        # 初始化飞机(飞机挂了, 初始化到初始位置)
+        self.rect.left, self.rect.top = (self.width - self.rect.width) // 2, (self.height - self.rect.height - 60)
+        # 重置飞机的存活状态
+        self.active = True
+```
+
+### main()函数
+
+```python
+def main():
+    # 响应音乐
+    pygame.mixer.music.play(-1)  # loops 接收该参数, -1 表示无限循环(默认循环播放一次)
+    running = True
+    switch_image = False  # 切换飞机的标识位(使飞机具有喷气式效果)
+    delay = 60  # 对一些效果进行延迟, 效果更好一些
+
+    enemies = pygame.sprite.Group()  # 生成敌方飞机组(一种精灵组用以存储所有敌机精灵)
+    small_enemies = pygame.sprite.Group()  # 敌方小型飞机组(不同型号敌机创建不同的精灵组来存储)
+
+    add_small_enemies(small_enemies, enemies, 4)  # 生成若干敌方小型飞机
+
+    # 定义子弹, 各种敌机和我方敌机的毁坏图像索引
+    bullet_index = 0
+    e1_destroy_index = 0
+    me_destroy_index = 0
+
+    # 定义子弹实例化个数
+    bullet1 = []
+    bullet_num = 6
+    for i in range(bullet_num):
+        bullet1.append(Bullet(our_plane.rect.midtop))
+
+    while running:
+
+        # 绘制背景图
+        screen.blit(background, (0, 0))
+
+        # 微信的飞机貌似是喷气式的, 那么这个就涉及到一个帧数的问题
+        clock = pygame.time.Clock()
+        clock.tick(60)
+
+        # 绘制我方飞机的两种不同的形式
+        if not delay % 3:
+            switch_image = not switch_image
+
+        for each in small_enemies:
+            if each.active:
+                # 随机循环输出小飞机敌机
+                for e in small_enemies:
+                    e.move()
+                    screen.blit(e.image, e.rect)
+            else:
+                if e1_destroy_index == 0:
+                    enemy1_down_sound.play()
+                screen.blit(each.destroy_images[e1_destroy_index], each.rect)
+                e1_destroy_index = (e1_destroy_index + 1) % 4
+                if e1_destroy_index == 0:
+                    each.reset()
+
+        # 当我方飞机存活状态, 正常展示
+        if our_plane.active:
+            if switch_image:
+                screen.blit(our_plane.image_one, our_plane.rect)
+            else:
+                screen.blit(our_plane.image_two, our_plane.rect)
+
+            # 飞机存活的状态下才可以发射子弹
+            if not (delay % 10):  # 每十帧发射一颗移动的子弹
+                bullet_sound.play()
+                bullets = bullet1
+                bullets[bullet_index].reset(our_plane.rect.midtop)
+                bullet_index = (bullet_index + 1) % bullet_num
+
+            for b in bullets:
+                if b.active:  # 只有激活的子弹才可能击中敌机
+                    b.move()
+                    screen.blit(b.image, b.rect)
+                    enemies_hit = pygame.sprite.spritecollide(b, enemies, False, pygame.sprite.collide_mask)
+                    if enemies_hit:  # 如果子弹击中飞机
+                        b.active = False  # 子弹损毁
+                        for e in enemies_hit:
+                            e.active = False  # 小型敌机损毁
+
+        # 毁坏状态绘制爆炸的场面
+        else:
+            if not (delay % 3):
+                screen.blit(our_plane.destroy_images[me_destroy_index], our_plane.rect)
+                me_destroy_index = (me_destroy_index + 1) % 4
+                if me_destroy_index == 0:
+                    me_down_sound.play()
+                    our_plane.reset()
+
+        # 调用 pygame 实现的碰撞方法 spritecollide (我方飞机如果和敌机碰撞, 更改飞机的存活属性)
+        enemies_down = pygame.sprite.spritecollide(our_plane, enemies, False, pygame.sprite.collide_mask)
+        if enemies_down:
+            our_plane.active = False
+            for row in enemies:
+                row.active = False
+
+        # 响应用户的操作
+        for event in pygame.event.get():
+            if event.type == 12:  # 如果用户按下屏幕上的关闭按钮，触发QUIT事件，程序退出
+                pygame.quit()
+                sys.exit()
+
+        if delay == 0:
+            delay = 60
+        delay -= 1
+
+        # 获得用户所有的键盘输入序列(如果用户通过键盘发出“向上”的指令,其他类似)
+        key_pressed = pygame.key.get_pressed()
+        if key_pressed[K_w] or key_pressed[K_UP]:
+            our_plane.move_up()
+        if key_pressed[K_s] or key_pressed[K_DOWN]:
+            our_plane.move_down()
+        if key_pressed[K_a] or key_pressed[K_LEFT]:
+            our_plane.move_left()
+        if key_pressed[K_d] or key_pressed[K_RIGHT]:
+            our_plane.move_right()
+
+        # 绘制图像并输出到屏幕上面
+        pygame.display.flip()
+```
+
+## 简易计算器（Tkinter）
+
+参考资料：[http://blog.csdn.net/hewei0241/article/details/31370487](http://blog.csdn.net/hewei0241/article/details/31370487)
+
+
+
+![image](http://wangweiguang.xyz/images/jsq.jpg)
+
+```python
+
+from tkinter import *
+
+
+# 创建横条型框架
+def frame(root, side):
+    w = Frame(root)
+    w.pack(side=side, expand=YES, fill=BOTH)
+    return w
+
+
+# 创建按钮
+def button(root, side, text, command=None):
+    w = Button(root, text=text, command=command)
+    w.pack(side=side, expand=YES, fill=BOTH)
+    return w
+
+
+# 继承了Frame类，初始化程序界面的布局
+class Calculator(Frame):
+    def __init__(self):
+
+        Frame.__init__(self)
+
+        self.pack(expand=YES, fill=BOTH)
+        self.master.title('Simple Calculater')
+
+        display = StringVar()
+        # 添加输入框
+        Entry(self, relief=SUNKEN,
+              textvariable=display).pack(side=TOP, expand=YES,
+                                         fill=BOTH)
+        # 添加横条型框架以及里面的按钮
+        for key in ('123', '456', '789', '-0.'):
+            keyF = frame(self, TOP)
+            for char in key:
+                button(keyF, LEFT, char, lambda w=display, c=char: w.set(w.get() + c))
+                # 添加操作符按钮
+        opsF = frame(self, TOP)
+        for char in '+-*/=':
+            if char == '=':
+                btn = button(opsF, LEFT, char)
+                btn.bind('<ButtonRelease - 1>', lambda e, s=self, w=display: s.calc(w), '+')
+
+            else:
+                btn = button(opsF, LEFT, char, lambda w=display, s='%s' % char: w.set(w.get() + s))
+                # 添加清除按钮
+        clearF = frame(self, BOTTOM)
+        button(clearF, LEFT, 'clear', lambda w=display: w.set(''))
+
+        # 调用eval函数计算表达式的值
+
+    def calc(self, display):
+        try:
+            display.set(eval(display.get()))
+        except:
+            display.set("ERROR")
+            # 程序的入口
+
+
+if __name__ == '__main__':
+    print('ok')
+    Calculator().mainloop()
+```
+
+
+## 总结
+最近主要参考一些github的python小项目的代码，自己也操练一下，作为对python基础语法的练习，并且学习一些常用的库。小游戏是用python的游戏开发库，pygame实现的，而简易计算器是用GUI库，tkinter实现的。
