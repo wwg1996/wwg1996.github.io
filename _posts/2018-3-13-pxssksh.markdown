@@ -1,0 +1,111 @@
+---
+layout: post
+title: 排序算法可视化网站大全
+date: 2018-03-13 16:09:12 +0800
+categories: CS
+tags: 算法 
+img: http://wangweiguang.xyz/images/sort3.jpg
+---
+
+* 
+{:toc}
+
+## 首荐：VisuAlgo
+> 可视化网站首先推荐VisuAlgo，上面的可视化比较全了，做的也很漂亮。排序算法用条形图表示数值，数据可以自定义，允许用户查看正在进行的所有操作。
+
+链接：[https://visualgo.net/sorting](https://visualgo.net/sorting)
+
+![image](http://wangweiguang.xyz/images/sort5.gif)
+
+## 各算法对比
+> 这个网页综合比较各种常见的排序算法在不同情况下的排序效率。
+
+链接：[https://www.toptal.com/developers/sorting-algorithms/](https://www.toptal.com/developers/sorting-algorithms/) 
+
+![image](http://wangweiguang.xyz/images/sort6.gif)
+
+## 最炫酷的
+> 这个排序可视化网站做的相当有设计感，艺术和算法的结合。
+
+链接：[http://sorting.at/](http://sorting.at/)
+
+![image](http://wangweiguang.xyz/images/sort10.gif)
+
+![image](http://wangweiguang.xyz/images/sort3.jpg)
+
+
+## 比较聪明的
+> 有一些排序算法其实还是比较难表现的，这个网站用了一些聪明的手段了展现排序的思路，不限于只用条形图，比如下面的快排，桶排序和计数排序。
+
+链接：[http://www.cs.usfca.edu/~galles/visualization/Algorithms.html](http://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+
+![image](http://wangweiguang.xyz/images/sort7.gif)
+
+![image](http://wangweiguang.xyz/images/sort8.gif)
+
+![image](http://wangweiguang.xyz/images/sort9.gif)
+
+## 最古老的
+> 这个网站很老了，但是块内容却是非常的全，不仅仅有排序算法。里面的java小程序需要安装java环境，因为比较老了，需要配置java，在安全站点列表中加入该网址才可以运行。（最好用IE）
+
+链接：[http://people.cs.pitt.edu/~kirk/cs1501/animations/SortApplets.html](http://people.cs.pitt.edu/~kirk/cs1501/animations/SortApplets.html)
+
+> **Sorting Applet 1 **：这个小程序可以通过代码对自定义的数列进行排序，允许用户查看正在进行的所有操作。
+
+![image](http://wangweiguang.xyz/images/sort1.gif)
+
+> **Sorting Applet 2 **：这个小程序使用条形图形表示大小，并包括一个计数器，用于移动的数量和做比较的次数。
+
+![image](http://wangweiguang.xyz/images/sort2.gif)
+
+> **Sorting Applet 3 **：这个小程序也使用条形图表示值，并使用一些动画来显示执行排序所涉及的步骤。这个小应用程序还可以在底部打印信息，以解释对象被移动的原因。小应用程序也有几种不同的交互模式，用来比较不同排序的效率。
+
+![image](http://wangweiguang.xyz/images/sort3.gif)
+
+> **Sorting Applet 5 **：这个小应用程序显示了从所有被拉入一条线的点来表示排序。
+
+![image](http://wangweiguang.xyz/images/sort4.gif)
+
+## 开源的Javascript程序
+> 这个前面的大同小异，但是在这个网站（jsdo.it）中你可以查看这个排序可视化程序的javascript代码！
+
+链接：[http://jsdo.it/norahiko/oxIy/fullscreen](http://jsdo.it/norahiko/oxIy/fullscreen)
+
+![image](http://wangweiguang.xyz/images/sort11.gif)
+
+## 我的方法（伪）：折线可视化
+> 想当年写数据结构编程练习的时候，无意间发现这种可视化方法，很是激动，便用c语言和画图板一点点的把所有常见排序算法可视化出来了。因为这种图上可以纵观整个排序过程，其中很容易看出来某些算法中的有些交换是多余的，直接的从这个角度看出了各种算法的排序效率。如下图：
+
+![image](http://wangweiguang.xyz/images/sort5.jpg)
+
+结局：虽然感觉是发现了新大陆，但是我还是很虚心的在网上寻找有没有人用过这种方法，终于，功夫不负有心人，我找到了下面的这个python脚本。😂
+
+## 开源Python脚本
+> 这种可视化方法用折线表示，Python脚本可以在![这里](https://coolshell.cn/articles/536.html)下载。
+
+![image](http://wangweiguang.xyz/images/bubble.jpg)
+
+## 舞蹈可视化
+> 外国人真会玩系列
+
+![image](http://wangweiguang.xyz/images/sort4.jpg)
+
+[插入排序](http://v.youku.com/v_show/id_XMjU4NTY5MzEy.html)
+
+[冒泡排序](http://v.youku.com/v_show/id_XMjU4MTg3MTU2.html)
+
+[希尔排序](http://v.youku.com/v_show/id_XMjU4NTcwMDIw.html)
+
+[选择排序](http://v.youku.com/v_show/id_XMjU4NTY5NTcy.html)
+
+[快速排序](http://v.youku.com/v_show/id_XMzMyODk4NTQ4.html)
+
+[归并排序](http://v.youku.com/v_show/id_XMzMyODk5Njg4.html)
+
+## 内存状态可视化
+> 大神的可视化作品作为压轴
+> “昨天我突发奇想，写了几段Mathematica代码，生成了各种排序算法的内存变化图。图中每一个新的横行都表示数组的一次更新，数字大小用颜色来表示。你可以直观地看到这些算法是如何把乱序数组一点一点变为有序的。效果还是很令人满意的，不少算法的内存轨迹都相当美观，相当有艺术性。”————Matrix67
+
+原网址：[http://www.matrix67.com/blog/archives/1763](http://www.matrix67.com/blog/archives/1763)
+
+![image](http://wangweiguang.xyz/images/sort2.jpg)
