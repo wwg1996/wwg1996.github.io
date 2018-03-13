@@ -16,7 +16,7 @@ img: http://wangweiguang.xyz/images/python.png
 参考资料：[https://www.cnblogs.com/alex3714/p/7966656.html](https://www.cnblogs.com/alex3714/p/7966656.html)
 
 游戏效果：
-![image](http://wangweiguang.xyz/images/dfj.jpg)
+![image](http://wangweiguang.xyz/images/dfj.gif)
 
 ### 项目结构
 ```python
@@ -326,5 +326,3 @@ if __name__ == '__main__':
 
 ## 总结
 最近主要参考一些github的python小项目的代码，自己也操练一下，作为对python基础语法的练习，并且学习一些常用的库。小游戏是用python的游戏开发库，pygame实现的，而简易计算器是用GUI库，tkinter实现的。
-
-![image](http://wangweiguang.xyz/images/sort1.gif)
