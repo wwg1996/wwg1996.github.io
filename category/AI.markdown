@@ -48,7 +48,8 @@ img: /images/ai.jpg
 
 ### 自然语言处理
 
-* [Chatbot初探0 qq聊天机器人 上](http://wangweiguang.xyz/ai/2018/03/03/chatbot0.html)
+* [Chatbot初探1 qq聊天机器人 上](http://wangweiguang.xyz/ai/2018/03/03/chatbot1.html)
+* [Chatbot初探2 qq聊天机器人 下](http://wangweiguang.xyz/ai/2018/03/15/chatbot2.html)
 * [Word2Vector 分析《三体》](http://wangweiguang.xyz/ai/2018/02/18/santi2vec.html)
 
 ### 计算机艺术
