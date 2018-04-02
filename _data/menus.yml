@@ -10,8 +10,8 @@
 - name: 关于
   url: /pages/about.html
   icon: "&#xe7fd;"
- - name: PKMS
-  url: /IT/index.html
+- name: PKMS
+  url: /mindmap/index.html
   icon: "&#xe7fd;"
 - name: navSearch
   switch: true
