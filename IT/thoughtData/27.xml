@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="27" name="Help Desk Institute" icon="" color="" hint="Technical Service and Support" pbv="1607247716849502"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+
+  <Tht id="78" name="Business Processes and Best Practices" icon="" color="" hint="" /> 
+
+  <Tht id="36" name="Helpdesk and User Support" icon="" color="" hint="" /> 
+
+
+  <Link idA="78" idB="27" type="PARENT" /> 
+  <Link idA="27" idB="36" type="JUMP" /> 
+
+  <Content href="thoughtData/27.html" />
+</TheBrainSimpleXML>

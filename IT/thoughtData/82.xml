@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="82" name="Known Issues" icon="" color="#660000" hint="Issue" pbv="367342904825023"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="70" name="Issue C" icon="" color="#660000" hint="Issue" /> 
+
+  <Tht id="95" name="Reoccurring Issues" icon="" color="#660000" hint="Issue" /> 
+
+
+  <Tht id="80" name="Top Solutions" icon="" color="" hint="" /> 
+
+  <Link idA="82" idB="70" type="CHILD" /> 
+  <Link idA="95" idB="80" type="CHILD" /> 
+  <Link idA="95" idB="82" type="PARENT" /> 
+
+  <Content href="thoughtData/82.html" />
+</TheBrainSimpleXML>

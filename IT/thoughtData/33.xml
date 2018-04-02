@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="33" name="IT Implementation A" icon="" color="" hint="" pbv="833796312667027"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="86" name="1. Technology Planning" icon="" color="" hint="" /> 
+  <Tht id="87" name="2. Requirements Gathering" icon="" color="" hint="" /> 
+  <Tht id="84" name="3. Development and Feedback" icon="" color="" hint="" /> 
+  <Tht id="85" name="4. Production and Rollout" icon="" color="" hint="" /> 
+
+  <Tht id="90" name="Active Projects" icon="" color="" hint="Project" /> 
+
+
+  <Tht id="110" name="IT Implementation B" icon="" color="" hint="" /> 
+  <Tht id="103" name="IT Implementation C" icon="" color="" hint="" /> 
+
+  <Link idA="33" idB="84" type="CHILD" /> 
+  <Link idA="33" idB="87" type="CHILD" /> 
+  <Link idA="33" idB="86" type="CHILD" /> 
+  <Link idA="33" idB="85" type="CHILD" /> 
+  <Link idA="90" idB="110" type="CHILD" /> 
+  <Link idA="90" idB="103" type="CHILD" /> 
+  <Link idA="90" idB="33" type="PARENT" /> 
+
+  <Content href="thoughtData/33.html" />
+</TheBrainSimpleXML>

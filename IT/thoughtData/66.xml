@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="66" name="Development" icon="" color="#006600" hint="User Community" pbv="2146443514425373"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+
+  <Tht id="91" name="Key User Department and Clients" icon="" color="" hint="" /> 
+
+
+  <Tht id="65" name="Customers" icon="" color="#006600" hint="User Community" /> 
+  <Tht id="68" name="Human Resources" icon="" color="#006600" hint="User Community" /> 
+  <Tht id="83" name="IT Support Center" icon="" color="#006600" hint="User Community" /> 
+  <Tht id="58" name="Marketing Department" icon="" color="#006600" hint="User Community" /> 
+  <Tht id="56" name="Sales Representatives" icon="" color="#006600" hint="User Community" /> 
+
+  <Link idA="91" idB="58" type="CHILD" /> 
+  <Link idA="91" idB="56" type="CHILD" /> 
+  <Link idA="91" idB="65" type="CHILD" /> 
+  <Link idA="91" idB="68" type="CHILD" /> 
+  <Link idA="91" idB="83" type="CHILD" /> 
+  <Link idA="91" idB="66" type="PARENT" /> 
+
+  <Content href="thoughtData/66.html" />
+</TheBrainSimpleXML>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="94" name="IT Team" icon="" color="" hint="" pbv="209605931648"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="12" name="Database Programmers" icon="" color="" hint="" /> 
+  <Tht id="10" name="Help Desk Team" icon="" color="" hint="" /> 
+  <Tht id="81" name="Information Architecture Team" icon="" color="" hint="" /> 
+  <Tht id="77" name="IT Consultants" icon="" color="" hint="Consultant" /> 
+  <Tht id="64" name="IT Directors" icon="" color="#3366ff" hint="Director" /> 
+  <Tht id="62" name="IT Managers" icon="" color="#007300" hint="Manager" /> 
+  <Tht id="16" name="Project Managers" icon="" color="#007300" hint="Manager" /> 
+  <Tht id="11" name="Web Developers" icon="" color="" hint="" /> 
+
+
+  <Tht id="92" name="IT Management" icon="" color="" hint="" /> 
+
+
+  <Link idA="94" idB="10" type="CHILD" /> 
+  <Link idA="94" idB="11" type="CHILD" /> 
+  <Link idA="94" idB="64" type="CHILD" /> 
+  <Link idA="94" idB="12" type="CHILD" /> 
+  <Link idA="94" idB="62" type="CHILD" /> 
+  <Link idA="94" idB="16" type="CHILD" /> 
+  <Link idA="94" idB="81" type="CHILD" /> 
+  <Link idA="94" idB="77" type="CHILD" /> 
+  <Link idA="94" idB="92" type="JUMP" /> 
+
+  <Content href="thoughtData/94.html" />
+</TheBrainSimpleXML>

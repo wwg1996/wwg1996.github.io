@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="96" name="InfoWorld" icon="" color="" hint="Business technology, IT news, product reviews and enterprise IT strategies" pbv="472115575740754"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+
+  <Tht id="79" name="IT Research Resources" icon="" color="#cc0000" hint="Research" /> 
+
+
+  <Tht id="74" name="CIO.com" icon="" color="" hint="" /> 
+  <Tht id="93" name="CNET" icon="" color="" hint="Product reviews and prices, software downloads, and tech news" /> 
+  <Tht id="106" name="Computerworld" icon="" color="" hint="IT news, features, blogs, tech reviews, career advice" /> 
+  <Tht id="75" name="InformationWeek" icon="" color="" hint="Business Technology News, Reviews and Blogs" /> 
+  <Tht id="108" name="Network World" icon="" color="" hint="" /> 
+  <Tht id="112" name="TechHive" icon="" color="" hint="News, tips and reviews about phones, tablets, apps, and all the other tech in your life" /> 
+  <Tht id="99" name="Wired" icon="" color="" hint="" /> 
+
+  <Link idA="79" idB="99" type="CHILD" /> 
+  <Link idA="79" idB="93" type="CHILD" /> 
+  <Link idA="79" idB="74" type="CHILD" /> 
+  <Link idA="79" idB="112" type="CHILD" /> 
+  <Link idA="79" idB="106" type="CHILD" /> 
+  <Link idA="79" idB="108" type="CHILD" /> 
+  <Link idA="79" idB="75" type="CHILD" /> 
+  <Link idA="79" idB="96" type="PARENT" /> 
+
+  <Content href="thoughtData/96.html" />
+</TheBrainSimpleXML>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="90" name="Active Projects" icon="" color="" hint="Project" pbv="218404433497655"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="33" name="IT Implementation A" icon="" color="" hint="" /> 
+  <Tht id="110" name="IT Implementation B" icon="" color="" hint="" /> 
+  <Tht id="103" name="IT Implementation C" icon="" color="" hint="" /> 
+
+  <Tht id="92" name="IT Management" icon="" color="" hint="" /> 
+
+
+  <Tht id="89" name="Business Strategies and IT Goals" icon="" color="#993300" hint="Goal" /> 
+  <Tht id="88" name="Current IT Assets" icon="" color="#006600" hint="IT Asset" /> 
+  <Tht id="36" name="Helpdesk and User Support" icon="" color="" hint="" /> 
+  <Tht id="91" name="Key User Department and Clients" icon="" color="" hint="" /> 
+
+  <Link idA="90" idB="33" type="CHILD" /> 
+  <Link idA="90" idB="110" type="CHILD" /> 
+  <Link idA="90" idB="103" type="CHILD" /> 
+  <Link idA="92" idB="89" type="CHILD" /> 
+  <Link idA="92" idB="88" type="CHILD" /> 
+  <Link idA="92" idB="91" type="CHILD" /> 
+  <Link idA="92" idB="36" type="CHILD" /> 
+  <Link idA="92" idB="90" type="PARENT" /> 
+
+  <Content href="thoughtData/90.html" />
+</TheBrainSimpleXML>

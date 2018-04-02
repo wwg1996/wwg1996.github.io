@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="43" name="Application" icon="" color="#006600" hint="Application" pbv="2278478661804636"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="59" name="Act" icon="" color="#006600" hint="Application" /> 
+  <Tht id="45" name="Applications" icon="" color="#006600" hint="Application" /> 
+  <Tht id="41" name="Communication Apps" icon="" color="#006600" hint="Application" /> 
+  <Tht id="100" name="CRM Apps" icon="" color="#006600" hint="Application" /> 
+  <Tht id="38" name="Engineering Apps" icon="" color="#006600" hint="Application" /> 
+  <Tht id="40" name="Finance Apps" icon="" color="#006600" hint="Application" /> 
+  <Tht id="57" name="Reporting and Performance" icon="" color="#006600" hint="Application" /> 
+
+
+
+
+  <Link idA="43" idB="57" type="CHILD" /> 
+  <Link idA="43" idB="45" type="CHILD" /> 
+  <Link idA="43" idB="41" type="CHILD" /> 
+  <Link idA="43" idB="100" type="CHILD" /> 
+  <Link idA="43" idB="38" type="CHILD" /> 
+  <Link idA="43" idB="40" type="CHILD" /> 
+  <Link idA="43" idB="59" type="CHILD" /> 
+
+  <Content href="thoughtData/43.html" />
+</TheBrainSimpleXML>

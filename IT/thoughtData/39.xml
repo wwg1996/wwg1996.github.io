@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="39" name="Server Location" icon="" color="#006600" hint="Server Location" pbv="2425145854909701"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="48" name="Chicago" icon="" color="#006600" hint="Server Location" /> 
+  <Tht id="61" name="Dubai" icon="" color="#006600" hint="Server Location" /> 
+  <Tht id="60" name="Hong Kong" icon="" color="#006600" hint="Server Location" /> 
+  <Tht id="53" name="London" icon="" color="#006600" hint="Server Location" /> 
+  <Tht id="51" name="Los Angeles" icon="" color="#006600" hint="Server Location" /> 
+  <Tht id="46" name="San Diego" icon="" color="#006600" hint="Server Location" /> 
+  <Tht id="22" name="Servers by Location" icon="" color="#006600" hint="Server Location" /> 
+
+
+
+
+  <Link idA="39" idB="61" type="CHILD" /> 
+  <Link idA="39" idB="51" type="CHILD" /> 
+  <Link idA="39" idB="46" type="CHILD" /> 
+  <Link idA="39" idB="53" type="CHILD" /> 
+  <Link idA="39" idB="60" type="CHILD" /> 
+  <Link idA="39" idB="48" type="CHILD" /> 
+  <Link idA="39" idB="22" type="CHILD" /> 
+
+  <Content href="thoughtData/39.html" />
+</TheBrainSimpleXML>

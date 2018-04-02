@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="91" name="Key User Department and Clients" icon="" color="" hint="" pbv="3130853022756860"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="65" name="Customers" icon="" color="#006600" hint="User Community" /> 
+  <Tht id="66" name="Development" icon="" color="#006600" hint="User Community" /> 
+  <Tht id="68" name="Human Resources" icon="" color="#006600" hint="User Community" /> 
+  <Tht id="83" name="IT Support Center" icon="" color="#006600" hint="User Community" /> 
+  <Tht id="58" name="Marketing Department" icon="" color="#006600" hint="User Community" /> 
+  <Tht id="56" name="Sales Representatives" icon="" color="#006600" hint="User Community" /> 
+
+  <Tht id="92" name="IT Management" icon="" color="" hint="" /> 
+
+
+  <Tht id="90" name="Active Projects" icon="" color="" hint="Project" /> 
+  <Tht id="89" name="Business Strategies and IT Goals" icon="" color="#993300" hint="Goal" /> 
+  <Tht id="88" name="Current IT Assets" icon="" color="#006600" hint="IT Asset" /> 
+  <Tht id="36" name="Helpdesk and User Support" icon="" color="" hint="" /> 
+
+  <Link idA="91" idB="58" type="CHILD" /> 
+  <Link idA="91" idB="56" type="CHILD" /> 
+  <Link idA="91" idB="65" type="CHILD" /> 
+  <Link idA="91" idB="68" type="CHILD" /> 
+  <Link idA="91" idB="66" type="CHILD" /> 
+  <Link idA="91" idB="83" type="CHILD" /> 
+  <Link idA="92" idB="89" type="CHILD" /> 
+  <Link idA="92" idB="88" type="CHILD" /> 
+  <Link idA="92" idB="90" type="CHILD" /> 
+  <Link idA="92" idB="36" type="CHILD" /> 
+  <Link idA="92" idB="91" type="PARENT" /> 
+
+  <Content href="thoughtData/91.html" />
+</TheBrainSimpleXML>

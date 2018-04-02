@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="78" name="Business Processes and Best Practices" icon="" color="" hint="" pbv="1948487063477998"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="27" name="Help Desk Institute" icon="" color="" hint="Technical Service and Support" /> 
+
+  <Tht id="89" name="Business Strategies and IT Goals" icon="" color="#993300" hint="Goal" /> 
+
+
+  <Tht id="79" name="IT Research Resources" icon="" color="#cc0000" hint="Research" /> 
+
+  <Link idA="78" idB="27" type="CHILD" /> 
+  <Link idA="89" idB="79" type="CHILD" /> 
+  <Link idA="89" idB="78" type="PARENT" /> 
+
+  <Content href="thoughtData/78.html" />
+</TheBrainSimpleXML>

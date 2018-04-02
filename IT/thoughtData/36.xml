@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="36" name="Helpdesk and User Support" icon="" color="" hint="" pbv="1332224200857943"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="104" name="Desktop Support" icon="" color="#006600" hint="Support Topic" /> 
+  <Tht id="67" name="FAQ" icon="" color="" hint="" /> 
+  <Tht id="124" name="Network Support" icon="" color="#006600" hint="Support Topic" /> 
+  <Tht id="95" name="Reoccurring Issues" icon="" color="#660000" hint="Issue" /> 
+  <Tht id="122" name="Server Support" icon="" color="#006600" hint="Support Topic" /> 
+  <Tht id="73" name="Troubleshooting Processes" icon="" color="" hint="" /> 
+
+  <Tht id="92" name="IT Management" icon="" color="" hint="" /> 
+
+  <Tht id="27" name="Help Desk Institute" icon="" color="" hint="Technical Service and Support" /> 
+  <Tht id="10" name="Help Desk Team" icon="" color="" hint="" /> 
+
+  <Tht id="90" name="Active Projects" icon="" color="" hint="Project" /> 
+  <Tht id="89" name="Business Strategies and IT Goals" icon="" color="#993300" hint="Goal" /> 
+  <Tht id="88" name="Current IT Assets" icon="" color="#006600" hint="IT Asset" /> 
+  <Tht id="91" name="Key User Department and Clients" icon="" color="" hint="" /> 
+
+  <Link idA="36" idB="73" type="CHILD" /> 
+  <Link idA="36" idB="67" type="CHILD" /> 
+  <Link idA="36" idB="95" type="CHILD" /> 
+  <Link idA="36" idB="122" type="CHILD" /> 
+  <Link idA="36" idB="124" type="CHILD" /> 
+  <Link idA="36" idB="104" type="CHILD" /> 
+  <Link idA="92" idB="89" type="CHILD" /> 
+  <Link idA="92" idB="88" type="CHILD" /> 
+  <Link idA="92" idB="91" type="CHILD" /> 
+  <Link idA="92" idB="90" type="CHILD" /> 
+  <Link idA="92" idB="36" type="PARENT" /> 
+  <Link idA="36" idB="27" type="JUMP" /> 
+  <Link idA="36" idB="10" type="JUMP" /> 
+
+  <Content href="thoughtData/36.html" />
+</TheBrainSimpleXML>

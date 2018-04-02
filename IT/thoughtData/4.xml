@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="4" name="Person" icon="" color="" hint="Person" pbv="2926703030"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+
+
+
+
+
+  <Content href="thoughtData/4.html" />
+</TheBrainSimpleXML>

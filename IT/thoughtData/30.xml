@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="30" name="Software Assets" icon="" color="#006600" hint="Software" pbv="985903434805863"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+
+  <Tht id="88" name="Current IT Assets" icon="" color="#006600" hint="IT Asset" /> 
+
+
+  <Tht id="28" name="Hardware Assets" icon="" color="#000099" hint="Hardware" /> 
+  <Tht id="109" name="Network Map" icon="" color="" hint="" /> 
+
+  <Link idA="88" idB="28" type="CHILD" /> 
+  <Link idA="88" idB="109" type="CHILD" /> 
+  <Link idA="88" idB="30" type="PARENT" /> 
+
+  <Content href="thoughtData/30.html" />
+</TheBrainSimpleXML>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="13" name="AnswerBox02" icon="" color="#006600" hint="Server" pbv="1679097578838769"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+
+  <Tht id="46" name="San Diego" icon="" color="#006600" hint="Server Location" /> 
+
+
+  <Tht id="18" name="AnswerBox01" icon="" color="#006600" hint="Server" /> 
+  <Tht id="21" name="Dante" icon="" color="#006600" hint="Server" /> 
+  <Tht id="49" name="MailServe" icon="" color="#006600" hint="Server" /> 
+  <Tht id="14" name="SolutionServe" icon="" color="#006600" hint="Server" /> 
+
+  <Link idA="46" idB="14" type="CHILD" /> 
+  <Link idA="46" idB="21" type="CHILD" /> 
+  <Link idA="46" idB="49" type="CHILD" /> 
+  <Link idA="46" idB="18" type="CHILD" /> 
+  <Link idA="46" idB="13" type="PARENT" /> 
+
+  <Content href="thoughtData/13.html" />
+</TheBrainSimpleXML>

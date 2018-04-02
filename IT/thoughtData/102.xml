@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="102" name="Software" icon="" color="#006600" hint="Software" pbv="7751578102083"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="30" name="Software Assets" icon="" color="#006600" hint="Software" /> 
+
+
+
+
+  <Link idA="102" idB="30" type="CHILD" /> 
+
+  <Content href="thoughtData/102.html" />
+</TheBrainSimpleXML>

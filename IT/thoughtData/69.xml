@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="69" name="Issue B" icon="" color="#660000" hint="Issue" pbv="82710792667"
+    modificationDate="2018-3-29 &#19979;&#21320;5:13"
+    authorName="94779"
+    authorEmail="" />
+
+  <Tht id="73" name="Troubleshooting Processes" icon="" color="" hint="" /> 
+
+
+  <Tht id="72" name="Issue A" icon="" color="#660000" hint="Issue" /> 
+  <Tht id="70" name="Issue C" icon="" color="#660000" hint="Issue" /> 
+
+  <Link idA="73" idB="72" type="CHILD" /> 
+  <Link idA="73" idB="70" type="CHILD" /> 
+  <Link idA="73" idB="69" type="PARENT" /> 
+
+  <Content href="thoughtData/69.html" />
+</TheBrainSimpleXML>
