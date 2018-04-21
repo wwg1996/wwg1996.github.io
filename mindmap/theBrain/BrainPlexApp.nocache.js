@@ -1,111 +1,126 @@
 function BrainPlexApp(){
 	var L='',
-		nc='\n-',
-		sb='" for "gwt:onLoadErrorFn"',
-		qb='" for "gwt:onPropertyErrorFn"',
-		ac='"<script src=\\"',eb='"><\/script>',
-		V='#',mc=');',
-		ec='-\n',
-		oc='-><\/scr',
-		bc='.cache.js\\"><\/scr" + "ipt>"',
-		X='/',
-		Pb='0532E7729A430B2FFE0D998A63BB860A',
-		Qb='369B50B56853931E49125B30E0845A69',
-		Rb='475BCCE5E852DEE48DEAC33CBDC62066',
-		Sb='74B013E804F6D0E208E5489B1CB78E43',
-		Tb='8A3AE4DD873EC2B851D043684E13B153',
-		Zb=':',
-		kb='::',
-		cc='<scr',
-		db='<script id="',
-		nb='=',
-		W='?',
-		Ub='A6EC931DCD83986682FDC05C3041045C',
-		Vb='ADEE999A861871D8B5E828ECB917DD0F',
-		pb='Bad handler "',
 		M='BrainPlexApp',
-		ab='BrainPlexApp.nocache.js',
-		jb='BrainPlexApp::',
-		Mb='Cross-site hosted mode not yet implemented. See issue ',
-		Wb='D45D5A19CF30E336E217704300B9F402',
-		$b='DOMContentLoaded',
-		Xb='EAB903FFAE2131A8BDB46E1AD6E73022',
-		Yb='F7889479DFB9112D9CA074A9FD6F4BD5',
-		fb='SCRIPT',
-		cb='__gwt_marker_BrainPlexApp',
-		xb='android',
-		zb='androidMobile',
-		gb='base',
-		$='baseUrl',
-		P='begin',
+		N='startup',
 		O='bootstrap',
-		Ab='browser',
-		Z='clear.cache.gif',
-		mb='content',
-		tb='device.user.agent',
-		lc='document.write(',
-		U='end',
-		hc='evtGroup: "loadExternalRefs", millis:(new Date()).getTime(),',
-		jc='evtGroup: "moduleStartup", millis:(new Date()).getTime(),',
-		Jb='gecko',
-		Kb='gecko1_8',
+		P='begin',
 		Q='gwt.codesvr=',
 		R='gwt.hosted=',
 		S='gwt.hybrid',
-		rb='gwt:onLoadErrorFn',
-		ob='gwt:onPropertyErrorFn',
-		lb='gwt:property',
-		Nb='http://code.google.com/p/google-web-toolkit/issues/detail?id=2079',
-		Ib='ie6',
-		Hb='ie8',
-		Gb='ie9',
-		Y='img',
-		wb='ipad',
-		ub='iphone',
-		vb='ipod',
-		pc='ipt>',
-		dc='ipt><!-',
-		_b='loadExternalRefs',
-		hb='meta',
-		yb='mobile',
-		gc='moduleName:"BrainPlexApp", sessionId:window.__gwtStatsSessionId, subSystem:"startup",',
 		T='moduleStartup',
-		Fb='msie',
-		ib='name',
-		Cb='opera',
-		Eb='safari',
-		_='script',
-		Ob='selectingPermutation',
-		N='startup',
-		ic='type: "end"});',
-		kc='type: "moduleRequested"});',
-		bb='undefined',
-		Lb='unknown',Bb='user.agent',
-		Db='webkit',
-		fc='window.__gwtStatsEvent && window.__gwtStatsEvent({';
+		U='end',
+		V='#',
+		W='?',
+		X='/',
+		Y='img',
+		Z='clear.cache.gif',
+		$='baseUrl',
+		_='script';
+	
 	var l=window,
 		m=document,
 		n=l.__gwtStatsEvent?function(a){return l.__gwtStatsEvent(a)}:null,
-		o=l.__gwtStatsSessionId?l.__gwtStatsSessionId:null,p,q,
+		o=l.__gwtStatsSessionId?l.__gwtStatsSessionId:null,
+		p,
+		q,
 		r=L,
 		s={},
 		t=[],
 		u=[],
 		v=[],
-		w=0,x,y;
-	n&&n({
-		moduleName:M,
-		sessionId:o,
-		subSystem:N,
-		evtGroup:O,
-		millis:(new Date).getTime(),type:P
-	});
-	if(!l.__gwt_stylesLoaded){
-		l.__gwt_stylesLoaded={}
-	}
-	if(!l.__gwt_scriptsLoaded){
-		l.__gwt_scriptsLoaded={}
-	}
+		w=0,
+		x,
+		y;
+	
+	var	ab='BrainPlexApp.nocache.js',
+		bb='undefined',
+		cb='__gwt_marker_BrainPlexApp',
+		db='<script id="',
+		eb='"><\/script>',
+		fb='SCRIPT',
+		gb='base',
+		hb='meta',
+		ib='name',
+		jb='BrainPlexApp::',
+		kb='::',
+		lb='gwt:property',
+		mb='content',
+		nb='=',
+		ob='gwt:onPropertyErrorFn',
+		pb='Bad handler "',
+		qb='" for "gwt:onPropertyErrorFn"',
+		rb='gwt:onLoadErrorFn',
+		sb='" for "gwt:onLoadErrorFn"',
+		tb='device.user.agent',
+		ub='iphone',
+		vb='ipod',
+		wb='ipad',
+		xb='android',
+		yb='mobile',
+		zb='androidMobile';
+		
+	var	Ab='browser',
+		Bb='user.agent',
+		Cb='opera',
+		Db='webkit',
+		Eb='safari',
+		Fb='msie',
+		Gb='ie9',
+		Hb='ie8',
+		Ib='ie6',		
+		Jb='gecko',
+		Kb='gecko1_8',
+		Lb='unknown',
+		Mb='Cross-site hosted mode not yet implemented. See issue ',
+		Nb='http://code.google.com/p/google-web-toolkit/issues/detail?id=2079',
+		Ob='selectingPermutation',
+		Pb='0532E7729A430B2FFE0D998A63BB860A',
+		Qb='369B50B56853931E49125B30E0845A69',
+		Rb='475BCCE5E852DEE48DEAC33CBDC62066',
+		Sb='74B013E804F6D0E208E5489B1CB78E43',
+		Tb='8A3AE4DD873EC2B851D043684E13B153',
+		Ub='A6EC931DCD83986682FDC05C3041045C',
+		Vb='ADEE999A861871D8B5E828ECB917DD0F',
+		Wb='D45D5A19CF30E336E217704300B9F402',
+		Xb='EAB903FFAE2131A8BDB46E1AD6E73022',
+		Yb='F7889479DFB9112D9CA074A9FD6F4BD5',
+		Zb=':',
+		$b='DOMContentLoaded',
+		_b='loadExternalRefs';
+		
+	var	ac='"<script src=\\"',
+		bc='.cache.js\\"><\/scr" + "ipt>"',
+		cc='<scr',
+		dc='ipt><!-',
+		ec='-\n',
+		fc='window.__gwtStatsEvent && window.__gwtStatsEvent({';
+		gc='moduleName:"BrainPlexApp", sessionId:window.__gwtStatsSessionId, subSystem:"startup",',
+		hc='evtGroup: "loadExternalRefs", millis:(new Date()).getTime(),',		
+		ic='type: "end"});',
+		jc='evtGroup: "moduleStartup", millis:(new Date()).getTime(),',
+		kc='type: "moduleRequested"});',
+		lc='document.write(',
+		mc=');',
+		nc='\n-',
+		oc='-><\/scr',
+		pc='ipt>';
+		
+	// n&&n({
+		// moduleName:M,
+		// sessionId:o,
+		// subSystem:N,
+		// evtGroup:O,
+		// millis:(new Date).getTime(),
+		// type:P
+	// });
+	
+	// if(!l.__gwt_stylesLoaded){
+		// l.__gwt_stylesLoaded={}
+	// }
+	// if(!l.__gwt_scriptsLoaded){
+		// l.__gwt_scriptsLoaded={}
+	// }
+	
 	function z(){
 		var b=false;
 		try{
@@ -117,6 +132,7 @@ function BrainPlexApp(){
 		}
 		return b
 	}
+	
 	function A(){
 		if(p&&q){
 			p(x,M,r,w);
@@ -277,6 +293,7 @@ function BrainPlexApp(){
 		}
 		throw null
 	}
+	
 	u[tb]=function(){
 		var a=navigator.userAgent.toLowerCase();
 		if(a.indexOf(ub)!=-1||a.indexOf(vb)!=-1){
@@ -312,81 +329,116 @@ function BrainPlexApp(){
 		return Lb
 	};
 	t[Bb]={
-		gecko1_8:0,
-		ie6:1,
-		ie8:2,
-		ie9:3,
-		opera:4,
+		//gecko1_8:0,
+		//ie6:1,
+		//ie8:2,
+		//ie9:3,
+		//opera:4,
 		safari:5
 	};
+	
 	BrainPlexApp.onScriptLoad=function(a){
 		BrainPlexApp.onScriptLoad=null;
-		p=a;A()
+		p=a;
+		A()
 	};
-	if(z()){
-		alert(Mb+Nb);
+	// if(z()){
+		// alert(Mb+Nb);
+		// return
+	// }
+	// C();
+	B();
+	// n&&n({
+		// moduleName:M,
+		// sessionId:o,
+		// subSystem:N,
+		// evtGroup:O,
+		// millis:(new Date).getTime(),type:Ob
+	// });
+	
+	var G;
+	try{
+		//E([zb,Eb],Pb);
+		//E([Ab,Ib],Qb);
+		//E([wb,Eb],Rb);
+		//E([Ab,Gb],Sb);
+		E([Ab,Eb],Tb);
+		//E([Ab,Cb],Ub);
+		//E([Ab,Kb],Vb);
+		//E([xb,Eb],Wb);
+		//E([Ab,Hb],Xb);
+		//E([ub,Eb],Yb);
+		G=v[F(tb)][F(Bb)];
+		var H=G.indexOf(Zb);
+		if(H!=-1){
+			w=Number(G.substring(H+1));
+			G=G.substring(0,H)
+		}
+	}catch(a){
 		return
 	}
-	C();
-	B();
-	n&&n({
-		moduleName:M,
-		sessionId:o,
-		subSystem:N,
-		evtGroup:O,
-		millis:(new Date).getTime(),type:Ob
-	});
-		var G;
-		try{
-			E([zb,Eb],Pb);
-			E([Ab,Ib],Qb);
-			E([wb,Eb],Rb);
-			E([Ab,Gb],Sb);
-			E([Ab,Eb],Tb);
-			E([Ab,Cb],Ub);
-			E([Ab,Kb],Vb);
-			E([xb,Eb],Wb);
-			E([Ab,Hb],Xb);
-			E([ub,Eb],Yb);
-			G=v[F(tb)][F(Bb)];
-			var H=G.indexOf(Zb);
-			if(H!=-1){
-				w=Number(G.substring(H+1));
-				G=G.substring(0,H)
+	
+	var I;
+	function J(){
+		if(!q){
+			q=true;A();
+			if(m.removeEventListener){
+				m.removeEventListener($b,J,false)
 			}
-		}catch(a){
-			return
-		}
-		var I;
-		function J(){
-			if(!q){
-				q=true;A();
-				if(m.removeEventListener){
-					m.removeEventListener($b,J,false)
-				}
-				if(I){
-					clearInterval(I)
-				}
+			if(I){
+				clearInterval(I)
 			}
 		}
-	if(m.addEventListener){
-		m.addEventListener($b,function(){J()},false)
 	}
+	// if(m.addEventListener){
+		// m.addEventListener($b,function(){J()},false)
+	// }
+	
 	var I=setInterval(function(){if(/loaded|complete/.test(m.readyState)){J()}},50);
-	n&&n({
-		moduleName:M,
-		sessionId:o,
-		subSystem:N,
-		evtGroup:O,
-		millis:(new Date).getTime(),type:U});
+	
+	// n&&n({
+		// moduleName:M,
+		// sessionId:o,
+		// subSystem:N,
+		// evtGroup:O,
+		// millis:(new Date).getTime(),
+		// type:U
+	// });
 	n&&n({
 		moduleName:M,
 		sessionId:o,
 		subSystem:N,
 		evtGroup:_b,
-		millis:(new Date).getTime(),type:P
+		millis:(new Date).getTime(),
+		type:P
 	});
+	
 	var K=ac+r+G+bc;
 	m.write(cc+dc+ec+fc+gc+hc+ic+fc+gc+jc+kc+lc+K+mc+nc+oc+pc)
 }
 BrainPlexApp();
+
+/* 
+输出：
+
+<script>
+<!--
+window.__gwtStatsEvent && window.__gwtStatsEvent({
+	moduleName:"BrainPlexApp",
+	sessionId:window.__gwtStatsSessionId,
+	subSystem:"startup",
+	evtGroup: "loadExternalRefs",
+	millis:(new Date()).getTime(),
+	type: "end"});
+window.__gwtStatsEvent && window.__gwtStatsEvent({
+	moduleName:"BrainPlexApp",
+	sessionId:window.__gwtStatsSessionId,
+	subSystem:"startup",
+	evtGroup: "moduleStartup",
+	millis:(new Date()).getTime(),
+	type: "moduleRequested"});
+	document.write("<script src=\"function G(t){return document.getElementById(t)}.cache.js\"></scr" + "ipt>");
+-->
+</script>
+
+*/
