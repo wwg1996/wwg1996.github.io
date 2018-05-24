@@ -1,5 +1,5 @@
 title:  # Meng title
-  switch: true # Meng title switch
+  switch: false # Meng title switch
   visible: "(*´∇｀*) 被发现啦~" # State is visible text
   hidden:  "(つェ⊂)看不到我~" # State is hidden text
   with_default_title: false # with default title
@@ -11,24 +11,24 @@ cursor: # Meng cursor
   pointer_url: "https://ooo.0o0.ooo/2017/06/12/593ea3612fd77.png" # State is pointer style
 
 console: # Meng console info
-  switch: true # Meng console info switch
+  switch: false # Meng console info switch
   theme_info: true # output theme info
   text: "Copyright © 2017 Jekyll-Theme-MDUI" # text
   color: "#fff" # text color
   background: "#448aff" # background color
 
 header: # Meng header color + theme-color
-  switch: true
+  switch: false
 
 background: # Meng background
-  switch: true
+  switch: false
   background_img: "/images/background2.jpg"
   transparent_header: false
   transparent_footer: false
   text_color: '#000'
 
 card: # Meng card
-  switch: true
+  switch: false
   background_color: 'rgba(255, 255, 255, 0.5)'
   card_img_opacity: '0.8'
 
