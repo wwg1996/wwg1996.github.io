@@ -1,0 +1,505 @@
+---
+layout: post
+title: 数据结构 1.线性表
+date: 2016-09-30 14:02:56 +0800
+categories: CS
+tags: 数据结构 
+img: http://wangweiguang.xyz/images/ds.jpg
+---
+
+* 
+{:toc}
+
+## 定义
+> **线性表**(linear_list)：是n(n≥0)个数据特性相同的元素构成的，相邻元素具有序偶关系是有限序列，记为
+
+```math
+L = (a_1,...,a_{i-1},a_i,a_{i+1},...,a_n)
+```
+> 线性表中元素的个数定义为线性表的长度，n=0时定义为空表。
+> 特点：
+> 1. 存在唯一的一个被称为“第一个”的数据元素；
+> 2. 存在唯一的一个被称为“最后一个”的数据元素；
+> 3. 除第一个之外，集合中每一个元素均只有一个前驱；
+> 4. 除最后一个之外，集合中每一个元素均只有一个后继；
+>> 稍微复杂的线性表中，一个数据可以有若干个**数据项**组成，这时候，常把数据项称作**记录**，含有大量记录的线性表由称**文件**。
+
+* **ADT定义如下**：
+
+```
+ADT List {
+    数据对象：D = { ai| ai∈ElemSet， i=1,2，...,n, n≥0 }
+    数据关系：Rl = { <a(i-1),ai> | a(i-1),ai∈D, i=2,...,n }
+    基本操作：
+        InitList( &L )
+            操作结果：构造一个空的线性表L
+        DestroyList( &L )
+            初始条件：线性表L存在
+            操作结果：销毁线性表L
+        ClearList( &L )
+            初始条件：线性表L存在
+            操作结果：将L重置为空表
+        ListEmpty( &L )
+            初始条件：线性表L存在
+            操作结果：如果L为空表，返回TRUE，否则返回FALSE
+        GetElem( L, i, &e )
+            初始条件：线性表L存在，1≤i≤ListLength(L)
+            操作结果：用e返回L中第i个数据元素的值
+        LocateElem( L, e )
+            初始条件：线性表已存在
+            操作结果：返回第一个与e相同的据元素的位序，若这样
+            的元素不存在返回0
+        PirorElem( L, cur_e, &pre_e )
+            初始条件：线性表已存在
+            操作结果：若cur_e是L的数据元素，且不是第一个，则用pre_e返回它的
+            后继，否则操作失败，pre_e无定义
+        NextElem( L, cur_e, &next_e )
+            初始条件：线性表已存在
+            操作结果：若cur_e是L的数据元素，且不是最后一个，则用next_e返回它
+            的后继，否则操作失败，next_e无定义
+        ListInsert( &L, i, &e )
+            初始条件：线性表已存在，1≤i≤ListLength(L)+1
+            操作结果：在L中第i个位置之前插入新的元素e，L的长度加1
+        ListDelete( &L, i, e)
+            初始条件：线性表已存在且非空，1≤i≤ListLength(L)
+            操作结果：删除L的第i个元素，并用e返回其值，L的长度减1
+        ListTraverse( L, visit() )
+            初始条件：线性表已存在
+            操作结果：依次对L的每个元素调用函数visit(),一旦visit()失败，则操
+            作失败
+    } ADT list        
+```
+> 上面的基本操作可以构成更复杂的操作
+
+## 顺序表
+> 顺序线性表是用一组地址连续的存储单元依次存储线性表的数据元素
+* 假设线性表每个元素需占用l个存储单元，则线性表中第i+1个元素的存储位置和第i个元素的存储位置之间满足下列关系：
+
+```math
+LOC(a_{i+1}) = LOC(a_i)+1
+```
+* 一般来说第i个元素的存储位置为
+
+```math
+LOC(a_i) = LOC(a_1)+(i-1)\times l
+```
+* 只要确定了存储线性表的起始位置，线性表任意元素都可以随机存取，所以说线性表是一种**顺序存储**，**随机存取**的数据结构。
+
+## 链表
+* 链表是用一组任意的存储单元存储线性表的数据元素，用指针来表示两个元素的逻辑关系；所以每个数据元素除了需要储存数据元素的数据域外，还需要存储后继存储位置的指针域。
+* 线性存储结构的链表有**单向链表**，**双向链表**和**循环链表**。
+
+* 单链表
+> 单链表有一个头节点head，指向链表在内存的首地址。链表中的每一个节点的数据类型为结构体类型，节点有两个成员：数据成员和指向下一个结构体类型节点的指针即下一个节点的地址。链表按此结构对各节点的访问需从链表的头找起，后续节点的地址由当前节点给出。无论在表中访问那一个节点，都需要从链表的头开始，顺序向后查找。链表的尾节点由于无后续节点，其指针域为空，写作为NULL。
+
+![image](http://wangweiguang.xyz/images/0_1324453818AsYF.gif)
+
+* 几个概念
+  * 首元结点：存储第一个数据元素的节点
+  * 头结点：首元结点前附加的一个结点，可以存放其他附加信息，也可以为空。
+  * 头指针：头指针指向第一个节点的指针。
+* 加入头节点的作用
+  * 使所有数据元素的结点都有前驱，无需对首元结点特殊处理。
+  * 便于空表和非空表的统一处理
+* 单链表是非随机存取的存储结构，取得第i个元素必须从头指针出发顺链进行寻找，也称为**顺序存取**的存储结构。
+
+## 顺序表的构造
+
+```
+# define MAXSIZE 100
+typedef struct       // 顺序表卡农到达的最大长度
+{
+    ElemTypen *elem; // 存储空间的基地址
+    int length;      // 当前长度（元素个数）
+}SqList;             
+```
+> ElemType也可是结构体类型，用于表示多个数据项
+
+## 基本操作的实现
+> 当线性表以上面的定义构造时，长度作为数组一个基本属性，求表长，判断表是否为空都无需复杂的算法，并且复杂度为O(1),下面讨论其他几个主要算法
+
+1. **初始化**\
+> 顺序表的初始化就是构造一个空的顺序表\
+
+* 算法步骤
+  1. 动态分配空间
+  2. 将表长设为0
+
+* 实现
+```
+Status InitList(SqList &L)
+{
+	L.elem = new ElemType[MAXSIZE]     
+	//分配空间一个数组空间,是elem指向这段空间的基地址
+	if(!L.elem) exit(OVERFLOW); 	   
+	L.length = 0;			   
+	return OK;		           	 
+} 
+```
+
+2. **取值**
+> 根据指定的位置序号i，获取顺序表中第i个元素的值
+
+* 算法步骤
+  1. 检查位置序号是否合法
+  2. 传值
+
+```
+Status GetEelm(SqList L, int i, ElemType &e)
+{
+    if (i<1||i>L.length) return ERROR
+    e = L.elem[i-1];    //i-1存储第i个元素
+    return OK;
+}
+```
+
+* 算法分析
+复杂度显然为O(1)
+
+3. **查找**
+> 返回第一个与e相同的据元素的位序，若这样的元素不存在返回0
+
+* 算法步骤
+  1. 遍历L，寻找与e相等的元素，成功返回序号i+1
+  2. 失败返回0
+
+* 实现
+```
+int LocateElem(SqList L, ElemType e)
+{
+    for(i=0, i<L, i++)
+        if(L.elem[i]==e) return i+1;
+    return 0;
+}
+```
+* 算法分析
+
+```math
+ASL = \frac1n \sum_{i=1}^n i=\frac{n+1}2
+```
+可见查找算法的平均时间复杂度为O(n)
+
+4. **插入**
+> 将表中第i个位置插入一个元素e，e之后的元素一次后移一个单位，表长也加1
+
+* 算法分析
+  1. 检查地i个位置是否合法
+  2. 判断顺序表存储空间是否已满
+  3. 将第n个至第i个位置的元素一次后移一个单位元素
+  4. 将e插入第i个位置
+  5. 表长加1
+ 
+* 实现
+```
+Status Listinsert(SqList &L, int i, ElemType e)
+{
+    if( (i<1) || (i>L.length+1) ) return ERROR;
+    if( L.lenght==MAXSIZE ) return ERROR;
+    for( j=L.length-1; j>=i-1; j-- )
+        L.elem[j+1]=Lelem[j]
+    L.elem[i-1]=e;
+    ++L.length;
+    return OK;
+}
+```
+* 算法分析\
+设pi是在第i个元素前插入一个元素的概率， Eins为在长度为n的线性表中插入一个元素时所需移动元素次数的期望值（平均次数），则有
+
+```math
+E_{ins} = \sum_{i=1}^n p_i(n-i+1)
+```
+当任何位置插入元素等概率时，有
+
+```math
+p_i = \frac 1{n+1}
+
+E_{ins} = \frac 1{n+1} \sum_{i=1}^n (n-i+1) = \frac n2
+```
+故复杂度为O(n)
+
+5. **删除**
+> 删除第i个位置的元素后，后面所有的元素所在的位置都要向前移一位。
+
+* 算法步骤
+  1. 判断删除位置i是否合法
+  2. 将第i+1个至第n个元素依次向前移动一个单位
+  3. 表长减1
+
+* 实现
+
+```
+Status ListDelete(SqList &L,int i)  
+{
+    if (i<0 || i>=L.length ) return ERROR；
+    for( j=i; <=L.length-1; j++ )
+        L.elem[j-1]=L.elem[j];
+    --L.length;
+    return ok;
+}
+```
+
+* 算法分析
+和插入操作类似，时间主要耗费在移动元素上，有
+
+```math
+p_i = \frac 1 n
+
+E_{ins} = \frac 1 n \sum_{i=1}^n (n-i) = \frac {n-1} 2
+```
+复杂度为O(n)
+
+## 单链表的构造
+
+```
+typedef struct LNode
+{
+	ElemType data;
+	struct LNode *next;
+}LNode;
+
+typedef LNode* LinkList;     	
+// 习惯上用Linklist定义单链表的头指针，用LNode *定义任一节点的指针变量
+```
+
+## 基本操作的实现
+
+1. **初始化**
+* 算法步骤
+  1. 生成新节点作为头结点，用头指针指向头结点
+  2. 头结店的指针域为空
+* 实现
+```
+Status InitList(LinkList &L)
+{
+    L = new LNode;
+    L->next = NUll;
+    return OK;
+}
+```
+
+2. **取值**
+* 算法步骤
+  1. 用指针p指向首元结点，用j做计数器初值赋为1
+  2. 从首元节点开始依次顺着链域next向下访问，只要指向当前结点的指针不为NULL，并且没有到达序号i的节点，则循环执行以下操作：
+     1. p指向下一个节点
+     2. 计数器j相应加1
+  3. 退出循环时，如果指针p为空，或者计数器j大于i，说明序号i不合法，取值失败；否则取值成功，此时j=i时，结点找到，用参数e保存当前结点的数据域。 
+
+```
+Status GetElem(LinkList L, int i, ElemType &e)
+{
+	LinkList p;
+    p = L->next;
+    int j = 1;
+    
+    while( p&&j<i )
+    {
+        p = p->next;
+        ++j;
+    }
+    if( !p||j>i ) return ERROR;
+    
+	e = p->data;
+    
+    return OK;
+} 
+```
+
+* 算法分析
+> 基本操作是比较j和i并且后移指针p，while中的语句频度与位置i有关。
+```math
+p_i = \frac 1 n
+
+ASL = \frac 1 n \sum_{i=1}^n (n-i) = \frac {n-1} 2
+```
+复杂度为O(n)
+
+* **查找**
+> 和按值查找的过程类似，从链表的首元结点出发依次将结点值和给定值进行比较，返回查找结果。
+* 算法步骤
+  1. 用指针p指向首元节点。
+  2. 从首元结点开始依次顺着链域next向下查找，只要指向当前结点的指针p不为空，并且p所指结点的数据域不等于给定值e，则循环执行以下操作：p指向下一个结点。
+  3. 查找成功，返回地址值，查找失败，p的值即为NULL
+
+* 实现
+
+```
+LNode *LocateELem(LinkList L, ElemType e)
+{
+    p = L->next;
+    while(p && p->date!=e)
+        p = p->next;
+    
+    return p;
+}
+```
+
+* 算法分析
+> 类似于取值，时间复杂度的为O(n)
+
+* **插入**
+> 将值为e的新结点插入到表的第i个结点的位置上，即插入到结点ai-1与ai之间。
+* 算法步骤
+  1. 查找结点ai-1并有指针p指向该结点
+  2. 生成一个新的结点*s
+  3. 将新结点*s的数据域置为e
+  4. 将新节点*s的指针域指向结点ai
+  5. 将结点*p的指针域指向新结点 *s
+* 实现
+
+```
+Status ListInsert(LinkList &L, int i, ElemType)
+{
+    p = L;
+    j = 0;
+    while(p && (j<i-1)) {
+    p = p->next;
+    ++j;
+    }
+    if(!p||j>i-1) return ERROR;
+    a = new LNode;
+    s->date = e;
+    s->next = p->next;
+    p->next = s;
+    
+    return OK;
+}
+```
+* **删除**
+
+```
+Status ListDelete( LinkList &L, int i )
+{
+	LinkList p;
+	p = L;
+	int j = 0;
+	
+	while( (p->next) && (j<i-1) )
+	{
+		p = p->next;
+		++j;
+	}
+	
+	if( !(p->next) || (j>i-1) ) return ERROR;
+	
+	LNode *q;
+	q = p->next;
+	p->next = q->next;
+	delete q;
+	return OK;	
+```
+
+* **前插法创建**
+
+
+```
+void CreateList_H( LinkList &L, int n ) 
+{
+	L = new LNode;          // 创建一个只有头结点的空链表 
+	L->next = NULL;          // 将头结点内的指针变量初始化 
+	
+	for( int i=0; i<n; ++i)     
+	{
+		LNode *p;           // 为创建新节点准备一个指针 
+		p = new LNode;      // 创建新节点 
+		cout << "请输入第" << i+1 << "个数据： "; 
+		cin >> p->data;    
+		p->next = L->next;  // 头节点指针指向赋予新节点的指针变量 
+		L->next = p;        // 头节点的指针指向新节点，新节点*p也便插入到了头结点之后 
+	}
+}
+```
+
+* **后插法创建**
+
+```
+void CreateList_R( LinkList &L, int n ) 
+{
+	L = new LNode;          // 创建一个只有头结点的空链表 
+	L->next = NULL;         // 将头结点内的指针变量初始化 
+    LNode *r;               // 为新节点准备一个尾指针, 每次插入都需要知道尾节点的地址，用尾指针加以标记 
+	r = L;                  // 先指向头结点 
+	
+	for( int i=0; i<n; ++i)     
+	{
+		LNode *p;           // 为创建新节点准备一个指针 
+		p = new LNode;      // 创建新节点 
+		cout << "请输入第" << i+1 << "个数据： "; 
+		cin >> p->data;    
+		p->next = NULL;     // 新节点为尾元素，无需指向节点 
+		r->next = p;        // 原先的尾元素的指针指向新的尾元素
+		r = p;              // 将尾指针指向新的尾元素 
+	}
+}
+```
+上面几种算法的时间复杂度都为O(n)
+
+## 循环链表
+> 表中最后一个指针指向头结点的链表。操作和单链表基本一致，但判别当前指向尾节点的判别条件不同，在单链表中为`p != NULL`或`p->next != NULL`, 循环链表为`p != L`或`p->next != L`
+
+## 双向链表
+> 双向链表结点有两个指针域，一个指向直接后继，一个指向直接前驱。
+
+
+```
+//-----双向链表的存储结构-----
+typedef struct DuLNode
+{
+    ElemType data;
+    struct DuLNode *prior;
+    struct DuLNode *next;
+}DuLNode, *DuLinkList;
+```
+
+## 基本操作
+> 大部分基本操作与单链表一致，但在取值和插入操作时需要该要修改两个以上方向的指针。
+
+* **插入操作**
+
+```
+Status ListInsert_DuL( DuLinkList &L, int i, Elemtype e )
+{
+	DuLNode *p = GetElem_DuL(L, i);
+	
+	DuLNode *s;
+	s = new DuLNode;
+	s->data = e;
+	
+	s->prior = p->prior;
+	p->prior->next = s;
+	s->next = p;
+	p->prior = s;
+	
+	return OK;
+}
+```
+
+* **删除操作**
+
+
+```
+Status ListDelete_DuL( DuLinkList &L, int i )
+{
+	DuLNode *p = GetElem_DuL(L, i);
+	
+	p->prior->next = p->next;
+	p->next->prior = p->prior;
+	delete p;
+	
+	return OK;
+}
+```
+
+**顺序线性表**
+* 优点：
+* 存储密度大
+* 存取元素的效率高
+
+当线性表长度变化不大，事先可以确定大小的，并且线性表的主要操作是和元素位置紧密相关的这类操作，很少做插入删除时，易采取顺序表作为存储结构。
+
+**链式线性表**
+* 优点：
+* 分配空间利用率高
+* 插入和删除的效率高
+
+当线性表长度变化较大，事先难以预估存储规模的，频繁做插入删除时，易采取链式表作为存储结构。

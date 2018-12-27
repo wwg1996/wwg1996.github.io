@@ -1,0 +1,570 @@
+---
+layout: post
+title: 数据结构 2.栈与队列
+date: 2016-10-23 14:02:56 +0800
+categories: CS
+tags: 数据结构 
+img: http://wangweiguang.xyz/images/ds.jpg
+---
+
+* 
+{:toc}
+
+> 栈与队列也属于线性表，但是某些操作受限而应用特殊情况的限定性的数据结构。
+## 栈（STACK）
+> 栈是限定**仅在表尾进行插入或删除操作的线性表**，栈的修改是按后进先出的原则进行的，因此，栈有称为后进先出（Last In First Out， LIFO）的线性表。\
+对栈来说，表尾段有其特殊含义，称为**栈顶**（top），相应的，表头段称为**栈低**（bottom）。
+
+* **ADT定义如下**：
+
+```
+ADT Stack {
+    数据对象：D = { ai| ai∈ElemSet， i=1,2，...,n, n≥0 }
+    数据关系：Rl = { <a(i-1),ai> | a(i-1),ai∈D, i=2,...,n }
+              约定an端为栈顶，a1端为栈底。
+    基本操作：
+        InitStack( &S )
+        DestroyStack( &S )
+        ClearStack( &S )
+        StackEmpty( &L )
+        ListTraverse( S )
+        // 上面的基本操作和线性表要求一样
+        
+        GetTop( S )
+            初始条件：栈S已存在且非空
+            操作结果：返回S的栈顶元素不修改栈顶指针
+        Push(&S, e)
+            初始条件：栈S已存在
+            操作结果：插入元素e为新的栈顶元素
+        Pop(&S, &e)
+            初始条件：栈S已存在且非空
+            操作结果：删除S的栈顶元素，并用e返回其值
+            
+    } ADT Stack        
+```
+## 队列（queue）
+> 队列是一种先进先出(First In First Out)的线性表,他只允许在**表的一端进行插入，而在另一端删除元素**.\
+在队列中允许插入的一端称为**队尾**（rear），允许删除的一端称为**队头**（front）。
+
+* **ADT定义如下**：
+```
+ADT Queue {
+    数据对象：D = { ai| ai∈ElemSet， i=1,2，...,n, n≥0 }
+    数据关系：Rl = { <a(i-1),ai> | a(i-1),ai∈D, i=2,...,n }
+              约定an端为队头，a1端为队尾。
+    基本操作：
+        InitQueue( &Q)
+        DestroyQueue( &Q )
+        ClearQueue( &Q )
+        QueueEmpty( &Q )
+        QueueLength( &Q )
+        QueueTraverse( Q )
+        // 上面的基本操作和线性表要求一样
+        
+        GetHead( Q )
+            初始条件：队列Q已存在且非空
+            操作结果：返回Q的队头元素
+        EnQueue(&Q, e)
+            初始条件：队列Q已存在
+            操作结果：插入元素e为新的队尾元素
+        DeQueue(&Q, &e)
+            初始条件：Q为非空队列
+            操作结果：删除Q的对头元素，并用e返回其值
+            
+    } ADT Queue  
+```
+
+## 顺序栈
+
+```
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h> 
+#include <conio.h>
+#include "E:\小c的数据结构\0. 绪论\Status.h" 
+using std::cin;
+using std::cout;
+using std::endl;
+
+#define MAXSIZE 100
+#define FALSE 0
+#define TRUE 1
+#define SElemType int
+
+typedef struct
+{
+	SElemType *base; // 当top等于base时表示空栈 
+	SElemType *top;  // top指针用以指示栈顶元素在顺序栈中的位置 
+	int stacksize;
+}SqStack;
+
+Status InitStack(SqStack &S)
+{
+	S.base = new SElemType[MAXSIZE];   //依然用数组空间分配顺序结构 
+	if(!S.base) exit(OVERFLOW);        //如果base的值为NULL说明栈不存在 
+	S.top = S.base;
+	S.stacksize = MAXSIZE;
+	cout << "链栈初始化成功！\n" ;
+	return OK;	 
+}
+
+// 入栈操作：在栈顶插入一个新的元素
+Status Push(SqStack &S)
+{
+	SElemType e;
+	cout << "输入要入栈的值："; 
+	cin >> e;
+	if(S.top-S.base==S.stacksize) return ERROR;
+	*S.top++ = e;  
+	/* 优先级：++，. , *, = 。所以解释为先S.top作为一个变量，
+	头*S.top = e 将元素压入栈顶，然后执行后置的++操作，头指针重置。*/ 
+	cout << "链栈初始化成功！\n" ;	 
+	return OK;
+}
+
+void ClearStack(SqStack &S)
+{
+	S.top=S.base;	
+}
+
+Status StackEmpty(SqStack S)
+{
+	if(S.base - S.top) return FALSE;
+	else return TRUE;
+}
+
+void ListLength(SqStack S)
+{
+	cout << "链栈有" << (S.top-S.base) << "个元素\n"; 
+}
+
+Status Pop(SqStack &S)
+{
+	if(S.top==S.base) return ERROR;
+     --S.top;
+	cout << "元素已出栈\n";
+}
+
+Status GetTop(SqStack S, SElemType &e)
+{
+	if(S.base==S.top) return ERROR;
+	e = *(S.top-1);
+	return OK;
+}
+
+Status Push_R(SqStack &S, int e)
+{
+	
+	if(S.top-S.base==S.stacksize) return ERROR;
+	*S.top++ = e;  
+	/* 优先级：++，. , *, = 。所以解释为先S.top作为一个变量，
+	头*S.top = e 将元素压入栈顶，然后执行后置的++操作，头指针重置。*/  
+
+}
+
+ void CreateList( SqStack &S ) 
+{          
+	for( int i=0; i<5; ++i)     
+	{
+		srand(i);                
+	    SElemType e = rand()%100+1;
+		Push_R(S, e);            
+	}
+	cout << "5个随机栈元素创建成功。\n";
+}
+
+void OutputList(SqStack S)
+{
+	cout << "数据：";
+	for(int *p = S.top; p!=S.base; --p)
+    	cout << *(p-1) << " ";
+	cout << endl;
+}
+
+```
+
+## 链栈
+
+
+```
+#ifndef SEQUENCELIST_H
+#define SEQUENCELIST_H
+
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include "E:\小c的数据结构\0. 绪论\Status.h" 
+using std::cin;
+using std::cout;
+using std::endl;
+
+typedef int SElemType;                 
+
+/* 单链表结构体 */
+typedef struct StackNode
+{
+	SElemType data;
+	struct StackNode *next;
+}StackNode;
+
+typedef StackNode* LinkStack;
+   	
+ 
+/* 初始化函数 */
+Status InitList( LinkStack &S )  
+{
+	S = NULL; // 无需头结点	
+	cout << "链栈初始化成功！\n" ;
+	return OK; 
+} 
+
+Status Push(LinkStack &S)
+{
+	SElemType e;
+	cout << "输入要入栈的值："; 
+	cin >> e;
+	StackNode *p = new StackNode;
+	p->data = e;
+	p->next = S;
+	S = p;
+	cout << "元素已入栈。\n";
+	return OK;
+} 
+
+void Push_R(LinkStack &S, int e)
+{
+	StackNode *p = new StackNode;
+	p->data = e;
+	p->next = S;
+	S = p;
+}
+
+Status Pop(LinkStack &S)
+{
+	if(S==NULL) return ERROR;
+	StackNode *p = S;
+	S = S->next;
+	delete p;
+	cout << "元素已出栈\n";
+	return OK;
+	
+}
+
+void GetTop(LinkStack S)
+{
+	if(S != NULL)
+		cout << "栈顶元素为" << S->data << endl; 
+}
+
+
+void CreateList( LinkStack &S ) 
+{          
+	for( int i=0; i<5; ++i)     
+	{
+		StackNode *p; 
+		srand(i);                
+	    SElemType e = rand()%100+1;
+		Push_R(S, e);            
+	}
+	cout << "5个随机栈元素创建成功。\n";
+}
+
+
+void ListLength(LinkStack S)
+{
+	LinkStack p;
+	int i;
+	
+	if(S)
+	{
+		i = 0;
+		p = S;
+		while(p)
+		{
+			i++;
+			p = p->next;
+		}		
+	}
+	
+	cout << "链栈有" << i << "个元素\n"; 
+	
+}
+
+void OutputList(LinkStack S)
+{
+	int i = 0;
+	StackNode *p = S;
+	cout << "\n数据为:" ;
+	while(p)
+	{
+		i++;
+		cout << p->data << " ";
+		p = p->next;
+	}	
+	cout << endl;	
+} 
+
+#endif
+
+
+```
+
+## 栈与递归
+
+## 递归的栈式内存管理
+* **函数调用的原理**
+> 当有多个函数构成嵌套调用时，按照“后调用先返回”的原则，上述函数之间的信息传递的控制转移必须通过“栈”来实现，即系统将整个程序运行时所需要的数据安排在一个栈中，每当调用一个函数时，就为它在栈顶分配一个存储区，每当一个函数退出时，就释放他的存储区，当前正在运行的函数的数据区必在栈顶。
+>> 函数调用前，系统需要完成的四项任务
+> 1. 保存返回地址
+> 2. 给形参以及局部变量分配相应的存储空间
+> 3. 接受从实参传过来的值
+> 4. 将控制转移的被调用函数的入口（执行函数体）
+>> 从被调用函数返回调用函数之前，应该完成以下三项任务
+> 1. 保存被调函数的计算结果
+> 2. 释放分配给它的存储空间
+> 3. 依照被调函数保存的返回地址将控制转移到调用函数
+
+* **例子**
+
+```
+// 链表正序输出 
+void TraverseList_1(LinkList L)
+{
+	if( L )
+	{
+		cout << L->data << " ";
+		TraverseList_1(L->next);
+	}
+}
+
+// 链表倒序输出 
+void TraverseList_2(LinkList L)
+{
+	if( L )
+	{
+		TraverseList_2(L->next);
+		cout << L->data << " ";
+	}
+}
+
+```
+
+![image](http://wangweiguang.xyz/images/23.jpg)
+
+## 顺序队列
+
+![image](https://note.youdao.com/favicon.ico)
+```
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h> 
+#include <conio.h>
+#include "E:\小c的数据结构\0. 绪论\Status.h" 
+using std::cin;
+using std::cout;
+using std::endl;
+
+#define MAXSIZE 100
+#define QElemType int
+ 
+typedef struct {
+	QElemType *base;   // 存储空间的基地址 
+	int front;		   // 头指针，若队列不空，指向队列头元素 
+	int rear;		   // 尾指针，若队列不空指向队尾的下一个位置 
+}SqQueue;
+
+Status InitQueue(SqQueue &Q)
+{
+	Q.base = new QElemType[MAXSIZE];
+	if(!Q.base) return ERROR;
+	Q.front = Q.rear = 0;
+	cout << "顺序队列初始化成功！\n" ;
+	return OK;
+}
+
+Status EnQueue( SqQueue &Q )
+{
+	QElemType e;
+	cout << "输入要入栈的值："; 
+	cin >> e;
+	if((Q.rear+1)%MAXSIZE == Q.front)       
+		return ERROR;
+	Q.base[Q.rear] = e;		          // 新元素插入队尾 
+	Q.rear = (Q.rear+1) % MAXSIZE;    // 队尾指针循环加 1
+	cout << "元素已进队。\n"; 
+	return OK;
+}
+
+
+Status EnQueue_R( SqQueue &Q, QElemType e )
+{	
+	if((Q.rear+1)%MAXSIZE == Q.front)       
+		return ERROR;
+	Q.base[Q.rear] = e;		          // 新元素插入队尾 
+	Q.rear = (Q.rear+1) % MAXSIZE;    // 队尾指针加 1
+	return OK;
+}
+
+Status DeQueue(SqQueue &Q)
+{
+	if(Q.front == Q.rear) return ERROR;
+	// e = Q.base[Q.front];
+	Q.front = (Q.front+1)%MAXSIZE;
+	
+	cout << "元素已出队\n";
+	return OK;
+} 
+
+QElemType GetHead(SqQueue Q)
+{
+	if(Q.front != Q.rear)
+		return Q.base[Q.front];
+}
+
+
+void CreateList( SqQueue &Q ) 
+{          
+	for( int i=0; i<5; ++i)     
+	{
+		srand(i);                
+	    QElemType e = rand()%100+1;
+		EnQueue_R(Q, e);            
+	}
+	cout << "5个随机队列元素创建成功。\n";
+}
+
+void ListLength(SqQueue Q)
+{	
+	cout << "队列有" << (Q.rear-Q.front+MAXSIZE)%MAXSIZE << "个元素" << endl;	
+} 
+
+void OutputList(SqQueue Q)
+{
+	int t = 0; 
+	cout << "\n数据为:" ;
+	while(t < (Q.rear-Q.front+MAXSIZE)%MAXSIZE )
+	{
+		cout << Q.base[t] << " ";
+		t++;
+	}
+	cout << endl;	
+} 
+```
+
+## 链式队列
+```
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h> 
+#include <conio.h>
+#include "E:\小c的数据结构\0. 绪论\Status.h" 
+using std::cin;
+using std::cout;
+using std::endl;
+
+#define QElemType int
+
+// 队列的链式结构 
+typedef struct QNode
+{
+	QElemType data;
+	struct QNode *next;
+}QNode;
+
+typedef QNode* QueuePtr;
+
+typedef struct
+{
+	QueuePtr front;
+	QueuePtr rear;
+}LinkQueue;
+
+Status InitQueue(LinkQueue &Q)
+{
+	Q.front = Q.rear = new QNode;  //生成新节点作为头结点，对头队尾指针指向此节点 
+	Q.front->next = NULL;          // 头结点指针域制空 
+	cout << "链式队列初始化成功！\n" ;
+	return OK; 
+}  
+
+Status EnQueue(LinkQueue &Q )
+{
+	QElemType e;
+	cout << "输入要入队的值："; 
+	cin >> e;
+	QueuePtr p = new QNode;
+	p->data = e;
+	p->next = NULL; Q.rear->next = p;
+	Q.rear= p;
+	cout << "元素已进队。\n"; 
+	return OK;
+} 
+
+Status EnQueue_R(LinkQueue &Q, QElemType e  )
+{
+	QueuePtr p = new QNode;
+	p->data = e;
+	p->next = NULL; Q.rear->next = p;
+	Q.rear= p;
+	return OK;
+} 
+
+Status DeQueue(LinkQueue &Q)
+{
+	if(Q.front==Q.rear) return ERROR;
+	QueuePtr p = Q.front->next;
+//	e = p->data;
+	Q.front->next = p->next;
+	if(Q.rear==p) Q.rear = Q.front; // 若是最后一个元素删去了，队尾指针会丢失，需要重新赋值。 
+	delete p;
+	cout << "元素已出队\n";
+	return OK;
+}
+
+QElemType GetHead(LinkQueue Q)
+{
+	if(Q.front!=Q.rear)
+		return Q.front->next->data;
+} 
+
+void CreateList( LinkQueue &Q ) 
+{          
+	for( int i=0; i<5; ++i)     
+	{
+		srand(i);                
+	    QElemType e = rand()%100+1;
+		EnQueue_R(Q, e);            
+	}
+	cout << "5个随机队列元素创建成功。\n";
+}
+
+void ListLength(LinkQueue Q)
+{	
+	int count = 0;
+	QueuePtr p = Q.front;
+	
+	while(p!=Q.rear)
+	{
+		count++;
+		p = p->next;
+	}
+	cout << "队列有" << count << "个元素" << endl;	
+} 
+
+void OutputList(LinkQueue Q)
+{
+	cout << "\n数据为:" ;
+	QueuePtr p = Q.front;
+	
+	while(p!=Q.rear)
+	{
+		p = p->next;
+		cout << p->data << " ";
+	}
+	cout << endl;	
+}
+
+```
+ 
+ 

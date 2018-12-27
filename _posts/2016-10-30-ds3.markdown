@@ -1,0 +1,194 @@
+---
+layout: post
+title: 数据结构 3.串&数组&广义表
+date: 2016-10-30 14:02:56 +0800
+categories: CS
+tags: 数据结构 
+img: http://wangweiguang.xyz/images/ds.jpg
+---
+
+* 
+{:toc}
+
+> 串是内容受限的线性表，其特殊性表现在数据元素是一个个字符。
+
+## 串（string）
+> 串（或字符串）定义：是由零个或多个字符组成的有限序列，一般记为：
+```math
+s="a_1a_2...a_n"
+```
+基本概念：串的长度，子串，主串，字符在串中的位置，串的相等
+
+ADT类型定义
+```
+ADT String {
+    数据对象：D = { ai| ai∈CharacterSet,i=1,2，...,n, n≥0 }
+    数据关系：Rl = { <a(i-1),ai> | a(i-1),ai∈D, i=2,...,n }
+    基本操作：
+        StrAssign (&T, chars)
+            初始条件：chars是字符串常量
+            操作结果：生成一个其值等于chars的串
+        StrCopy (&T, S)
+            初始条件：串S存在。
+            操作结果：由串S复制得串T。
+        StrEmpty(S)
+            初始条件：串S存在。
+            操作结果：若S为空串，则返回TRUE，否则返回FALSE。
+        StrCompare(S, T)
+            初始条件：串S和T存在。
+            操作结果：若S>T，则返回值>0；若S=T，则返回值＝0；若S < T，则返回值 < 0。
+        StrLength(S)
+            初始条件：串S存在。
+            操作结果：返回S的元素个数，称为串的长度。
+        ClearString (&S)
+            初始条件：串S存在。
+            操作结果：将S清为空串。
+        Concat (&T, S1, S2)
+            初始条件：串S1和S2存在。
+            操作结果：用T返回由S1和S2联接而成的新串。
+        SubString(&Sub, S, pos, len)
+            初始条件：串S存在,1≤pos≤StrLength(S)且0≤len≤StrLength(S)-pos+1
+            操作结果：用Sub返回串S的第pos个字符长度为len的子串。
+        Index(S, T, pos)
+            初始条件：串S和T存在,T是非空串，1≤pos≤StrLength(S)。
+            操作结果：若主串S中存在和串T值相同的子串，则返回它在主串S中第pos个字符之后第一次出现的位置;否则函数值为0。
+        Replace (&S, T, V)
+            初始条件：串S, T和V存在，T是非空串。
+            操作结果：用V替换主串S中出现的所有与T相等的不重叠的子串。
+        StrInsert (&S, pos, T)
+            初始条件：串S和T存在, 1≤pos≤StrLength(S)+1。
+            操作结果：在串S的第pos个字符之前插入串T。
+        StrDelete (&S, pos, len)
+            初始条件：串S存在, 1≤pos≤StrLength(S)－len+1。
+            操作结果：从串S中删除第pos个字符起长度为len的子串。
+        DestroyString (&S)
+            初始条件：串S存在。
+            操作结果：串S被销毁
+            
+    } ADT String
+ ```
+ 
+ ## 串的模式匹配算法
+ > 子串的定位运算通常称为串的模式匹配或串匹配。你
+ 串的模式匹配设有两个字符串S和T，设S为主串，也称正文串；设T为子串，也称模式，在主串S中查找与模式T相匹配的子串，如果匹配成功，确定相匹配的子串中的第一个字符在主串S中出现的位置。
+ 
+1. **BF算法**
+* 实现
+```
+int Index_BF(SString S, SString T, int pos)
+{
+	int i = pos; 		// 标记主串正在比较的位置 
+	int j = 1;			// 标记子串正在比较的位置 
+	while(i<=S.length && j<=T.length)		// 主串和子串都遍历到末端结束循环 
+	{
+		if(S.ch[i]==T.ch[j]) { ++i; ++j; }  //  继续比较后继字符 
+		else { i=i-j+2; j=1; }              //  指针后退重新开始匹配 
+	}
+	if(j>T.length) return i-T.length;		//	匹配成功 
+	else return 0; 							//  匹配失败 
+}
+```
+* 算法分析
+设主串长度为n，子串长度为，假设从第i个位置开始匹配成功，假定每个位置匹配成功的概率相等, 为：
+
+```math
+p_i = \frac 1 {n-m+1}
+```
+
+* * 最好情况下，每趟不成功的匹配都发生在，模式串的第一个字符与主串中相应字符的比较，设主串长度为n，子串长度为，假设从第i个位置开始匹配成功，假定每个位置匹配成功的概率相等可得平均时间复杂度为O(n+m)
+
+```math
+p_i = \frac 1 {n-m+1}
+
+\sum_{i=1}^{n-m+1} p_i(i-1+m) = \frac 1 2 (m+n)
+
+```
+* * 最坏情况下每趟不成功的匹配都发生在模式串的最后一个字符与主串中相应字符的比较, 可得平均算法复杂度为O(n×m)
+
+```math
+
+\sum_{i=1}^{n-m+1} p_i(i \times m) = \frac 1 2 m \times (n-m+2)
+```
+
+2. **KMP算法**
+* * 特点：\
+    主串遍历的时候不需要回溯
+* * 思想：\
+    **在匹配过程中利用了事先分析（模式匹配）出模式串中的结构信息---自相似性，利用这个信息节约了在匹配过程中在对这些相似部分的重复再匹配**。也就是说在失配前因为主串已经匹配正确了模式串中的一段子串，这段子串因为同样是模式串到底组成部分，我们就可以利用之前对模式串的分析，通过提前对模式串与其子串的模式匹配把重新回溯主串进行匹配的过程除去，但因为实际中模式串往往远远小于主串的长度，所以我们之前虽然花费一定时间对模式串本身进行部分匹配，但最终给算法带来的总时间收益是巨大的。
+* * 做法：\
+    在主串遍历的时候，主串的指针i无需回溯，只需将模式串指针j回溯到一个合适的位置，继续比较，而通过get_next函数我们可以得到模式串中每个发生失陪的位置需要回溯为之前的某个位置的一个序列。
+* * 主算法函数：
+
+```
+int Index_KMP(SString S, SString T, int pos) 
+{
+	int i = pos;
+	int j = 1;
+	while (i<=S.length && j<=T.length)
+	{
+		if(j==0 || S.ch[i]==T.ch[j]) { ++i; ++j; }  
+		else j = next[j];					//  i不回溯j回到第next[j]中继续比较 
+	}
+	if(j>T.length) return i-T.length;	 
+	else return 0; 	
+}
+```
+* * next[]--回溯位置的理解\
+    主要的思想还是寻找模式串中自相似的部分，我们需要在模式串中寻找这样两段序列使
+
+```math
+"t_1t_2...t_k" = "t_{j-k+1}t_{j-k+2}...t_{j-1}" \space (1<k<j) \space (1) 
+
+```
+从而只需使模式串指针回溯到 k 位置继续进行匹配。\
+另外有一种简明的方法是利用前缀后缀的概念对next[]位置的值进行理解与计算。
+
+* * next[]序列的计算
+    * 令next[j]=k，下面是next函数的定义
+    * j=1时，k设为0
+    * Max{k|1<k<j且满足(1)式}
+    * next[j]=1时，k=1\
+根据定义，我们可以使用递推的方法（可以使用递推的方法也是因为我们的算法基于模式串的“分形”特征）
+* * get_next算法
+
+```
+void get_next(SString T, int next[]) // 求模式串的next函数值并存入数组next
+{ 
+	int i = 1；					     // 标记整个模式串T 
+	int j = 0;						 // 标记组成模式串的一层层前缀 
+	next[1] = 0;					 // t1就不相等，当做特殊情况处理
+	while (i<T.length)
+	{
+		if(j==0 || T.ch[i]==T.ch[j]) { ++i; ++j; next[i]=j;	}  
+		else j = next[j];	  		//递推过程，检查前缀 
+	}   
+	
+}
+```
+
+* * 最后：对next的修正算法
+
+```
+/* 对next算法的修正值 */ 
+void get_nextval(SString T, int nextval[]) 
+{ 
+	int i = 1；					     
+	int j = 0;						 
+	next[1] = 0;					
+	while (i<T.length)
+	{
+		if(j==0 || T.ch[i]==T.ch[j]) 
+		{ 
+			++i; ++j; 
+			if( T.ch[i]!=T.ch[j] ) nextval[i]=j;
+			else nextval[i] = nextval[j];
+				
+			
+		}  
+		else j = next[j];	  		
+	}   
+	
+}
+
+```
+
