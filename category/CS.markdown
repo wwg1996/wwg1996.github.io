@@ -21,6 +21,7 @@ img: /images/cs.jpg
 * [C++](https://wwg1996.github.io/cs/2017/10/10/cpp.html)
 
 ## 数据结构
+* [0 绪论](http://wangweiguang.xyz/cs/2018/03/08/ds0.html)
 
 ## 数据库
 
