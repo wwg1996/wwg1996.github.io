@@ -4,3 +4,7 @@
   img: /images/ai.jpg
 - name: math
   img: /images/math.jpg
+- name: music
+  img: /images/music.jpg
+- name: PKM
+  img: /images/pkm.jpg
