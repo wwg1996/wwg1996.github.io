@@ -2,7 +2,7 @@
 layout: post
 title: 文章的结构
 date: 2017-10-09 23:05:46 +0800
-categories: PKM
+categories: 
 tags: 
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/pkm.jpg
 ---
