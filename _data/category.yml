@@ -1,10 +1,1 @@
-- name: origin
-  img: /images/music.jpg
-- name: CS
-  img: /images/cs.jpg
-- name: AI
-  img: /images/ai.jpg
-- name: math
-  img: /images/math.jpg
-- name: music
-  img: /images/music.jpg
+
