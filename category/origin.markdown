@@ -11,7 +11,6 @@ img: /images/origin.jpg
 * PKMS（SiteBarin）大四
 * 文字风格模仿 大四
 * mathematica 辅助学习程序 大四
-  * 泰勒展开式逼近过程
 * 基于TheBrain的知识分析 大三
 * 打飞机小游戏 大三
 * QQchatbot 大三
