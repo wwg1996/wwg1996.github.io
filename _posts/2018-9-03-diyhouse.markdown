@@ -1,8 +1,8 @@
 ---
 layout: post
-title: DIY小房子 大学
+title: DIY小房子 
 date: 2018-09-03 14:02:56 +0800
-categories: 原创空间
+categories: origin
 tags: 手工 
 img: http://wangweiguang.xyz/images/mine/267026916.png
 ---

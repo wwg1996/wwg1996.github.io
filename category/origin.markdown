@@ -9,12 +9,12 @@ img: /images/origin.jpg
 
 ## 计算机
 * PKMS（SiteBarin）大四
-* 文字风格模仿 大四
+* 文本风格转移 大四
 * mathematica 辅助学习程序 大四
 * 基于TheBrain的知识分析 大三
-* 打飞机小游戏 大三
-* QQchatbot 大三
-* 小说分析 大三
+* [打飞机小游戏 大三](http://wangweiguang.xyz/cs/2018/03/09/pyxxm.html)
+* [QQchatbot 大三](http://wangweiguang.xyz/ai/origin/2018/03/03/chatbot1.html)
+* [小说分析 大三](http://wangweiguang.xyz/ai/2018/02/18/santi2vec.html)
 * Qt文档管理软件 大二
 * PKMS（Acesse）大二
 * 若干C语言小程序
@@ -22,7 +22,7 @@ img: /images/origin.jpg
   * 质数可视化小程序 大一
 
 ## 艺术
-* DIY小楼 大学
+* [DIY小房子 大学](http://wangweiguang.xyz/%E5%8E%9F%E5%88%9B%E7%A9%BA%E9%97%B4/2018/09/03/diyhouse.html)
 * 每日一画 大学
 * 《飓风》微电影 高中
 * 《咱们的十二班》恶搞视频 高中
@@ -93,5 +93,5 @@ img: /images/origin.jpg
 
 ## 其他
 * 个人知识管理体系 大学
-* 信息论与问题分析
-* 英文字幕翻译
+* 信息论与问题分析 大二
+* 英文字幕翻译 大一
