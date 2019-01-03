@@ -22,10 +22,10 @@ img: /images/origin1.jpg
   * 质数可视化小程序 大一
 
 ## 艺术
-* [DIY小房子 大学](http://wangweiguang.xyz/%E5%8E%9F%E5%88%9B%E7%A9%BA%E9%97%B4/2018/09/03/diyhouse.html)
-* 每日一画 大学
-* 《飓风》微电影 高中
-* 《咱们的十二班》恶搞视频 高中
+* [DIY小房子 大学](http://wangweiguang.xyz/origin/2018/09/03/diyhouse.html)
+* [每日一画 大学](http://wangweiguang.xyz/origin/2015/10/01/mryh.html)
+* [《飓风》微电影 高中](https://v.youku.com/v_show/id_XNzQwOTQxNTE2.html)
+* [《咱们的十二班》微电影 高中](https://www.bilibili.com/video/av39800856)
 * 城楼（纸雕） 高中  
 * 正多面体（纸艺）高中
 * “手绘” 初中 
