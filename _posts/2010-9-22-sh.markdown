@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "手绘"  
-date: 2010-10-01 14:02:56 +0800
+date: 2010-09-22 14:02:56 +0800
 categories: origin
 tags: 画画 
-img: http://wangweiguang.xyz/images/手绘/IMG_009.jp
+img: http://wangweiguang.xyz/images/手绘/IMG_009.jpg
 ---
 
 ![image](http://wangweiguang.xyz/images/手绘/IMG_001.jpg)
