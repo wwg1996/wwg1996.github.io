@@ -33,5 +33,5 @@ img: http://wangweiguang.xyz/images/手绘/IMG_009.jpg
 
 ![image](http://wangweiguang.xyz/images/手绘/IMG_013.jpg)
 
-![image](http://wangweiguang.xyz/images/手绘/IMG_014.jpg)
+![image](http://wangweiguang.xyz/images/手绘/IMG.jpg)
 

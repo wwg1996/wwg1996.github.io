@@ -26,13 +26,13 @@ img: /images/origin1.jpg
 * [每日一画 大学](http://wangweiguang.xyz/origin/2015/10/01/mryh.html)
 * [《飓风》微电影 高中](https://v.youku.com/v_show/id_XNzQwOTQxNTE2.html)
 * [《咱们的十二班》微电影 高中](https://www.bilibili.com/video/av39800856)
-* 城楼（纸雕） 高中  
-* 正多面体（纸艺）高中
+* [城楼（纸雕） 高中](http://wangweiguang.xyz/origin/2014/10/01/handcraft.html)  
+* [正多面体（纸艺）高中 大学](http://wangweiguang.xyz/origin/2014/10/01/handcraft.html)
 * “手绘” 初中 
 * 初中同学像 初中
 * 翻页动画（火柴人） 小学 初中
-* 定格动画 小学 初中
-* Flash火柴人 小学
+* 定格动画 小学 初中 大学
+* Flash火柴人大战 小学
 * 课本涂鸦 小学
 * 鬼畜音频 小学
 * 漫画《武之道》 小学 初中
