@@ -10,14 +10,24 @@ img: /images/origin1.jpg
 ## 计算机
 * PKMS（SiteBarin）大四
 * 文本风格转移 大四
-* mathematica 辅助学习程序 大四
+* Mathematica 辅助学习程序 大四
 * 基于TheBrain的知识分析 大三
 * [打飞机小游戏 大三](http://wangweiguang.xyz/cs/2018/03/09/pyxxm.html)
 * [QQchatbot 大三](http://wangweiguang.xyz/ai/origin/2018/03/03/chatbot1.html)
 * [小说分析 大三](http://wangweiguang.xyz/ai/2018/02/18/santi2vec.html)
 * Qt文档管理软件 大二
-* PKMS（Acesse）大二
-* 若干C语言趣味小程序 大一大二
+* [个人知识管理系统（Acesse）大二](http://wangweiguang.xyz/origin/2017/06/01/pkms0.html)
+* [C语言小程序 大一大二](http://wangweiguang.xyz/origin/2016/06/06/xcx.html)
+
+## 数学
+* 《新能源模型》美赛 大学
+* 《CT系统参数标定及成像》国赛 大学
+* 《电池组配组问题》大学
+* n次折线路径的轨迹 大学
+* [分形之歌 大学](http://wangweiguang.xyz/origin/2015/10/19/fxzg.html)
+* [多面体的展开图 高中](http://wangweiguang.xyz/origin/2014/10/01/handcraft.html)
+* 三等分线段尺规作图 初中
+* 几个猜想 小学
 
 ## 艺术
 * [DIY小房子 大学](http://wangweiguang.xyz/origin/2018/09/03/diyhouse.html)
@@ -93,18 +103,13 @@ img: /images/origin1.jpg
   * [《想写一首情歌》](http://wangweiguang.xyz/origin/2016/12/03/xxysqg.html)
 
 ## 随笔
-* 22年的人生总结
-* 三年的无纸化生活
-* 天才的层次
+* 22岁的人生总结 大学
+* 无纸化生活 大学
+* 天才的层次 大学
+* 18岁的人生总结 高中
+* 未命名剧本 高中 
 * 意识流小说 初中
 * etc
-
-## 数学
-* 数学建模 大学
-* n次折线路径的轨迹 大学
-* 多面体的展开图 高中
-* 三等分线段尺规作图 初中
-* 猜想：任何数学问题都可以有无限种解决方法；每一种解决方法都有现实的意义 小学
 
 ## 小说
 * 《乘虚者》 大学

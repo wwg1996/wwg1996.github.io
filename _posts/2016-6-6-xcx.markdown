@@ -8,9 +8,11 @@ img: http://wangweiguang.xyz/images/cs.jpg
 ---
 
 * 刚学完判断语句
+
 ![image](http://wangweiguang.xyz/images/其他/xcx1.jpg)
 
 * 刚学完循环
+
 ![image](http://wangweiguang.xyz/images/其他/xcx2.jpg)
 
 ![image](http://wangweiguang.xyz/images/其他/xcx.gif)
@@ -18,8 +20,10 @@ img: http://wangweiguang.xyz/images/cs.jpg
 ![image](http://wangweiguang.xyz/images/其他/xcx1.gif)
 
 * 质数分布可视化
+
 ![image](http://wangweiguang.xyz/images/其他/xcx3.jpg)
 
 * 学到排序，排序过程中元素交换可视化
-* ![image](http://wangweiguang.xyz/images/sort5.jpg)
+
+![image](http://wangweiguang.xyz/images/sort5.jpg)
 
