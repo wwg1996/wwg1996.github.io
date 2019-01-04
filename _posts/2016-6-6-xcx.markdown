@@ -1,0 +1,25 @@
+---
+layout: post
+title: c语言小程序
+date: 2016-06-06 14:02:56 +0800
+categories: origin
+tags:  C 
+img: http://wangweiguang.xyz/images/cs.jpg
+---
+
+* 刚学完判断语句
+![image](http://wangweiguang.xyz/images/其他/xcx1.jpg)
+
+* 刚学完循环
+![image](http://wangweiguang.xyz/images/其他/xcx2.jpg)
+
+![image](http://wangweiguang.xyz/images/其他/xcx.gif)
+
+![image](http://wangweiguang.xyz/images/其他/xcx1.gif)
+
+* 质数分布可视化
+![image](http://wangweiguang.xyz/images/其他/xcx3.jpg)
+
+* 学到排序，排序过程中元素交换可视化
+* ![image](http://wangweiguang.xyz/images/sort5.jpg)
+
