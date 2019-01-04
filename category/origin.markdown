@@ -88,9 +88,9 @@ img: /images/origin1.jpg
   * 吉他编曲
     * [《伤心的人别听慢歌》](http://node.kg.qq.com/play?s=tS-pM-tq-UTwStGQ&g_f=personal) 
   * 作词改编
-    * 《分形之歌》（改编《听妈妈的话》）
+    * [《分形之歌》（改编《听妈妈的话》）](http://wangweiguang.xyz/origin/2015/10/19/fxzg.html)
 * 原创 
-  * 《想写一首情歌》
+  * [《想写一首情歌》](http://wangweiguang.xyz/origin/2016/12/03/xxysqg.html)
 
 ## 随笔
 * 22年的人生总结
@@ -100,10 +100,10 @@ img: /images/origin1.jpg
 * etc
 
 ## 数学
+* 数学建模 大学
 * n次折线路径的轨迹 大学
 * 多面体的展开图 高中
 * 三等分线段尺规作图 初中
-
 * 猜想：任何数学问题都可以有无限种解决方法；每一种解决方法都有现实的意义 小学
 
 ## 小说
