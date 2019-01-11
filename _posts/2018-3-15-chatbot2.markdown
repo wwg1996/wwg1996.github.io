@@ -3,7 +3,7 @@ layout: post
 title: Chatbot初探2 qq聊天机器人 下
 date: 2018-03-15 14:02:56 +0800
 categories: AI
-tags: NPL chatbot 
+tags: NLP chatbot 
 img: http://wangweiguang.xyz/images/chatbot.jpg
 ---
 
