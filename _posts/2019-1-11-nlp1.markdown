@@ -1,0 +1,449 @@
+---
+layout: post
+title:  1. NLP基本流程
+date: 2019-01-11 14:02:56 +0800
+categories: AI
+tags: NLP  
+img: http://wangweiguang.xyz/images/nlp.jpg
+---
+
+
+* 
+{:toc}
+
+
+机器学习的基本流程主要就是两个步骤即
+
+1. 数据的准备和预处理
+2. 模型的构建和训练
+
+而自然语言处理（NLP）作为一类机器学习的应用也复合这两个基本步骤。而NLP的特殊之处主要在于数据的预处理部分。
+
+
+![image](http://wangweiguang.xyz/images/nlp1.jpg)
+
+
+## 0 准备：语料（corpus）
+当代自然语言处理都是基于统计的，统计自然需要很多样本，因此语料和词汇资源是必不可少的，本节以NLTK库为例安装和使用语料库。
+
+
+```python
+# NLTK安装语料库
+import nltk
+nltk.download()
+```
+
+```python
+# NLTK⾃带语料库
+>>> from nltk.corpus import brown
+>>> brown.categories()
+['adventure', 'belles_lettres', 'editorial',
+'fiction', 'government', 'hobbies', 'humor',
+'learned', 'lore', 'mystery', 'news', 'religion',
+'reviews', 'romance', 'science_fiction']
+>>> len(brown.sents())
+57340
+>>> len(brown.words())
+1161192
+```
+
+
+```python
+# 收集自己的语料文件（文本文件）到某路径下（比如/tmp)，然后执行：
+>>> from nltk.corpus import PlaintextCorpusReader
+>>> corpus_root = '/tmp'
+>>> wordlists = PlaintextCorpusReader(corpus_root, '.*')
+>>> wordlists.fileids()
+# 就可以列出自己语料库的各个文件了，也可以使用如wordlists.sents('a.txt')和wordlists.words('a.txt')等方法来获取句子和词信息
+```
+
+## 1 预处理：分词（tokenize）
+分词，即按照词法，把文本切成一个一个的词。
+
+```python
+>>> import nltk
+>>> sentence = “hello, world"
+>>> tokens = nltk.word_tokenize(sentence)
+>>> tokens
+['hello', ‘,', 'world']
+```
+
+## 1.0 中文分词
+中英文自然语言处理最大的区别在于分词。
+```python
+import jieba
+
+seg_list =jieba.cut("我来到北京清华大学",cut_all=True)
+print("【全模式】:","/".join(seg_list)) 
+
+seg_list =jieba.cut("我来到北京清华大学",cut_all=False)
+print("【精确模式】:","/".join(seg_list)) 
+
+seg_list =jieba.cut("他来到了网易杭研天厦")
+print("【新词识别】:","/".join(seg_list)) 
+
+seg_list =jieba.cut_for_search("小明硕土毕业于中国科学院计算所，后在日本京都大学深造")
+print("【新词识别】:","/".join(seg_list)) 
+```
+
+```python
+【全模式】: 我/来到/北京/清华/清华大学/华大/大学
+【精确模式】: 我/来到/北京/清华大学
+【新词识别】: 他/来到/了/网易/杭研/天厦
+【新词识别】: 小明/硕土/毕业/于/中国/科学/学院/科学院/中国科学院/计算/计算所/，/后/在/日本/京都/大学/日本京都大学/深造
+```
+
+## 1.1 处理非正式的用语
+**问题**
+⽐如社交⽹络上，这些乱七⼋糟的不合语法不合正常逻辑的语⾔很多：@某⼈, 表情符号, URL, #话题符号，导致无法正确的分词。
+
+**方法**
+正则表达式
+
+```python
+# nltk.download('punkt')
+from nltk.tokenize import word_tokenize
+
+tweet = 'RT @angelababy: love you baby! :D http://ah.love #168cm'
+print(word_tokenize(tweet))
+
+# 正则表达式处理 表情&网址 字符串
+
+import re
+emoticons_str = r"""
+    (?:
+        [:=;] #眼睛
+        [oO\-]? #鼻子
+        [D\)\]\(\]/\\OpP] #嘴
+    )"""
+regex_str = [
+    emoticons_str,
+    r'<[^>]+>', # HTML tags
+    r'(?:@[\w_]+)', # @某人
+    r"(?:\#+[\w_]+[\w\'_\-]*[\w_]+)", # 话题标签
+    r'http[s]?://(?:[a-z]|[0-9]|[$-_@.&amp;+]|[!*\(\),]|(?:%[0-9a-f][0-9a-f]))+', # URLs
+    r'(?:(?:\d+,?)+(?:\.?\d+)?)', # 数字
+    r"(?:[a-z][a-z'\-_]+[a-z])", # 含有-和‘的单词 如don't
+    r'(?:[\w_]+)', # 其他
+    r'(?:\S)' # 其他
+]
+
+tokens_re = re.compile(r'('+'|'.join(regex_str)+')', re.VERBOSE | re.IGNORECASE)
+emoticon_re = re.compile(r'^'+emoticons_str+'$', re.VERBOSE | re.IGNORECASE)
+def tokenize(s):
+    return tokens_re.findall(s)
+
+def preprocess(s, lowercase=False):
+    tokens = tokenize(s)
+    if lowercase:
+        tokens = [token if emoticon_re.search(token) else token.lower() for token in tokens]
+    return tokens
+
+tweet = 'RT @angelababy: love you baby! :D http://ah.love #168cm'
+word_list = preprocess(tweet)
+print(word_list)
+```
+
+## 1.2 处理纷繁复杂的词形
+**问题**
+
+derivation引申: nation (noun) => national (adjective) => nationalize (verb)
+影响词性
+
+Inflection变化: walk => walking => walked
+不影响词性
+
+**方法**
+
+Stemming 词干提取：⼀般来说，就是把不影响词性的inflection的小尾巴砍掉
+walking 砍ing = walk
+walked 砍ed = walk
+
+Lemmatization 词形归⼀：把各种类型的词的变形，都归为⼀个形式
+went 归⼀= go
+are 归⼀= be
+
+### Stemming 词⼲提取
+```python
+>>> from nltk.stem.porter import PorterStemmer
+>>> porter_stemmer = PorterStemmer()
+>>> porter_stemmer.stem(‘maximum’)
+u’maximum’
+>>> porter_stemmer.stem(‘presumably’)
+u’presum’
+>>> porter_stemmer.stem(‘multiply’)
+u’multipli’
+>>> porter_stemmer.stem(‘provision’)
+u’provis’
+>>> from nltk.stem import SnowballStemmer
+>>> snowball_stemmer = SnowballStemmer(“english”)
+>>> snowball_stemmer.stem(‘maximum’)
+u’maximum’
+>>> snowball_stemmer.stem(‘presumably’)
+u’presum’
+>>> from nltk.stem.lancaster import LancasterStemmer
+>>> lancaster_stemmer = LancasterStemmer()
+>>> lancaster_stemmer.stem(‘maximum’)
+‘maxim’
+>>> lancaster_stemmer.stem(‘presumably’)
+‘presum’
+>>> lancaster_stemmer.stem(‘presumably’)
+‘presum’
+>>> from nltk.stem.porter import PorterStemmer
+>>> p = PorterStemmer()
+>>> p.stem('went')
+'went'
+>>> p.stem('wenting')
+'went'
+```
+
+### Lemma 词形归⼀
+
+```python
+>>> from nltk.stem import WordNetLemmatizer
+>>> wordnet_lemmatizer = WordNetLemmatizer()
+>>> wordnet_lemmatizer.lemmatize(‘dogs’)
+u’dog’
+>>> wordnet_lemmatizer.lemmatize(‘churches’)
+u’church’
+>>> wordnet_lemmatizer.lemmatize(‘aardwolves’)
+u’aardwolf’
+>>> wordnet_lemmatizer.lemmatize(‘abaci’)
+u’abacus’
+>>> wordnet_lemmatizer.lemmatize(‘hardrock’)
+‘hardrock’
+
+```
+### 更好地实现Lemma：词性标注
+
+```python
+>>> import nltk
+>>> text = nltk.word_tokenize('what does the fox say')
+>>> text
+['what', 'does', 'the', 'fox', 'say']
+>>> nltk.pos_tag(text)
+[('what', 'WDT'), ('does', 'VBZ'), ('the', 'DT'), ('fox', 'NNS'), ('say', 'VBP')]
+
+```
+
+## 1.3 关于停止词（stopwords）
+停止词，是由英文单词:stopword翻译过来的，原来在英语里面会遇到很多a，the，or等使用频率很多的字或词，常为冠词、介词、副词或连词等
+
+
+```python
+from nltk.corpus import stopwords
+#先token⼀一把，得到⼀一个word_list
+# ...
+#然后filter⼀一把
+filtered_words =
+[word for word in word_list if word not in stopwords.words('english')]
+
+```
+
+## 1.4 ⼀条typical的⽂本预处理流⽔线
+![image](http://wangweiguang.xyz/images/nlp2.jpg)
+
+## 2 特征工程（Feature化）
+当经历完分词的过程后，接下来需要把词汇转化为计算机可以理解的向量组形式，并且最大限度地从原始数据中提取特征以供算法和模型使用。以下以三个NLP的经典应用展现特征化的过程。
+## 2.1 应用1：情感分析
+
+### 1. 基于字典的方法（sentiment dictionary）
+like 1
+good 2
+bad -2
+terrible -3
+类似于关键词打分机制
+
+
+```python
+words = word_list 
+
+sentiment_dictionary = {}
+for line in open('AFINN-111.txt'):
+    word, score = line.split('\t')
+    sentiment_dictionary[word] = int(score)
+#把这个打分表记录在一个Dict上以后
+#跑一遍整个句句子，把对应的值相加
+total_score = sum(sentiment_dictionary.get(word, 0) for word in words)
+#有值就是Dict中的值，没有就是0
+#于是你就得到了了⼀一个sentiment score
+
+total_score
+```
+
+
+
+### 2.  ML方法
+
+```python
+from nltk.classify import NaiveBayesClassifier
+
+#随⼿手造点训练集
+s1 = 'this is a good book'
+s2 = 'this is a awesome book'
+s3 = 'this is a bad book'
+s4 = 'this is a terrible book'
+
+def preprocess(s):
+    # Func:句⼦处理
+    #这⾥简单的⽤了split(),把句子中每个单词分开
+    #显然还有更更多的processing method可以⽤用
+    return {word: True for word in s.lower().split()}
+
+    # return长这样:
+    # {'this': True, 'is':True, 'a':True, 'good':True, 'book':True}
+    #其中,前一个叫fname,对应每个出现的⽂文本单词;
+    #后一个叫fval,指的是每个⽂文本单词对应的值。
+    #这⾥里里我们⽤用最简单的True,来表示,这个词『出现在当前的句子中』的意义。
+    #当然啦,我们以后可以升级这个方程,让它带有更更加牛逼的fval,比如word2vec
+
+#把训练集给做成标准形式
+training_data = [[preprocess(s1), 'pos'],
+                 [preprocess(s2), 'pos'],
+                 [preprocess(s3), 'neg'],
+                 [preprocess(s4), 'neg']]
+#喂给model吃
+model = NaiveBayesClassifier.train(training_data)
+#打出结果
+print(model.classify(preprocess('this is a good book')))
+
+```
+
+
+
+## 2.2 应用2：文本相似度
+用元素频率表示⽂本特征
+
+
+```python
+import nltk
+from nltk import FreqDist
+#做个词库先
+corpus = 'this is my sentence ' \
+        'this is my life ' \
+        'this is the day'
+#随便tokenize⼀一下
+#显然,正如上文提到,
+#这⾥里里可以根据需要做任何的preprocessing:
+# stopwords, lemma, stemming, etc.
+tokens = nltk.word_tokenize(corpus)
+print(tokens)
+#得到token好的word list
+# ['this', 'is', 'my', 'sentence',
+# 'this', 'is', 'my', 'life', 'this',
+# 'is', 'the', 'day']
+#借用NLTK的FreqDist统计一下⽂文字出现的频率
+fdist = FreqDist(tokens)
+#它就类似于一个Dict
+#带上某个单词,可以看到它在整个⽂文章中出现的次数
+print(fdist['is'])
+# 3
+
+#好,此刻,我们可以把最常⽤用的50个单词拿出来
+standard_freq_vector = fdist.most_common(50)
+size = len(standard_freq_vector)
+print(standard_freq_vector)
+# [('is', 3), ('this', 3), ('my', 2),
+# ('the', 1), ('day', 1), ('sentence', 1),
+# ('life', 1)
+
+# Func:按照出现频率⼤大⼩小,记录下每⼀一个单词的位置
+def position_lookup(v):
+    res = {}
+    counter = 0
+    for word in v:
+        res[word[0]] = counter
+        counter += 1
+        return res
+#把标准的单词位置记录下来
+standard_position_dict = position_lookup(standard_freq_vector)
+print(standard_position_dict)
+#得到一个位置对照表
+# {'is': 0, 'the': 3, 'day': 4, 'this': 1,
+# 'sentence': 5, 'my': 2, 'life': 6}
+```
+
+    ['this', 'is', 'my', 'sentence', 'this', 'is', 'my', 'life', 'this', 'is', 'the', 'day']
+    3
+    [('this', 3), ('is', 3), ('my', 2), ('sentence', 1), ('life', 1), ('the', 1), ('day', 1)]
+
+
+
+```python
+import nltk
+from nltk import FreqDist
+#做个词库先
+corpus = 'this is my sentence ' \
+'this is my life ' \
+'this is the day'
+
+tokens = nltk.word_tokenize(corpus)
+print(tokens)
+```
+
+    ['this', 'is', 'my', 'sentence', 'this', 'is', 'my', 'life', 'this', 'is', 'the', 'day']
+
+
+## 2.3 应用3：文本分类
+无论是分辨情感，分辨是哪个作者写的都是文本分类。很多的NLP问题都可以被归为文本分类问题。
+
+### TF-IDF
+**特征工程的目的就是分析出该文本中的独特之处，出现太少的词语无法体现该文本的特点，出现太多的文本也无法体现文本特点。**
+
+TF: Term Frequency, 衡量⼀个term在⽂档中出现得有多频繁。
+
+TF(t) = (t出现在⽂档中的次数) / (⽂档中的term总数).
+
+IDF: Inverse Document Frequency, 衡量⼀个term有多重要。
+
+有些词出现的很多，但是明显不是很有卵⽤。⽐如’is'，’the‘，’and‘之类
+的。
+
+为了平衡，我们把罕见的词的重要性（weight）搞⾼，
+把常见词的重要性搞低。
+
+IDF(t) = log_e(⽂档总数/ 含有t的⽂档总数).
+
+TF-IDF = TF * IDF
+
+举个栗⼦🌰
+:
+⼀个⽂档有100个单词，其中单词baby出现了3次。
+那么，TF(baby) = (3/100) = 0.03.
+好，现在我们如果有10M的⽂档，baby出现在其中的1000个⽂档中。
+那么，IDF(baby) = log(10,000,000 / 1,000) = 4
+所以，TF-IDF(baby) = TF(baby) * IDF(baby) = 0.03 * 4 = 0.12
+
+
+
+```python
+# NLTK实现TF-IDF
+from nltk.text import TextCollection
+#首先把所有的⽂文档放到TextCollection类中。
+#这个类会⾃自动帮你断句句,做统计,做计算
+corpus = TextCollection(['this is sentence one',
+                         'this is sentence two',
+                         'this is sentence three'])
+#直接就能算出tfidf
+# (term:一句句话中的某个term, text:这句话)
+print(corpus.tf_idf('this', 'this is sentence four'))
+# 0.444342
+#同理理,怎么得到⼀个标准⼤小的vector来表示所有的句子?
+#对于每个新句句⼦子
+new_sentence = 'this is sentence five'
+#遍历⼀一遍所有的vocabulary中的词:
+for word in standard_vocab:
+    print(corpus.tf_idf(word, new_sentence))
+#我们会得到⼀一个巨⻓长(=所有vocab⻓长度)的向量
+```
+
+## 3 接下来就是ML的过程了...
+可能的ML模型:
+SVM
+LR
+RF
+MLP
+LSTM
+RNN
+
+

@@ -1,0 +1,252 @@
+---
+layout: post
+title:  基于TheBrain的知识分析 初探
+date: 2018-05-11 14:02:56 +0800
+categories: origin
+tags: PKM  
+img: http://wangweiguang.xyz/images/pkma.jpg
+---
+
+尝试用thebrain进行个人知识管理已经有一年半的时间了，这短时间来学习的知识点形成了一个超过1.8万个节点以及超过2.3关系连线的庞大的思维导图。在thebrain软件中存储了关于这些节点与连线详细的信息，于是尝试导出后用python进行一下简单的数据分析，作为进一年多来学习情况的一个总结汇报。
+
+## 数据读取
+
+```
+import glob
+import codecs
+from html import unescape
+import calendar
+import matplotlib.pyplot as plt
+import numpy as np
+
+# 文件名读取
+filenames = glob.glob("thoughtData/*.xml")
+for i in range(len(filenames)):
+    filenames[i] = int(filenames[i][12:-4])
+filenames = sorted(filenames)
+
+# 文件数据读取
+thoughts = {}
+for i in filenames:
+    thought = {}
+    thoughts[i] = thought
+    name = ""
+    child = []
+    jump = []
+    parent = []
+    filename = 'thoughtData/' + str(i) + '.xml'
+    for line in open(filename):
+        if ('name' in line) and (len(name) == 0):
+            start = line.find('name') + 6
+            end = line[start:].find(' ') + start -1
+            name = unescape(line[start:end])
+            continue
+        if 'modificationDate' in line:
+            start = line.find('date') + 23
+            date = unescape(line[start:-2])
+        if 'Link' in line:
+            str1 = 'idA="'+str(i)+'"'
+            str2 = 'idB="'+str(i)+'"'
+            
+            start = line.find('idB') + 5
+            end = line[start:].find(' ') + start -1
+            start2 = line.find('idA') + 5
+            end2 = line[start2:].find(' ') + start2 -1
+            
+            if ('CHILD' in line) and (str1 in line):
+                child.append(int(line[start:end]))
+            if ('JUMP' in line) and (str1 in line):
+                jump.append(int(line[start:end]))
+            if ('PARENT' in line) and (str2 in line):
+                parent.append(int(line[start2:end2]))
+    thought['name'] = name
+    thought['modDate'] = date
+    thought['child'] = child
+    thought['jump'] = jump
+    thought['parent'] = parent
+```python
+
+
+## 数据处理
+
+```
+# 帮助函数
+def compareDates(date1, date2):
+    date1 = date1.split('-')
+    date2 = date2.split('-')
+    for i in range(3):
+        if int(date1[i]) > int(date2[i]):
+            return '>'
+        elif int(date1[i]) < int(date2[i]):
+            return '<'
+    return '='
+    
+# 时间序列处理—转换成二十四小时制
+modDates = []
+modTimes = []
+for i in filenames:
+    modDate = thoughts[i]['modDate']
+    if '上午' in modDate:
+        modDate = modDate.replace('上午','')
+        modDates.append(modDate)
+    elif '下午' in modDate:
+        date = modDate 
+        start = date.find('下午')
+        time = date[start+2:]
+        end = time.find(':')
+        hour = str(int(time[:end]) + 12)
+        time = hour + time[end:]
+        modDate = date[:start] + time
+        modDates.append(modDate)
+    start = modDate.find(' ')
+    end = modDate.find(':')
+    modTime = modDate[start+1:end]
+    modTimes.append(modTime)
+    
+# 修改时间序列
+for i in range(len(modDates)):
+    end = modDates[i].find(' ')
+    modDates[i] = modDates[i][:end]
+len(modDates)
+
+## 耗时！
+## 创建时间序列
+# createDates = []
+# for i in range(len(modDates)):
+#     date = modDates[i]
+#     for j in range(i, len(modDates)):
+#         if compareDates(date, modDates[j]) == '>':
+#             date = modDates[j]
+#     createDates.append(date)
+
+# 每日想法统计
+dateCount = []
+dates = dateGenerator(2017,7,10,Y,M,D)
+
+for date1 in dates:
+    count = 0
+    for date2 in modDates:
+        if date1 == date2:
+            count += 1
+    dateCount.append(count)
+        
+sum(dateCount)  
+
+# 每日想法统计
+dateCount1 = []
+dates = dateGenerator(2017,7,10,Y,M,D)
+
+for date1 in dates:
+    count = 0
+    for date2 in createDates:
+        if date1 == date2:
+            count += 1
+    dateCount1.append(count)
+sum(dateCount1) 
+
+# 每小时想法统计
+timeCount = []
+times = range(1,25)
+flags = len(modTimes)*[0]
+
+for time in times:
+    i = 0
+    count = modTimes.count(str(time))
+    timeCount.append(count)
+    
+timeCount[22]=timeCount[22]-800
+    
+sum(timeCount)   
+
+
+```python
+
+## 数据分析
+
+```
+# -*- coding: utf-8 -*-  
+# 每日节点统计
+modification = list(np.array(dateCount)-np.array(dateCount1))
+for i in range(len(modification)):
+    if modification[i] < 0:
+        modification[i] = 0
+# 创建+修改
+dateCount2 = list(np.array(dateCount)+np.array(modification))
+        
+# 去掉导入1119个节点数的一天
+for i in range (len(dateCount)):
+    if dateCount[i]==max(dateCount):
+        dateCount[i] = 100   
+
+plt.plot(modification,label="modification")
+plt.plot(dateCount,label="creation")
+plt.title('Day Count')
+plt.legend()
+plt.show()
+
+print("节点总数：",sum(dateCount))
+print("复习率：60%")
+print("修改率：",round(sum(modification)/sum(dateCount),3)*100,"%")
+print("未学习天数：",round(dateCount.count(0)/len(dateCount),3)*100,"%")
+print("平均每天学习：",sum(dateCount2)//len(dateCount))
+print("最多的一天学习：",max(dateCount))
+```python
+
+![image](http://wangweiguang.xyz/images/pkma1.jpg)
+
+```
+# 节点增长
+sums = []
+for i in range(len(dateCount)):
+    s = 0
+    for count in dateCount[:i+1]:
+        s += count
+    sums.append(s)
+plt.plot(sums)
+plt.title('Increase')
+plt.show()
+```python
+
+![image](http://wangweiguang.xyz/images/pkma2.jpg)
+```
+#一天中24小时的节点计数
+plt.bar(range(1,25), timeCount)
+plt.title('Time Count')
+plt.show()
+```python
+![image](http://wangweiguang.xyz/images/pkma3.jpg)
+```
+# 整个知识网络的可视化
+
+%matplotlib inline
+import matplotlib.pyplot as plt
+import networkx as nx
+import pydot
+from networkx.drawing.nx_pydot import graphviz_layout
+
+# 画出子树
+root = 4 # 数学
+cildTree = findChild(4, list(G.edges))
+
+ncolors = ['b']*G.number_of_nodes()
+for i in list(cildTree):
+    ncolors[list(G.nodes()).index(i[0])] = 'r'
+    ncolors[list(G.nodes()).index(i[1])] = 'r'
+
+ecolors = list(G.edges)
+for i in range(len(list(ecolors))):
+    if ecolors[i] in cildTree:
+        ecolors[i] = 'r'
+    else:
+        ecolors[i] = 'b'
+
+pos = graphviz_layout(G, prog='dot', args='')
+plt.figure(figsize=(20, 20))
+nx.draw(G, pos, node_size=5, alpha=0.5, edge_color=ecolors, node_color=ncolors, with_labels=False)
+#plt.axis('equal')
+plt.show()
+```python
+![image](http://wangweiguang.xyz/images/pkma4.jpg)
+
+
+

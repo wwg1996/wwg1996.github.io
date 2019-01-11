@@ -12,6 +12,7 @@ img: /images/origin1.jpg
 * 文本风格转移 大四
 * Mathematica 辅助学习程序 大四
 * 基于TheBrain的知识分析 大三
+* 英文字幕翻译预处理 大三
 * [打飞机小游戏 大三](http://wangweiguang.xyz/cs/2018/03/09/pyxxm.html)
 * [QQchatbot 大三](http://wangweiguang.xyz/ai/origin/2018/03/03/chatbot1.html)
 * [小说分析 大三](http://wangweiguang.xyz/ai/2018/02/18/santi2vec.html)
@@ -116,5 +117,4 @@ img: /images/origin1.jpg
 
 ## 其他
 * 个人知识管理体系 大学
-* 信息论与问题分析 大二
-* 英文字幕翻译 大一
+* 信息论与问题分析 大学
