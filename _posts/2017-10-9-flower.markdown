@@ -2,8 +2,8 @@
 layout: post
 title: 《flower》岸部真明
 date: 2017-10-09 22:01:57 +0800
-categories: music
-tags: 曲目积累 指弹 
+categories: more
+tags: 音乐 
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/abzm.jpg
 ---
 * 
