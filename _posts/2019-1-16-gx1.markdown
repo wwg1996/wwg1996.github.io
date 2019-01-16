@@ -11,18 +11,8 @@ img: http://wangweiguang.xyz/images/nlp.jpg
 * 
 {:toc}
 
-**定义**
-反函数为对一给定函数做逆运算的函数. 也就是从输出y 出发, 这个新的函数发现一个且仅有一个输入 $x$ 满足 $f(x)=y$. 这个新的函数称为 $f$ 的反函数, 并写作 $f^{-1}$. 
 
-如果水平线检验失败因而没有反函数, 可以限制函数的定义域, 使之满足水平线检验. 比如将 $g(x)=x^2$ 的定义域缩减为 $[0,\infty )$ , 就满足水平线检验, 也有了反函数. 
-
-$a_n x^n+a_{n-1} x^{n-1}+{...}+a_1 x+a_0$ 一般的多项式的图像是很难画的. 不过, 多项式的图像左右两端的走势倒是容易判断. 这是由最高次数的项的系数决定的 $a_n$ , 该系数叫作**首项系数**.
 
 <script type="text/javascript"
-src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}
-});
+ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
