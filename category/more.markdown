@@ -2,10 +2,13 @@
 layout: post
 title: 其他
 date: 2017-10-8 20:39:36 +0800
-categories: 
+categories: more
 tags:  
 img: /images/more.jpg
 ---
+
+* 
+{:toc}
 
 ## 音乐
 ### 曲目积累
@@ -30,7 +33,7 @@ img: /images/more.jpg
 [HookTheory](https://www.hooktheory.com/site)
 [Guitar Pro](https://baike.baidu.com/item/Guitar%20Pro/5452699) 
 
-## 逻辑学
+## 逻辑
 
 * [逻辑学分类](https://wwg1996.github.io/more/2017/10/10/ljxfl.html)
 * [逻辑学简史](https://wwg1996.github.io/more/2017/10/10/ljxls.html)
@@ -39,6 +42,16 @@ img: /images/more.jpg
 
 * [哲学主要内容](https://wwg1996.github.io/more/2017/10/10/zxzynr.html)
 * [《苏菲的世界》笔记](https://wwg1996.github.io/more/2017/10/10/sfdsj.html)
+### 马克思主义哲学
+* 0 绪论
+* 1 唯物论
+* 2 辩证法
+* 3 认识论
+* 4 唯物史观
+### 古希腊哲学
+### 其他
+* 《物演通论》
+* 语言学转向
 
 ## 英语
 
@@ -53,9 +66,63 @@ img: /images/more.jpg
 * [3.3 语句分类](https://wwg1996.github.io/more/2017/10/10/yjfl.html)
 * [3.4 主谓一致](https://wwg1996.github.io/more/2017/10/10/zwyz.html)
 
+### 写作
 
 ### 考试
 
 * [听力](http://wangweiguang.xyz/more/2018/01/31/listening.html)
 * [阅读](http://wangweiguang.xyz/more/2018/01/31/reading.html)
+
+## 文学
+### 读
+### 写
+* 设定
+* 情节
+* 文字
+
+## 国学
+### 道家文化
+### 禅宗文化
+
+## 心理
+* 心理学基础
+  * 1 心理过程
+  * 2 个性心理
+  * 3 学科体系
+  * 4 西方流派
+* 人格心理学
+  * 九型人格 
+* 进化心理学
+* 社会心理学
+
+## 艺术
+* 美术
+* 手工
+* 电子
+
+## 思维
+* 经验型思维
+* 科学型思维
+* 观念型思维
+
+## 科技
+* 虚拟现实
+* 3D打印
+
+## 历史
+### 中国历史
+* 近代
+* 现代
+### 世界历史
+### 数学历史
+* 数学起源
+* 古代数学
+* 近代数学
+* 现代数学
+
+## 政治
+* 政治经济学
+* 科学社会主义
+
+
 

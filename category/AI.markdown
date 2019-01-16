@@ -10,9 +10,9 @@ img: /images/ai.jpg
 * 
 {:toc}
 
-## 知识
+# 理论基础
 
-### 人工智能概论
+## 0  概论
 
 * 0 [人工智能概述](http://wangweiguang.xyz/ai/2017/10/23/ai0.html)
 * 1 [确定性知识系统](http://wangweiguang.xyz/ai/2017/11/02/qdxzsxt.html)
@@ -20,8 +20,21 @@ img: /images/ai.jpg
 * 3 [计算智能](http://wangweiguang.xyz/ai/2018/02/17/computational-intelligence.html)
 * 4 [机器学习](http://wangweiguang.xyz/ai/2018/02/17/machine-learning.html)
 
-### 深度学习
+## 1 Python
+* [0 基本语法](http://wangweiguang.xyz/cs/2018/03/04/python3.html)
+* 1 面向对象
+* 2 常用模块
+* 3 网络爬虫
+* 4 数据分析
 
+## 2 数学基础
+* 高数基础
+* 线代基础
+* 概统基础
+
+## 3 机器学习
+
+## 4 深度学习
 [吴恩达的深度学习课程](http://mooc.study.163.com/smartSpec/detail/1001319001.htm)
 
 * [1 课程导论](https://wwg1996.github.io/ai/2017/10/11/dl1.html)
@@ -42,33 +55,19 @@ img: /images/ai.jpg
 * [8 CNN实现艺术风格转移](http://wangweiguang.xyz/ai/2018/02/22/how-to-generate-art.html)
 * [11 如何做文章摘要](http://wangweiguang.xyz/ai/2018/03/07/how-to-make-a-text-summarizer.html)
 
-### 数据挖掘
 
-## 应用
+# 应用技术
 
-### 自然语言处理
+## 数据挖掘
 
+## 自然语言处理
 * [Chatbot初探1 qq聊天机器人 上](http://wangweiguang.xyz/ai/2018/03/03/chatbot1.html)
 * [Chatbot初探2 qq聊天机器人 下](http://wangweiguang.xyz/ai/2018/03/15/chatbot2.html)
 * [Word2Vector 分析《三体》](http://wangweiguang.xyz/ai/2018/02/18/santi2vec.html)
 
-### 计算机艺术
+## Kaggle实战
+
+## 计算机视觉
 
 * [CNN实现艺术风格转移](http://wangweiguang.xyz/ai/2018/02/22/how-to-generate-art.html)
-
-## 编程
-
-### 吴恩达DL编程练习
-
-[Python Basics with Numpy](http://wangweiguang.xyz/html/Python+Basics+With+Numpy.html)（刷新后显示）
-
-[Logistic Regression with a Neural Network mindset](http://wangweiguang.xyz/html/Logistic+Regression+with+a+Neural+Network+mindset.html)（刷新后显示）
-
-[Planar data classification with one hidden layer](http://wangweiguang.xyz/html/Planar+data+classification+with+one+hidden+layer+v4.html)（刷新后显示）
-
-[Building your Deep Neural Network Step b Step v5.html](http://wangweiguang.xyz/html/Building%2Byour%2BDeep%2BNeural%2BNetwork%2B-%2BStep%2Bby%2BStep%2Bv5.html)（刷新后显示）
-
-[Deep Neural Network Application v3.html](http://wangweiguang.xyz/html/Deep%2BNeural%2BNetwork%2B-%2BApplication%2Bv3.html)（刷新后显示）
-
-## 
 
