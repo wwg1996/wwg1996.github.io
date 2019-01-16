@@ -11,7 +11,7 @@ img: http://wangweiguang.xyz/images/nlp.jpg
 * 
 {:toc}
 
-
+$abcd^2$
 
 <script type="text/javascript"
  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
