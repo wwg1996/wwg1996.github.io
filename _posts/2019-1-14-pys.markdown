@@ -4,7 +4,7 @@ title:  python中的字符串操作
 date: 2019-01-14 14:02:56 +0800
 categories: AI CS
 tags: python  
-img: http://wangweiguang.xyz/images/python.jpg
+img: http://wangweiguang.xyz/images/python.png
 ---
 
 

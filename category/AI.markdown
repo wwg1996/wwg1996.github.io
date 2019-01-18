@@ -61,6 +61,14 @@ img: /images/ai.jpg
 ## 数据挖掘
 
 ## 自然语言处理
+### 理论
+* 自然语言理论
+  * [0 NLP基本流程](http://wangweiguang.xyz/ai/2019/01/11/nlp1.html)  
+### 技术
+* [python字符串处理](http://wangweiguang.xyz/ai/cs/2019/01/14/pys.html)
+* [python正则表达式](http://wangweiguang.xyz/cs/2019/01/15/regex0.html)
+* [jieba中文处理](http://wangweiguang.xyz/ai/2019/01/18/jieba.html)
+### 实践
 * [Chatbot初探1 qq聊天机器人 上](http://wangweiguang.xyz/ai/2018/03/03/chatbot1.html)
 * [Chatbot初探2 qq聊天机器人 下](http://wangweiguang.xyz/ai/2018/03/15/chatbot2.html)
 * [Word2Vector 分析《三体》](http://wangweiguang.xyz/ai/2018/02/18/santi2vec.html)

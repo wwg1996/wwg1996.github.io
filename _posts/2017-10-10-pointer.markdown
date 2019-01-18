@@ -3,11 +3,10 @@ layout: post
 title: 指针
 date: 2017-10-10 17:05:48 +0800
 categories: CS
-tags: C 
+tags: C/C+ 
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/c.jpg
 ---
-* 
-{:toc}
+
 
 1. **内存与地址**
 
@@ -88,3 +87,50 @@ char *cp = &ch;
 10. **指针运算---指针-指针**
 > 只有当两个指针都指向同一个数组中的元素时，才允许这样做，相减的结果是ptrdiff_t类型，结果是两个元素的距离，相当于下标相减。
 
+Notes：
+1. 永远清楚指针指向了哪里，指针必须指向一块有意义的内存。
+2. 永远看清每个指针指向的对象内容是什么。
+3. 永远不要使用未经过初始化的指针变量。（NULL）
+
+* 应用场景一
+> 适用于函数需要返回多个值
+
+```c
+void swap (int *a, int *b);
+{
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
+```
+* 应用场景二
+> 函数返回运算状态，结果由指针返回
+
+```c
+int divide( int a, int b, int *c)
+{
+    int ret = 1;
+    if(b == 0) ret = 0;
+    else{
+        *c = a/b;
+    }
+    
+    return ret;
+}
+```
+* 应用场景三
+> 字符串的操作
+
+```c
+int strlen( char * string )
+{
+    int length = 0;
+    
+    while( *string++ != '\0' )
+        length += 1;
+        
+    return length;c
+}
+```
+
+c

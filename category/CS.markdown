@@ -83,6 +83,7 @@ img: /images/cs.jpg
 
 ## Python 
 * [0 基本语法](http://wangweiguang.xyz/cs/2018/03/04/python3.html)
+  * [字符串操作](http://wangweiguang.xyz/ai/cs/2019/01/14/pys.html)
 * 1 面向对象
 * 2 常用模块
 * 3 网络爬虫

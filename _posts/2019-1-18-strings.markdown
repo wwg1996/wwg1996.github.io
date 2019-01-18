@@ -1,0 +1,115 @@
+---
+layout: post
+title:  标准库 string 类型
+date: 2019-01-18 14:02:56 +0800
+categories: CS
+tags: C/C++
+img: 
+---
+
+
+## 标准库 string 类型
+> 作用：满足对字符串的一般应用。
+>> #include <string>
+>> using std::vecter;
+
+
+### 1. 初始化
+* string
+
+ 1 | 2
+---|---
+string s1； | 默认构造函数s1为空串 
+ string s1(s2);| 将s2初始化为s1的副本
+ string s2(“value”);| 将s3初始化为一个字符串值副本
+ string s4(n, ‘c’)；|将s4初始化字符‘c’的n个副本
+* vecter
+> vecter <Type> v1 和string类似
+### 2. string 读入
+ 1. `cin >> s`
+    * 基本读入
+    * 读取并忽略有效字符(非空白字符)之前所有的空白字符，然后读取字符直到再次遇到空白字符，读取终止。
+s
+
+```
+string word;
+	while (cin >> word)
+		cout << word << endl;
+	return 0;
+```
+
+2. `getline(cin， line)`
+   * 读取整行文本
+   * 不忽略开头的空白字符，读取字符直至遇到换行符，读取终止并丢弃换行符(换行符从输入流中去掉但并不存储在string对象中)
+   * 
+```
+string line;
+	while (getline(cin, line))
+	{
+		cout << line << endl;
+	}
+	return 0;
+```
+### 3. string对象的操作
+
+1| 2  
+---|---
+s.emptyz() | 如果s为空串，返回true，否则false 
+s.size()|返回s中字符的个数，返回类型为size_type的值（可移植性）
+s[n] | s[0]为第一个字符，s[s.size()-1]则表示最后一个字符,勿越界
+s1 + s2 | 连接成为一个新的字符串
+v1==v2 | 相等返回true，否则返回false
+!=,<,<=,<,>=|比较基于字典排序，大写字母在小写之前
+
+> vecter与之相似
+>> v.push_back(t)\
+>> 在v的末尾增加一个值为t的元素，扩充v的大小。
+
+* **注意**：只能对已存在的下标元素进行操作。
+例程
+1.  “+”
+>  + 操作符的左右操作数必须值少有一个是string类型的
+```
+string s1("hello");
+string s2("world")；
+
+string s4 = s1 + ","; \\ OK
+string s5 = "hello" + ","; \\ ERROR
+
+```
+2. 取出每一个字符
+
+```
+for (string::size_type ix = 0; ix != str.size(); ++ix)
+    cout << str[ix] << endl;
+// 为了防止size经过循环改变，所以每次循环都要检查
+// C++程序员习惯用 != 判断下标是否越界 
+```
+
+### 4. string中各种字符的操作函数
+> #include <cctype>
+>> 检查某个字符是否为空白字符，字母或者数字etc
+
+名称 | 是则返回true
+---|---
+isalnum(c)|字母数字
+isalpha(c)|字母
+iscntrl(c)|控制字符
+isdigit(c)|数字
+isgraph(c)|数字
+islower(c)|不是空格
+isprint(c)|可打印字符
+ispunct(c)|标点符号
+isspase(c)|空白字符
+isupper(c)|大写字母
+tolower(c)|大写字符便小写字符
+toupper(c)|小写字符变大写字符
+
+```
+
+```
+
+
+
+
+
