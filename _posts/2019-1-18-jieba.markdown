@@ -1,0 +1,301 @@
+---
+layout: post
+title:  jieba中文处理
+date: 2019-01-18 14:02:56 +0800
+categories: AI
+tags: NLP  
+img: http://wangweiguang.xyz/images/nlp.jpg
+---
+
+
+* 
+{:toc}
+
+
+<h2 id="jieba中文处理">jieba中文处理<a class="anchor-link" href="#jieba中文处理">¶</a></h2><p>by 寒小阳(hanxiaoyang.ml@gmail.com)</p>
+<p>和拉丁语系不同，亚洲语言是不用空格分开每个有意义的词的。而当我们进行自然语言处理的时候，大部分情况下，词汇是我们对句子和文章理解的基础，因此需要一个工具去把完整的文本中分解成粒度更细的词。</p>
+<p>jieba就是这样一个非常好用的中文工具，是以分词起家的，但是功能比分词要强大很多。</p>
+
+
+
+<h3 id="1.基本分词函数与用法">1.基本分词函数与用法<a class="anchor-link" href="#1.基本分词函数与用法">¶</a></h3>
+
+
+
+<p>jieba.cut 以及 jieba.cut_for_search 返回的结构都是一个可迭代的 generator，可以使用 for 循环来获得分词后得到的每一个词语(unicode)</p>
+<p><strong>jieba.cut</strong> 方法接受三个输入参数:</p>
+<ul>
+<li>需要分词的字符串</li>
+<li>cut_all 参数用来控制是否采用全模式</li>
+<li>HMM 参数用来控制是否使用 HMM 模型</li>
+</ul>
+<p><strong>jieba.cut_for_search</strong> 方法接受两个参数</p>
+<ul>
+<li>需要分词的字符串</li>
+<li>是否使用 HMM 模型。</li>
+</ul>
+<p>该方法适合用于搜索引擎构建倒排索引的分词，粒度比较细</p>
+
+
+
+```python
+# encoding=utf-8
+import jieba
+
+seg_list = jieba.cut("我在学习自然语言处理", cut_all=True)
+
+print("Full Mode: " + "/ ".join(seg_list))  # 全模式
+
+seg_list = jieba.cut("我在学习自然语言处理", cut_all=False)
+print("Default Mode: " + "/ ".join(seg_list))  # 精确模式
+
+seg_list = jieba.cut("他毕业于上海交通大学，在百度深度学习研究院进行研究")  # 默认是精确模式
+print(", ".join(seg_list))
+
+seg_list = jieba.cut_for_search("小明硕士毕业于中国科学院计算所，后在哈佛大学深造")  # 搜索引擎模式
+print(", ".join(seg_list))
+```
+
+    Full Mode: 我/ 在/ 学习/ 自然/ 自然语言/ 语言/ 处理
+    Default Mode: 我/ 在/ 学习/ 自然语言/ 处理
+    他, 毕业, 于, 上海交通大学, ，, 在, 百度, 深度, 学习, 研究院, 进行, 研究
+    小明, 硕士, 毕业, 于, 中国, 科学, 学院, 科学院, 中国科学院, 计算, 计算所, ，, 后, 在, 哈佛, 大学, 哈佛大学, 深造
+
+
+
+<p><strong>jieba.lcut</strong>以及<strong>jieba.lcut_for_search</strong>直接返回 list</p>
+
+
+
+```python
+result_lcut = jieba.lcut("小明硕士毕业于中国科学院计算所，后在哈佛大学深造")
+print(result_lcut)
+print(" ".join(result_lcut))
+print(" ".join(jieba.lcut_for_search("小明硕士毕业于中国科学院计算所，后在哈佛大学深造")))
+```
+
+    ['小明', '硕士', '毕业', '于', '中国科学院', '计算所', '，', '后', '在', '哈佛大学', '深造']
+    小明 硕士 毕业 于 中国科学院 计算所 ， 后 在 哈佛大学 深造
+    小明 硕士 毕业 于 中国 科学 学院 科学院 中国科学院 计算 计算所 ， 后 在 哈佛 大学 哈佛大学 深造
+
+
+
+<h4 id="添加用户自定义词典">添加用户自定义词典<a class="anchor-link" href="#添加用户自定义词典">¶</a></h4>
+
+
+
+<p>很多时候我们需要针对自己的场景进行分词，会有一些领域内的专有词汇。</p>
+<ul>
+<li>1.可以用jieba.load_userdict(file_name)加载用户字典</li>
+<li>2.少量的词汇可以自己用下面方法手动添加：<ul>
+<li>用 add_word(word, freq=None, tag=None) 和 del_word(word) 在程序中动态修改词典</li>
+<li>用 suggest_freq(segment, tune=True) 可调节单个词语的词频，使其能（或不能）被分出来。</li>
+</ul>
+</li>
+</ul>
+
+
+
+```python
+print('/'.join(jieba.cut('如果放到旧字典中将出错。', HMM=False)))
+```
+
+    如果/放到/旧/字典/中将/出错/。
+
+
+
+```python
+jieba.suggest_freq(('中', '将'), True)
+```
+
+
+
+
+    494
+
+
+
+
+```python
+print('/'.join(jieba.cut('如果放到旧字典中将出错。', HMM=False)))
+```
+
+    如果/放到/旧/字典/中/将/出错/。
+
+
+
+<h3 id="关键词提取">关键词提取<a class="anchor-link" href="#关键词提取">¶</a></h3>
+
+
+
+<h4 id="基于-TF-IDF-算法的关键词抽取">基于 TF-IDF 算法的关键词抽取<a class="anchor-link" href="#基于-TF-IDF-算法的关键词抽取">¶</a></h4>
+
+
+
+<p>import jieba.analyse</p>
+<ul>
+<li>jieba.analyse.extract_tags(sentence, topK=20, withWeight=False, allowPOS=())<ul>
+<li>sentence 为待提取的文本</li>
+<li>topK 为返回几个 TF/IDF 权重最大的关键词，默认值为 20</li>
+<li>withWeight 为是否一并返回关键词权重值，默认值为 False</li>
+<li>allowPOS 仅包括指定词性的词，默认值为空，即不筛选</li>
+</ul>
+</li>
+</ul>
+
+
+
+```python
+lines = open('frxxz.txt',encoding='UTF-8').read()
+print("  ".join(analyse.extract_tags(lines, topK=50, withWeight=False, allowPOS=())))
+```
+
+    韩立  修士  道友  一下  说道  老者  化为  一声  之色  一闪  有些  什么  没有  而出  起来  自然  前辈  如此  修为  闪动  修炼  顿时  对方  心中  浮现  禁制  身形  一丝  这些  神通  神色  虽然  魔族  一个  样子  不过  女子  手中  目光  只是  之下  似乎  虚空  蓦然  一道  之极  二人  事情  双目  一名
+
+
+
+```python
+lines = open('金庸-侠客行.txt',encoding='UTF-8').read()
+print("  ".join(analyse.extract_tags(lines, topK=50, withWeight=False, allowPOS=())))
+```
+
+    石破天  石清  丁珰  白万剑  帮主  谢烟客  丁不四  雪山  史婆婆  武功  说道  贝海石  闵柔  内力  丁不三  什么  长剑  阿绣  白自在  剑法  长乐  夫妇  爷爷  自己  二人  石中玉  弟子  少年  侠客岛  咱们  一声  凌霄城  师哥  石庄主  不知  心想  一招  心下  李四  小丐  石帮主  铜牌  不是  心中  当真  武林中  一个  龙岛主  登时  小子
+
+
+
+<h4 id="关于TF-IDF-算法的关键词抽取补充">关于TF-IDF 算法的关键词抽取补充<a class="anchor-link" href="#关于TF-IDF-算法的关键词抽取补充">¶</a></h4><ul>
+<li><p>关键词提取所使用逆向文件频率（IDF）文本语料库可以切换成自定义语料库的路径</p>
+<ul>
+<li>用法： jieba.analyse.set_idf_path(file_name) # file_name为自定义语料库的路径<ul>
+<li>自定义语料库示例见<a href="https://github.com/fxsjy/jieba/blob/master/extra_dict/idf.txt.big">这里</a></li>
+<li>用法示例见<a href="https://github.com/fxsjy/jieba/blob/master/test/extract_tags_idfpath.py">这里</a></li>
+</ul>
+</li>
+<li>关键词提取所使用停止词（Stop Words）文本语料库可以切换成自定义语料库的路径<ul>
+<li>用法： jieba.analyse.set_stop_words(file_name) # file_name为自定义语料库的路径</li>
+<li>自定义语料库示例见<a href="https://github.com/fxsjy/jieba/blob/master/extra_dict/stop_words.txt">这里</a></li>
+<li>用法示例见<a href="https://github.com/fxsjy/jieba/blob/master/test/extract_tags_stop_words.py">这里</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>关键词一并返回关键词权重值示例</p>
+<ul>
+<li>用法示例见<a href="https://github.com/fxsjy/jieba/blob/master/test/extract_tags_with_weight.py">这里</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+<h4 id="基于-TextRank-算法的关键词抽取">基于 TextRank 算法的关键词抽取<a class="anchor-link" href="#基于-TextRank-算法的关键词抽取">¶</a></h4>
+
+
+
+<ul>
+<li>jieba.analyse.textrank(sentence, topK=20, withWeight=False, allowPOS=('ns', 'n', 'vn', 'v')) 直接使用，接口相同，注意默认过滤词性。</li>
+<li>jieba.analyse.TextRank() 新建自定义 TextRank 实例</li>
+</ul>
+
+
+
+<p>算法论文： <a href="http://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf">TextRank: Bringing Order into Texts</a></p>
+<p>基本思想:</p>
+<ul>
+<li>将待抽取关键词的文本进行分词</li>
+<li>以固定窗口大小(默认为5，通过span属性调整)，词之间的共现关系，构建图</li>
+<li>计算图中节点的PageRank，注意是无向带权图</li>
+</ul>
+
+
+
+```python
+
+import jieba.analyse as analyse
+lines = open('金庸-侠客行.txt',encoding='UTF-8').read()
+print("  ".join(analyse.textrank(lines, topK=20, withWeight=False, allowPOS=('ns', 'n', 'vn', 'v'))))
+print("---------------------我是分割线----------------")
+print("  ".join(analyse.textrank(lines, topK=20, withWeight=False, allowPOS=('ns', 'n'))))
+
+
+```
+
+    说道  帮主  丁珰  夫妇  内力  不知  长乐  弟子  长剑  爷爷  便是  出来  剑法  只见  心想  对方  不能  跟着  兄弟  伸手
+    ---------------------我是分割线----------------
+    夫妇  弟子  内力  长乐  长剑  心想  爷爷  剑法  对方  江湖  眼见  兄弟  侠客岛  儿子  问道  小子  汉子  师父  石帮主  内功
+
+
+
+```python
+lines = open('frxxz.txt',encoding='UTF-8').read()
+print("  ".join(analyse.textrank(lines, topK=20, withWeight=False, allowPOS=('ns', 'n', 'vn', 'v'))))
+
+```
+
+    没有  修士  起来  道友  化为  老者  对方  说道  出来  知道  无法  出现  不会  前辈  女子  事情  东西  修炼  开始  样子
+
+
+
+<h3 id="词性标注">词性标注<a class="anchor-link" href="#词性标注">¶</a></h3>
+
+
+
+<ul>
+<li>jieba.posseg.POSTokenizer(tokenizer=None) 新建自定义分词器，tokenizer 参数可指定内部使用的 jieba.Tokenizer 分词器。jieba.posseg.dt 为默认词性标注分词器。</li>
+<li>标注句子分词后每个词的词性，采用和 ictclas 兼容的标记法。</li>
+<li>具体的词性对照表参见<a href="http://ictclas.nlpir.org/nlpir/html/readme.htm">计算所汉语词性标记集</a></li>
+</ul>
+
+
+
+```python
+
+import jieba.posseg as pseg
+words = pseg.cut("我爱自然语言处理")
+for word, flag in words:
+    print('%s %s' % (word, flag))
+
+
+```
+
+    我 r
+    爱 v
+    自然语言 l
+    处理 v
+
+
+
+<h3 id="Tokenize：返回词语在原文的起止位置">Tokenize：返回词语在原文的起止位置<a class="anchor-link" href="#Tokenize：返回词语在原文的起止位置">¶</a></h3><p>注意，输入参数只接受 unicode</p>
+
+
+
+```python
+print("这是默认模式的tokenize")
+result = jieba.tokenize(u'自然语言处理非常有用')
+for tk in result:
+    print("%s\t\t start: %d \t\t end:%d" % (tk[0],tk[1],tk[2]))
+
+print("\n-----------我是神奇的分割线------------\n")
+
+print("这是搜索模式的tokenize")
+result = jieba.tokenize(u'自然语言处理非常有用', mode='search')
+for tk in result:
+    print("%s\t\t start: %d \t\t end:%d" % (tk[0],tk[1],tk[2]))
+```
+
+    这是默认模式的tokenize
+    自然语言		 start: 0 		 end:4
+    处理		 start: 4 		 end:6
+    非常		 start: 6 		 end:8
+    有用		 start: 8 		 end:10
+    
+    -----------我是神奇的分割线------------
+    
+    这是搜索模式的tokenize
+    自然		 start: 0 		 end:2
+    语言		 start: 2 		 end:4
+    自然语言		 start: 0 		 end:4
+    处理		 start: 4 		 end:6
+    非常		 start: 6 		 end:8
+    有用		 start: 8 		 end:10
+
