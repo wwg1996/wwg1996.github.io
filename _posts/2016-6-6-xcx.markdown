@@ -3,7 +3,7 @@ layout: post
 title: c语言小程序
 date: 2016-06-06 14:02:56 +0800
 categories: origin
-tags:  C/C++ 
+tags: C/C++ 
 img: http://wangweiguang.xyz/images/cs.jpg
 ---
 
