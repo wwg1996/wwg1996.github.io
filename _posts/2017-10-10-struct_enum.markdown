@@ -3,7 +3,7 @@ layout: post
 title: 结构和联合
 date: 2017-10-10 17:20:48 +0800
 categories: CS
-tags: C/C++ 
+tags:  
 img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/c.jpg
 ---
 * 
