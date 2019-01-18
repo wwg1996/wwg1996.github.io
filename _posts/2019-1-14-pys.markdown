@@ -1,0 +1,155 @@
+---
+layout: post
+title:  python中的字符串操作
+date: 2019-01-14 14:02:56 +0800
+categories: AI CS
+tags: python  
+img: http://wangweiguang.xyz/images/python.jpg
+---
+
+
+* 
+{:toc}
+
+
+# 字符串操作
+
+我们一起回归一下python字符串的相关操作，这是非常基础的知识，但却是使用频度非常高的一些功能。
+
+## 去空格及特殊符号
+
+
+```python
+s = ' hello, world!'
+print s.strip()
+print s.lstrip(' hello, ')
+print s.rstrip('!')
+```
+
+    hello, world!
+    world!
+     hello, world
+
+
+## 连接字符串
+
+
+```python
+sStr1 = 'strcat'
+sStr2 = 'append'
+sStr1 += sStr2
+print sStr1
+```
+
+    strcatappend
+
+
+## 定位与替换
+
+
+```python
+# 字符的定位
+# < 0 为未找到
+sStr1 = 'strchr'
+sStr2 = 'r'
+nPos = sStr1.index(sStr2)
+print nPos
+
+# 字符串的定位与替换
+string.count(str, start, end)  # 返回 str 在 string 里面出现的次数
+string.replace(str1, str2)  # 把 string 中的 str1 替换成 str2
+string.expandtabs(tabsize)     # 把字符串 string 中的 tab 符号转为空格，默认为8。
+string.find(str, start, end)   # 检测 str 是否包含在 string 中，返回索引
+```
+
+    2
+
+
+## 比较字符串
+
+
+```python
+sStr1 = 'strchr'
+sStr2 = 'strch'
+print cmp(sStr2,sStr1)
+print cmp(sStr1,sStr2)
+print cmp(sStr1,sStr1)
+```
+
+    -1
+    1
+    0
+
+
+## 大小写转换
+
+
+```python
+sStr1 = 'JCstrlwr'
+sStr1 = sStr1.upper()
+sStr1 = sStr1.lower()
+sStr1 = sStr1.capitalize()
+```
+
+## 翻转字符串
+
+
+```python
+sStr1 = 'abcdefg'
+sStr1 = sStr1[::-1]
+print sStr1
+```
+
+    gfedcba
+
+
+## 分割与连接
+
+
+```python
+## 字符串的联合与分割
+string.join(seq)    #以 string 作为分隔符，将 seq 中所有的元素合并为一个新的字符串
+string.split(str)     # 以 str 为分隔符切片 string，返回一个list
+```
+
+## 条件判断
+
+
+```python
+## 字符串条件判断
+string.isalpha()    # 是否只包含字母
+string.isdigit()    # 是否只包含数字
+string.isspace()    # 是否只包含空格
+string.isalnum()    # 是否只包含字母和数字
+```
+
+## 字符串格式化
+
+
+```python
+# 格式化字符串
+# 占位符 %d 整数，%f 浮点数, %s 字符串
+str4 = 'Hi, %s, you have $%d.' % ('Michael', 1000000)
+```
+
+## 格式化输出
+
+
+```python
+## 字符串格式化输出
+string.center(width, fillchar) # 居中,并使用fillchar填充至长度 width
+str.ljust(width, fillchar)     # 靠左
+str.rjust(width, fillchar)     # 靠右
+```
+
+## 字符串编码
+
+
+```python
+## 字符串编码
+string.decode(encoding) # 以 encoding 指定的编码格式解码 string
+string.encode(encoding  # 以 encoding 指定的编码格式编码 string
+ord('A') # 获取字符的整数表示
+chr(66)  # 函数把编码转换为对应的字符  
+```
+
