@@ -64,14 +64,28 @@ img: /images/ai.jpg
 ### 理论
 * 自然语言理论
   * [0 NLP基本流程](http://wangweiguang.xyz/ai/2019/01/11/nlp1.html)  
+  * 1 朴素贝叶斯与n-gram语言模型
 ### 技术
-* [python字符串处理](http://wangweiguang.xyz/ai/cs/2019/01/14/pys.html)
-* [python正则表达式](http://wangweiguang.xyz/cs/2019/01/15/regex0.html)
-* [jieba中文处理](http://wangweiguang.xyz/ai/2019/01/18/jieba.html)
+* 语法：[python字符串处理](http://wangweiguang.xyz/ai/cs/2019/01/14/pys.html)
+* 语法：[python正则表达式](http://wangweiguang.xyz/cs/2019/01/15/regex0.html)
+* 库：[jieba中文处理](http://wangweiguang.xyz/ai/2019/01/18/jieba.html)
+* 库：NLTK
+* 框架：TensorFlow
+  * [Windows下 TensorFlow-GPU 安装过程中一个又一个的坑](http://wangweiguang.xyz/ai/2019/02/03/TFinstall.html)
+### 应用
+
+- 朴素贝叶斯实现拼写纠错
+- TensorFlow实现拼写纠错
+- 基于统计的翻译系统
+- 神经网络实现机器翻译
+
 ### 实践
+
 * [Chatbot初探1 qq聊天机器人 上](http://wangweiguang.xyz/ai/2018/03/03/chatbot1.html)
 * [Chatbot初探2 qq聊天机器人 下](http://wangweiguang.xyz/ai/2018/03/15/chatbot2.html)
 * [Word2Vector 分析《三体》](http://wangweiguang.xyz/ai/2018/02/18/santi2vec.html)
+* 考研英语作文自动评分批改
+* 金庸小说文本写作风格迁移
 
 ## Kaggle实战
 
