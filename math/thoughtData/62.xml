@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="62" name="&#20854;&#20182;" icon="" color="" hint="" pbv="20183"
+    modificationDate="2019-2-25 &#19978;&#21320;11:05"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="47" name="&#21160;&#30011;&#24102;&#20320;&#29702;&#35299;&#28857;&#31215;&#21644;&#21449;&#31215;" icon="" color="" hint="&#35270;&#39057;" /> 
+  <Tht id="48" name="&#22797;&#25968;&#21450;&#22797;&#21464;&#20989;&#25968;&#30340;&#21160;&#30011;&#35299;&#26512;" icon="" color="" hint="" /> 
+  <Tht id="55" name="&#20026;&#20160;&#20040; 0&#30340;&#38454;&#20056;&#31561;&#20110;1 ?" icon="" color="" hint="" /> 
+  <Tht id="114" name="&#33258;&#28982;&#25968;&#19982;&#30382;&#20122;&#35834;&#20844;&#29702;" icon="" color="" hint="&#35270;&#39057;" /> 
+  <Tht id="40" name="&#26368;&#32654;&#25968;&#23398;&#20844;&#24335;&#65306;&#27431;&#25289;&#24658;&#31561;&#24335;" icon="" color="" hint="" /> 
+
+  <Tht id="24" name="&#25968;&#23398;&#20998;&#26512;" icon="" color="" hint="" /> 
+
+
+  <Tht id="110" name="&#38598;&#21512;&#35770;" icon="" color="" hint="" /> 
+  <Tht id="60" name="&#24494;&#31215;&#20998;" icon="" color="" hint="" /> 
+  <Tht id="105" name="&#26080;&#31351;&#32423;&#25968;" icon="" color="" hint="" /> 
+
+  <Link idA="62" idB="40" type="CHILD" /> 
+  <Link idA="62" idB="47" type="CHILD" /> 
+  <Link idA="62" idB="48" type="CHILD" /> 
+  <Link idA="62" idB="55" type="CHILD" /> 
+  <Link idA="62" idB="114" type="CHILD" /> 
+  <Link idA="24" idB="60" type="CHILD" /> 
+  <Link idA="24" idB="105" type="CHILD" /> 
+  <Link idA="24" idB="110" type="CHILD" /> 
+  <Link idA="24" idB="62" type="PARENT" /> 
+
+  <Content href="thoughtData/62.html" />
+</TheBrainSimpleXML>

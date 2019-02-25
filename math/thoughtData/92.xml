@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="92" name="&#20854;&#20182;" icon="" color="" hint="" pbv="20183"
+    modificationDate="2019-2-25 &#19978;&#21320;11:22"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="82" name="&#20195;&#25968;&#22522;&#26412;&#23450;&#29702;" icon="" color="" hint="&#35270;&#39057;" /> 
+  <Tht id="102" name="&#40644;&#37329;&#20998;&#21106;&#27604; &#26000;&#27874;&#37027;&#22865;" icon="" color="" hint="" /> 
+  <Tht id="117" name="&#35753;&#20154;&#22256;&#24785;&#22855;&#28857;&#25351;&#30340;&#26159;?" icon="" color="" hint="&#35270;&#39057;" /> 
+  <Tht id="55" name="&#20026;&#20160;&#20040; 0&#30340;&#38454;&#20056;&#31561;&#20110;1 ?" icon="" color="" hint="" /> 
+  <Tht id="38" name="&#29992;&#36825;&#20010;&#31070;&#22855;&#30340;&#20845;&#36793;&#24418;&#24039;&#35760;&#19977;&#35282;&#20989;&#25968;" icon="" color="" hint="" /> 
+
+  <Tht id="2" name="1 &#25968;&#23398;&#30693;&#35782;" icon="" color="" hint="" /> 
+
+
+  <Tht id="16" name="&#27010;&#29575;&#32479;&#35745;" icon="" color="" hint="" /> 
+  <Tht id="42" name="&#20960;&#20309;&#23398;" icon="" color="" hint="" /> 
+  <Tht id="80" name="&#25968;&#29702;&#36923;&#36753;" icon="" color="" hint="" /> 
+  <Tht id="89" name="&#25968;&#35770;" icon="" color="" hint="" /> 
+  <Tht id="24" name="&#25968;&#23398;&#20998;&#26512;" icon="" color="" hint="" /> 
+  <Tht id="115" name="&#25968;&#19982;&#25968;&#31995;" icon="" color="" hint="" /> 
+  <Tht id="11" name="&#22270;&#35770;" icon="" color="" hint="" /> 
+
+  <Link idA="92" idB="55" type="CHILD" /> 
+  <Link idA="92" idB="117" type="CHILD" /> 
+  <Link idA="92" idB="82" type="CHILD" /> 
+  <Link idA="92" idB="38" type="CHILD" /> 
+  <Link idA="92" idB="102" type="CHILD" /> 
+  <Link idA="2" idB="11" type="CHILD" /> 
+  <Link idA="2" idB="16" type="CHILD" /> 
+  <Link idA="2" idB="24" type="CHILD" /> 
+  <Link idA="2" idB="42" type="CHILD" /> 
+  <Link idA="2" idB="80" type="CHILD" /> 
+  <Link idA="2" idB="89" type="CHILD" /> 
+  <Link idA="2" idB="115" type="CHILD" /> 
+  <Link idA="2" idB="92" type="PARENT" /> 
+
+  <Content href="thoughtData/92.html" />
+</TheBrainSimpleXML>

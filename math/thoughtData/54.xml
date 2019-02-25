@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="54" name="Mathematica" icon="" color="" hint="" pbv="1729434283739727"
+    modificationDate="2019-2-25 &#19978;&#21320;10:57"
+    authorName="94779"
+    authorEmail="" />
+
+  <Tht id="3" name="4 &#25968;&#23398;&#24037;&#20855;" icon="" color="" hint="" /> 
+
+
+
+  <Link idA="3" idB="54" type="PARENT" /> 
+
+  <Content href="thoughtData/54.html" />
+</TheBrainSimpleXML>

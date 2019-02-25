@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="84" name="&#29486;&#32473;&#23401;&#31461; 10 &#20010;&#36259;&#21619;&#21644;&#36731;&#26494;&#30340;&#25968;&#23398;&#23567;&#25216;&#24039;" icon="" color="" hint="&#35270;&#39057;" pbv="1271898660844275"
+    modificationDate="2019-2-25 &#19978;&#21320;11:14"
+    authorName="94779"
+    authorEmail="" />
+
+  <Tht id="83" name="&#35299;&#39064;&#26041;&#27861;" icon="" color="" hint="" /> 
+
+
+
+  <Link idA="83" idB="84" type="PARENT" /> 
+
+  <Content href="https://mp.weixin.qq.com/s/pKKBMETVpM28RVvvhI0POQ" />
+</TheBrainSimpleXML>
