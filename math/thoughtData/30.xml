@@ -24,5 +24,5 @@
   <Link idA="132" idB="30" type="PARENT" /> 
   <Link idA="30" idB="29" type="JUMP" /> 
 
-  <Content href="https://mp.weixin.qq.com/s/qW5kJYBhobQI3cIYrssTBw" />
+  <Content href="thoughtData/30.html" />
 </TheBrainSimpleXML>

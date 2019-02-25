@@ -31,5 +31,5 @@
   <Link idA="5" idB="100" type="PARENT" /> 
   <Link idA="7" idB="100" type="PARENT" /> 
 
-  <Content href="https://mp.weixin.qq.com/s/MTTS7Gg0F5QJ4EzKMlLu8w" />
+  <Content href="thoughtData/100.html" />
 </TheBrainSimpleXML>

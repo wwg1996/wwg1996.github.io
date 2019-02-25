@@ -27,5 +27,5 @@
   <Link idA="60" idB="109" type="CHILD" /> 
   <Link idA="60" idB="123" type="PARENT" /> 
 
-  <Content href="https://mp.weixin.qq.com/s/jVn_rfDwNgPNU4S-h-0f6Q" />
+  <Content href="thoughtData/123.html" />
 </TheBrainSimpleXML>
