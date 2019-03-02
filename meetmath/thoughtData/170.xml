@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="170" name="&#21338;&#24328;&#35770;&#23567;&#28216;&#25103;" icon="" color="" hint="The Evolution of Trust" pbv="826581839354505"
+    modificationDate="2019-3-2 &#19979;&#21320;6:17"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="171" name="&#12298;&#20449;&#20219;&#30340;&#36827;&#21270;&#12299;&#20013;&#25991;&#29256;" icon="" color="" hint="" /> 
+
+  <Tht id="148" name="&#21338;&#24328;&#35770;" icon="" color="#ff0000" hint="&#25237;&#31295;&#24076;&#26395;&#20248;&#20808;&#32771;&#34385;&#19968;&#19979;&#30340;&#20027;&#39064;&#21734;~" /> 
+
+
+  <Tht id="169" name="&#21338;&#24328;&#35770;&#23567;&#28459;&#30011;" icon="" color="" hint="" /> 
+
+  <Link idA="170" idB="171" type="CHILD" /> 
+  <Link idA="148" idB="169" type="CHILD" /> 
+  <Link idA="148" idB="170" type="PARENT" /> 
+
+  <Content href="thoughtData/170.html" />
+</TheBrainSimpleXML>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="159" name="&#25968;&#23398;&#23478;" icon="" color="" hint="" pbv="551239883"
+    modificationDate="2019-3-2 &#19979;&#21320;5:38"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="90" name="Numberphile&#31995;&#21015; | &#24352;&#30410;&#21776;&#19982;&#36136;&#25968;&#38388;&#38553;" icon="" color="#009900" hint="&#35270;&#39057;" /> 
+  <Tht id="161" name="&#38518;&#21746;&#36713;" icon="" color="" hint="" /> 
+
+  <Tht id="7" name="&#25968;&#23398;&#23478;&#19982;&#25968;&#23398;&#21490;" icon="" color="" hint="" /> 
+
+
+  <Tht id="160" name="&#25968;&#23398;&#21490;" icon="" color="" hint="" /> 
+
+  <Link idA="159" idB="90" type="CHILD" /> 
+  <Link idA="159" idB="161" type="CHILD" /> 
+  <Link idA="7" idB="160" type="CHILD" /> 
+  <Link idA="7" idB="159" type="PARENT" /> 
+
+  <Content href="thoughtData/159.html" />
+</TheBrainSimpleXML>

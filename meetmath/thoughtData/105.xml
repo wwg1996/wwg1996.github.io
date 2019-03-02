@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="105" name="&#26080;&#31351;&#32423;&#25968;" icon="" color="" hint="" pbv="17512235121513"
+    modificationDate="2019-2-25 &#19978;&#21320;11:32"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="164" name="&#20613;&#37324;&#21494;&#32423;&#25968;" icon="" color="#ff0000" hint="&#25237;&#31295;&#24076;&#26395;&#20248;&#20808;&#32771;&#34385;&#19968;&#19979;&#30340;&#20027;&#39064;&#21734;~" /> 
+  <Tht id="163" name="&#27888;&#21202;&#32423;&#25968;" icon="" color="" hint="" /> 
+
+  <Tht id="24" name="&#25968;&#23398;&#20998;&#26512;" icon="" color="" hint="" /> 
+
+
+  <Tht id="62" name="&#20854;&#20182;" icon="" color="" hint="" /> 
+  <Tht id="60" name="&#24494;&#31215;&#20998;" icon="" color="" hint="" /> 
+
+  <Link idA="105" idB="163" type="CHILD" /> 
+  <Link idA="105" idB="164" type="CHILD" /> 
+  <Link idA="24" idB="60" type="CHILD" /> 
+  <Link idA="24" idB="62" type="CHILD" /> 
+  <Link idA="24" idB="105" type="PARENT" /> 
+
+  <Content href="thoughtData/105.html" />
+</TheBrainSimpleXML>

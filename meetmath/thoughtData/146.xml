@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="146" name="Mr.C" icon="" color="" hint="&#19968;&#20010;&#26222;&#36890;&#25968;&#23398;&#29233;&#22909;&#32773;&#30340;&#25152;&#24605;&#25152;&#24819;" pbv="302962"
+    modificationDate="2019-3-2 &#19979;&#21320;5:31"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="152" name="chaos_order" icon="" color="" hint="" /> 
+  <Tht id="157" name="circulation" icon="" color="" hint="" /> 
+  <Tht id="155" name="collectomania" icon="" color="" hint="" /> 
+  <Tht id="154" name="dimension" icon="" color="" hint="" /> 
+  <Tht id="153" name="humanity" icon="" color="" hint="" /> 
+  <Tht id="158" name="infinite" icon="" color="" hint="" /> 
+  <Tht id="156" name="The_School_of_Athens" icon="" color="" hint="" /> 
+
+  <Tht id="144" name="&#20851;&#20110;&#25105;&#20204;" icon="" color="" hint="&#38656;&#35201;&#30340;&#35805;&#25105;&#20204;&#20063;&#21487;&#20197;&#28155;&#21152;&#23646;&#20110;&#24744;&#30340;&#19968;&#39063;&#8220;&#23567;&#26641;&#8221;" /> 
+
+
+
+  <Link idA="146" idB="152" type="CHILD" /> 
+  <Link idA="146" idB="153" type="CHILD" /> 
+  <Link idA="146" idB="154" type="CHILD" /> 
+  <Link idA="146" idB="155" type="CHILD" /> 
+  <Link idA="146" idB="156" type="CHILD" /> 
+  <Link idA="146" idB="157" type="CHILD" /> 
+  <Link idA="146" idB="158" type="CHILD" /> 
+  <Link idA="144" idB="146" type="PARENT" /> 
+
+  <Content href="thoughtData/146.html" />
+</TheBrainSimpleXML>

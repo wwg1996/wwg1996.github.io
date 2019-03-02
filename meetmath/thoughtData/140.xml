@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="140" name="&#21733;&#24503;&#24052;&#36203;&#29468;&#24819;" icon="" color="" hint="" pbv="2947657095606441"
+    modificationDate="2019-2-27 &#19979;&#21320;8:26"
+    authorName="94779"
+    authorEmail="" />
+
+  <Tht id="139" name="Hilbert&#30340;23&#20010;&#38382;&#39064;" icon="" color="" hint="" /> 
+  <Tht id="165" name="&#19990;&#30028;&#19977;&#22823;&#25968;&#23398;&#29468;&#24819;" icon="" color="" hint="" /> 
+
+  <Tht id="125" name="&#25968;&#23398;&#21746;&#23398;&#20013;&#22235;&#22823;&#38376;&#27966;" icon="" color="#009900" hint="&#35270;&#39057;" /> 
+
+  <Tht id="166" name="&#36153;&#39532;&#29468;&#24819;" icon="" color="" hint="" /> 
+  <Tht id="147" name="&#22235;&#33394;&#38382;&#39064;" icon="" color="#ff0000" hint="&#22235;&#33394;&#29468;&#24819;&#65307;&#22235;&#33394;&#23450;&#29702;" /> 
+
+  <Link idA="165" idB="147" type="CHILD" /> 
+  <Link idA="165" idB="166" type="CHILD" /> 
+  <Link idA="139" idB="140" type="PARENT" /> 
+  <Link idA="165" idB="140" type="PARENT" /> 
+  <Link idA="140" idB="125" type="JUMP" /> 
+
+  <Content href="thoughtData/140.html" />
+</TheBrainSimpleXML>

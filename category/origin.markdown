@@ -9,8 +9,9 @@ img: /images/origin1.jpg
 
 ## 计算机
 * PKMS（SiteBarin）大四
-* 文本风格转移 大四
-* Mathematica 辅助学习程序 大四
+* 中文文本风格转移 大四
+* Mathematica 辅助数学学习程序 大四
+* 高考英语试卷词频分析 大四
 * 基于TheBrain的知识分析 大三
 * 英文字幕翻译预处理 大三
 * [打飞机小游戏 大三](http://wangweiguang.xyz/cs/2018/03/09/pyxxm.html)

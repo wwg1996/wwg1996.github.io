@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="139" name="Hilbert&#30340;23&#20010;&#38382;&#39064;" icon="" color="" hint="" pbv="487405413199272"
+    modificationDate="2019-2-27 &#19979;&#21320;8:26"
+    authorName="94779"
+    authorEmail="" />
+  <Tht id="140" name="&#21733;&#24503;&#24052;&#36203;&#29468;&#24819;" icon="" color="" hint="" /> 
+
+
+  <Tht id="14" name="&#36259;&#39064;&#19982;&#38590;&#39064;" icon="" color="" hint="" /> 
+
+
+  <Link idA="139" idB="140" type="CHILD" /> 
+  <Link idA="139" idB="14" type="JUMP" /> 
+
+  <Content href="thoughtData/139.html" />
+</TheBrainSimpleXML>

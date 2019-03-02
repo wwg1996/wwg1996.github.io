@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<TheBrainSimpleXML>
+  <Tht id="171" name="&#12298;&#20449;&#20219;&#30340;&#36827;&#21270;&#12299;&#20013;&#25991;&#29256;" icon="" color="" hint="" pbv="1709037396172734"
+    modificationDate="2019-3-2 &#19979;&#21320;6:17"
+    authorName="94779"
+    authorEmail="" />
+
+  <Tht id="170" name="&#21338;&#24328;&#35770;&#23567;&#28216;&#25103;" icon="" color="" hint="The Evolution of Trust" /> 
+
+
+
+  <Link idA="170" idB="171" type="PARENT" /> 
+
+  <Content href="thoughtData/171.html" />
+</TheBrainSimpleXML>
