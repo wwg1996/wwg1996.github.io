@@ -56,7 +56,7 @@ img: /images/origin1.jpg
   * 《流行的云》 大学
   * 《天空之城》 大学
   * 《雪之华》 大学
-  * [《flower》 大学](http://wangweiguang.xyz/music/2017/10/09/flower.html)
+  * [《flower》 大学](http://wangweiguang.xyz/more/2017/10/09/flower.html)
   * [《PineApple》尤克里里 大学](http://node.kg.qq.com/play?s=1zo85o1O3nKe_1Er&g_f=personal)
   * [《I'm yours》 高中](http://v.youku.com/v_show/id_XNjczMDAzMDk2.html?spm=a2hzp.8244740.0.0)
   * [《secret story》 高中](http://v.youku.com/v_show/id_XNjY2NTI3MDA0.html?spm=a2hzp.8244740.0.0)
@@ -66,8 +66,8 @@ img: /images/origin1.jpg
   * 《fight》 初中
 * 弹唱 大学
   * [《消愁》 ](http://node.kg.qq.com/play?s=dVAkqAdMSyIHndTw&g_f=personal) 
-  * [《董小姐》 ](http://wangweiguang.xyz/music/2017/10/31/dxj.html)
-  * [《漂洋过海来看你》 ](http://wangweiguang.xyz/music/2017/09/25/pyghlkn.html)
+  * [《董小姐》 ](http://wangweiguang.xyz/more/2017/10/31/dxj.html)
+  * [《漂洋过海来看你》 ](http://wangweiguang.xyz/more/2017/09/25/pyghlkn.html)
   * [《红豆》爵士版](http://node.kg.qq.com/play?s=rUYEyYrlYqCSCrBF&g_f=personal)
   * [《每个人都会》](http://node.kg.qq.com/play?s=ky9dU9kwBcGL9ki3&g_f=personal)
   * [《空白格》](http://node.kg.qq.com/play?s=fWlZ0lfYl79hCfkr&g_f=personal)
