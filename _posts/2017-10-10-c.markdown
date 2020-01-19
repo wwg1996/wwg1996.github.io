@@ -83,7 +83,7 @@ int main()
   Simple y[20], *z;
   ```
 
-  [详细...](https://wwg1996.github.io/cs/2017/10/10/struct_enum.html)
+  [详细...](https://wwg1996.github.io/cs/2017/10/14/struct_enum.html)
 
 ### 类型转换
 
@@ -102,7 +102,7 @@ int i = (int)(a/b);
 ### 数组
 ### 指针
 
-* [指针基础](https://wwg1996.github.io/cs/2017/10/10/pointer.html)
+* [指针基础](https://wwg1996.github.io/cs/2017/10/12/pointer.html)
 * [指针的应用](https://wwg1996.github.io/cs/2017/10/10/pointer2.html)
 
 ### 字符串

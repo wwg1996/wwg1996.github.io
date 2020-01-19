@@ -17,9 +17,8 @@ img: /images/cs.jpg
 
 ## 编程基础
 
-* [C语言基础](https://wwg1996.github.io/cs/2017/10/10/c.html)
-* C语言指针
-* [C++基础](https://wwg1996.github.io/cs/2017/10/10/cpp.html)
+* [C语言基础](https://wwg1996.github.io/cs/2017/10/11/c.html)
+* [C++基础](https://wwg1996.github.io/cs/2017/10/13/cpp.html)
 * [正则表达式](http://wangweiguang.xyz/cs/2019/01/15/regex0.html)
 
 ## 数据结构
@@ -80,6 +79,11 @@ img: /images/cs.jpg
 * [数字图像处理](http://wangweiguang.xyz/cs/2017/10/16/txcl.html)
 
 # 应用技术
+
+## JAVA
+* 基本语法
+* 面向对象
+* 语法进阶
 
 ## Python 
 * [0 基本语法](http://wangweiguang.xyz/cs/2018/03/04/python3.html)

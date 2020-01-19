@@ -22,6 +22,7 @@ img: /images/origin1.jpg
 * [C语言小程序 大一大二](http://wangweiguang.xyz/origin/2016/06/06/xcx.html)
 
 ## 数学
+* Geogebra与中学几何 2019
 * 《新能源模型》美赛 大学
 * 《CT系统参数标定及成像》国赛 大学
 * 《电池组配组问题》大学
@@ -32,6 +33,7 @@ img: /images/origin1.jpg
 * 几个猜想 小学
 
 ## 艺术
+* Ps练习 大学
 * [DIY小房子 大学](http://wangweiguang.xyz/origin/2018/09/03/diyhouse.html)
 * [大学画集 大学](http://wangweiguang.xyz/origin/2016/01/01/dxhj.html)
 * [每日一画 大学](http://wangweiguang.xyz/origin/2015/10/01/mryh.html)
@@ -53,6 +55,8 @@ img: /images/origin1.jpg
 
 ## 音乐
 * 指弹
+  * 《Sunflower》
+  * 《G弦上的咏叹曲》
   * 《流行的云》 大学
   * 《天空之城》 大学
   * 《雪之华》 大学
@@ -64,7 +68,9 @@ img: /images/origin1.jpg
   * [《Ebon Coast》 高中](http://v.youku.com/v_show/id_XNjE3OTcxMzQ4.html?spm=a2hzp.8244740.0.0) 
   * [《Drifting》 初中](http://v.youku.com/v_show/id_XNjExNDE0NzQ0.html?spm=a2hzp.8244740.0.0&f=20074018)
   * 《fight》 初中
-* 弹唱 大学
+* 弹唱 
+  * 《加州旅馆》
+  * 《活着》
   * [《消愁》 ](http://node.kg.qq.com/play?s=dVAkqAdMSyIHndTw&g_f=personal) 
   * [《董小姐》 ](http://wangweiguang.xyz/more/2017/10/31/dxj.html)
   * [《漂洋过海来看你》 ](http://wangweiguang.xyz/more/2017/09/25/pyghlkn.html)
