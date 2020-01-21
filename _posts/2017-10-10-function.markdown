@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 抽象机制—— 函数
+title: 抽象机制—— 函数（方法）
 date: 2017-10-10 17:04:48 +0800
 categories: CS
 tags: C/C++
@@ -11,16 +11,58 @@ img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/c
 
 ---
 > **为什么要有函数**？
+>
 > 1. 有组织：复杂的程序模块化，简单化，分而攻之。
 > 2. 可重用：不用复制粘贴。
-> 3. 易测试：减少代码量，更容易找出八哥。
+> 3. 易测试：减少代码量，更容易找出Bug。
 > 4. 可扩展：不动代码主体就可以增加新功能。
 > 5. 抽象化：比如标准库，把写好功能的代码封装成黑箱，使用者只需知道接口，无需知道原理。
-
+> **函数与方法**
+> * python中类中的函数叫做方法，C/C++都称作函数，Java中都称作方法。
 > **tips**
 > 1. 每次调用函数，都会创建该函数的所有形参，形参的作用域是函数体。
 
-## 1. 传递实参
+## 1. 定义函数
+
+```c
+修饰符 返回值类型 函数名(参数列表){
+    //代码省略...
+    return 结果;
+}
+```
+* 修饰符：Java中修饰符，public static 固定写法
+* 返回值类型：表示方法运行的结果的数据类型，方法执行后将结果返回到调用者
+* 参数列表：方法在运算过程中的未知数据，调用者调用方法时传递
+* return：将方法执行后的结果带给调用者，方法执行到return ，整体方法运行结束
+
+## 2. 函数重载
+
+方法重载：比如在Java中叫做方法重载，指在同一个类中，允许存在一个以上的同名方法，只要它们的参数列表不同即可，与修饰符和返回值类型无关。
+参数列表：个数不同，数据类型不同，顺序不同。
+重载方法调用：JVM通过方法的参数列表，调用不同的方法。
+
+```java
+public class MethodOverload {
+    public static void main(String[] args) {
+        myPrint(100);
+        myPrint("Hello");
+    }
+    
+    // 方法重载
+    // 模拟输出语句中的println 方法效果，传递什么类型的数据就输出什么类型的数据
+    public static void myPrint(byte num){System.out.println(num);}
+    public static void myPrint(short num){System.out.println(num);}
+    public static void myPrint(int num){System.out.println(num);}
+    public static void myPrint(long num){System.out.println(num);}
+    public static void myPrint(float num){System.out.println(num);}
+    public static void myPrint(double num){System.out.println(num);}
+    public static void myPrint(char c){System.out.println(c);}
+    public static void myPrint(boolean is){System.out.println(is);}
+    public static void myPrint(String str){System.out.println(str);}
+}
+```
+## 3. 传递实参
+
 * **按值传递**
 > 函数实际接受的是实参的副本，最基本的传递方式
 
