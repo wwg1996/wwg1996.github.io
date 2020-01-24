@@ -1,0 +1,273 @@
+---
+layout: post
+title: java 面向对象基础
+date: 2020-1-24 17:03:48 +0800
+categories: CS
+tags: C/C++ 
+img: https://raw.githubusercontent.com/wwg1996/wwg1996.github.io/master/images/c.jpg
+---
+
+* 
+{:toc}
+
+# C语言—基础总结
+## 1. C语言基本特点
+>   * C语言是一个有结构化程序设计、具有变量作用域 以及递归功能的过程式语言。
+>   * **优点**：
+>   1. 最大的优点在于它的效率，优秀的c语言效率几乎于汇编语言一样高，但比汇编语言更容易开发。
+>   2. C语言可以更方便的提供汇编语言的接口，是实现操作系统和嵌入式控制器软件的良好选择。
+>   3. 和许多其他语言相比，C给予程序员更多控制权，如控制数据的存储位置和初始化过程等。
+>   4. 学习好C语言的很多知识和技巧，如将、指针和标准库，也有助于你成为一名出色的C++程序员。
+>   * **缺点**
+>   1. C语言缺乏安全性，要求程序员严格遵守相关规定，否则会有很多潜在问题。
+
+## 2. 基本概念
+1. ​
+### 数据类型 
+* 整形
+
+```c
+int integer_number = -1;
+long long verylong_integer = -1;
+
+unsigned int integer_number2 = 1;
+unsigned long long verylong_integer2 = 1;
+```
+* 浮点型
+
+```c
+double num1 = 1.0； // 优先使用double性能更好
+float num2 = 1.0；
+
+//  浮点类型不准确，精确计算用整形
+```
+* 字符型
+
+```c
+char character1 = 'a'；
+char character2 = '\n';
+```
+* 数组
+```c
+int array[3] = {1, 2, 3};
+double array[] = {1.0, 2.0};
+```
+* 指针
+
+```c
+int* pnumber = NULL;
+```
+* 字符串
+
+```c
+#include <string.h>
+int main()
+{
+    char string[] = "string array";
+    // C语言的字符串其实就是以'\0'字符结尾的char型数组
+    
+    return 0;
+}
+```
+
+* 结构和联合
+
+  ```c
+  typedef struct {
+      int a;
+      char b;
+      float c;
+  } Simple;
+
+  Simple x；
+  Simple y[20], *z;
+  ```
+
+  [详细...](https://wwg1996.github.io/cs/2017/10/14/struct_enum.html)
+
+### 类型转换
+
+* 自动类型转换
+> 当运算符两边出现不一致的类型时，会自动转换成较大的类型。
+1. char->short->int->long->long long
+2. int->float->double
+
+* 强制类型转换
+```c
+double a = 1.0;
+double b = 2,0
+int i = (int)(a/b);
+// 强制类型转换的优先级高于四则运算
+```
+### 数组
+### 指针
+
+* [指针基础](https://wwg1996.github.io/cs/2017/10/12/pointer.html)
+* [指针的应用](https://wwg1996.github.io/cs/2017/10/10/pointer2.html)
+
+### 字符串
+### 运算
+* 按位运算符
+> 在编程硬件设备中非常有用
+
+| 符号      | 作用            |
+| ------- | ------------- |
+| &       | 可用于消除位数       |
+| \|      | 可用于进行标记       |
+| ^(按位亦或) | 不占用内存空间进行数据交换 |
+| ~       | 取反            |
+| << >>   | 移位运算符         |
+
+```c
+swap(int& a, int& b)
+{
+    a^=b;
+    b^=a;
+    a^=b;
+}
+```
+
+
+
+* 关系运算符
+> C语言提供６种关系运算符（> < <= >= == != ）前四种优先级高于后两种。
+* 逻辑运算
+> C语言本没有逻辑类型，在内部计算中使用整数表达关系运算和逻辑运算的结果，0表示false，而非0的值表示true。逻辑运算则是C语言固有的成分。
+
+| 运算符  | 描述   |
+| ---- | ---- |
+| ！    | 逻辑非  |
+| &&   | 逻辑与  |
+| \|\| | 逻辑或  |
+
+* 条件运算
+
+```c
+count = （count>20)? cout-10: count
+
+
+//等价于
+
+if( cout>20 )
+    count = count-10;
+else
+    count = count+10;
+```
+
+* 逗号运算符
+> 逗号用来连接两个表达式，并以其右边表达式的值作为它的结果。逗号优先级在所有运算符中最低的。
+
+```c
+for （ i=0, j=10; i<j; i++, j-- )
+{ }
+```
+
+
+## 3. 语法结构
+* 顺序结构
+* 选择结构
+  * If语句
+  * switch语句
+
+```c
+//C提供了三种形式的if语句
+If( flag )
+{ // statement }
+
+If( a != 1)
+{ // statement 1 }
+else 
+// statement 2
+
+If( a ==1 )
+{ // statement 1 }
+Else if( a == 2)
+// statement
+…
+else 
+// statement n
+```
+
+```c
+int i;
+
+Switch( i )
+{
+case 1：
+     // expression 1
+     break;
+case 2：
+    // expression 2
+    break;
+…
+case n：
+    // expression n
+    break;
+    
+default:
+    // expression n+1
+    break;
+}
+```
+
+* 循环结构
+  * goto语句（现已很少使用）
+  * while语句
+  * do-while语句
+  * for语句
+  * Break语句用于跳出循环，continue用于结束本次循环。
+
+```c
+while（ ture ）
+{
+    // while语句先判断表达式后执行语句
+}
+
+do{
+    // do-while语句先执行语句后判断表达式
+} while ( true )
+```
+
+```c
+for( i=0; i<10; i++ )
+{
+    if( i==2 )
+    {
+        continue;
+    }
+    
+    if( i==4 )
+    {
+        break;
+    }
+}
+```
+
+
+## 4. 程序结构
+> C语言的模块化程序结构用函数来实现，即将复杂的C程序分为若干模块，每个模块都编写成一个C函数，然后通过主函数调用函数及函数调用函数来实现一大型问题的C程序编写，因此常说：**C程序=主函数+子函数**。因此，对函数的定义、调用、值的返回等中要尤其注重理解和应用，并通过上机调试加以巩固。
+### 函数
+
+* 调用
+* 嵌套
+* 递归
+
+```c
+void function( int n )
+{
+    function( n-1 );
+}
+void main()
+{
+    function(10);
+}
+```
+[详细...](https://wwg1996.github.io/cs/2017/10/10/function.html)
+
+## 5. 内存动态分配与释放
+
+* 分配空间：`指针变量=(类型*)malloc(字节数)`
+
+* 释放空间：`free(指针变量)`
+
+  [详细...](https://wwg1996.github.io/cs/2017/10/10/ccjg.html)
