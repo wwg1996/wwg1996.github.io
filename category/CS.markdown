@@ -81,9 +81,11 @@ img: /images/cs.jpg
 # 应用技术
 
 ## JAVA
-* 基本语法
-* 面向对象
-* 语法进阶
+* [基本语法](http://wangweiguang.xyz/cs/2020/01/21/Java.html), [数组](http://wangweiguang.xyz/cs/2020/01/22/array.html)
+* [面向对象：类与对象](http://wangweiguang.xyz/cs/2020/01/24/OOP.html)
+* 面向对象：封装、继承与多态
+* 常用API_1：Scanner，String，Arrays，ArrayList，Random，Math
+* 常用API_2：Object，Date，DateFormat，Calendar，System，StringBuilder
 
 ## Python 
 * [0 基本语法](http://wangweiguang.xyz/cs/2018/03/04/python3.html)
