@@ -6,8 +6,10 @@ categories: CS
 tags:  
 img: /images/cs.jpg
 ---
+
 * 
 {:toc}
+
 # Java后端开发
 
 ## Java基础
@@ -17,7 +19,7 @@ img: /images/cs.jpg
 
 * 常用API：[String相关类](https://blog.csdn.net/qq_31707969/article/details/104101689)，[Arrays类](https://blog.csdn.net/qq_31707969/article/details/104124503)，[Object类与包装类](https://blog.csdn.net/qq_31707969/article/details/104327745)，[System类与时间相关类](https://blog.csdn.net/qq_31707969/article/details/104335054)，[其他常用类](https://blog.csdn.net/qq_31707969/article/details/104089520)
 * 容器：[Collection集合，List 和 Set 及其子类，Map 及其子类](https://blog.csdn.net/qq_31707969/article/details/104399162)，[工具类](https://blog.csdn.net/qq_31707969/article/details/104425038)，[HashMap原理](https://blog.csdn.net/qq_31707969/article/details/106627877)，[ConcurrentHashMap原理](https://blog.csdn.net/qq_31707969/article/details/106627877)，[其他容器原理](https://blog.csdn.net/qq_31707969/article/details/106653452)
-* 并发编程：[线程](https://blog.csdn.net/qq_31707969/article/details/104453079)/[线程2](https://blog.csdn.net/qq_31707969/article/details/104507717)，[synchronized与volatile](https://blog.csdn.net/qq_31707969/article/details/106689015)，[Lock体系](https://blog.csdn.net/qq_31707969/article/details/106719609)，[线程池](https://blog.csdn.net/qq_31707969)，并发编程
+* 并发编程：[线程](https://blog.csdn.net/qq_31707969/article/details/104453079)/[线程2](https://blog.csdn.net/qq_31707969/article/details/104507717)，[synchronized与volatile](https://blog.csdn.net/qq_31707969/article/details/106689015)，[Lock体系](https://blog.csdn.net/qq_31707969/article/details/106719609)，[线程池](https://blog.csdn.net/qq_31707969)，[并发编程基础](https://blog.csdn.net/qq_31707969/article/details/106727648)，[并发容器与辅助类](https://blog.csdn.net/qq_31707969/article/details/106753599)
 * 其他：[异常](https://blog.csdn.net/qq_31707969/article/details/104437373)，[I/O流](I/O流)，[File类](https://blog.csdn.net/qq_31707969/article/details/105472858)，[线程](https://blog.csdn.net/qq_31707969/article/details/104453079)/[线程2](https://blog.csdn.net/qq_31707969/article/details/104507717)，[网络编程](https://blog.csdn.net/qq_31707969/article/details/104956092)，[序列化，拷贝](https://blog.csdn.net/qq_31707969/article/details/106592081)[设计模式](https://blog.csdn.net/qq_31707969/article/details/105850608)，[反射](https://blog.csdn.net/qq_31707969/article/details/105492396)，[注解](https://blog.csdn.net/qq_31707969/article/details/106244020)，[JVM](https://blog.csdn.net/qq_31707969/article/details/106978050)，Junit，lambda表达式，JDK新特性
 
 * 其他：IDEA，Eclipse
