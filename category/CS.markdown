@@ -6,34 +6,37 @@ categories: CS
 tags:  
 img: /images/cs.jpg
 ---
+
 * 
 {:toc}
+
 # Java后端开发
 
 ## Java基础
-* 基础：
-  * [Java基础语法](https://blog.csdn.net/qq_31707969/article/details/106296607)，[代码书写规范](https://blog.csdn.net/tototuzuoquan/article/details/7867593)
-  * Java面向对象：[类与对象](https://blog.csdn.net/qq_31707969/article/details/104078502)，[继承](https://blog.csdn.net/qq_31707969/article/details/104144134)，[接口](https://blog.csdn.net/qq_31707969/article/details/104190194)，[多态](https://blog.csdn.net/qq_31707969/article/details/104203732)，[final、权限、内部类](https://blog.csdn.net/qq_31707969/article/details/104230033)
-* 中级：
-  * 常用API：[String相关类](https://blog.csdn.net/qq_31707969/article/details/104101689)，[Arrays类](https://blog.csdn.net/qq_31707969/article/details/104124503)，[Object类与包装类](https://blog.csdn.net/qq_31707969/article/details/104327745)，[System类与时间相关类](https://blog.csdn.net/qq_31707969/article/details/104335054)，[其他常用类](https://blog.csdn.net/qq_31707969/article/details/104089520)
-  * 容器：[Collection集合，List 和 Set 及其子类，Map 及其子类](https://blog.csdn.net/qq_31707969/article/details/104399162)，[工具类](https://blog.csdn.net/qq_31707969/article/details/104425038)
-  * 其他：[异常](https://blog.csdn.net/qq_31707969/article/details/104437373)，[I/O流](I/O流)，[File类](https://blog.csdn.net/qq_31707969/article/details/105472858)，[线程](https://blog.csdn.net/qq_31707969/article/details/104453079)/[线程2](https://blog.csdn.net/qq_31707969/article/details/104507717)，[网络编程](https://blog.csdn.net/qq_31707969/article/details/104956092)，拷贝，图形界面，Junit，lambda表达式
-* 高级：[设计模式](https://blog.csdn.net/qq_31707969/article/details/105850608)，[反射](https://blog.csdn.net/qq_31707969/article/details/105492396)，[注解](https://blog.csdn.net/qq_31707969/article/details/106244020)，多线程高级，JVM优化，JDK新特性
+
+* [Java基础语法](https://blog.csdn.net/qq_31707969/article/details/106296607)，[代码书写规范](https://blog.csdn.net/tototuzuoquan/article/details/7867593)
+* Java面向对象：[类与对象](https://blog.csdn.net/qq_31707969/article/details/104078502)，[继承](https://blog.csdn.net/qq_31707969/article/details/104144134)，[接口](https://blog.csdn.net/qq_31707969/article/details/104190194)，[多态](https://blog.csdn.net/qq_31707969/article/details/104203732)，[final、权限、内部类](https://blog.csdn.net/qq_31707969/article/details/104230033)
+
+* 常用API：[String相关类](https://blog.csdn.net/qq_31707969/article/details/104101689)，[Arrays类](https://blog.csdn.net/qq_31707969/article/details/104124503)，[Object类与包装类](https://blog.csdn.net/qq_31707969/article/details/104327745)，[System类与时间相关类](https://blog.csdn.net/qq_31707969/article/details/104335054)，[其他常用类](https://blog.csdn.net/qq_31707969/article/details/104089520)
+* 容器：[Collection集合，List 和 Set 及其子类，Map 及其子类](https://blog.csdn.net/qq_31707969/article/details/104399162)，[工具类](https://blog.csdn.net/qq_31707969/article/details/104425038)，[HashMap原理](https://blog.csdn.net/qq_31707969/article/details/106627877)，[ConcurrentHashMap原理](https://blog.csdn.net/qq_31707969/article/details/106627877)，[其他容器原理](https://blog.csdn.net/qq_31707969/article/details/106653452)
+* 并发编程：[线程](https://blog.csdn.net/qq_31707969/article/details/104453079)/[线程2](https://blog.csdn.net/qq_31707969/article/details/104507717)，[synchronized与volatile](https://blog.csdn.net/qq_31707969/article/details/106689015)，[Lock体系](https://blog.csdn.net/qq_31707969/article/details/106719609)，[线程池](https://blog.csdn.net/qq_31707969)，[并发编程基础](https://blog.csdn.net/qq_31707969/article/details/106727648)，[并发容器与辅助类](https://blog.csdn.net/qq_31707969/article/details/106753599)
+* 其他：[异常](https://blog.csdn.net/qq_31707969/article/details/104437373)，[I/O流](I/O流)，[File类](https://blog.csdn.net/qq_31707969/article/details/105472858)，[线程](https://blog.csdn.net/qq_31707969/article/details/104453079)/[线程2](https://blog.csdn.net/qq_31707969/article/details/104507717)，[网络编程](https://blog.csdn.net/qq_31707969/article/details/104956092)，[序列化，拷贝](https://blog.csdn.net/qq_31707969/article/details/106592081)[设计模式](https://blog.csdn.net/qq_31707969/article/details/105850608)，[反射](https://blog.csdn.net/qq_31707969/article/details/105492396)，[注解](https://blog.csdn.net/qq_31707969/article/details/106244020)，[JVM](https://blog.csdn.net/qq_31707969/article/details/106978050)，Junit，lambda表达式，JDK新特性
+
 * 其他：IDEA，Eclipse
 
 ## JavaWeb
 * 前端：[HTML](https://blog.csdn.net/qq_31707969/article/details/104623031)，[CSS](https://blog.csdn.net/qq_31707969/article/details/104676926)，[JavaScript基础](https://blog.csdn.net/qq_31707969/article/details/104701408)/[JavaScript高级](https://blog.csdn.net/qq_31707969/article/details/104723530)，[BootStrap](https://blog.csdn.net/qq_31707969/article/details/104787239)，[JQuery](https://blog.csdn.net/qq_31707969/article/details/105224137)，Vue，webpack
-* 服务：Servlet([Request](https://blog.csdn.net/qq_31707969/article/details/104980019)，[Response](https://blog.csdn.net/qq_31707969/article/details/105125929))， [Ajax](https://blog.csdn.net/qq_31707969/article/details/105231705)，[Tomcat](https://blog.csdn.net/qq_31707969/article/details/104904516)，[Cookie&&Session](https://blog.csdn.net/qq_31707969/article/details/105187102)，[JSP](https://blog.csdn.net/qq_31707969/article/details/105196236)，Filter，Listener，
-* 数据：数据库基础，[JDBC](https://blog.csdn.net/qq_31707969/article/details/105017233)/ [JDBC使用优化](https://blog.csdn.net/qq_31707969/article/details/105106588)，[JSON](https://blog.csdn.net/qq_31707969/article/details/105298808)，[Redis](https://blog.csdn.net/qq_31707969/article/details/105194729)*，xml
-  [MySQL 基础](https://blog.csdn.net/qq_31707969/article/details/104521981)，[MySQL中级](https://blog.csdn.net/qq_31707969/article/details/104527557)，[MySQL高级](https://blog.csdn.net/qq_31707969/article/details/106176789)*
-* 其他：[Web相关概念](https://blog.csdn.net/qq_31707969/article/details/104831655)，[计算机网络基础](https://blog.csdn.net/qq_31707969/article/details/104956092)
+* 服务：Servlet([Request](https://blog.csdn.net/qq_31707969/article/details/104980019)，[Response](https://blog.csdn.net/qq_31707969/article/details/105125929))， [Ajax](https://blog.csdn.net/qq_31707969/article/details/105231705)，[Tomcat](https://blog.csdn.net/qq_31707969/article/details/104904516)，[Cookie&&Session](https://blog.csdn.net/qq_31707969/article/details/105187102)，[JSP](https://blog.csdn.net/qq_31707969/article/details/105196236)，Filter，Listener，
+* 数据：数据库基础，[JDBC](https://blog.csdn.net/qq_31707969/article/details/105017233)/ [JDBC使用优化](https://blog.csdn.net/qq_31707969/article/details/105106588)，[JSON](https://blog.csdn.net/qq_31707969/article/details/105298808)，
+  [MySQL基础1](https://blog.csdn.net/qq_31707969/article/details/104521981)，[MySQL基础2](https://blog.csdn.net/qq_31707969/article/details/104527557)，[MySQL事务](https://blog.csdn.net/qq_31707969/article/details/106894725)，[MySQL索引](https://blog.csdn.net/qq_31707969/article/details/106954843)，[MySQL优化](https://blog.csdn.net/qq_31707969/article/details/106936362)，[Redis1](https://blog.csdn.net/qq_31707969/article/details/107005382)，[Redis2](https://blog.csdn.net/qq_31707969/article/details/107003556)
+* 其他：[Web相关概念](https://blog.csdn.net/qq_31707969/article/details/104831655)，[计算机网络](https://blog.csdn.net/qq_31707969/article/details/106823489)
 ## JavaEE
 * 框架：
-  * 逻辑层框架：[Spring框架-IoC](https://blog.csdn.net/qq_31707969/article/details/105547723)，[Spring框架-AOP](https://blog.csdn.net/qq_31707969/article/details/105656183)，[SSM整合](https://blog.csdn.net/qq_31707969/article/details/106458906)
-  * 表现层框架：[SpringMVC框架](https://blog.csdn.net/qq_31707969/article/details/105766381)，[SpringMVC框架2](https://blog.csdn.net/qq_31707969/article/details/105983546)
-  * 持久层框架：[MyBatis基础](https://blog.csdn.net/qq_31707969/article/details/106350978)，[通用Mapper](https://blog.csdn.net/qq_31707969/article/details/106154664)，[Hibernate](https://blog.csdn.net/qq_31707969/article/details/106505536)
-  * 分布式框架： [SpringBoot入门](https://blog.csdn.net/qq_31707969/article/details/105822609)，[SpringBoot整合](https://blog.csdn.net/qq_31707969/article/details/105860401)，[从集中式到微服务架构](https://blog.csdn.net/qq_31707969/article/details/105896507)，[SpringCloud](https://blog.csdn.net/qq_31707969/article/details/105919653)
-* 其他：[Maven](https://blog.csdn.net/qq_31707969/article/details/105232520)，[Nginx](https://blog.csdn.net/qq_31707969/article/details/106084594)，[FastDFS](https://blog.csdn.net/qq_31707969/article/details/106328974)，[Linux](https://blog.csdn.net/qq_31707969/article/details/106334102)，Git，SVN，Thymeleaf，RabbitMQ，Elasticsearch，kafka，Zookeeper，Docker，文件上传和下载
+  * 逻辑：[Spring框架-IoC](https://blog.csdn.net/qq_31707969/article/details/105547723)，[Spring框架-AOP](https://blog.csdn.net/qq_31707969/article/details/105656183)，[SSM整合](https://blog.csdn.net/qq_31707969/article/details/106458906)，[Spring原理](https://blog.csdn.net/qq_31707969/article/details/106848874)
+  * 表现：[SpringMVC框架](https://blog.csdn.net/qq_31707969/article/details/105766381)，[SpringMVC框架2](https://blog.csdn.net/qq_31707969/article/details/105983546)
+  * 持久：[MyBatis基础](https://blog.csdn.net/qq_31707969/article/details/106350978)，[通用Mapper](https://blog.csdn.net/qq_31707969/article/details/106154664)，[Hibernate](https://blog.csdn.net/qq_31707969/article/details/106505536)
+  * 分布式： [SpringBoot入门](https://blog.csdn.net/qq_31707969/article/details/105822609)，[SpringBoot整合](https://blog.csdn.net/qq_31707969/article/details/105860401)，[从集中式到微服务架构](https://blog.csdn.net/qq_31707969/article/details/105896507)，[SpringCloud](https://blog.csdn.net/qq_31707969/article/details/107083922)
+* 其他：[Maven](https://blog.csdn.net/qq_31707969/article/details/105232520)，[Nginx](https://blog.csdn.net/qq_31707969/article/details/106084594)，[FastDFS](https://blog.csdn.net/qq_31707969/article/details/106328974)，[Linux](https://blog.csdn.net/qq_31707969/article/details/106334102)，[RabbitMQ](https://blog.csdn.net/qq_31707969/article/details/107033588)，Git，SVN，Thymeleaf，Elasticsearch，Zookeeper，Docker，文件上传和下载
 
 
 
@@ -92,5 +95,3 @@ img: /images/cs.jpg
 * 其他：[一张图了解计算机学科](http://wangweiguang.xyz/cs/2017/10/14/map_of_cs.html)，[《信息简史》摘录](https://blog.csdn.net/qq_31707969/article/details/106580302)，[不同编程语言的区别](https://blog.csdn.net/qq_31707969/article/details/106583823)，[《必然》读书笔记](https://blog.csdn.net/qq_31707969/article/details/106584319)，EGB 读书笔记
 
   
-
-
