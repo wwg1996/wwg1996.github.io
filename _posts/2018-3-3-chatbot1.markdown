@@ -4,7 +4,7 @@ title: Chatbot初探1 qq聊天机器人 上
 date: 2018-03-03 16:05:15 +0800
 categories: AI origin
 tags: NLP chatbot 
-img: http://wangweiguang.xyz/images/chatbot.jpg
+img: http://wwg1996.github.io/images/chatbot.jpg
 ---
 
 想自己做几个聊天机器人，可以在一些开放的话题里进行一些短对话（联系上下文估计还是比较难的）。
@@ -338,16 +338,16 @@ def index():
 ### No1 精分的么小
 第一次出的结果，留作纪念，可能主要是因为训练时间比较短吧，对话都没有逻辑。把他叫做精分么小。
 
-![image](http://wangweiguang.xyz/images/jfmx.jpg)
+![image](http://wwg1996.github.io/images/jfmx.jpg)
 
 ### No2 敷衍的么小
 这个训练了十个小时，迭代到40000次，结果，，，
 
-![image](http://wangweiguang.xyz/images/fymx1.jpg)
+![image](http://wwg1996.github.io/images/fymx1.jpg)
 
-![image](http://wangweiguang.xyz/images/fymx2.jpg)
+![image](http://wwg1996.github.io/images/fymx2.jpg)
 
-![image](http://wangweiguang.xyz/images/fymx3.jpg)
+![image](http://wwg1996.github.io/images/fymx3.jpg)
 
 看起来很有道理的样子，有了点“灵性”，不过只会回答三句话（在qq里其实是三种的表情），不过这三句倒是“万能回答”，被AI学习到了。
 

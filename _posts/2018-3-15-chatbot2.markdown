@@ -4,7 +4,7 @@ title: Chatbot初探2 qq聊天机器人 下
 date: 2018-03-15 14:02:56 +0800
 categories: AI
 tags: NLP chatbot 
-img: http://wangweiguang.xyz/images/chatbot.jpg
+img: http://wwg1996.github.io/images/chatbot.jpg
 ---
 
 * 
@@ -71,9 +71,9 @@ while True:
     print("AI么小：", chatbot.get_response(input("> ")))  
 ```
 
-![image](http://wangweiguang.xyz/images/chat1.jpg)
+![image](http://wwg1996.github.io/images/chat1.jpg)
 
-![image](http://wangweiguang.xyz/images/chat2.jpg)
+![image](http://wwg1996.github.io/images/chat2.jpg)
 
 这是十几句对话，效果还是不错的。本身想看看女朋友什么时候才会发现异常，后来她几秒钟连发了5个qq表情，我便放弃了（手速跟不上），告知其真相。预计如果进行顺利的话，这个检索式的机器人连着对话二十句也没有问题，已经很满意了。
 
