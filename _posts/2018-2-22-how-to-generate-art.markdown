@@ -4,7 +4,7 @@ title: CNN实现艺术风格转移
 date: 2018-02-22 14:42:38 +0800
 categories: AI
 tags: 神经网络 Siraj 艺术 
-img: http://wangweiguang.xyz/images/tp.jpg
+img: https://wwg1996.github.io/images/tp.jpg
 ---
 
 * 
@@ -29,7 +29,7 @@ img: http://wangweiguang.xyz/images/tp.jpg
 ## 艺术风格转移
 本文的程序是对这篇倍受欢迎的论文[Gatys et al., 2015](https://arxiv.org/abs/1508.06576)的python代码实现，它演示了如何使用神经网络将艺术风格从一个图像转移到另一个图像上（如下图）。并且作为这篇[博客文章的补充](https://harishnarayanan.org/writing/artistic-style-transfer/)。
 
-![image](http://wangweiguang.xyz/images/style-transferred.jpg)
+![image](https://wwg1996.github.io/images/style-transferred.jpg)
 
 ## 依赖库
 
@@ -67,7 +67,7 @@ content_image
 ```
 out[1]:
 
-![image](http://wangweiguang.xyz/images/hugo.jpg)
+![image](https://wwg1996.github.io/images/hugo.jpg)
 
 ```python
 # 样式图像
@@ -78,7 +78,7 @@ style_image = style_image.resize((height, width))
 style_image
 ```
 out[2]:
-![image](http://wangweiguang.xyz/images/wave.jpg)
+![image](https://wwg1996.github.io/images/wave.jpg)
 
 ### 图像预处理
 然后，我们将这些图像转换成适合数值处理的形式。需要注意的是，我们添加了另一个维度(超越了经典高度\*宽\*RGB值三维)，这样我们就可以将这两个图像的表示连接到一个公共的数据结构中。
@@ -143,7 +143,7 @@ input_tensor = backend.concatenate([content_image,
 
 此外，由于我们对分类问题不感兴趣，我们不需要全连接的层和最终的softmax分类器。我们只需要下面表格中绿色标记的部分。
 
-![VGG Network Architectures](http://wangweiguang.xyz/images/vgg-architecture.png)
+![VGG Network Architectures](https://wwg1996.github.io/images/vgg-architecture.png)
 
 对于我们来说，访问这个被截尾模型是很简单的，因为Keras提供了一组预先训练的模型，包括我们感兴趣的VGG16模型。注意，通过在下面的代码中设置“include_top=False”，我们不包括任何完全连接的层。
 
@@ -348,7 +348,7 @@ x = np.clip(x, 0, 255).astype('uint8')
 Image.fromarray(x)
 ```
 out[6]:
-![image](http://wangweiguang.xyz/images/output.jpg)
+![image](https://wwg1996.github.io/images/output.jpg)
 
 采用不同的样式图片有产生不同的融合效果：
-![image](http://wangweiguang.xyz/images/tp.jpg)
+![image](https://wwg1996.github.io/images/tp.jpg)

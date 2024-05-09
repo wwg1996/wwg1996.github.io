@@ -4,7 +4,7 @@ title: 个人知识管理系统（Acesse）
 date: 2017-06-01 14:02:56 +0800
 categories: origin
 tags: PKM 
-img: http://wangweiguang.xyz/images/pkm.jpg
+img: https://wwg1996.github.io/images/pkm.jpg
 ---
 
 * 
@@ -218,7 +218,7 @@ img: http://wangweiguang.xyz/images/pkm.jpg
 
 根据上面的需求分析，本系统是单用户单机使用的，为了防止其他人在没有经过使用者允许的情况下进入系统，所以一开始打开系统系统是出于密码锁定状态的，输入设置的密码才可以进入系统主界面，另外多次输错密码，会提示输入验证码，如图5.1。
 
- ![image](http://wangweiguang.xyz/images/pkms1.jpg)
+ ![image](https://wwg1996.github.io/images/pkms1.jpg)
 
 图5.1
 
@@ -226,19 +226,19 @@ img: http://wangweiguang.xyz/images/pkm.jpg
 
 之后会进入主界面，主界面主要分为三部分，左侧的部分可以记录知识点的各个要素，右侧以树形图显示出知识系统的结构，另外还有功能键按钮区，其中一部分是关于知识录入和对知识结构进行操作的相关按钮，一部分是其他功能。下面用详细的演示实例进行介绍。
 
- ![image](http://wangweiguang.xyz/images/pkm1.jpg)
+ ![image](https://wwg1996.github.io/images/pkm1.jpg)
 
  1. 1)主界面功能键
 
 包括展开所有，折叠所有，展开当前和折叠当前，这些功能键是可以对知识结构的显示方式进行操作；剩下的功能键还有创建关系，添加子节点，添加根节点，添加关系，删除所选和保存修改这些按键对知识节点进行操作。（如图5.2 ）
 
- ![image](http://wangweiguang.xyz/images/pkm2.jpg)
+ ![image](https://wwg1996.github.io/images/pkm2.jpg)
  图5.2左侧功能键
 
 
  另外右面知识结构图的上面有简单的根据关键字的搜索功能，搜索后左边会显示出该知识点的内容，右面的知识树状图会打开节点所在的目录。在这里，搜索是累积的，也就是内清空搜索之前，上一次的搜索会在树形图中保持显示。如果有多个搜索结果，可以通过点击&quot;上一个&quot;或&quot;下一个&quot;进行切换选择内容。点击&quot;清空搜索&quot;按键会折叠所有节点，清空搜索栏。（如图5.3）
 
-![image](http://wangweiguang.xyz/images/pkms2.png)
+![image](https://wwg1996.github.io/images/pkms2.png)
 图5.3 搜索功能和效果展示
 
 1. 2)知识内容的输入
@@ -249,7 +249,7 @@ img: http://wangweiguang.xyz/images/pkm.jpg
 
 新建节点后，焦点会显示在知识概述中的知识名称输入框，知识名称是首要的知识要素，每个知识点都必须有一个名称，然后如果有别名可以输入别名，搜索时也会对别名进搜索，然后就是知识类别和知识描述，知识默认的类别为基本概念，知识描述里可以书写对该知识点的一般性解释。（见图5.4）
 
-![image](http://wangweiguang.xyz/images/pkm3.jpg)
+![image](https://wwg1996.github.io/images/pkm3.jpg)
 图5.4
 
 1. ②　与父节点的关系部分
@@ -260,19 +260,19 @@ img: http://wangweiguang.xyz/images/pkm.jpg
 
 而我们特别关注与添加节点和父节点的关系类别的意义在于，这样可以使我们学习的知识更具有贯通性，比在如&quot;逻辑模型&quot;这个节点下，&quot;动态特性&quot;、&quot;静态特性&quot;和&quot;完整性约束条件&quot;这三个子节点与父节点具有组成关系，这里代表意义就是&quot;逻辑模型&quot;包含的属性（如图5.8），而&quot;关系模型&quot;是&quot;逻辑模型&quot;分类关系下的一个子类，所以&quot;关系模型&quot;具有&quot;逻辑模型&quot;的一切性质。（如图5.9），这符合知识的特性，也顺应我们了的认知习惯，所以加入了这一部分的内容。
 
-![image](http://wangweiguang.xyz/images/pkm4.jpg)
+![image](https://wwg1996.github.io/images/pkm4.jpg)
 图5.5
 
-![image](http://wangweiguang.xyz/images/pkm5.jpg)
+![image](https://wwg1996.github.io/images/pkm5.jpg)
 图5.6
 
-![image](http://wangweiguang.xyz/images/pkm6.jpg)
+![image](https://wwg1996.github.io/images/pkm6.jpg)
 图5.7
 
-![image](http://wangweiguang.xyz/images/pkm7.jpg)
+![image](https://wwg1996.github.io/images/pkm7.jpg)
 图5.8
 
-![image](http://wangweiguang.xyz/images/pkm8.jpg)
+![image](https://wwg1996.github.io/images/pkm8.jpg)
 图5.9
 
 1. ③　知识详情
@@ -280,19 +280,19 @@ img: http://wangweiguang.xyz/images/pkm.jpg
 上面对于知识内容的介绍是用文字进行的描述，是具有总结性的，但是有时候一些多媒体的手段可能会更好的帮助我们理解知识，比图说图片，并且如果我们随时想了解关于知识点更多的知识，我们可以打开实现输入的相关教材或网站。（图5.10）特别的，对于数据库课程相关的知识，比如SQL语言的相关知识点我们可以通过查看具体的SQL联系实例，来加深我们对这些抽象概念的理解，对于VBA的学习也是如此。（如图5.11 到 5.14）在这里，图片可以直接插入到OLE控件框里，但是对于SQL语言和VBA实例的输入需要进入开发模式才可以进行更改。
 
 
-![image](http://wangweiguang.xyz/images/pkm9.jpg)
+![image](https://wwg1996.github.io/images/pkm9.jpg)
 图5.10
 
-![image](http://wangweiguang.xyz/images/pkm10.jpg)
+![image](https://wwg1996.github.io/images/pkm10.jpg)
 图5.11
 
-![image](http://wangweiguang.xyz/images/pkm11.jpg)
+![image](https://wwg1996.github.io/images/pkm11.jpg)
 图5.12
 
-![image](http://wangweiguang.xyz/images/pkm12.jpg)
+![image](https://wwg1996.github.io/images/pkm12.jpg)
 图5.13
 
-![image](http://wangweiguang.xyz/images/pkm13.png)
+![image](https://wwg1996.github.io/images/pkm13.png)
 图5.14
 
 1. 3)关系的添加
@@ -300,10 +300,10 @@ img: http://wangweiguang.xyz/images/pkm.jpg
 当两个知识节点具有其他关系时，我们可以通过点击红色的&quot;创建关系&quot;按钮添加这个关系（图5.15），修改关系也是通过这个按键，当需要查看已有的关系时，可以点击左侧的图标，进入关系网络界面进行查看（图5.16）。
 
 
-![image](http://wangweiguang.xyz/images/pkm14.png)
+![image](https://wwg1996.github.io/images/pkm14.png)
 图5.15
 
-![image](http://wangweiguang.xyz/images/pkm15.jpg)
+![image](https://wwg1996.github.io/images/pkm15.jpg)
 图5.16
 
 1. 4)知识结构的整理
